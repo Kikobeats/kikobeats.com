@@ -1,0 +1,23 @@
+{
+  "name": "kikobeats.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "~2.18.13",
+    "gulp": "~3.9.1",
+    "gulp-util": "~3.0.8"
+  },
+  "dependencies": {
+    "acho": "~4.0.0",
+    "condense-whitespace": "~1.0.0",
+    "tachyons-sass": "~4.8.1"
+  }
+}
