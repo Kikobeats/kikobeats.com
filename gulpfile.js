@@ -1,6 +1,5 @@
 'use strict'
 
-const condenseWhitespace = require('condense-whitespace');
 const browserSync = require('browser-sync').create()
 const {spawn} = require('child_process')
 const gutil = require('gulp-util')
@@ -42,6 +41,7 @@ gulp.task('serve', () => {
     open: false,
     reloadDebounce: 2000,
     reloadDelay: 3000,
+    ghostMode: false,
     server: {
       baseDir: '_site'
     }
