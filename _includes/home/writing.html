@@ -1,0 +1,33 @@
+<section class="bg-white helvetica near-black pa4-l pa3" >
+  <header class=" pv3" id="#writing">
+		<div class="mauto ph4-l max-width-big-screen">
+			<h2 class="m0 f2 lh-1p125 fw7">Writing</h2>
+		</div>
+	</header>
+
+	<ul class="list pl0 mauto pv3 ph4-l max-width-big-screen">
+    {% assign posts = "" | split: "" %}
+
+		{% for post in site.posts %}
+      {% unless post.draft %}
+        {% assign posts = posts | push: post %}
+      {% endunless %}
+		{% endfor %}
+
+    {% for post in posts limit:5 %}
+    <li class="mb4">
+      <span class="ttu f6 b mr2 tracked light-silver db">
+        {{ post.date | date: "%B %e, %Y" }}
+      </span>
+      <a href="{{ post.url }}" class="near-black link link-dotted ttc f3 mb3 lh-copy">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+	</ul>
+
+  <div class="mauto ph4-l pt3 max-width-big-screen">
+    <h3 class="f3 near-black">
+      See more on <a class="near-black link link-gold" href="">blog</a>.
+    </h3>
+  </div>
+
+</section>

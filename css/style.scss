@@ -19,20 +19,18 @@ $font-family   : -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
 	color: $gold;
 }
 
-.gold.no-underline {
-	color: $near-white;
-	text-decoration: none;
-	display: inline-block;
+a.link-gold {
+  text-decoration: none;
+  border-bottom: 3px solid $gold;
   position: relative;
+
+  &:hover {
+    color: $gold;
+  }
 }
 
-.gold.no-underline::after {
-	content: '';
-  position: absolute;
-  left: 0;
-  display: inline-block;
-  height: 1em;
-  width: 100%;
-	border-bottom: .25rem solid;
-	margin-top: 9%;
+a.link-dotted {
+  text-decoration: none;
+  border-bottom: 3px dotted #ddd;
+  position: relative;
 }
