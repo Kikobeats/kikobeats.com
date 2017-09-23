@@ -1,5 +1,6 @@
 'use strict'
 
+const condenseWhitespace = require('condense-whitespace')
 const browserSync = require('browser-sync').create()
 const {spawn} = require('child_process')
 const gutil = require('gulp-util')
