@@ -1,0 +1,22 @@
+<section class="bg-white helvetica near-black pa4-l pa3" >
+	<ul class="list pl0 mauto pv3 ph4-l max-width-big-screen">
+    {% for post in site.posts %}
+    {% unless post.draft %}
+      {% capture currentdate %}{{post.date | date: "%Y"}}{% endcapture %}
+
+      {% if currentdate != thedate %}
+        <h2 class="f2 bl bw3 f2 pl3 mt6-l mt5">{{ currentdate }}</h2>
+        {% capture thedate %}{{currentdate}}{% endcapture %}
+      {% endif %}
+      <li class="mb2-l mb4">
+        <span class="ttu f6 b mr2 tracked light-silver fr-l db">
+          {{ post.date | date: "%B %e, %Y" }}
+        </span>
+        <a class="near-black dim link link-dotted ttc f3-l f4 mb3 lh-copy" href="{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </li>
+    {% endunless %}
+    {% endfor %}
+	</ul>
+</section>
