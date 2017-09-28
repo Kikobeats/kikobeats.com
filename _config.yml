@@ -1,10 +1,12 @@
 title: Kikobeats
 email: josefrancisco.verdu@gmail.com
-description: A millenial doing stff on internet
+description: A millenial doing stuff on internet
 baseurl: ""
 url: ""
 twitter: kikobeats
 github: kikobeats
+
+permalink: "/:title/"
 
 exclude:
   - Gemfile
