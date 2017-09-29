@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Frases que te harÃ¡n un mejor programador
+title: Frases que te harán un mejor programador
 date: '2013-12-28 12:40:51'
 ---
 

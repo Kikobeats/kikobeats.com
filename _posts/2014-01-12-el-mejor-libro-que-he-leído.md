@@ -1,6 +1,6 @@
 ---
 layout: post
-title: El mejor libro que he leÃ­do...
+title: El mejor libro que he leído...
 date: '2014-01-12 16:32:04'
 ---
 
