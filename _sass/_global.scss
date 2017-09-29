@@ -1,0 +1,22 @@
+::selection {
+  background-color: $primary-color;
+  color: $white;
+}
+
+.link-underline {
+  text-decoration: none;
+  border-bottom: 3px solid $primary-color;
+  padding-bottom: 2px;
+  position: relative;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.link-dotted {
+  text-decoration: none;
+  border-bottom: 3px dotted $secondary-color;
+  position: relative;
+  padding-bottom: 2px;
+}

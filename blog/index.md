@@ -2,5 +2,6 @@
 layout: default
 ---
 
-{% include blog/hero-header.html title="Writings" %}
+{% include navbar.html %}
+{% include blog/hero-header.html title="Writings" image="/images/hero-header.jpg" %}
 {% include blog/list-posts.html %}

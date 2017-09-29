@@ -39,19 +39,21 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 
 ~~Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.~~
 
-==Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.==
+<mark>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</mark>
 
-Pellentesque *habitant* morbi tristique senectus et netus et malesuada fames ac turpis **egestas**. Vestibulum tortor ==quam==, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet ~~quam~~ egestas semper. Aenean ultricies mi vitae est. Mauris [placerat](http://kikobeats.com) eleifend leo.
+Pellentesque *habitant* morbi tristique senectus et netus et malesuada fames ac turpis **egestas**. Vestibulum tortor <mark>quam</mark>, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet ~~quam~~ egestas semper. Aenean ultricies mi vitae est. Mauris [placerat](http://kikobeats.com) eleifend leo.
 
 #### **Quote**
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
 
-> â€œWhenever you find yourself on the side of the majority, it is time to pause and reflectâ€ 
+> Whenever you find yourself on the side of the majority, it is time to pause and reflect
 <cite>Mark Twain</cite>
 
+Source code:
+
 ```
-> â€œWhenever you find yourself on the side of the majority, it is time to pause and reflectâ€ 
+> Whenever you find yourself on the side of the majority, it is time to pause and reflect 
 <cite>Mark Twain</cite>
 ```
 
@@ -59,9 +61,9 @@ It has survived not only five centuries, but also the leap into electronic types
 
 #### **Emoji**
 
-ðŸ˜€ ðŸ˜¬ ðŸ˜ ðŸ˜‚
+😬 😍 💸 😱
 
-Hello ðŸ¤“ how are you? ðŸ¤‘.
+Hello 😁 how are you? 🤓.
 
 :smile:
 
@@ -83,7 +85,7 @@ Hello ðŸ¤“ how are you? ðŸ¤‘.
 A `Map` is the new `ECMAScript6` data structure. You can use a `Object` as a `Map`.
 
 
-```javascript
+```js
 var cluster = require('cluster');
 var http = require('http');
 var numCPUs = require('os').cpus().length;

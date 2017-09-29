@@ -1,5 +1,5 @@
-<section class="bg-white helvetica near-black pa4-l pa3" >
-	<ul class="list pl0 mauto pv3 ph4-l max-width-big-screen">
+<section class="layout-{{page.layout}} bg-white helvetica near-black pa4-l pa3" >
+	<ul class="list pl0 mauto pv4 ph4-l max-width-big-screen">
     {% for post in site.posts %}
     {% unless post.draft %}
       {% capture currentdate %}{{post.date | date: "%Y"}}{% endcapture %}
@@ -9,9 +9,9 @@
         {% capture thedate %}{{currentdate}}{% endcapture %}
       {% endif %}
       <li class="mb2-l mb4">
-        <span class="ttu f6 b mr2 tracked light-silver fr-l db">
+        <date class="ttu f6 b mr2 tracked light-silver fr-l db">
           {{ post.date | date: "%B %e, %Y" }}
-        </span>
+        </date>
         <a class="near-black dim link link-dotted ttc f3-l f4 mb3 lh-copy" href="{{ post.url }}">
           {{ post.title }}
         </a>
