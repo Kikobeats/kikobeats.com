@@ -2,18 +2,18 @@ featured:
   - name: Acho
     description: The Hackable Log.
     link: http://acho.js.org
-    image: http://compositor.s3.amazonaws.com/images/bikeshed-hero-2.jpg
+    image: /images/acho.png
 
 
   - name: Bumped
     description: Make easy releasing software.
     link: http://bumped.js.org
-    image: http://compositor.s3.amazonaws.com/images/bikeshed-hero-2.jpg
+    image: /images/bumped.png
 
   - name: Osom
     description: An Awesome Object Data Modeling.
     link: http://osom.js.org
-    image: http://compositor.s3.amazonaws.com/images/bikeshed-hero-2.jpg
+    image: /images/osom.png
 
 normal:
   - name: browserless
