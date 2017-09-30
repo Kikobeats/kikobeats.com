@@ -7,8 +7,7 @@ const gutil = require('gulp-util')
 const gulp = require('gulp')
 
 const log = require('acho')({
-  outputType: type => `[${type}]`,
-  keyword: 'jekyll'
+  outputType: type => '[jekyll]'
 })
 
 gulp.task('jekyll', () => {
@@ -29,7 +28,7 @@ gulp.task('jekyll', () => {
         message.length > 2 && log[type](condenseWhitespace(message))
       })
   }
-  
+
   ;[
     {output: 'stdout', type: 'info'},
     {output: 'stderr', type: 'error'}
@@ -38,16 +37,16 @@ gulp.task('jekyll', () => {
 
 gulp.task('serve', () => {
   browserSync.init({
-    port: 4000,
+    port: 1337,
     open: false,
-    reloadDebounce: 2000,
-    reloadDelay: 3000,
+    reloadDebounce: 800,
+    reloadDelay: 800,
     ghostMode: false,
     server: {
       baseDir: '_site'
     }
   })
-  
+
   gulp.watch([
     '_site/**/*.*',
   ]).on('change', browserSync.reload);

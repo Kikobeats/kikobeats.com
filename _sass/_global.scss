@@ -6,11 +6,10 @@
 .link-underline {
   text-decoration: none;
   border-bottom: 3px solid $primary-color;
-  padding-bottom: 2px;
   position: relative;
 
   &:hover {
-    color: $primary-color;
+    color: $primary-color
   }
 }
 
@@ -18,5 +17,29 @@
   text-decoration: none;
   border-bottom: 3px dotted $secondary-color;
   position: relative;
-  padding-bottom: 2px;
+
+  &:hover {
+    animation: zomg 1.2s infinite;
+  }
+}
+
+.animate-glitch {
+  &:hover {
+    animation: glitch 0.9s infinite;
+  }
+}
+
+@keyframes zomg {
+  0%   { color: $primary-color; }
+  25%  { color: $white; }
+  50%  { color: $silver; }
+  75%  { color: $moon-gray; }
+  100% { color: $mid-gray; }
+}
+
+@keyframes glitch {
+  0%, 100% { filter: invert(0) saturate(100%) hue-rotate(0deg); }
+  25%      { filter: invert(10%) saturate(500%) hue-rotate(180deg); }
+  50%      { filter: invert(10%) saturate(300%) hue-rotate(300deg); }
+  75%      { filter: invert(10%) saturate(500%) hue-rotate(90deg); }
 }
