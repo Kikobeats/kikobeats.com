@@ -9,7 +9,10 @@
   position: relative;
 
   &:hover {
-    color: $primary-color
+    padding: 2px;
+    margin: -2px;
+    border-bottom: none;
+    background-color: $primary-color;
   }
 }
 
