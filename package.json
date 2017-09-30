@@ -15,6 +15,9 @@
   "scripts": {
     "dev": "gulp"
   },
+  "engines": {
+    "node": ">= 8"
+  },
   "private": true,
   "license": "MIT"
 }
