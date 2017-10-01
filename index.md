@@ -8,4 +8,4 @@ layout: default
 {% include home/libraries.html %}
 {% include home/writing.html %}
 {% include footer.html %}
-<script type="text/javascript" src="/js/vanilla-tilt.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.4.1/dist/vanilla-tilt.min.js"></script>
