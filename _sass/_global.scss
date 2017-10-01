@@ -4,9 +4,10 @@
 }
 
 .link-underline {
-  text-decoration: none;
-  border-bottom: 3px solid $primary-color;
-  position: relative;
+  text-decoration-style: solid;
+  text-decoration-color: $primary-color;
+  text-decoration-line: underline;
+  text-underline-position: under;
 
   &:hover {
     padding: 2px;
@@ -17,9 +18,10 @@
 }
 
 .link-dotted {
-  text-decoration: none;
-  border-bottom: 3px dotted $secondary-color;
-  position: relative;
+  text-decoration-style: dotted;
+  text-decoration-color: $secondary-color;
+  text-decoration-line: underline;
+  text-underline-position: under;
 
   &:hover {
     animation: zomg 1.2s infinite;
