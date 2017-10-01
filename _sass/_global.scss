@@ -3,6 +3,10 @@
   color: $white;
 }
 
+.anchorjs-link {
+  color: rgba($near-black, .35);
+}
+
 .link-underline {
   text-decoration-style: solid;
   text-decoration-color: $primary-color;
