@@ -1,9 +1,8 @@
 featured:
   - name: Acho
-    description: The Hackable Log.
+    description: The &lt;Hackable/&gt; Log.
     link: http://acho.js.org
     image: /images/acho.png
-
 
   - name: Bumped
     description: Make easy releasing software.
@@ -16,9 +15,13 @@ featured:
     image: /images/osom.png
 
 normal:
-  - name: browserless
-    description: Chrome Headless API made easy.
-    link: https://github.com/Kikobeats/browserless
+  - name: svr
+    description: Hot Module replacement (HMR) capabilities for HTTP Server under development.
+    link: https://github.com/Kikobeats/svr
+
+  - name: hyperdiff
+    description: Find common, removed and added element between two collections.
+    link: https://github.com/kikobeats/hyperdiff
 
   - name: process-stats
     description: Human readable stats for your NodeJS process.
@@ -28,14 +31,10 @@ normal:
     description: Given an image, extract predominant & palette colors.
     link: https://github.com/kikobeats/splashy
 
+  - name: browserless
+    description: Chrome Headless API made easy.
+    link: https://github.com/Kikobeats/browserless
+
   - name: voll
     description: Boolean expressions evaluator.
     link: https://github.com/Kikobeats/voll
-
-  - name: svr
-    description: Hot Module replacement (HMR) capabilities for HTTP Server under development.
-    link: https://github.com/Kikobeats/svr
-
-  - name: hyperdiff
-    description: Find common, removed and added element between two collections.
-    link: https://github.com/kikobeats/hyperdiff
