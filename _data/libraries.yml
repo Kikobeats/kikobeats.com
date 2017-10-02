@@ -19,6 +19,10 @@ normal:
     description: Hot Module replacement (HMR) capabilities for HTTP Server under development.
     link: https://github.com/Kikobeats/svr
 
+  - name: hyperlru
+    description: Tiny & Fast LRU Implementation as possible in 60 lines of code.
+    link: https://github.com/Kikobeats/hyperlru
+
   - name: hyperdiff
     description: Find common, removed and added element between two collections.
     link: https://github.com/kikobeats/hyperdiff
