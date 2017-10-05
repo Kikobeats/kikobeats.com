@@ -8,17 +8,17 @@ tags:
 - javascript
 ---
 
-**random** is a term used for identify automatic data generation with no correlation.
+**random** is a term used to describe the process of generate data with no correlation.
 
-Random number generation is used around many users cases over computers: 
+Random number generation is used around many users cases over computers such as:
 
 - Pick a random item from an array.
 - Generate unique keys from an API.
 - Create the key exchange between an HTTPS connection.
 
-As you can see, all these examples use an *random* factor, but they are different. Also computationally they are different so, how to?
+As you can see, all these examples use a *random* factor, but they are different. Also computationally they are different so, how to?
 
-Like most of the things of this life, it depends.
+Like most of the things in life, it depends.
 
 ## Types of "random"
 
@@ -32,13 +32,13 @@ To have any hope of producing truly random data, you must reach outside the comp
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WpiWz_abx1A" frameborder="0" allowfullscreen></iframe>
 
-At [Cloudflare](http://www.coastdigital.co.uk/2017/09/06/wall-entropy-cloudflare-protecting-data/) they use a wall of lava light for generate enough [entropy](https://en.wikipedia.org/wiki/Entropy) for encrypt the requests.
+At [Cloudflare](http://www.coastdigital.co.uk/2017/09/06/wall-entropy-cloudflare-protecting-data/) they use a wall of lava light to generate enough [entropy](https://en.wikipedia.org/wiki/Entropy) to encrypt the requests.
 
 ### Pseudo Random
 
 Also known as *Pseudo-Random Number Generators* (**PRNGs**).
 
-As the name suggest, is very closest to truly random numbers generators, but the output is generated using a finite set of numbers:
+As the name suggest, is very close to truly random numbers generators, but the output is generated using a finite set of numbers:
 
 - The current process ID.
 - The tick count since boot time.
@@ -46,19 +46,19 @@ As the name suggest, is very closest to truly random numbers generators, but the
 
 They are deterministic because they use an algorithm or a mathematical formulae for be calculated but, on the other hand, they are sufficiently random for practical purposes and they make the process more efficient.
 
-[`Math.random`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) is an example of get a pseudo-random number between `0` and `1`.
+[`Math.random`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) is an example of a way to get a pseudo-random number between `0` and `1`.
 
-In cryptographically terms, `Math.random` doest not provide a secure random number. This means, probably you can use it for pick a random element from an array, but because the implementation is not enough robust, it doesn't have the characteristics to be considered cryptography secured.
+In cryptographically terms, `Math.random` doest not provide a secure random number. This means, probably you can use it to pick a random element from an array, but because the implementation is not robust enough, it doesn't have the characteristics to be considered cryptographically secured.
 
 A subsection inside PRNGs are Cryptographically Secure Pseudo-Random Number Generator (**CSPRNG**).
 
-Every random value that you need for security-related purposes (ie. anything where there exists the possibility of an "attacker"), should be generated using a CSPRNG.  This includes:
+Every random value that you need for security-related purposes (ie. anything where the possibility of an "attack" exists), should be generated using a CSPRNG.  This includes:
 
 - Lottery numbers.
 - API keys.
 - Generated passwords.
 
-Theses examples are very closed with [nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce) concept.
+Theses examples are very close with [nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce) concept.
 
 ## From the code side
 
@@ -79,7 +79,7 @@ const randomBytes = promisify(crypto.randomBytes)
 })()
 </div>
 
-The code above generate raw pseudo random data. You need to be careful transforming the data because wrong data manipulation will modify how random it is.
+The code above generates raw pseudo random data. You need to be careful transforming the data because wrong data manipulation will modify how random it is.
 
 If you need specific random output for your user case, I recommend you use the following libraries:
 
