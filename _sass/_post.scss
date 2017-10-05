@@ -22,7 +22,7 @@
   }
 
   a:not(.anchorjs-link) {
-    @extend .link-underline, .near-black, .link, .dim;
+    @extend .link-underline, .near-black, .link;
   }
 
   mark {
@@ -84,13 +84,12 @@
     margin-bottom: 0;
   }
 
-  p img {
+  iframe, p img {
     border-radius: 3px;
     display: block;
     margin: 1.5rem auto;
     max-width: 100%;
     text-align: center;
-    width: auto;
   }
 
   figcaption {
