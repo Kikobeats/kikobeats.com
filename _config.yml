@@ -5,6 +5,7 @@ twitter: kikobeats
 github: kikobeats
 
 permalink: "/:title/"
+disqus_shortname: kikobeats
 google_analytics: UA-34372837-2
 
 exclude:
@@ -31,19 +32,8 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      _options:
-        content:
-          width: 1500
-          height: 2500
-  -
-    scope:
-      path: ""
-      type: "staff_members"
-    values:
-      _options:
-        image_path:
-          width: 600
-          height: 600
+      comments: true
+
   -
     scope:
       path: ""
@@ -54,11 +44,6 @@ defaults:
       path: "index.html"
     values:
       layout: "default"
-  -
-    scope:
-      path: "contact.html"
-    values:
-      full_width: true
 
 jekyll-archives:
   enabled:
