@@ -2,7 +2,7 @@
 layout: post
 title: What is random
 date: '2017-10-5 16:00:00'
-image: https://i.imgur.com/EGrs7Be.jpg
+image: https://i.imgur.com/C7s8inu.jpg
 tags:
 - computer science
 - javascript
