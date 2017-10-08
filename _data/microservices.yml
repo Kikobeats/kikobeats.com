@@ -1,0 +1,11 @@
+- name: timecards
+  description: Bob Sponja time cards as service.
+  link: http://time.kikobeats.com
+
+- name: color
+  description: Get predominant & palette colors from an image.
+  link: http://color.kikobeats.com
+
+- name: changelog
+  description: See the changelog of any NPM package.
+  link: http://changelog.kikobeats.com

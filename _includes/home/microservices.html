@@ -1,0 +1,20 @@
+<section class="bg-white helvetica near-black pa4-l pa3" >
+		<header class="pv3 mb3" id="#work">
+			<div class="mauto ph4-l max-width-big-screen">
+				<h2 class="m0 f1-l f2 lh-1p125 fw7">Microservices</h2>
+			</div>
+		</header>
+
+		<article class="pt0 pb0">
+      <ul class="list pl0 mauto ph4-l max-width-big-screen">
+        {% for microservice in site.data.microservices %}
+        <li class="flex flex-row-l flex-column items-center-l mb4">
+          <a href="{{ microservice.link}}" class="near-black link link-dotted dim mb1 mr2">
+            <b class="f3">{{ microservice.name }}</b>
+          </a>
+          <span class="f4 lh-copy">{{ microservice.description}}</span>
+        </li>
+        {% endfor %}
+  		</ul>
+		</article>
+	</section>
