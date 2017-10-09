@@ -42,3 +42,7 @@ normal:
   - name: voll
     description: Boolean expressions evaluator.
     link: https://github.com/Kikobeats/voll
+
+  - name: whoops
+    description: It makes simple throw qualified errors.
+    link: https://github.com/Kikobeats/whoops
