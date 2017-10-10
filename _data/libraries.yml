@@ -46,3 +46,7 @@ normal:
   - name: whoops
     description: It makes simple throw qualified errors.
     link: https://github.com/Kikobeats/whoops
+    
+  - name: retry-backoff
+    description: Handle callback retries with incremental backoff & timeout support.
+    link: https://github.com/AudienseCo/retry-backoff
