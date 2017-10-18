@@ -7,6 +7,10 @@ tags:
 - computer-science
 ---
 
+![](https://i.imgur.com/bETR5rF.png)
+
+Inside Cloud economy we can found:
+
 * [SaaS (Software as a Service)](https://en.wikipedia.org/wiki/Software_as_a_service): When the software is hosted and you pay for a subscription. "on-demand software" as well. Examples: Spotify, Gmail, Skype,...
 
 * [PaaS (Platform as a Service)](https://en.wikipedia.org/wiki/Platform_as_a_service): Provides you computing platforms which typically includes operating system, programming language execution environment, database, web server etc. Examples: Heroku, Openshift, Windows Azure... 
@@ -17,4 +21,7 @@ tags:
 
 At the end this cloud computing services models has under the [Everything as a service](https://simple.wikipedia.org/wiki/Everything_as_a_service) umbrella.
 
-[@ StackOverFlow](http://stackoverflow.com/a/20836351/1656676)
+### Bibliography
+
+- [@ StackOverFlow](http://stackoverflow.com/a/20836351/1656676)
+- [@ Layers of the Internet Enconomy, André Staltz](https://staltz.com/layers-of-the-internet-economy.html)
