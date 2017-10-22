@@ -22,7 +22,7 @@
   }
 
   a:not(.anchorjs-link) {
-    @extend .link-underline, .near-black, .link;
+    @extend .link-underline, .near-black;
   }
 
   mark {

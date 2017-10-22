@@ -8,16 +8,17 @@
 }
 
 .link-underline {
-  text-decoration-style: solid;
-  text-decoration-color: $primary-color;
-  text-decoration-line: underline;
-  text-underline-position: under;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 2px solid $primary-color;
+  line-height: normal;
 
   &:hover {
     padding: 2px;
     margin: -2px;
     border-bottom: none;
     background-color: $primary-color;
+    color: white;
   }
 }
 
