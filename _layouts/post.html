@@ -6,7 +6,7 @@ layout: default
 {% include blog/hero-header.html title=page.title image=page.image %}
 
 <section class="layout-{{page.layout}} lh-copy f4 bg-white helvetica mauto max-width-blog near-black pa5-l pa3">
-  <date class="ttu f4-l f5 b pv3 tracked light-silver db">
+  <date class="ttu f4-l f5 b tracked light-silver db">
     {{ page.date | date: "%B %e, %Y" }}
   </date>
   {{content}}

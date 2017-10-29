@@ -21,6 +21,10 @@
     margin-top: 4rem;
   }
 
+  p {
+    margin: $line-height 0;
+  }
+
   a:not(.anchorjs-link) {
     @extend .link-underline, .near-black;
   }
