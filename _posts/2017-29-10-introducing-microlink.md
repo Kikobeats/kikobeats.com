@@ -24,7 +24,8 @@ Today, I going to be excited to launch my latest project, [microlink.io](https:/
 
 ## What is microlink.io
 
-[https://microlink.io](microlink.io) turns any link into information.
+[https://microlink.io](microlink.io) get relevant infromation from any link.
+
 
 Taking a whatever [url](https://docs.microlink.io/#url) as input, it will extract structured and normalized information related with the link, like:
 
