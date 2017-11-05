@@ -3,7 +3,7 @@
   link: http://time.kikobeats.com
 
 - name: color
-  description: Get predominant & palette colors from an image.
+  description: Get color information from any URL image.
   link: http://color.kikobeats.com
 
 - name: changelog
