@@ -2,6 +2,10 @@
   description: Bob Sponja time cards as service.
   link: http://time.kikobeats.com
 
+- name: tweets
+  description: Twitter timelines fetcher as service.
+  link: http://tweets.kikobeats.com
+
 - name: color
   description: Get color information from any URL image.
   link: http://color.kikobeats.com
