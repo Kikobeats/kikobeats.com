@@ -9,6 +9,10 @@
 - name: color
   description: Get color information from any URL image.
   link: http://color.kikobeats.com
+  
+- name: pdf
+  description: Get the PDF version of any website as service.
+  link: http://pdf.kikobeats.com
 
 - name: changelog
   description: See the changelog of any NPM package.
