@@ -4,6 +4,20 @@
 			<a class="near-black f4 link ml3 mr3 sm-ml4 sm-mr4 mt3 mb3 dib fw7 link pt2 pb2" href="/">Work</a>
       <a class="near-black f4 link ml3 mr3 sm-ml4 sm-mr4 mt3 mb3 dib fw7 link pt2 pb2" href="/blog">Writings</a>
       <a class="near-black f4 link ml3 mr3 sm-ml4 sm-mr4 mt3 mb3 dib fw7 link pt2 pb2" target="_blank" href="https://github.com/kikobeats">GitHub</a>
+      <a class="near-black f4 link ml3 mr3 sm-ml4 sm-mr4 mt3 mb3 dib fw7 link pt2 pb2 pointer" target="_blank" onclick="rain()">🕶</a>
 		</div>
 	</div>
 </nav>
+<script>
+    function rain() {
+    setTimeout(rain, Math.random() * 10);
+    let el = document.createElement(`div`);
+    el.innerHTML = `🕶`;
+    el.style.position = `absolute`;
+    el.style.zIndex = 999999;
+    el.style.fontSize = (((Math.random() * 48) | 0) + 16) + `px`;
+    el.style.left = ((Math.random() * innerWidth) | 0) + `px`;
+    el.style.top = ((Math.random() * (innerHeight + pageYOffset)) | 0) + `px`;
+    document.body.appendChild(el);
+  }
+</script>
