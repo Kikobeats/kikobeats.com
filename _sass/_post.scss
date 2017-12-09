@@ -21,7 +21,8 @@
     margin-top: 4rem;
   }
 
-  p {
+  p,
+  table {
     margin: $line-height 0;
   }
 
@@ -88,7 +89,8 @@
     margin-bottom: 0;
   }
 
-  iframe, p img {
+  iframe,
+  p img {
     border-radius: 3px;
     display: block;
     margin: 1.5rem auto;
@@ -100,5 +102,24 @@
     font-size: 75%;
     color: #9b9b9b;
     text-align: center;
+  }
+
+  table th {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: bottom;
+    font-weight: 600;
+  }
+
+  table td {
+    padding: 10px;
+    vertical-align: top;
+  }
+
+  table th,
+  table td {
+    font-size: 90%;
+    text-align: left;
+    line-height: 1.6;
   }
 }
