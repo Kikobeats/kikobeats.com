@@ -28,6 +28,8 @@ We can distinguish at least three types of *random* data generators. These depen
 
 The ideal case. True [randomness](https://en.wikipedia.org/wiki/Randomness), to which no pattern or algorithm applies. It's debatable whether this really exists.
 
+[](https://www.random.org/randomness){:.card-preview}
+
 To have any hope of producing truly random data, you must reach outside the computer and [sample the analog world](http://theworld.com/~cme/P1363/ranno.html). This means use [specific hardware](https://en.wikipedia.org/wiki/Hardware_random_number_generator) for this purpose as well.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WpiWz_abx1A" frameborder="0" allowfullscreen></iframe>
@@ -47,6 +49,8 @@ As the name suggest, is very close to truly random numbers generators, but the o
 They are deterministic because they use an algorithm or a mathematical formulae for be calculated but, on the other hand, they are sufficiently random for practical purposes and they make the process more efficient.
 
 [`Math.random`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) is an example of a way to get a pseudo-random number between `0` and `1`.
+
+[](https://blog.codinghorror.com/computers-are-lousy-random-number-generators){:.card-preview}
 
 In cryptographically terms, `Math.random` doest not provide a secure random number. This means, probably you can use it to pick a random element from an array, but because the implementation is not robust enough, it doesn't have the characteristics to be considered cryptographically secured.
 
@@ -79,7 +83,9 @@ const randomBytes = promisify(crypto.randomBytes)
 })()
 </div>
 
-The code above generates raw pseudo random data. You need to be careful transforming the data because wrong data manipulation will modify how random it is.
+The code above generates raw pseudo random data.
+
+You need to be careful transforming the data because wrong data manipulation will modify how random it is.
 
 If you need specific random output for your user case, I recommend you use the following libraries:
 

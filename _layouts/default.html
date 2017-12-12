@@ -9,10 +9,10 @@
   {{ content }}
 </body>
 {% include external-links.html %}
-<script src="https://cdn.jsdelivr.net/combine/npm/anchor-js@4,npm/instantclick@3.1.0-2"></script>
-<script data-no-instant>InstantClick.init();</script>
+<script src="https://cdn.jsdelivr.net/combine/npm/anchor-js@4,npm/microlinkjs@1"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function(event) {
+    microlink('.card-preview', {rounded: true})
     anchors.add();
   });
 </script>

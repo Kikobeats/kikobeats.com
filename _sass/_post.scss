@@ -26,7 +26,20 @@
     margin: $line-height 0;
   }
 
-  a:not(.anchorjs-link) {
+  .card-preview {
+    text-decoration: none;
+  }
+
+  .microlink_card {
+    line-height: normal;
+    width: 100%;
+  }
+
+  .microlink_card__content_description {
+    margin: 0;
+  }
+
+  a:not(.anchorjs-link):not(.card-preview) {
     @extend .link-underline, .near-black;
   }
 

@@ -14,9 +14,21 @@ tags:
 }
 </style>
 
-**Contrast** is the difference in luminance or color that makes an object (or its representation in an image or display) distinguishable. In visual perception of the real world, contrast is determined by the difference in the color and brightness of the object and other objects within the same field of view.
+**Contrast** is the difference in luminance or color that makes an object (or its representation in an image or display) distinguishable. 
+
+[](https://a11yproject.com/posts/what-is-color-contrast/){:.card-preview}
+
+In visual perception of the real world, contrast is determined by the difference in the color and brightness of the object and other objects within the same field of view.
 
 ## Contrast ratio
+
+**Contrast ratio** refers to how bright or dark colors appear on screens.
+
+**WCAG 2.0** guidelines dictate a minimum contrast ratio of **4.5:1** for the visual presentation of both text and images embedded as text.
+
+[](https://www.boia.org/blog/how-contrast-ratio-pertains-to-website-accessibility){:.card-preview}
+
+The **4.5:1** contrast ratio is intended to address the loss of contrast that users experience if they have low visual acuity, age-related loss of contrast sensitivity, or color deficiencies.
 
 ### Normalize sized text
 
@@ -33,7 +45,3 @@ tags:
 - [colorable](https://colorable.jxnblk.com/) – Color combination contrast tester.
 - [hello-color](http://jxnblk.com/hello-color/) – Functional color palette generator.
 - [randoma11y](https://randoma11y.com/#/explore) – Vote on random a11y color combinations.
-
-## Bibliography
-
-- [What is Color Contrast on a11y project](https://a11yproject.com/posts/what-is-color-contrast/).
