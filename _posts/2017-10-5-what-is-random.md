@@ -28,7 +28,7 @@ We can distinguish at least three types of *random* data generators. These depen
 
 The ideal case. True [randomness](https://en.wikipedia.org/wiki/Randomness), to which no pattern or algorithm applies. It's debatable whether this really exists.
 
-[](https://www.random.org/randomness){:.card-preview}
+[](https://www.random.org/randomness){:.card-preview data-image="logo"}
 
 To have any hope of producing truly random data, you must reach outside the computer and [sample the analog world](http://theworld.com/~cme/P1363/ranno.html). This means use [specific hardware](https://en.wikipedia.org/wiki/Hardware_random_number_generator) for this purpose as well.
 
