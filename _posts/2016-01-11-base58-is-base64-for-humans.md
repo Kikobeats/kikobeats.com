@@ -39,5 +39,5 @@ I created a [encode-base58](https://github.com/kikobeats/encode-base58) to encod
 <div id="my-element">
 const encodeBase58 = require('encode-base58')
 encodeBase58(9); // => 'a'
-encodeBase58.emojis(9); // => 'ðŸ”†'
+encodeBase58.emoji(9); // => '🔆'
 </div>
