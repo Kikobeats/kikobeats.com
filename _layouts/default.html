@@ -10,10 +10,10 @@
 </body>
 {% include external-links.html %}
 <script type="text/javascript" src="//unpkg.com/anchor-js@latest"></script>
-<script type="text/javascript" src="//unpkg.com/microlinkjs@latest"></script>
+<script type="text/javascript" src="//unpkg.com/microlinkjs@latest/umd/microlink.min.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function(event) {
-    microlink('.card-preview', {rounded: true})
+    microlink('.card-preview', {round: true})
     anchors.add();
   });
 </script>
