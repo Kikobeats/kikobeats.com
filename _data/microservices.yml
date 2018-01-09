@@ -1,19 +1,23 @@
+- name: tom
+  description: Tom creates customers, subscriptions plans & send notifications.
+  link: https://tom.js.org
+  
 - name: timecards
   description: Bob Sponja time cards as service.
-  link: http://time.kikobeats.com
+  link: https://time.kikobeats.com
 
 - name: tweets
   description: Twitter timelines fetcher as service.
-  link: http://tweets.kikobeats.com
+  link: https://tweets.kikobeats.com
 
 - name: color
   description: Get color information from any URL image.
-  link: http://color.kikobeats.com
+  link: https://color.kikobeats.com
   
 - name: pdf
   description: Get the PDF version of any website as service.
-  link: http://pdf.kikobeats.com
+  link: https://pdf.kikobeats.com
 
 - name: changelog
   description: See the changelog of any NPM package.
-  link: http://changelog.kikobeats.com
+  link: https://changelog.kikobeats.com
