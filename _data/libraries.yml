@@ -16,8 +16,8 @@ featured:
 
 normal:
   - name: svr
-    description: Hot Module replacement (HMR) capabilities for HTTP Server under development.
-    link: https://github.com/Kikobeats/svr#svr
+    description: Hot Module replacement (HMR) capabilities for HTTP Server.
+    link: https://svr.js.org
 
   - name: hyperlru
     description: Tiny & Fast LRU Implementation as possible in 60 lines of code.
