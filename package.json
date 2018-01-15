@@ -13,6 +13,7 @@
     "tachyons-sass": "latest"
   },
   "scripts": {
+    "build": "NODE_ENV=production JEKYLL_ENV=production bundle jekyll build",
     "dev": "gulp"
   },
   "engines": {
