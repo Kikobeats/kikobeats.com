@@ -11,6 +11,8 @@ Errors are frustating.
 
 But in the tech culture, the errors are everywhere all time.
 
+[](https://twitter.com/GregorySchier/status/732830868562182144){:.card-preview data-size="large"}
+
 When you design a error situation, think *how* the user feels under this context. A good error message should be:
 
 - **Say what happened and why**.

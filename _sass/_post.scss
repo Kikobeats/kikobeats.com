@@ -33,8 +33,10 @@
   .microlink_card {
     line-height: normal;
     width: 100%;
+    margin: auto;
   }
 
+  .microlink_card__content_title,
   .microlink_card__content_description {
     margin: 0;
   }
