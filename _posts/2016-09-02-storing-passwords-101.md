@@ -103,4 +103,5 @@ Best trick that I know for that: auto-generate strong password per service using
 
 - [How To Safely Store A Password](https://codahale.com/how-to-safely-store-a-password/).
 - [Storing User Passwords Securely](http://dustwell.com/how-to-handle-passwords-bcrypt.html).
+- [Hacker101: Password Storage](https://www.hacker101.com/sessions/password_storage).
 - [bcrypt.js](https://github.com/ncb000gt/node.bcrypt.js).
