@@ -5,6 +5,7 @@
   "author": "",
   "keywords": [],
   "devDependencies": {
+    "gulp-imagemin": "latest",
     "acho": "latest",
     "browser-sync": "latest",
     "condense-whitespace": "latest",

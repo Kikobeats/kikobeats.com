@@ -2,6 +2,7 @@
 
 const condenseWhitespace = require('condense-whitespace')
 const browserSync = require('browser-sync').create()
+const imagemin = require('gulp-imagemin')
 const {spawn} = require('child_process')
 const gutil = require('gulp-util')
 const gulp = require('gulp')
@@ -50,6 +51,12 @@ gulp.task('serve', () => {
   gulp.watch([
     '_site/**/*.*',
   ]).on('change', browserSync.reload);
+})
+
+gulp.task('images', () => {
+  gulp.src('images/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('images'))
 })
 
 gulp.task('default', ['jekyll', 'serve'])
