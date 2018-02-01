@@ -5,17 +5,21 @@
   "author": "",
   "keywords": [],
   "devDependencies": {
-    "gulp-imagemin": "latest",
     "acho": "latest",
     "browser-sync": "latest",
     "condense-whitespace": "latest",
     "gulp": "latest",
+    "gulp-imagemin": "latest",
     "gulp-util": "latest",
-    "tachyons-sass": "latest"
+    "tachyons-sass": "latest",
+    "urlint-cli": "latest"
   },
   "scripts": {
     "build": "NODE_ENV=production JEKYLL_ENV=production bundle jekyll build",
-    "dev": "gulp"
+    "dev": "gulp",
+    "lint": "urlint https://kikobeats.com/blog",
+    "pretest": "npm run lint",
+    "test": "exit 0"
   },
   "engines": {
     "node": ">= 8"
