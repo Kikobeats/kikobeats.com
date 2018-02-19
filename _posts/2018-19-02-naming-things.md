@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Naming Things
-date: '2018-01-21'
-image: https://i.imgur.com/TTS0TFn.jpg
+date: '2018-02-19'
+image: https://i.imgur.com/252uMRU.png
 tags:
 - product
 ---
