@@ -28,6 +28,13 @@
 
   .card-preview {
     text-decoration: none;
+    display: block;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .card-preview ~ .card-preview {
+    margin-top: 1.5rem;
   }
 
   .microlink_card {
