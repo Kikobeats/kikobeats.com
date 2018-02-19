@@ -12,6 +12,18 @@
   <meta name="twitter:image" content="https://kikobeats.com/favicon.ico" />
 {% endif %}
 
+<meta name="twitter:label1" value="Category"/>
+<meta name="twitter:data1" value="{{ page.tags | join: ', ' | capitalize }}"/>
+
+<meta name="twitter:label2" value="Reading time"/>
+
+{% assign words = content | number_of_words %}
+{% if words < 360 %}
+  <meta name="twitter:data2" value="1 min read"/>
+{% else %}
+  <meta name="twitter:data2" value="{{ words | divided_by:180 }} min read"/>
+{% endif %}
+
 {% seo %}
 {% feed_meta %}
 
