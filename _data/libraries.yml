@@ -37,7 +37,7 @@ normal:
 
   - name: browserless
     description: Chrome Headless API made easy.
-    link: https://github.com/Kikobeats/browserless
+    link: https://browserless.js.org
 
   - name: voll
     description: Boolean expressions evaluator.
