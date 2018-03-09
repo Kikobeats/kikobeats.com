@@ -41,7 +41,6 @@ gulp.task('serve', () => {
     port: 1337,
     open: false,
     reloadDebounce: 800,
-    reloadDelay: 800,
     ghostMode: false,
     server: {
       baseDir: '_site'
