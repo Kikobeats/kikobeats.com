@@ -9,12 +9,12 @@
   {{ content }}
 </body>
 {% include external-links.html %}
-<script type="text/javascript" src="//unpkg.com/anchor-js@latest"></script>
-<script type="text/javascript" src="//unpkg.com/microlinkjs@latest/umd/microlink.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function(event) {
-    microlink('.card-preview', {round: true})
-    anchors.add();
+    window.mediumZoom && mediumZoom('img')
+    window.microlink && microlink('.card-preview', {round: true})
+    window.anchors && anchors.add();
   });
 </script>
 {% include analytics.html %}
