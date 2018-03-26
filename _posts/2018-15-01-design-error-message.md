@@ -21,6 +21,9 @@ When you design a error situation, think *how* the user feels under this context
 
 At the end of the day, errors are part of the product and the business culture for communicating something was wrong.
 
+![](https://i.imgur.com/uTDI8tA.png)
+<figcaption>Try Undos instead of prompting for confirmation.</figcaption>
+
 Threy are not only for final user app: We need to communicate good errors message in all your developments layers.
 
 Think in the user experience behind read a developer that looks like:
@@ -54,7 +57,7 @@ Always try to provide a point to get more information, making possible extend th
 
 ## Bibliography
 
-- [Say Hello to Error Hyperlinks
-](https://zeit.co/blog/err-sh).
+- [Say Hello to Error Hyperlinks](https://zeit.co/blog/err-sh).
 - [The art of the error message](https://thestyleofelements.org/the-art-of-the-error-message-9f878d0bff80).
+- [GoodUI, Good User Interfaces for higher conversion rates and ease of use](https://www.goodui.org).
 - [Alert / Error Messages by Marcelo Graciolli](https://dribbble.com/shots/2990935-Alert-Error-Messages).
