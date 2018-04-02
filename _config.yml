@@ -1,9 +1,11 @@
 title: Kikobeats
 email: josefrancisco.verdu@gmail.com
 description: Software Engineer, UNIX, JavaScript &amp; Open Source.
-twitter: kikobeats
 github: kikobeats
 author: kikobeats
+
+twitter:
+  username: kikobeats
 
 permalink: "/:title/"
 disqus_shortname: kikobeats
