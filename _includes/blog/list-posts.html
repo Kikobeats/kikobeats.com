@@ -1,5 +1,5 @@
 <section class="layout-{{page.layout}} bg-white helvetica near-black pa4-l pa3" >
-	<ul class="list pl0 mauto pv4 ph5-l max-width-big-screen">
+	<ul class="list pl0 mauto pv4 ph5-l max-width-large">
     {% for post in site.posts %}
     {% unless post.draft %}
       {% capture currentdate %}{{post.date | date: "%Y"}}{% endcapture %}

@@ -8,6 +8,7 @@
 }
 
 .link-underline {
+  transition: all .15s ease-in !important;
   display: inline-block;
   text-decoration: none;
   border-bottom: 2px solid $primary-color;
@@ -34,9 +35,7 @@
 }
 
 .animate-glitch {
-  &:hover {
-    animation: glitch 0.9s infinite;
-  }
+  animation: glitch 0.9s infinite;
 }
 
 @keyframes zomg {
@@ -52,4 +51,66 @@
   25%      { filter: invert(10%) saturate(500%) hue-rotate(180deg); }
   50%      { filter: invert(10%) saturate(300%) hue-rotate(300deg); }
   75%      { filter: invert(10%) saturate(500%) hue-rotate(90deg); }
+}
+
+@keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+.selectedText {
+  font-style: normal;
+  background: $primary-color;
+}
+
+.cursor-rock {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" style="font-size:14px"><text y="16">🤘</text></svg>'), auto;
+}
+
+.cursor-work {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" style="font-size:14px"><text y="16">💼</text></svg>'), auto;
+}
+
+.cursor-unicorn {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" style="font-size:14px"><text y="16">🦄</text></svg>'), auto;
+}
+
+.cursor-windsurf {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" style="font-size:14px"><text y="16">💨</text></svg>'), auto;
+}
+
+.cursor-location {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" style="font-size:14px"><text y="16">🌎</text></svg>'), auto;
+}
+
+.cursor-age {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" style="font-size:14px"><text y="16">👴</text></svg>'), auto;
+}
+
+.cursor-code {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" style="font-size:14px"><text y="16">💻</text></svg>'), auto;
+}
+
+#title {
+  &::after {
+    content: " ";
+    display: inline-block;
+    height: 43px;
+    position: relative;
+    top: 8px;
+    margin-left: 4px;
+    width: 2px;
+    background: $primary-color;
+    animation: blink 1s step-start 0s infinite;
+  }
+}
+
+@media screen and (max-width: 30em) {
+  #title {
+    &::after {
+      height: 28px;
+      top: 5px;
+    }
+  }
 }

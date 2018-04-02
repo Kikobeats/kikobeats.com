@@ -9,19 +9,26 @@
 {% if page.image %}
   <meta name="twitter:image" content="{{ page.image }}" />
 {% else %}
-  <meta name="twitter:image" content="https://kikobeats.com/favicon.ico" />
+  <meta name="twitter:image" content="/images/avatar-glitch.png" />
 {% endif %}
 
-<meta name="twitter:label1" value="Category"/>
-<meta name="twitter:data1" value="{{ page.tags | join: ', ' | capitalize }}"/>
+{% if page.layout == 'post' %}
+  <meta name="twitter:label1" value="Category"/>
+  <meta name="twitter:data1" value="{{ page.tags | join: ', ' | capitalize }}"/>
+  <meta name="twitter:label2" value="Reading time"/>
+  {% assign words = content | number_of_words %}
+  {% if words < 360 %}
+    <meta name="twitter:data2" value="1 min read"/>
+  {% else %}
+    <meta name="twitter:data2" value="{{ words | divided_by:180 }} min read"/>
+  {% endif %}
 
-<meta name="twitter:label2" value="Reading time"/>
+  {% else %}
+  <meta name="twitter:label1" value="Twitter"/>
+  <meta name="twitter:data1" value="twitter.com/Kikobeats"/>
+  <meta name="twitter:label2" value="GitHub"/>
+  <meta name="twitter:data2" value="github.com/Kikobeats"/>
 
-{% assign words = content | number_of_words %}
-{% if words < 360 %}
-  <meta name="twitter:data2" value="1 min read"/>
-{% else %}
-  <meta name="twitter:data2" value="{{ words | divided_by:180 }} min read"/>
 {% endif %}
 
 {% seo %}

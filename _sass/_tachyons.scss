@@ -1,5 +1,9 @@
 @import "../node_modules/tachyons-sass/tachyons.scss";
 
+.tracked-light {
+  letter-spacing: 0.05em;
+}
+
 .lh-copy {
   line-height: $line-height;
 }
@@ -16,7 +20,11 @@
   margin: 0;
 }
 
-.max-width-big-screen {
+.max-width-large {
+  max-width: 1200px;
+}
+
+.max-width-extra-large {
   max-width: 1400px;
 }
 

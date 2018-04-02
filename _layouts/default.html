@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+{% include ascii-art.html %}
+
 <head>
   {% include head.html %}
 </head>
@@ -12,9 +14,13 @@
 <script src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function(event) {
-    window.mediumZoom && mediumZoom('img')
+    window.mediumZoom && mediumZoom('layout-post img')
     window.microlink && microlink('.card-preview', {round: true})
     window.anchors && anchors.add();
+    window.Typist && new Typist(document.getElementById("title"), {
+      letterSelectInterval: 80,
+      interval: 5000
+    })
   });
 </script>
 {% include analytics.html %}

@@ -5,12 +5,12 @@ layout: default
 {% include navbar.html %}
 {% include blog/hero-header.html title=page.title image=page.image %}
 
-<section class="layout-{{page.layout}} lh-copy f4 bg-white helvetica mauto max-width-blog near-black pa5-l pa3">
+<section class="layout-{{page.layout}} lh-copy f4 bg-white helvetica mauto max-width-blog near-black ph5-l pt5-l pb3-l ph3 pv3">
   <date class="ttu f4-l f5 b tracked light-silver db">
     {{ page.date | date: "%B %e, %Y" }}
   </date>
   {{content}}
 </section>
-{% include comments.html %}
+{% include post-footer.html %}
 {% include footer.html %}
 <script src="https://cdn.jsdelivr.net/combine/npm/prismjs@latest,npm/microlinkjs@latest/umd/microlink.min.js,npm/medium-zoom@latest"></script>
