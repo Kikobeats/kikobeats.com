@@ -40,16 +40,14 @@ gulp.task('serve', () => {
   browserSync.init({
     port: 1337,
     open: false,
-    reloadDebounce: 800,
-    ghostMode: false,
     server: {
       baseDir: '_site'
     }
   })
 
-  gulp.watch([
-    '_site/**/*.*',
-  ]).on('change', browserSync.reload);
+
+
+  gulp.watch(['!_site/.sass-cache', '_site/**/*.*',]).on('change', browserSync.reload);
 })
 
 gulp.task('images', () => {

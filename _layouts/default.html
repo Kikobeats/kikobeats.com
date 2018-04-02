@@ -15,6 +15,10 @@
     window.mediumZoom && mediumZoom('layout-post img')
     window.microlink && microlink('.card-preview', {round: true})
     window.anchors && anchors.add();
+    window.Typist && new Typist(document.getElementById("title"), {
+      letterSelectInterval: 80,
+      interval: 5000
+    })
   });
 </script>
 {% include analytics.html %}
