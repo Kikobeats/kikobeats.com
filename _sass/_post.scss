@@ -1,18 +1,4 @@
-.layout-post,
-.layout-default {
-  h1:first-child,
-  h2:first-child, {
-    margin-top: 0;
-  }
-}
-
 .layout-post {
-  @media (min-width: 30em) {
-    h1.f-headline-ns {
-      font-size: 4rem;
-    }
-  }
-
   h2 {
     margin-top: 5rem;
   }
@@ -104,9 +90,9 @@
     position: relative;
     top: -1px;
 
-    &:before {
+    &::before {
       content: '– ';
-      font-family: Cochin,Georgia,"Times New Roman",serif;
+      font-family: Cochin, Georgia, "Times New Roman", serif;
       margin-left: .2rem;
       margin-right: .1rem;
     }
@@ -154,5 +140,13 @@
     font-size: 90%;
     text-align: left;
     line-height: 1.6;
+  }
+}
+
+.layout-post,
+.layout-default {
+  h1:first-child,
+  h2:first-child, {
+    margin-top: 0;
   }
 }

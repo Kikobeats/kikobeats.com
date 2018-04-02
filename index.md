@@ -2,7 +2,6 @@
 layout: default
 ---
 
-{% include ascii-art.html %}
 {% include navbar.html %}
 {% include home/resume.html %}
 {% include home/projects.html %}
