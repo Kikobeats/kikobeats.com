@@ -1,45 +1,69 @@
-<script>
-  function hover(element) {
-      element.setAttribute('src', 'images/avatar-glitch.png');
-  }
-  function unhover(element) {
-      element.setAttribute('src', 'images/avatar.png');
-  }
-</script>
-<section class="bg-near-black helvetica white pv0-l pv0-m pv4 pv5-l" >
-    <header class="vh-90 mauto pv0-l pv4 max-width-big-screen">
-      <div class="dtc">
-        <div class="justify-center flex flex-row-l flex-column items-center">
-          <img src="images/avatar.png" class="pointer mw6-l mw5 ph4-l br-100 mb5-l animate-glitch" onmouseover="hover(this);" onmouseout="unhover(this);">
+<section class="bg-near-black helvetica white pv0-l pv0-m pv4 pv5-l">
+  <header class="vh-90 mauto pv0-l pv4 max-width-big-screen">
+    <div class="dtc">
+      <div class="justify-center flex flex-row-l flex-column items-center">
+        <img id="avatar" src="images/avatar.png" class="pointer mw6-l mw5 ph4-l br-100 mb5-l" onmouseover="hover(this);" onmouseout="unhover(this);">
 
-          <div class="ph4-l ph3">
-            <h2 class="f1-l f3 lh-copy">Hey</h2>
-            <h1 class="f1-l f3 lh-copy fade-in">
+        <div class="ph4-l ph3">
+          <h2 class="f1-l f3 lh-copy">Hey</h2>
+          <h1 class="f1-l f3 lh-copy fade-in">
               I’m <span class="tracked-light gold">Kiko</span>, Web Engineer working at <a target="blank" href="https://audiense.com" class="link link-underline white link-job">Audiense</a>.
             </h1>
-            <div class="cf fade-in">
-              <dl class="fl fn-l w-50 dib-l w-auto-l lh-title mr5-l grow">
-                <dd class="f6 fw3 ml0">Age</dd>
-                <dd class="f3 ml0">25</dd>
-              </dl>
-              <dl class="fl fn-l w-50 dib-l w-auto-l lh-title mr5-l grow">
-                <dd class="f6 fw3 ml0">From</dd>
-                <dd class="f3 ml0">Murcia, Spain</dd>
-              </dl>
-              <dl class="fl fn-l w-50 dib-l w-auto-l lh-title mr5-l grow">
-                <dd class="f6 fw3 ml0">Language</dd>
-                <dd class="f3 ml0">JavaScript</dd>
-              </dl>
-              <dl class="fl fn-l w-50 dib-l w-auto-l lh-title mr5-l grow">
-                <dd class="f6 fw3 ml0">Favorite Sport</dd>
-                <dd class="f3 ml0">Windsurfing</dd>
-              </dl>
-            </div>
-            <div class="pv4 fade-in-delay">
-              {% include home/social-links.html %}
-            </div>
+          <div class="cf fade-in">
+            <dl class="fl fn-l w-50 dib-l w-auto-l lh-title mr5-l grow">
+              <dd class="f6 fw3 ml0">Age</dd>
+              <dd class="f3 ml0">25</dd>
+            </dl>
+            <dl class="fl fn-l w-50 dib-l w-auto-l lh-title mr5-l grow">
+              <dd class="f6 fw3 ml0">From</dd>
+              <dd class="f3 ml0">Murcia, Spain</dd>
+            </dl>
+            <dl class="fl fn-l w-50 dib-l w-auto-l lh-title mr5-l grow">
+              <dd class="f6 fw3 ml0">Language</dd>
+              <dd class="f3 ml0">JavaScript</dd>
+            </dl>
+            <dl class="fl fn-l w-50 dib-l w-auto-l lh-title mr5-l grow">
+              <dd class="f6 fw3 ml0">Favorite Sport</dd>
+              <dd class="f3 ml0">Windsurfing</dd>
+            </dl>
+          </div>
+          <div class="pv4 fade-in-delay">
+            {% include home/social-links.html %}
           </div>
         </div>
       </div>
-    </header>
-  </section>
+    </div>
+  </header>
+</section>
+
+<script>
+  var avatars = [ 'images/avatar.png', 'images/avatar-glitch.png']
+  var el = document.getElementById('avatar')
+  var times = [ 3000, 150, 3000, 300, 1000, 800 ]
+  var index = 0
+
+  function hover(element) {
+    element.setAttribute('src', 'images/avatar-glitch.png');
+    element.classList.add("animate-glitch");
+  }
+  function unhover(element) {
+    element.setAttribute('src', 'images/avatar.png');
+    element.classList.remove("animate-glitch");
+  }
+
+
+  function glitchEffect () {
+    var isGlitch = index % 2 === 0
+    var avatar = isGlitch ? 'images/avatar-glitch.png' : 'images/avatar.png'
+    var timing = times[index % times.length]
+
+    setTimeout(function () {
+      el.setAttribute('src', avatar);
+      el.classList[isGlitch ? 'add' : 'remove']('animate-glitch')
+      index = index + 1
+      glitchEffect()
+    }, timing)
+  }
+
+  glitchEffect()
+</script>

@@ -34,9 +34,7 @@
 }
 
 .animate-glitch {
-  &:hover {
-    animation: glitch 0.9s infinite;
-  }
+  animation: glitch 0.9s infinite;
 }
 
 @keyframes zomg {
