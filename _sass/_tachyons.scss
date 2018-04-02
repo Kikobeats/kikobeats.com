@@ -1,5 +1,9 @@
 @import "../node_modules/tachyons-sass/tachyons.scss";
 
+.tracked-light {
+  letter-spacing: 0.05em;
+}
+
 .lh-copy {
   line-height: $line-height;
 }
