@@ -12,5 +12,12 @@ layout: default
   {{content}}
 </section>
 {% include post-footer.html %}
+{% include comments.html %}
 {% include footer.html %}
 <script src="https://cdn.jsdelivr.net/combine/npm/prismjs@latest,npm/microlinkjs@latest/umd/microlink.min.js,npm/medium-zoom@latest"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    mediumZoom('layout-post img')
+    microlink('.card-preview')
+  });
+</script>

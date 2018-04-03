@@ -6,10 +6,10 @@
 
         <div class="ph4-l ph3">
           <h2 class="f2-l f3 lh-copy">Hey,</h2>
-          <h1 class="f2-l f3 lh-copy fade-in mw7">
+          <h1 class="f2-l f3 lh-copy fade-in fade-in-delay-short mw7">
             I’m <span class="cursor-rock tracked-light gold">Kiko</span>, <span class="cursor-unicorn" id="title" data-typist="Landing Page Engineer, Unicorn Engineer, Full Stack Engineer, Inspect Element Engineer, Memory Leak Engineer, NaN Engineer, Asynchronous Engineer">Web Engineer</span> working at <a target="blank" href="https://audiense.com" class="cursor-work link link-underline white link-job">Audiense</a>.
           </h1>
-          <div class="cursor-age cf fade-in">
+          <div class="cursor-age cf fade-in fade-in-delay-short">
             <dl class="fl fn-l w-50 dib-l w-auto-l lh-title mr5-l grow">
               <dd class="f6 fw3 ml0">Age</dd>
               <dd class="f3 ml0">25</dd>
@@ -27,7 +27,7 @@
               <dd class="f3 ml0">Windsurfing</dd>
             </dl>
           </div>
-          <div class="pv4 fade-in-delay">
+          <div class="pv4 fade-in fade-in-delay-large">
             {% include home/social-links.html %}
           </div>
         </div>
@@ -66,4 +66,15 @@
   }
 
   glitchEffect()
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Typist/1.2/typist.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    setTimeout(function() {
+      new Typist(document.getElementById("title"), {
+        letterSelectInterval: 80,
+        interval: 3500
+      })
+    }, 3000)
+  });
 </script>
