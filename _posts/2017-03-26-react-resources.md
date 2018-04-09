@@ -5,22 +5,18 @@ image: https://i.imgur.com/6cJoQXs.jpg
 date: '2017-03-26 20:16:16'
 ---
 
-### About General
-
-- [awesome-react](https://github.com/enaqx/awesome-react).
-
-### About Workflow
+### Workflow
 
 - [reactpatterns.com](http://reactpatterns.com).
 - [react-bits](https://github.com/vasanthk/react-bits).
-
-### About API
-
 - [reactcheatsheet.com](http://reactcheatsheet.com).
 - [ricostacruz cheatseet](http://ricostacruz.com/cheatsheets/react.html).
+- [React lifecycle methods diagram](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
-### About Components
+### Other
 
-- [awesome-react-componets](https://github.com/brillout/awesome-react-components).
+- [awesome-react](https://github.com/enaqx/awesome-react).
+- [awesome-react-components](https://github.com/brillout/awesome-react-components).
+
 
 *Just a non exhaustive list of good react resources. Feel free to suggest resources!*
