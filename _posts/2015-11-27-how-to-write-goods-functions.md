@@ -10,6 +10,8 @@ tags:
 > Every function or piece of code should have one entry point (input) and one exit point (output).
 <cite>Edsger W. Dijkstra</cite>
 
+![](https://i.imgur.com/Ve9my2x.png)
+
 ## About the implementation
 
 - Do one thing. Be small!
