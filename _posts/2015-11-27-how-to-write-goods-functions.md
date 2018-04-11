@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Functions: The Right Way'
-image: https://i.imgur.com/Dt0l2PC.png
+image: https://i.imgur.com/A8myRDv.jpg
 date: '2015-11-27 22:07:32'
 tags:
 - craftsmanship
