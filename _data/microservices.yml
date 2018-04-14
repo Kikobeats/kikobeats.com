@@ -20,4 +20,4 @@
 
 - name: changelog
   description: See the changelog of any NPM package.
-  link: https://changelog.kikobeats.com
+  link: https://changes.now.sh
