@@ -7,11 +7,10 @@ tags:
 - javascript
 ---
 
-> "Streams in node are one of the rare occasions when doing something the fast way is actually easier. SO USE THEM. not since bash has streaming been introduced into a high level language as nicely as it is in node." 
+> "Streams in node are one of the rare occasions when doing something the fast way is actually easier. SO USE THEM. not since bash has streaming been introduced into a high level language as nicely as it is in node."
+<cite>[@dominictarr](https://twitter.com/dominictarr) at [high level node style guide](https://gist.github.com/dominictarr/2401787).</cite>
 
-– [@dominictarr](https://twitter.com/dominictarr) in his [high level node style guide](https://gist.github.com/dominictarr/2401787).
-
-## General
+## TL;DR
 
 * Streams emits [Events](https://nodejs.org/api/events.html), the native observer pattern of NodeJS.
 
@@ -35,39 +34,80 @@ tweetStream.pipe(process.stdout)
 
 ## Readable
 
+Streams from which data can be read (e.g [`fs.createReadStream()`](https://nodejs.org/api/fs.html#fs_fs_createreadstream_path_options)).
+
+```js
+const toReadableStream = input => (
+	new Readable({
+		read() {
+			this.push(input);
+			this.push(null);
+		}
+	})
+);
+```
+
+* Readable streams produce data that can be fed into a writable, transform, or duplex stream by calling `.pipe()`
+
 * For emit chunks of data you need to create a object that implement the [._read](https://nodejs.org/api/stream.html#stream_readable_read_size_1) method.
 
 * It emits `data` events each time they get a *chunk* of data. From the implementation this is synonymous of `this.push(data)`.
 
 * It emits `end` when it has no more data `this.push(null)`. In others words, the event `end` is triggered when the last chunk of data arrives, signifying that this is it and there is no more data after this last piece.
 
-* When you are using a Readable Stream you can use  `resume()` and `pause()` methods to control the data flow of the stream.
+* When you are using a Readable Stream you can use `resume()` and `pause()` methods to control the data flow of the stream.
 
 ## Writable
+
+Streams to which data can be written (e.g [`fs.createWriteStream()`](https://nodejs.org/api/fs.html#fs_fs_createwritestream_path_options)).
+
+* A writable stream is a stream you can `.pipe()` to but not from.
 
 * For emit chunks of data you need to create a object that implement the [._write](https://nodejs.org/api/stream.html#stream_writable_write_chunk_encoding_callback_1) method.
 
 * `.end` to close the stream and also you can pass the last chunk to `.write`.
 
-* Just provide the callback if you want to wait, but the order of the successive calls is guaranteed. 
+* Just provide the callback if you want to wait, but the order of the successive calls is guaranteed.
 
 * The event `finish` is triggered when all the data has been processed (after end has been run and been processed).
 
 ## Duplex
 
-* A *duplex* stream is one that is both Readable and Writable, such as a TCP socket connection.
+Streams that are both Readable and Writable. Both are independent and each have separate internal buffer. (e.g [`net.Socket`](https://nodejs.org/api/net.html#net_class_net_socket)).
+
+```
+                             Duplex Stream
+                          ------------------|
+                    Read  <-----               External Source
+            You           ------------------|   
+                    Write ----->               External Sink
+                          ------------------|
+            You don't get what you write. It is sent to another source.
+```
 
 * It was implemented in the most recent node version but you can use [through2](https://github.com/rvagg/through2).
 
-## FD Streams
+## Transform
 
-* It's a special type of streams because interact with the filesystem.
+Duplex streams where the output is in some way related to the input (e.g [zlib streams](https://nodejs.org/api/zlib.html)).
+
+```
+                                 Transform Stream
+                           --------------|--------------
+            You     Write  ---->                   ---->  Read  You
+                           --------------|--------------
+            You write something, it is transformed, then you read something.
+```
+
+## File System/Descriptor Streams
+
+They are a subclass of Readable/Writable streams because they interact with the filesystem, emitting special kind of events
 
 * uses `open` event to control the file state of the `fs.ReadStream`/`fs.WriteStream` streams.
 
 ## Child Process
 
-* Also it's an especial kind of streams. They particularry fire `exit` event that is different from `close`.
+* Also it's an especial kind of streams. They particulary fire `exit` event that is different from `close`.
 
 * It uses `stdio` to setup stream communication between the child_process and where the output have to be write/read (by default `stdin`, `stdout` and `stderr` that are align with UNIX standard streams).
 
@@ -88,8 +128,9 @@ Interested libraries to use with streams are:
 * [squeak](https://github.com/kevva/squeak), a tiny stream log.
 * [hyperquest](https://github.com/substack/hyperquest), make streaming http requests.
 
-
 ## Bibliography
+
+* [Awesome Node.js Streams](https://github.com/thejmazz/awesome-nodejs-streams)
 
 * [Streams @ Max Ogden](http://maxogden.com/node-streams.html)
 * [Stream Handbook @ Substack](https://github.com/substack/stream-handbook)

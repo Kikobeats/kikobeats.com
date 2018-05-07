@@ -7,7 +7,7 @@ tags:
 - unix
 ---
 
-A [glob](https://en.wikipedia.org/wiki/Glob_(programming)) is a short expression that lets you select a bunch of files. 99% of the time, thereâ€™s an asterisk involved.
+A [glob](https://en.wikipedia.org/wiki/Glob_(programming)) is a short expression that lets you select a bunch of files. 99% of the time, there's an asterisk involved.
 
 Here's a (*non exhaustive*) list of the most useful patterns.
 

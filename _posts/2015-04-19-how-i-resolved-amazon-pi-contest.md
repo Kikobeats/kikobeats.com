@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How I resolved Amazon Ï€ Contest
+title: How I resolved Amazon π Contest
 image: http://i.imgur.com/X2Ka2kZ.jpg
 date: '2015-04-19 16:45:32'
 tags:
@@ -12,7 +12,7 @@ Time in the past, a wild tweet appeared in my timeline:
 <blockquote class="twitter-tweet" lang="es"><p>Amazon is hiring in Spain! Give it a try! <a href="http://t.co/jH3YisaTeK">pic.twitter.com/jH3YisaTeK</a></p>&mdash; Jaime Vallori (@jvallori) <a href="https://twitter.com/jvallori/status/563046478521057280">febrero 4, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-</br>
+<br>
 
 Actually I wasn't interested in be part of the Amazon in that moment, but I was interested if I might be able to resolve it and what would happen. Let's go.
 
@@ -20,7 +20,7 @@ At first I knew nothing about palindromes in the pi decimals. First notice about
 
 First, I generated a list of 5 numbers (0000 to 9999). I only need five because I can create a palindrome reversing the numbers, for example:
 
-```
+```js
 function reverseNumber(number) {
   return number.split('').reverse().join('');
 }
@@ -36,7 +36,7 @@ The second part of the problem is know what palindrome of the 9999 palindromes i
 
 I created a stream for read the file fast line by line and for each line created a HTTP request, waiting for the address that resolves the exercise. Also I use a library to makes the requests.
 
-This is the result of the code: 
+This is the result of the code:
 
 <script src="https://gist.github.com/Kikobeats/79d6c0baad034fc43b42.js"></script>
 
@@ -46,7 +46,7 @@ It reports me the [0136776310.com](http://0136776310.com) and efectively, I reso
 
 The next exercise was waiting me. I knew that a brute force is just a simple people filter for the first step, so I really wanted to resolved the next exercise.
 
-Actually was simple. The file of the website had a large list of numbers. Again, stream for read by line will be useful. 
+Actually was simple. The file of the website had a large list of numbers. Again, stream for read by line will be useful.
 
 Now the output of the exercise that will resolve the problem is, first, a primer number, and second, the value of the number is equal to number of the line in the file.
 

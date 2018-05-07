@@ -21,7 +21,7 @@ tags:
 
 *This is the Unix philosophy: Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.*
 
-# Under NodeJS 
+# Under NodeJS
 
 ![](http://i.imgur.com/9ZLoYuu.png)
 
@@ -29,7 +29,7 @@ tags:
 2. *Write modules that encourage composition rather than extension.*
 3. *Write modules that handle data Streams, because that is the universal interface.*
 4. *Write modules that are agnostic about the source of their input or the destination of their output.*
-5. *Write modules that solve a problem you know, so you can learn about the ones you donï¿½t.*
+5. *Write modules that solve a problem you know, so you can learn about the ones you don't.*
 6. *Write modules that are small. Iterate quickly. Refactor ruthlessly. Rewrite bravely.*
 7. *Write modules quickly, to meet your needs, with just a few tests for compliance. Avoid extensive specifications. Add a test for each bug you fix.*
 8. *Write modules for publication, even if you only use them privately. You will appreciate documentation in the future.*
@@ -47,7 +47,8 @@ tags:
 
 ![](https://i.vimeocdn.com/video/389233413_640.jpg)
 
-> When abstractions are kept to the minimum necessary, it's much easier to see which ones are good ideas and which ones are mistaken ideas. With larger collections of ideas branded into cohesive framework ideologies, it's very easy for unjustified abstractions to sneak in under the cover of the more useful pieces. ï¿½ [Substack](http://substack.net/how_I_write_modules)
+> When abstractions are kept to the minimum necessary, it's much easier to see which ones are good ideas and which ones are mistaken ideas. With larger collections of ideas branded into cohesive framework ideologies, it's very easy for unjustified abstractions to sneak in under the cover of the more useful pieces.
+<cite>[Substack](http://substack.net/how_I_write_modules)</cite>
 
 I didn't write nothing of this, but we, programmers, forget important things, and I wanted to collect it in one place.
 

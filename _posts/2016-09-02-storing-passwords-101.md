@@ -11,9 +11,9 @@ tags:
 
 I mean, not only.
 
-*MD5*, *SHA1*, *SHA256*, *SHA512*, *SHA-3*,... 
+*MD5*, *SHA1*, *SHA256*, *SHA512*, *SHA-3*,...
 
-These are all general purpose hash functions, designed to calculate a digest of huge amounts of data in as short a time as possible. 
+These are all general purpose hash functions, designed to calculate a digest of huge amounts of data in as short a time as possible.
 
 This means that they are fantastic for ensuring the integrity of data and utterly rubbish for storing passwords.
 
@@ -25,7 +25,7 @@ A **salt** is a random value that is generally not a secret, which is used to ma
 hash(salt+password)=hashed password
 ```
 
-Salts are closely related to the concept of [nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce). 
+Salts are closely related to the concept of [nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce).
 
 The primary function of salts is to defend against dictionary attacks versus a list of password hashes and against pre-computed rainbow table attacks.
 
@@ -40,7 +40,7 @@ The primary function of salts is to defend against dictionary attacks versus a l
 
 > So weakly talking about 5 or so orders of magnitude. Instead of cracking a password every 40 seconds, We will be cracking them every 12 years or so. Your passwords might not need that kind of security and you might need a faster comparison algorithm, but bcrypt allows you to choose your balance of speed and security. Use it.
 
-That's little benchmark to know how salt rounds affect: 
+That's little benchmark to know how salt rounds affect:
 
 ```
 rounds=8 : ~40 hashes/sec
