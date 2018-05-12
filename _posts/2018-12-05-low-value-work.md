@@ -16,17 +16,17 @@ tags:
 
 - **Schedule less time for low-value tasks**. Don't feed things that are non productive for you. Avoid the busy work that add no real value to your work, vision or long-term goal.
 
-- **Automatize all the things**. Do not do it too early, but detects the pattern and foresees when it is necessary.
+- **Automatize all the things**. Do not do it too early, but detect the pattern and foresee when it is necessary.
 
 - **Priorize your short and long term goals**. Make very focused lists for things to accomplish each year, each month, and each day.
 
 - **Do something attainable, realistic, and time-bound each day** aligned with your long-term goal. Generate the momentum of getting things done.
 
-- **Delegating is key**. Share responsibility. Everyone else is most productive when they’re doing what they like, and do what you’d want other people to do for you.
+- **Delegating is key**. Share responsibility. Everyone is more productive when they are doing what they like, and do what you would want other people to do for you.
 
 ## Things that reduce your productivity
 
-- **Responding to notifications** won’t contribute to your goal of the day. Put down your phone and kill those notifications.
+- **Responding to notifications** will not contribute to your goal of the day. Put down your phone and kill those notifications.
 
 - **Limit the times you check the mail**. Check it 77 times a day is totally unnecessary. 3 times each day is enough.
 
