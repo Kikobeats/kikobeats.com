@@ -12,6 +12,7 @@ date: '2017-03-26 20:16:16'
 - [reactcheatsheet.com](http://reactcheatsheet.com).
 - [ricostacruz cheatseet](http://ricostacruz.com/cheatsheets/react.html).
 - [React lifecycle methods diagram](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
+- [transform, Transform JS objects to get something useful](https://transform.now.sh/)
 
 ### Other
 
