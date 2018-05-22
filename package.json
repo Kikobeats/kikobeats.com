@@ -12,7 +12,7 @@
     "gulp-imagemin": "latest",
     "gulp-util": "latest",
     "tachyons-sass": "latest",
-    "urlint-cli": "urlint/urlint-cli#master"
+    "urlint-cli": "github:urlint/urlint-cli#ci-build"
   },
   "scripts": {
     "build": "NODE_ENV=production JEKYLL_ENV=production bundle jekyll build",
