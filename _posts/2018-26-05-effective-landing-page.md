@@ -116,7 +116,7 @@ Instead, I prefer show real feedback for real people.
 - [netlify.com/features](https://www.netlify.com/features)
 - [sweet.io](https://sweet.io)
 - [getcadet.com](https://getcadet.com)
-- [cronhub.io](https://cronhub.io)
+- [spectrum.chat](https://spectrum.chat/features)
 
 ## Resources
 
