@@ -18,6 +18,6 @@ date: '2017-03-26 20:16:16'
 
 - [awesome-react](https://github.com/enaqx/awesome-react).
 - [awesome-react-components](https://github.com/brillout/awesome-react-components).
-- [JSX Live Compiler](https://jsx-live.now.sh/)
+- [JSX Live Compiler](https://jsx-live.now.sh/).
 
 *Just a non exhaustive list of good react resources. Feel free to suggest resources!*
