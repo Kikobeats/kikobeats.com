@@ -109,6 +109,7 @@ Instead, I prefer show real feedback for real people.
 - [ghost.org](https://ghost.org)
 - [weatherkit.org](https://weatherkit.org)
 - [www.imgix.com](https://www.imgix.com)
+- [algolia.com](https://www.algolia.com/)
 
 ### Focus on structure
 
