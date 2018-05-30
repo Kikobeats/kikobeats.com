@@ -118,6 +118,7 @@ Instead, I prefer show real feedback for real people.
 - [sweet.io](https://sweet.io)
 - [getcadet.com](https://getcadet.com)
 - [spectrum.chat](https://spectrum.chat/features)
+- [numeracy.co](https://numeracy.co/features)
 
 ## Resources
 
