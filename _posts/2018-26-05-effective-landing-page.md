@@ -33,13 +33,13 @@ If you need to do just one thing well, **improve your landing page content**. Be
 
 Imagine enter a website and you can't do scroll. The portion of website that you can se is all the information that you can get.
 
-If people only can see the first thing in your website, what do you put there? 
+If people only can see the first thing in your website, what do you put there?
 
 Probably you only can put your main product caption that resume the global vision of the product. **You main clap**.
 
 The space limits you to being smart: It should be **easy to understand for anyone** and **expressed in a few words**.
 
-Then think your mum enter in the website. Can she understand the product? 
+Then think your mum enter in the website. Can she understand the product?
 
 Really, it should be <u>simple</u>!
 
@@ -104,17 +104,17 @@ Instead, I prefer show real feedback for real people.
 ### Focus in first impression
 
 - [authenticweather.com](http://authenticweather.com)
-- [www.crunchet.com](https://www.crunchet.com)
+- [crunchet.com](https://www.crunchet.com)
 - [magicsignup.com](https://magicsignup.com)
 - [ghost.org](https://ghost.org)
 - [weatherkit.org](https://weatherkit.org)
-- [www.imgix.com](https://www.imgix.com)
+- [imgix.com](https://www.imgix.com)
 - [algolia.com](https://www.algolia.com/)
 
 ### Focus on structure
 
 - [airtable.com](https://airtable.com)
-- [netlify.com/features](https://www.netlify.com/features)
+- [netlify.com](https://www.netlify.com/features)
 - [sweet.io](https://sweet.io)
 - [getcadet.com](https://getcadet.com)
 - [spectrum.chat](https://spectrum.chat/features)
@@ -131,7 +131,3 @@ Instead, I prefer show real feedback for real people.
 [](http://thelandingpagecourse.com/landing-page-copywriting-for-conversion/){:.card-preview data-image="logo"}
 
 [](https://undraw.co/illustrations){:.card-preview}
-
-
-
-
