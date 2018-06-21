@@ -131,3 +131,5 @@ Instead, I prefer show real feedback for real people.
 [](http://thelandingpagecourse.com/landing-page-copywriting-for-conversion/){:.card-preview data-image="logo"}
 
 [](https://undraw.co/illustrations){:.card-preview}
+
+[](http://openlogos.org/){:.card-preview}
