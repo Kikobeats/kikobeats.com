@@ -25,5 +25,11 @@
     "node": ">= 8"
   },
   "private": true,
-  "license": "MIT"
+  "license": "MIT",
+  "urlint": {
+    "url": "https://kikobeats.com",
+    "whitelist": [
+      "https://www.linkedin.com/in/kikobeats"
+    ]
+  }
 }

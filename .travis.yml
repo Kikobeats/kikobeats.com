@@ -4,4 +4,4 @@ node_js:
   - "node"
 
 script:
-  - npx urlint https://kikobeats.com --whitelist https://www.linkedin.com/in/kikobeats
+  - npx urlint
