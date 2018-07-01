@@ -20,15 +20,15 @@ featured:
     link: http://osom.js.org
     image: /images/osom.png
 
-  - name: svr
-    description: HTTP development server done right.
-    link: https://svr.js.org
-    image: /images/svr.png
-
   - name: Tom
     description: Your backoffice as service.
     link: http://tom.js.org
     image: /images/tom.png
+
+  - name: svr
+    description: HTTP development server done right.
+    link: https://svr.js.org
+    image: /images/svr.png
 
 normal:
 

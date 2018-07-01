@@ -50,10 +50,7 @@
     ]
   },
   "urlint": {
-    "urls": [
-      "https://kikobeats.com",
-      "https://kikobeats.com/blog"
-    ],
+    "url": "https://kikobeats.com/sitemap.xml",
     "whitelist": [
       "https://www.linkedin.com/in/kikobeats"
     ]
