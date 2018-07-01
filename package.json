@@ -11,23 +11,49 @@
     "gulp": "latest",
     "gulp-imagemin": "latest",
     "gulp-util": "latest",
-    "tachyons-sass": "latest",
-    "urlint-cli": "urlint/urlint-cli#master"
-  },
-  "scripts": {
-    "build": "NODE_ENV=production JEKYLL_ENV=production bundle jekyll build",
-    "dev": "gulp",
-    "lint": "urlint https://kikobeats.com/blog",
-    "pretest": "npm run lint",
-    "test": "exit 0"
+    "husky": "latest",
+    "imagemin-lint-staged": "latest",
+    "lint-staged": "latest",
+    "standard": "latest",
+    "standard-markdown": "latest",
+    "tachyons-sass": "latest"
   },
   "engines": {
     "node": ">= 8"
   },
+  "scripts": {
+    "build": "NODE_ENV=production JEKYLL_ENV=production bundle jekyll build",
+    "dev": "gulp",
+    "lint": "standard-markdown && standard",
+    "precommit": "lint-staged",
+    "pretest": "npm run lint",
+    "test": "exit 0"
+  },
   "private": true,
   "license": "MIT",
+  "lint-staged": {
+    "package.json": [
+      "finepack",
+      "git add"
+    ],
+    "*.js": [
+      "prettier-standard",
+      "git add"
+    ],
+    "*.md": [
+      "standard-markdown",
+      "git add"
+    ],
+    "*.{png,jpeg,jpg,gif,svg}": [
+      "imagemin-lint-staged",
+      "git add"
+    ]
+  },
   "urlint": {
-    "url": "https://kikobeats.com",
+    "urls": [
+      "https://kikobeats.com",
+      "https://kikobeats.com/blog"
+    ],
     "whitelist": [
       "https://www.linkedin.com/in/kikobeats"
     ]

@@ -1,7 +1,7 @@
 - name: tom
   description: Tom creates customers, subscriptions plans & send notifications.
   link: https://tom.js.org
-  
+
 - name: timecards
   description: Bob Sponja time cards as service.
   link: https://time.kikobeats.com
@@ -13,11 +13,15 @@
 - name: color
   description: Get color information from any URL image.
   link: https://color.kikobeats.com
-  
+
 - name: pdf
   description: Get the PDF version of any website as service.
   link: https://pdf.kikobeats.com
 
 - name: changelog
-  description: See the changelog of any NPM package.
+  description: See the changelog for any NPM package.
   link: https://changes.now.sh
+
+- name: unavatar
+  description: Get user avatar across social services.
+  link: https://unavatar.now.sh

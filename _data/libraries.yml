@@ -1,4 +1,10 @@
 featured:
+
+  - name: browserless
+    description: Chrome Headless API made easy.
+    link: https://browserless.js.org
+    image: /images/browserless.png
+
   - name: Acho
     description: The &lt;Hackable/&gt; Log.
     link: http://acho.js.org
@@ -14,14 +20,17 @@ featured:
     link: http://osom.js.org
     image: /images/osom.png
 
-normal:
   - name: svr
-    description: Hot Module replacement (HMR) capabilities for HTTP Server.
+    description: HTTP development server done right.
     link: https://svr.js.org
+    image: /images/svr.png
 
-  - name: hyperlru
-    description: Tiny & Fast LRU Implementation as possible in 60 lines of code.
-    link: https://github.com/Kikobeats/hyperlru
+  - name: Tom
+    description: Your backoffice as service.
+    link: http://tom.js.org
+    image: /images/tom.png
+
+normal:
 
   - name: hyperdiff
     description: Find common, removed and added element between two collections.
@@ -35,10 +44,6 @@ normal:
     description: Given an image, extract predominant & palette colors.
     link: https://github.com/kikobeats/splashy
 
-  - name: browserless
-    description: Chrome Headless API made easy.
-    link: https://browserless.js.org
-
   - name: voll
     description: Boolean expressions evaluator.
     link: https://github.com/Kikobeats/voll
@@ -46,7 +51,7 @@ normal:
   - name: whoops
     description: It makes simple throw qualified errors.
     link: https://github.com/Kikobeats/whoops
-    
+
   - name: retry-backoff
     description: Handle callback retries with incremental backoff & timeout support.
     link: https://github.com/AudienseCo/retry-backoff
