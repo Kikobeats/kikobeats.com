@@ -12,10 +12,11 @@
     "gulp-imagemin": "latest",
     "gulp-util": "latest",
     "husky": "latest",
-    "imagemin-lint-staged": "latest",
+    "imageoptim-cli": "latest",
     "lint-staged": "latest",
     "standard": "latest",
     "standard-markdown": "latest",
+    "svgo": "latest",
     "tachyons-sass": "latest"
   },
   "engines": {
@@ -44,8 +45,12 @@
       "standard-markdown",
       "git add"
     ],
-    "*.{png,jpeg,jpg,gif,svg}": [
-      "imagemin-lint-staged",
+    "*.{png,jpeg,jpg,gif}": [
+      "imageoptim --imagealpha",
+      "git add"
+    ],
+    "*.svg": [
+      "svgo --pretty",
       "git add"
     ]
   },
