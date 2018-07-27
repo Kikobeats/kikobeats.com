@@ -94,7 +94,7 @@ If you need specific random output for your user case, I recommend you use the f
 - [nanoid](https://github.com/ai/nanoid) – A tiny, secure URL-friendly unique string ID generator for JavaScript.
 
 ![](https://i.imgur.com/rlCYVvc.png)
-<figcaption>[nanoid cc](https://alex7kom.github.io/nano-nanoid-cc/) calculates the probability of a collision based on nanoid algorithm.</figcaption>
+<figcaption><a href="https://alex7kom.github.io/nano-nanoid-cc">nanoid collision calculator</a> estimates the probability of a collision based on nanoid algorithm.</figcaption>
 
 The world is random. Computers aren't.
 
