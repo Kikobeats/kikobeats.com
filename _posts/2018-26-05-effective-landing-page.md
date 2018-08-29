@@ -130,6 +130,8 @@ Instead, I prefer show real feedback for real people.
 
 [](http://thelandingpagecourse.com/landing-page-copywriting-for-conversion/){:.card-preview data-image="logo"}
 
+[](https://uxplanet.org/common-webpage-design-mistakes-59eed9831bd7){:.card-preview data-image="image"}
+
 [](https://undraw.co/illustrations){:.card-preview}
 
 [](http://openlogos.org/){:.card-preview}
