@@ -8,6 +8,7 @@
   }
 
   p,
+  ul,
   table {
     margin: $line-height 0;
   }
@@ -38,6 +39,7 @@
     }
   }
 
+  .microlink_card__media,
   .microlink_card__content_title,
   .microlink_card__content_description {
     margin: 0;
