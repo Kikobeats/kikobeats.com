@@ -9,7 +9,7 @@ tags:
 
 ## as URL encoded
 
-````bash
+```bash
 $ http -f POST https://httpbin.org/post foo=bar --verbose
 POST /post HTTP/1.1
 Accept: */*
@@ -113,5 +113,5 @@ And also:
 
 First,  don't use more than you need. Keep it simple!
 
-If you need send a form or plain object, then use `x-www-form-urlencoded`. 
+If you need send a form or plain object, then use `x-www-form-urlencoded`.
 In other case use `application/json` (and you will have to stringify before send and parse after send).

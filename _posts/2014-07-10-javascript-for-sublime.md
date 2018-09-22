@@ -22,7 +22,7 @@ in this:
 
 Suite of basics snippets for common actions in JavaScript.
 
-````
+```
 [afn] anonymous function
 
 function(${1:arguments}) {
@@ -110,8 +110,8 @@ Improve your worfklow with snippets for all method of the console and greate way
 
 ![](https://raw.github.com/caiogondim/js-console-sublime-snippets/master/snippets.gif)
 
-```
-Methods covered
+```js
+/* Methods covered */
 
 console.assert()
 console.clear()
@@ -147,7 +147,6 @@ Snippets for manipulate the DOM and good snippets for NodeJS. If you decide inst
 List of Snippets:
 
 ```
-
 Console
 
 [cd] console.dir
