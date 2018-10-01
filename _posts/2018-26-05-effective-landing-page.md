@@ -103,35 +103,42 @@ Instead, I prefer show real feedback for real people.
 
 ### Focus in first impression
 
-- [authenticweather.com](http://authenticweather.com)
-- [crunchet.com](https://www.crunchet.com)
-- [magicsignup.com](https://magicsignup.com)
-- [ghost.org](https://ghost.org)
-- [weatherkit.org](https://weatherkit.org)
-- [imgix.com](https://www.imgix.com)
-- [algolia.com](https://www.algolia.com/)
+- [authenticweather.com](http://authenticweather.com).
+- [crunchet.com](https://www.crunchet.com).
+- [magicsignup.com](https://magicsignup.com).
+- [ghost.org](https://ghost.org).
+- [weatherkit.org](https://weatherkit.org).
+- [imgix.com](https://www.imgix.com).
+- [algolia.com](https://www.algolia.com/).
 
 ### Focus on structure
 
-- [airtable.com](https://airtable.com)
-- [netlify.com](https://www.netlify.com/features)
-- [sweet.io](https://sweet.io)
-- [getcadet.com](https://getcadet.com)
-- [spectrum.chat](https://spectrum.chat/features)
-- [numeracy.co](https://numeracy.co/features)
+- [airtable.com](https://airtable.com).
+- [netlify.com](https://www.netlify.com/features).
+- [sweet.io](https://sweet.io).
+- [getcadet.com](https://getcadet.com).
+- [spectrum.chat](https://spectrum.chat/features).
+- [numeracy.co](https://numeracy.co/features).
 
 ## Resources
 
-[](https://www.froala.com/design-blocks#playground){:.card-preview}
+### Design System Components
 
-[](http://tachyons.io/components/){:.card-preview}
+- [Froala Design Blocks](https://www.froala.com/design-blocks#playground).
+- [Tachyons Components](http://tachyons.io/components/).
+- [Rebass](https://rebassjs.org/).
 
-[](https://goodui.org/){:.card-preview data-image="logo"}
+### Logo & Ilustrations
 
-[](http://thelandingpagecourse.com/landing-page-copywriting-for-conversion/){:.card-preview data-image="logo"}
+- [Open Logos](http://openlogos.org/) – Free logos for your open source projects.
+- [unDraw](https://undraw.co/illustrations) – Free and customizable illustrations.
 
-[](https://uxplanet.org/common-webpage-design-mistakes-59eed9831bd7){:.card-preview data-image="image"}
+### User Interaction
 
-[](https://undraw.co/illustrations){:.card-preview}
+- [GoodUI.org](https://goodui.org/) – Tested A/B Patterns to ouse in your site.
+- [Common webpage design mistakes](https://uxplanet.org/common-webpage-design-mistakes-59eed9831bd7) by UX Planet.
+- [Motion design doesn’t have to be hard](https://medium.com/google-design/motion-design-doesnt-have-to-be-hard-33089196e6c2) by Google Design.
 
-[](http://openlogos.org/){:.card-preview}
+### Copywriting
+
+- [Landing Page Copywriting for Conversion](http://thelandingpagecourse.com/landing-page-copywriting-for-conversion).
