@@ -3,46 +3,31 @@ featured:
   - name: browserless
     description: Chrome Headless API made easy.
     link: https://browserless.js.org
-    image: /images/browserless.png
+    image: /images/browserless.jpg
 
   - name: Acho
     description: The &lt;Hackable/&gt; Log.
     link: http://acho.js.org
-    image: /images/acho.png
-
-  - name: Bumped
-    description: Make easy releasing software.
-    link: https://bumped.github.io
-    image: /images/bumped.png
-
-  - name: Osom
-    description: An Awesome Object Data Modeling.
-    link: http://osom.js.org
-    image: /images/osom.png
-
-  - name: Tom
-    description: Your backoffice as service.
-    link: http://tom.js.org
-    image: /images/tom.png
+    image: /images/acho.jpg
 
   - name: svr
     description: HTTP development server done right.
     link: https://svr.js.org
-    image: /images/svr.png
+    image: /images/svr.jpg
 
 normal:
 
-  - name: hyperdiff
-    description: Find common, removed and added element between two collections.
-    link: https://github.com/kikobeats/hyperdiff
+  - name: Bumped
+    description: Make easy releasing software.
+    link: https://bumped.github.io
 
-  - name: process-stats
-    description: Human readable stats for your NodeJS process.
-    link: https://github.com/kikobeats/process-stats
+  - name: Osom
+    description: An Awesome Object Data Modeling.
+    link: http://osom.js.org
 
-  - name: splashy
-    description: Given an image, extract predominant & palette colors.
-    link: https://github.com/kikobeats/splashy
+  - name: Metascraper
+    description: Get unified metadata from any website.
+    link: http://metascraper.js.org
 
   - name: voll
     description: Boolean expressions evaluator.
@@ -52,6 +37,22 @@ normal:
     description: It makes simple throw qualified errors.
     link: https://github.com/Kikobeats/whoops
 
-  - name: retry-backoff
-    description: Handle callback retries with incremental backoff & timeout support.
-    link: https://github.com/AudienseCo/retry-backoff
+  - name: json-future
+    description: Modern JSON interface.
+    link: https://github.com/Kikobeats/json-future
+
+  - name: async-ratelimiter
+    description: Rate limit made simple, easy, async.
+    link: https://github.com/microlinkhq/async-ratelimiter
+
+  - name: html-get
+    description: Get the HTML from any website, using prerendering when is necessary.
+    link: https://github.com/Kikobeats/html-get
+
+  - name: reachable-url
+    description: Given an url resolve it as fast as possible.
+    link: https://github.com/Kikobeats/reachable-url
+
+  - name: html-urls
+    description: Get all urls from a HTML markup.
+    link: https://github.com/Kikobeats/html-urls

@@ -1,27 +1,35 @@
-- name: tom
-  description: Tom creates customers, subscriptions plans & send notifications.
-  link: https://tom.js.org
+featured:
 
-- name: timecards
-  description: Bob Sponja time cards as service.
-  link: https://time.kikobeats.com
+  - name: Tom
+    description: Your backoffice as service.
+    link: http://tom.js.org
+    image: /images/tom.jpg
 
-- name: tweets
-  description: Twitter timelines fetcher as service.
-  link: https://tweets.kikobeats.com
+  - name: unavatar
+    description: Get unified user avatar.
+    link: https://unavatar.now.sh
+    image: /images/unavatar.jpg
+  
+  - name: changelog
+    description: See the changelog for any NPM package.
+    link: https://changes.now.sh
+    image: /images/changes.jpg
 
-- name: color
-  description: Get color information from any URL image.
-  link: https://color.kikobeats.com
+normal:
 
-- name: pdf
-  description: Get the PDF version of any website as service.
-  link: https://pdf.kikobeats.com
+  - name: timecards
+    description: Bob Sponja time cards as service.
+    link: https://time.kikobeats.com
 
-- name: changelog
-  description: See the changelog for any NPM package.
-  link: https://changes.now.sh
+  - name: tweets
+    description: Twitter timelines fetcher as service.
+    link: https://tweets.kikobeats.com
 
-- name: unavatar
-  description: Get user avatar across social services.
-  link: https://unavatar.now.sh
+  - name: color
+    description: Get color information from any URL image.
+    link: https://color.kikobeats.com
+
+  - name: pdf
+    description: Get the PDF version of any website as service.
+    link: https://pdf.kikobeats.com
+

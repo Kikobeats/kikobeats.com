@@ -2,17 +2,16 @@
   <header class="vh-90 mauto pv0-l pv4 max-width-extra-large">
     <div class="dtc">
       <div class="justify-center flex flex-row-l flex-column items-center">
-        <img id="avatar" src="images/avatar.png" class="pointer mw6-l mw5 ph4-l br-100" onmouseover="hover(this);"
+        <img id="avatar" src="images/avatar.jpg" class="pointer mw6-l mw5 ph4-l br-100" onmouseover="hover(this);"
           onmouseout="unhover(this);">
 
         <div class="ph4-l ph3">
           <h2 class="f2-l f3 lh-copy">Hey,</h2>
           <h1 class="f2-l f3 lh-copy fade-in fade-in-delay-short mw7">
-            I’m <span class="cursor-rock tracked-light gold">Kiko</span>, <span class="cursor-unicorn" id="title"
-              data-typist="Web Engineer, Product Engineer, Landing Page Engineer, Unicorn Engineer, Full Stack Engineer, Inspect Element Engineer, Memory Leak Engineer, NaN Engineer, Asynchronous Engineer">a
+            I’m <span class="cursor-rock tracked-light gold">Kiko</span>, <span class="cursor-unicorn" id="job-name"
+              data-typist="Web Engineer,Product Engineer,Landing Page Engineer,Unicorn Engineer,Full Stack Engineer,Inspect Element Engineer,Memory Leak Engineer,NaN Engineer,Asynchronous Engineer">a
               millenial doing stuff on internet</span> working at <a target="blank" href="https://www.research.ibm.com"
-              class="cursor-work link link-underline white link-job">IBM
-              Research</a>.
+              class="cursor-work link link-underline white link-job">IBM Research</a>.
           </h1>
           <div class="cursor-age cf fade-in fade-in-delay-short">
             <dl class="fl fn-l w-50 dib-l w-auto-l lh-title mr5-l grow">
@@ -42,24 +41,24 @@
 </section>
 
 <script>
-  var avatars = ['images/avatar.png', 'images/avatar-glitch.png']
+  var avatars = ['images/avatar.jpg', 'images/avatar-glitch.jpg']
   var el = document.getElementById('avatar')
   var times = [3000, 150, 3000, 300, 1000, 800]
   var index = 0
 
   function hover(element) {
-    element.setAttribute('src', 'images/avatar-glitch.png');
+    element.setAttribute('src', 'images/avatar-glitch.jpg');
     element.classList.add("animate-glitch");
   }
   function unhover(element) {
-    element.setAttribute('src', 'images/avatar.png');
+    element.setAttribute('src', 'images/avatar.jpg');
     element.classList.remove("animate-glitch");
   }
 
 
   function glitchEffect() {
     var isGlitch = index % 2 === 0
-    var avatar = isGlitch ? 'images/avatar-glitch.png' : 'images/avatar.png'
+    var avatar = isGlitch ? 'images/avatar-glitch.jpg' : 'images/avatar.jpg'
     var timing = times[index % times.length]
 
     setTimeout(function () {
@@ -76,7 +75,7 @@
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
     setTimeout(function () {
-      new Typist(document.getElementById("title"), {
+      new Typist(document.getElementById("job-name"), {
         letterSelectInterval: 80,
         interval: 3500
       })

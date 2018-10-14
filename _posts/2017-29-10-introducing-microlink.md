@@ -2,7 +2,7 @@
 layout: post
 title: Introducing microlink.io
 date: '2017-10-29 11:00:00'
-image: https://kikobeats.com/images/microlink-post.png
+image: https://kikobeats.com/images/microlink-post.jpg
 tags:
 - product
 ---
