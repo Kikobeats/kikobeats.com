@@ -22,6 +22,22 @@
   }
 }
 
+.external-icon {
+  [href^="http"]:not([href*="localhost"]):not([href*="kikobeats"])::after {
+    content: '(external link)';
+    display: inline-block;
+    width: .5em;
+    height: .65em;
+    text-indent: .7em;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: url("/images/external.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+}
+
 .link-dotted {
   text-decoration-style: dotted;
   text-decoration-color: $secondary-color;

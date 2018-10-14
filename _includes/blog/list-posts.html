@@ -1,22 +1,22 @@
-<section class="layout-{{page.layout}} bg-white helvetica near-black pa4-l pa3" >
-	<ul class="list pl0 mauto pv4 ph5-l max-width-large">
+<section class="layout-{{page.layout}} external-icon bg-white helvetica near-black pa4-l pa3">
+  <ul class="list pl0 mauto pv4 ph5-l max-width-large">
     {% for post in site.posts %}
     {% unless post.draft %}
-      {% capture currentdate %}{{post.date | date: "%Y"}}{% endcapture %}
+    {% capture currentdate %}{{post.date | date: "%Y"}}{% endcapture %}
 
-      {% if currentdate != thedate %}
-        <h2 class="f2 bl bw3 f2 pl3 mt6-l mt5">{{ currentdate }}</h2>
-        {% capture thedate %}{{currentdate}}{% endcapture %}
-      {% endif %}
-      <li class="flex flex-row-l flex-column-reverse items-center-l mb2-l mb4">
-        <a class="near-black link link-dotted f3-l f4 lh-copy" href="{{ post.url }}" style="margin-right: auto;">
-          {{ post.title }}
-        </a>
-        <date class="ttu f6 b mr2 tracked light-silver fr-l db">
-          {{ post.date | date: "%B %e, %Y" }}
-        </date>
-      </li>
+    {% if currentdate != thedate %}
+    <h2 class="f2 bl bw3 f2 pl3 mt6-l mt5">{{ currentdate }}</h2>
+    {% capture thedate %}{{currentdate}}{% endcapture %}
+    {% endif %}
+
+    <li class="flex flex-row-l flex-column-reverse items-center-l mb2-l mb4">
+      {% include post-link.html class="near-black link link-dotted f3-l f4 lh-copy" style="margin-right: auto;" post=post %}
+
+      <date class="ttu f6 b mr2 tracked light-silver fr-l db">
+        {{ post.date | date: "%B %e, %Y" }}
+      </date>
+    </li>
     {% endunless %}
     {% endfor %}
-	</ul>
+  </ul>
 </section>

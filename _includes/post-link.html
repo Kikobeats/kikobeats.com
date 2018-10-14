@@ -1,0 +1,5 @@
+<a class="{{ include.class }}" href="{% if include.post.external %}{{ include.post.external }}{% else %}{{ include.post.url }}{% endif %}"
+  target="{% if include.post.external %}_blank{% else %}_self{% endif %}" rel="{% if include.post.external %}noopener noreferrer{% endif %}"
+  style="{{include.style}}">
+  {{ include.post.title }}
+</a>

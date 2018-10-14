@@ -1,28 +1,28 @@
-<section class="bg-white helvetica near-black pa4-l pa3" >
+<section class="bg-white helvetica external-link near-black pa4-l pa3">
   <header class="pv3" id="#writings">
-		<div class="mauto ph4-l max-width-large">
-			<h2 class="m0 f1-l f2 lh-1p125 fw7">Writings</h2>
-		</div>
-	</header>
+    <div class="mauto ph4-l max-width-large">
+      <h2 class="m0 f1-l f2 lh-1p125 fw7">Writings</h2>
+    </div>
+  </header>
 
-	<ul class="list pl0 mauto pv3 ph4-l max-width-large">
+  <ul class="list pl0 mauto pv3 ph4-l max-width-large external-icon">
     {% assign posts = "" | split: "" %}
 
-		{% for post in site.posts %}
-      {% unless post.draft %}
-        {% assign posts = posts | push: post %}
-      {% endunless %}
-		{% endfor %}
+    {% for post in site.posts %}
+    {% unless post.draft %}
+    {% assign posts = posts | push: post %}
+    {% endunless %}
+    {% endfor %}
 
     {% for post in posts limit:5 %}
     <li class="mb4">
       <span class="ttu f6 b mr2 tracked light-silver db">
         {{ post.date | date: "%B %e, %Y" }}
       </span>
-      <a href="{{ post.url }}" class="near-black dim link link-dotted f3 mb3 lh-copy">{{ post.title }}</a>
+      {% include post-link.html class="near-black dim link link-dotted f3 mb3 lh-copy" post=post %}
     </li>
     {% endfor %}
-	</ul>
+  </ul>
 
   <div class="mauto ph4-l pt3 max-width-large">
     <h3 class="f3 near-black">
