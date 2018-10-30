@@ -24,17 +24,20 @@
 
 .external-icon {
   [href^="http"]:not([href*="localhost"]):not([href*="kikobeats"])::after {
-    content: '(external link)';
+    content: '';
     display: inline-block;
-    width: .5em;
-    height: .65em;
+    width: 13px;
+    height: 15px;
     text-indent: .7em;
     white-space: nowrap;
     overflow: hidden;
-    background-image: url("/images/external.svg");
+    background-image: url(/images/external.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+    position: relative;
+    margin-left: 2px;
+    text-align: center;
   }
 }
 
