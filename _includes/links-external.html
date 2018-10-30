@@ -1,0 +1,18 @@
+<script>
+  if (document.addEventListener) document.addEventListener('click', onClick, false);
+  else document.attachEvent('onclick', onClick);
+
+  function onClick(event) {
+    if (event.target.tagName !== 'A') return;
+    var link = event.target
+
+    if (link.hostname != window.location.hostname) {
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+    }
+
+    localStorage.setItem(window.visited.KEY_PREFIX + link.href, true);
+    window.visited()
+  }
+
+</script>

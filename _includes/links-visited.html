@@ -1,0 +1,12 @@
+<script>
+  window.visited = function () {
+    var links = document.links;
+    for (var i = 0; i < links.length; i++) {
+      var link = links[i];
+      var isVisited = localStorage.getItem(window.visited.KEY_PREFIX + link.href)
+      if (isVisited) link.dataset.visited = true
+    }
+  }
+  window.visited.KEY_PREFIX = 'visited-'
+  window.visited()
+</script>

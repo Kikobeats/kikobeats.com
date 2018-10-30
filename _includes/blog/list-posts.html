@@ -1,4 +1,4 @@
-<section class="layout-{{page.layout}} external-icon bg-white helvetica near-black pa4-l pa3">
+<section class="layout-{{page.layout}} external-icon visited bg-white helvetica near-black pa4-l pa3">
   <ul class="list pl0 mauto pv4 ph5-l max-width-large">
     {% for post in site.posts %}
     {% unless post.draft %}
@@ -10,7 +10,8 @@
     {% endif %}
 
     <li class="flex flex-row-l flex-column-reverse items-center-l mb2-l mb4">
-      {% include post-link.html class="near-black link link-dotted f3-l f4 lh-copy" style="margin-right: auto;" post=post %}
+      {% include post-link.html class="near-black link link-dotted f3-l f4 lh-copy" style="margin-right: auto;"
+      post=post %}
 
       <date class="ttu f6 b mr2 tracked light-silver fr-l db">
         {{ post.date | date: "%B %e, %Y" }}
