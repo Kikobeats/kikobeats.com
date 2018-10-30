@@ -5,12 +5,7 @@
   "author": "",
   "keywords": [],
   "devDependencies": {
-    "acho": "latest",
     "browser-sync": "latest",
-    "condense-whitespace": "latest",
-    "gulp": "latest",
-    "gulp-imagemin": "latest",
-    "gulp-util": "latest",
     "husky": "latest",
     "imageoptim-cli": "latest",
     "lint-staged": "latest",
@@ -24,7 +19,7 @@
   },
   "scripts": {
     "build": "NODE_ENV=production JEKYLL_ENV=production bundle jekyll build",
-    "dev": "gulp",
+    "dev": "bundle exec jekyll browser-sync --browser-sync ./node_modules/.bin/browser-sync --port 1337 --watch --incremental --drafts -- --reload-delay 1000 --logLevel debug --reload-debounce 1000 --no-notify",
     "lint": "standard-markdown && standard",
     "precommit": "lint-staged",
     "pretest": "npm run lint",
