@@ -50,13 +50,13 @@ First we need to understand what is a [Weak Reference](https://en.wikipedia.org/
 All things in JavaScript unless primitives types (remember the first lines of this posts) works with references. If you create a new object that reference another object, basically you are linking the reference, not copy the object into another new:
 
 ```js
-> var var1 = {};
-> var var2 = var1;
+var var1 = {}
+var var2 = var1
 
-> var1.foo = 123;
-123
-> var2.foo
-123
+var1.foo = 123
+// => 123
+var2.foo
+// => 123
 ```
 
 Basically a clone method that is very typical in other language doesn't exist natively.
@@ -70,32 +70,32 @@ Because of references being weak, WeakMap keys are not enumerable (i.e. there is
 A little example about the difference of behaivor between `Map` and `WeakMap`:
 
 ```js
-> map = new Map();
-{}
-> var foo = 'bar'
-undefined
-> map.set('foo', foo)
-{}
-> wmap = new WeakMap()
-{}
-> var objt = {foo: 'bar'}
-undefined
-> map.get('foo')
-'bar'
-> foo = 'it was changed'
-'it was changed'
-> map.get('foo');
-'bar'
-> wmap.set(objt, 'bar')
-{}
-> map.get('foo');
-'bar'
-> wmap.get(objt)
-'bar'
-> objt = {foo: 'test'}
-{ foo: 'test' }
-> wmap.get(objt)
-undefined
+var map = new Map()
+// => {}
+var foo = 'bar'
+// => undefined
+map.set('foo', foo)
+// => {}
+var wmap = new WeakMap()
+// => {}
+var obj = { foo: 'bar' }
+// => undefined
+map.get('foo')
+// => 'bar'
+foo = 'it was changed'
+// => 'it was changed'
+map.get('foo')
+// => 'bar'
+wmap.set(obj, 'bar')
+// => {}
+map.get('foo')
+// => 'bar'
+wmap.get(objt)
+// => 'bar'
+obj = { foo: 'test' }
+// => { foo: 'test' }
+wmap.get(obj)
+// => undefined
 ```
 
 ## You need more?

@@ -1,0 +1,11 @@
+- name: git-authors-cli
+  description: Detects project contributors and add it into `package.json`.
+  link: https://github.com/Kikobeats/git-authors-cli
+
+- name: fmt-obj-cli
+  description: Pretty any JavaScript Object in your console.
+  link: https://github.com/Kikobeats/fmt-obj-cli
+
+- name: regexgen-cli
+  description: Generates regular expressions that match a set of strings.
+  link: https://github.com/Kikobeats/regexgen-cli

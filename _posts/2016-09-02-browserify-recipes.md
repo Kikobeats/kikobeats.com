@@ -13,7 +13,7 @@ tags:
 var browserify = require('browserify')
 
 browserify()
-  .require(src.main, {expose: module.shortcut})
+  .require(src.main, { expose: module.shortcut })
   .bundle()
 ```
 
@@ -21,19 +21,19 @@ browserify()
 
 ```js
 var browserify = require('browserify')
-browserify(src.vanilla, {standalone: module.shortcut})
+browserify(src.vanilla, { standalone: module.shortcut })
   .bundle()
 ```
 
 # Applying transpilers (like CoffeeScript, TypeScript, Babel,...)
 
-```js
+```coffee
 var browserify = require('browserify')
 var coffeeify = require('coffeeify')
 
 browserify extensions: ['.coffee', '.js']
   .transform coffeeify, global: true
-  .require(src.main, { expose: module.shortcut})
+  .require(src.main, { expose: module.shortcut })
   .ignore('coffee-script')
   .bundle()
 ```

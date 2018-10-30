@@ -38,13 +38,13 @@ Streams from which data can be read (e.g [`fs.createReadStream()`](https://nodej
 
 ```js
 const toReadableStream = input => (
-	new Readable({
-		read() {
-			this.push(input);
-			this.push(null);
-		}
-	})
-);
+  new Readable({
+    read () {
+      this.push(input)
+      this.push(null)
+    }
+  })
+)
 ```
 
 * Readable streams produce data that can be fed into a writable, transform, or duplex stream by calling `.pipe()`

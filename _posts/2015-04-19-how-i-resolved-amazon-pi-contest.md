@@ -21,13 +21,10 @@ At first I knew nothing about palindromes in the pi decimals. First notice about
 First, I generated a list of 5 numbers (0000 to 9999). I only need five because I can create a palindrome reversing the numbers, for example:
 
 ```js
-function reverseNumber(number) {
-  return number.split('').reverse().join('');
-}
-
-var number = '12345';
-var reverseNumber = reverse('12345'); # 54321
-var palindrome = number + reverseNumber # 1234554321
+const reverseNumber = (number) => number.split('').reverse().join('')
+const number = '12345'
+const reversedNumber = reverse('12345') // => 54321
+const palindrome = number + reversedNumber // => 1234554321
 ```
 
 Yes, I decided to use JavaScript.

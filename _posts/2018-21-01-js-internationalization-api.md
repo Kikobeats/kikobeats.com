@@ -20,7 +20,7 @@ The method [Object.prototype.toLocaleString()](https://developer.mozilla.org/es/
 First time I used it was on [windtoday](https://windtoday.co) app, where I created a helper for easily format a timestamp based on a locale
 
 ```js
-const getFormatDate =  (timestamp, lang = 'en-us') =>
+const getFormatDate = (timestamp, lang = 'en-us') =>
   new Date(timestamp).toLocaleString(lang, {
     month: 'short',
     day: 'numeric',
@@ -31,7 +31,7 @@ const getFormatDate =  (timestamp, lang = 'en-us') =>
 In an international scenario a good approach could be get the language from the browser settings:
 
 ```js
-const locale = navigator.language || navigator.userLanguage; 
+const locale = navigator.language || navigator.userLanguage
 ```
 
 It's useful for formatting money as well:

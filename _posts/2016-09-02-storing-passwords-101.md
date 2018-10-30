@@ -73,16 +73,16 @@ and _where_:
 In the case of _bcrypt_, it explore _A salt per each password_ and _In the same database than password_:
 
 ```js
-var hash = bcrypt.hashSync(myPlaintextPassword, saltRounds);
-bcrypt.compareSync(myPlaintextPassword, hash); // true
+var hash = bcrypt.hashSync(myPlaintextPassword, saltRounds)
+bcrypt.compareSync(myPlaintextPassword, hash) // true
 ```
 
 Let's see how looks the hash has been generated:
 
 ```js
-> bcrypt.genSaltSync(10) // $2a$10$Yq0.l.cOsImF1s1kJL2IOe
-> bcrypt.genSaltSync(10) // $2a$10$Rtqb0Kjma5W93bDDJRUdO.
-> bcrypt.genSaltSync(11) // $2a$11$/7YSZ7uZH0ouTTDl4BAGve
+bcrypt.genSaltSync(10) // $2a$10$Yq0.l.cOsImF1s1kJL2IOe
+bcrypt.genSaltSync(10) // $2a$10$Rtqb0Kjma5W93bDDJRUdO.
+bcrypt.genSaltSync(11) // $2a$11$/7YSZ7uZH0ouTTDl4BAGve
 ```
 
 The salt is part of the final hash.

@@ -26,23 +26,23 @@ Check the follow example:
 
 ```js
 // set function to be called after 1 second
-setTimeout(function() {
-   console.log('Timeout ran at ' + new Date().toTimeString());
-}, 1000);
+setTimeout(function () {
+  console.log('Timeout ran at ' + new Date().toTimeString())
+}, 1000)
 
 // store the start time
-var start = new Date();
-console.log('Enter loop at: '+start.toTimeString());
+var start = new Date()
+console.log('Enter loop at: ' + start.toTimeString())
 
 // run a loop for 4 seconds
-var i = 0;
+var i = 0
 // increment i while (current time < start time + 4000 ms)
-while(new Date().getTime() < start.getTime() + 4000) { // SYNC!
-   i++;
+while (new Date().getTime() < start.getTime() + 4000) { // SYNC!
+  i++
 }
-console.log('Exit loop at: '
-            +new Date().toTimeString()
-            +'. Ran '+i+' iterations.');
+console.log('Exit loop at: ' +
+            new Date().toTimeString() +
+            '. Ran ' + i + ' iterations.')
 ```
 
 In this case the while loop is synchronous, it is blocking the asynchronous code. The explanation about this is here:
@@ -53,7 +53,7 @@ In this case the while loop is synchronous, it is blocking the asynchronous code
 
 If event loop works as a queue, you can put event in the queue with priority. For do it you can use [process.nextTick](https://nodejs.org/api/process.html#process_process_nexttick_callback). The definition of this method is:
 
-```js
+```
 process.nextTick(callback {Function})
 
 Once the current event loop turn runs to completion, call the callback function.
@@ -63,7 +63,7 @@ Large CPU tasks normally are loops. You can convert your synchronous loops in mo
 
 ```js
 for (var i = 0; i < 1024 * 1024; i++) {
-  process.nextTick(function () { Math.sqrt(i) } )
+  process.nextTick(function () { Math.sqrt(i) })
 }
 ```
 
@@ -73,25 +73,24 @@ In the NodeJS documentation about `process.nextTick` you can find more examples 
 
 ```js
 // WARNING!  DO NOT USE!  BAD UNSAFE HAZARD!
-function maybeSync(arg, cb) {
-
+function maybeSync (arg, cb) {
   // this piece of code is exec synchronous.
   // Notes that it follows a asynchronous interface
-  // (you need to provide a callback) BUT 
+  // (you need to provide a callback) BUT
   // the operation is not deferring in the time.
   if (arg) {
-    cb();
-    return;
+    cb()
+    return
   }
 
   // this operation is definitely asynchronous.
-  fs.stat('file', cb);
+  fs.stat('file', cb)
 }
 ```
 
 In this example, `maybeSync` function can be a asynchronous and synchronous behaviours, depend if you provide the `arg` parameter. The example continues:
 
-```js
+```
 This API is hazardous. If you do this
 
 maybeSync(true, function() {
@@ -104,15 +103,15 @@ bar();
 *then it's not clear whether foo() or bar() will be called first. This approach is much better:*
 
 ```js
-function definitelyAsync(arg, cb) {
+function definitelyAsync (arg, cb) {
   if (arg) {
     // You want to finish this stack, but your operation
     // don't need more time, so wrap it.
-    process.nextTick(cb);
-    return;
+    process.nextTick(cb)
+    return
   }
 
-  fs.stat('file', cb);
+  fs.stat('file', cb)
 }
 ``` 
 
@@ -127,20 +126,20 @@ More precisely, `process.nextTick` defers the function **until a completely new 
 The next example is a good example about how to use `process.nextTick` for interleaving CPU usage and events in the event loop:
 
 ```js
-var http = require('http');
+var http = require('http')
 
-function compute() {
-    // performs complicated calculations continuously
-    // ...
-    process.nextTick(compute);
+function compute () {
+  // performs complicated calculations continuously
+  // ...
+  process.nextTick(compute)
 }
 
-http.createServer(function(req, res) {
-     res.writeHead(200, {'Content-Type': 'text/plain'});
-     res.end('Hello World');
-}).listen(5000, '127.0.0.1');
+http.createServer(function (req, res) {
+  res.writeHead(200, { 'Content-Type': 'text/plain' })
+  res.end('Hello World')
+}).listen(5000, '127.0.0.1')
 
-compute();
+compute()
 ```
 
 We are enqueue a the `compute` function at the end of the event loop of each event loop iteration. At the same time we are dispatching other http events and all in the main node thread.
@@ -150,23 +149,23 @@ I think that in the example another important thing is present: exists a differe
 For example, this an example of fake async function:
 
 ```js
-function asyncFake(data, callback) {        
-    if(data === 'foo') callback(true);
-    else callback(false);
+function asyncFake (data, callback) {
+  if (data === 'foo') callback(true)
+  else callback(false)
 }
 
-asyncFake('bar', function(result) {
-    // this callback is actually called synchronously!
-});
+asyncFake('bar', function (result) {
+  // this callback is actually called synchronously!
+})
 ```
 
 Another example:
 
 ```js
-var client = net.connect(8124, function() { 
-    console.log('client connected');
-    client.write('world!\r\n');
-});
+var client = net.connect(8124, function () {
+  console.log('client connected')
+  client.write('world!\r\n')
+})
 ```
 
 *In the above case, if for some reason, net.connect() were to become synchronous, the callback would be called immediately, and hence the client variable will not be initialized when the it's accessed by the callback to write to the client!*
@@ -174,10 +173,10 @@ var client = net.connect(8124, function() {
 *We can correct asyncFake() to be always asynchronous this way:* 
 
 ```js
-function asyncReal(data, callback) {
-    process.nextTick(function() {
-        callback(data === 'foo');       
-    });
+function asyncReal (data, callback) {
+  process.nextTick(function () {
+    callback(data === 'foo')
+  })
 }
 ```
 
@@ -187,7 +186,7 @@ function asyncReal(data, callback) {
 
 From the latest versions of node, the core of NodeJS is providing a function that is very similar to `process.nextTick` and is called `setImmediate`. The definition of the method is:
 
-```js
+```
 setImmediate(callback[, arg][, ...])#[link]
 
 To schedule the "immediate" execution of callback after I/O events callbacks and before setTimeout and setInterval . Returns an immediateObject for possible use with clearImmediate(). Optionally you can also pass arguments to the callback.
@@ -209,12 +208,12 @@ Exists a special case where `setImmediate` is better than `process.nextTick`, th
 Another important point about it that I discover recently is that the interface of `process.nextTick` is different depend of your version of node. For example, if you see node `0.12.x` documentation, the interface is simply:
 
 ```js
-process.nextTick(callback);
+process.nextTick(callback)
 ```
 
 But if you check Node `5.x` documentation, the new interface is more `setImmediate` like:
 
-```js
+```
 process.nextTick(callback[, arg][, ...])
 ```
 

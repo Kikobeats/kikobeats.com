@@ -1,16 +1,26 @@
 {
   "name": "kikobeats.com",
-  "description": "",
+  "description": "ma website yo",
   "version": "1.0.0",
-  "author": "",
-  "keywords": [],
+  "author": {
+    "email": "josefrancisco.verdu@gmail.com",
+    "name": "Kiko Beats",
+    "url": "https://kikobeats.com"
+  },
   "devDependencies": {
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
     "browser-sync": "latest",
+    "conventional-github-releaser": "latest",
+    "finepack": "latest",
+    "git-authors-cli": "latest",
     "husky": "latest",
     "imageoptim-cli": "latest",
     "lint-staged": "latest",
+    "npm-check-updates": "latest",
     "standard": "latest",
     "standard-markdown": "latest",
+    "standard-version": "latest",
     "svgo": "latest",
     "tachyons-sass": "latest"
   },
@@ -21,33 +31,63 @@
     "build": "NODE_ENV=production JEKYLL_ENV=production bundle jekyll build",
     "dev": "bundle exec jekyll browser-sync --browser-sync ./node_modules/.bin/browser-sync --port 1337 --watch --incremental --drafts -- --reload-delay 1000 --logLevel debug --reload-debounce 1000 --no-notify",
     "lint": "standard-markdown && standard",
+    "postrelease": "npm run release:tags && npm run release:github",
     "precommit": "lint-staged",
+    "prerelease": "npm run update:check && git-authors-cli",
     "pretest": "npm run lint",
-    "test": "exit 0"
+    "release": "git add package.json && standard-version -a",
+    "release:github": "conventional-github-releaser -p angular",
+    "release:tags": "git push --follow-tags origin HEAD:master",
+    "test": "exit 0",
+    "update": "ncu -a",
+    "update:check": "ncu -- --error-level 2"
   },
   "private": true,
   "license": "MIT",
-  "lint-staged": {
-    "package.json": [
-      "finepack",
-      "git add"
-    ],
-    "*.js": [
-      "prettier-standard",
-      "git add"
-    ],
-    "*.md": [
-      "standard-markdown",
-      "git add"
-    ],
-    "*.{png,jpeg,jpg,gif}": [
-      "imageoptim --imagealpha",
-      "git add"
-    ],
-    "*.svg": [
-      "svgo --pretty",
-      "git add"
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "package.json": [
+        "finepack",
+        "git add"
+      ],
+      "*.js": [
+        "prettier-standard",
+        "git add"
+      ],
+      "*.md": [
+        "standard-markdown",
+        "git add"
+      ],
+      "*.{png,jpeg,jpg,gif}": [
+        "imageoptim --imagealpha",
+        "git add"
+      ],
+      "*.svg": [
+        "svgo --pretty",
+        "git add"
+      ]
+    }
+  },
+  "standard": {
+    "ignore": [
+      "js/prism.js"
+    ]
+  },
+  "standard-version": {
+    "scripts": {
+      "prechangelog": "git-authors-cli"
+    }
   },
   "urlint": {
     "url": "https://kikobeats.com/sitemap.xml",

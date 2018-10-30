@@ -9,8 +9,8 @@ tags:
 
 ```javascript
 // Here's the parameter!
-function greet(name) {
- console.log('Hello', name)
+function greet (name) {
+  console.log('Hello', name)
 }
 
 // Here's the argument

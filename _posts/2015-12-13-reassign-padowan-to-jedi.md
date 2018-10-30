@@ -10,10 +10,10 @@ tags:
 # Smelly Code
 
 ```javascript
-data = this.appendAnalyticsData(data);
-data = this.appendSubmissionData(data);
-data = this.appendAdditionalInputs(data);
-data = this.pruneObject(data);
+data = this.appendAnalyticsData(data)
+data = this.appendSubmissionData(data)
+data = this.appendAdditionalInputs(data)
+data = this.pruneObject(data)
 ```
 
 # â†“
@@ -27,7 +27,7 @@ data = this.pruneObject(
       this.appendAnalyticsData(data)
     )
   )
-);
+)
 ```
 
 # â†“
@@ -40,11 +40,11 @@ var funcs = [
   this.appendSubmissionData,
   this.appendAdditionalInputs,
   this.pruneObject
-];
+]
 
-funcs.forEach(function(func) {
-  data = func(data);
-});
+funcs.forEach(function (func) {
+  data = func(data)
+})
 ```
 
 # â†“
@@ -57,11 +57,11 @@ var funcs = [
   this.appendSubmissionData,
   this.appendAdditionalInputs,
   this.pruneObject
-];
+]
 
-data = funcs.reduce(function(memo, func) {
-  return func(memo);
-}, data);
+data = funcs.reduce(function (memo, func) {
+  return func(memo)
+}, data)
 ```
 
 # â†“
@@ -74,7 +74,7 @@ data = _.flow(
   this.appendSubmissionData,
   this.appendAdditionalInputs,
   this.pruneObject
-)(data);
+)(data)
 ```
 
 # Bibliography
