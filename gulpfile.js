@@ -4,7 +4,6 @@ const condenseWhitespace = require('condense-whitespace')
 const browserSync = require('browser-sync').create()
 const imagemin = require('gulp-imagemin')
 const { spawn } = require('child_process')
-const gutil = require('gulp-util')
 const gulp = require('gulp')
 
 const log = require('acho')({

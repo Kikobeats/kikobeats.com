@@ -18,7 +18,6 @@
     "git-authors-cli": "latest",
     "gulp": "latest",
     "gulp-imagemin": "latest",
-    "gulp-util": "latest",
     "husky": "latest",
     "imageoptim-cli": "latest",
     "lint-staged": "latest",

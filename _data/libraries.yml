@@ -5,7 +5,7 @@ featured:
     link: https://browserless.js.org
     image: /images/browserless.jpg
 
-  - name: Acho
+  - name: acho
     description: The &lt;Hackable/&gt; Log.
     link: http://acho.js.org
     image: /images/acho.jpg
@@ -17,15 +17,15 @@ featured:
 
 normal:
 
-  - name: Bumped
+  - name: bumped
     description: Make easy releasing software.
     link: https://bumped.github.io
 
-  - name: Osom
+  - name: osom
     description: An Awesome Object Data Modeling.
     link: http://osom.js.org
 
-  - name: Metascraper
+  - name: metascraper
     description: Get unified metadata from any website.
     link: http://metascraper.js.org
 
