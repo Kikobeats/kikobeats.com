@@ -1,7 +1,7 @@
 {
   "name": "kikobeats.com",
   "description": "ma website yo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
     "name": "Kiko Beats",
@@ -99,5 +99,8 @@
     "whitelist": [
       "https://www.linkedin.com/in/kikobeats"
     ]
-  }
+  },
+  "contributors": [
+    "Travis CI <travis@travis-ci.org>"
+  ]
 }
