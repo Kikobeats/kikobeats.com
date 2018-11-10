@@ -16,8 +16,6 @@ data = this.appendAdditionalInputs(data)
 data = this.pruneObject(data)
 ```
 
-# â†“
-
 # Nested Functions
 
 ```javascript
@@ -29,8 +27,6 @@ data = this.pruneObject(
   )
 )
 ```
-
-# â†“
 
 # forEach
 
@@ -47,8 +43,6 @@ funcs.forEach(function (func) {
 })
 ```
 
-# â†“
-
 # Reduce
 
 ```javascript
@@ -63,8 +57,6 @@ data = funcs.reduce(function (memo, func) {
   return func(memo)
 }, data)
 ```
-
-# â†“
 
 # Flow
 
