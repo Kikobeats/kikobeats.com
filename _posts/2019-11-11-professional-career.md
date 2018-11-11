@@ -2,7 +2,7 @@
 layout: post
 title: Professional Career
 date: '2018-11-11'
-image: https://images.unsplash.com/photo-1520588831435-1529e6d7cf5e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fd3d7c35892bd8c7c9e757865a764d4c&auto=format&fit=crop&w=800&q=60
+image: https://i.imgur.com/5IoYKTD.jpg
 ---
 
 ## Job Title Is A Lie
