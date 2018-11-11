@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Design for failing
+title: Design for Failing
 date: '2018-01-15'
 image: https://s3.envato.com/files/236735101/590.jpg
 tags:

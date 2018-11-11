@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Writing documentation
+title: Writing Documentation
 date: '2018-09-12'
 image: https://i.imgur.com/zQ9xjyx.jpg
 tags:

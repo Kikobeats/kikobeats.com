@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is random
+title: What Is Random
 date: '2017-10-5 16:00:00'
 image: https://i.imgur.com/C7s8inu.jpg
 tags:

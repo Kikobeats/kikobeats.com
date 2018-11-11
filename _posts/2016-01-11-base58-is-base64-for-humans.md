@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Base58 is Base64 for humans
+title: Base58 Is Base64 for Humans
 image: https://i.imgur.com/TXWfO18.jpg
 date: '2016-01-11 23:05:45'
 tags:

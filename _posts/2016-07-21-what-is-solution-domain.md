@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is solution domain
+title: What Is Solution Domain
 image: https://i.imgur.com/WuMtr8m.jpg
 date: '2016-07-21 10:03:20'
 tags:
