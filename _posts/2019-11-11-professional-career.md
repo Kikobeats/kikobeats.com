@@ -7,7 +7,7 @@ image: https://i.imgur.com/5IoYKTD.jpg
 
 ## Jobs Titles Are a Lie
 
-The job title is just something that resumes your professional profile.
+A job title is just something that resumes your professional profile.
 
 > Landing Page Engineer sounds fine to me
 <cite>Kiko Beats</cite>
