@@ -31,6 +31,8 @@ tags:
 
 [](https://medium.com/ux-in-motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc){:.card-preview}
 
+[](https://medium.com/google-design/motion-design-doesnt-have-to-be-hard-33089196e6c2){:.card-preview}
+
 - Transitions should be clear, simple, and coherent. **Quick**. They should avoid doing too much at once.
 
 <video src="https://i.imgur.com/mU7bs46.mp4" autoplay="" loop=""></video>
