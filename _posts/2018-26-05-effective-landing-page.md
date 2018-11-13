@@ -136,7 +136,6 @@ Instead, I prefer show real feedback for real people.
 
 ### User Interaction
 
-- [Design Tips](https://twitter.com/i/moments/994601867987619840) – A collection of design tips by refactoringui.com.
 - [GoodUI.org](https://goodui.org/) – Tested A/B Patterns to ouse in your site.
 - [Common webpage design mistakes](https://uxplanet.org/common-webpage-design-mistakes-59eed9831bd7) by UX Planet.
 - [Motion design doesn’t have to be hard](https://medium.com/google-design/motion-design-doesnt-have-to-be-hard-33089196e6c2) by Google Design.
