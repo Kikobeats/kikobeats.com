@@ -5,7 +5,7 @@ date: '2018-11-11'
 image: https://i.imgur.com/5IoYKTD.jpg
 ---
 
-## Job Title Is A Lie
+## Jobs Titles Are a Lie
 
 The job title is just something that resumes your professional profile.
 
