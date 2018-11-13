@@ -5,7 +5,7 @@ date: '2018-05-26'
 image: https://i.imgur.com/SJQMGQI.jpg
 ---
 
-## What does effective mean
+## What Does Effective Mean
 
 Any landing page for a digital product should solve the following goals:
 
@@ -15,7 +15,7 @@ Any landing page for a digital product should solve the following goals:
 
 My experience building them it's difficult to achieve it because is extremely easy lose the objectives.
 
-## Content is the key
+## Content Is the Key
 
 ![](https://i.imgur.com/qZ8XJUE.png)
 <figcaption>If you feel <a href="https://stripe.com/es/billing">Stripe</a> is beauty it's because the content matches with the design perfectly.</figcaption>
@@ -26,7 +26,7 @@ The design is an important factor on landing pages but not the most important.
 
 If you need to do just one thing well, **improve your landing page content**. Be easy to understand what you want to transmit.
 
-## Priorize the information
+## Priorize the Information
 
 ![](https://i.imgur.com/5knUUbb.png)
 <figcaption><a href="https://scrumpy.io/">scrumpy.io</a> main hero resume all the product.</figcaption>
@@ -49,7 +49,7 @@ Find your clap and then you can start building the rest of the website, explaini
 
 The order of question that you need to resolve are **what** > **why** > **how**.
 
-## Just one Call to Action
+## Just One Call to Action
 
 Call to Action (*CTA*) is a marketing term used for request an user interaction with the website, normally related with the path you want user follows, like subscribe to a newsletter, see pricing table, etc.
 
@@ -69,7 +69,7 @@ Limit yourself in just once CTA per page. You can repeat it along the page, but 
 
 If you need to use a different CTA, then create a different page for that.
 
-## Explain your product showing it
+## Explain Your Product Showing It
 
 It looks obvious, but most of the landing page is built from a marketing strategy perspective, using assets (like icons) that actually are not part of the product.
 
@@ -86,7 +86,7 @@ A good parttern to follow here is use one column pattern to explain big function
 ![](https://i.imgur.com/i6OawSv.png)
 <figcaption>Comibining one column and multi column for explaining product features at <a href="https://scrumpy.io/">scrumpy.io</a>.</figcaption>
 
-## Adding credibility
+## Adding Credibility
 
 Also known as testimonial: It is usually a section where you show your main clients or opinions about your product.
 
@@ -99,9 +99,9 @@ Instead, I prefer show real feedback for real people.
 ![](https://i.imgur.com/98QkIS0.png)
 <figcaption>Showing feedback + promoting his Twitter account. Extremely well played by <a href="https://culturedcode.com/things/whats-new/">Things</a>.</figcaption>
 
-## Bilbiography
+## Bibliography
 
-### Focus in first impression
+### Focus in First Impression
 
 - [authenticweather.com](http://authenticweather.com).
 - [crunchet.com](https://www.crunchet.com).
@@ -111,7 +111,7 @@ Instead, I prefer show real feedback for real people.
 - [imgix.com](https://www.imgix.com).
 - [algolia.com](https://www.algolia.com/).
 
-### Focus on structure
+### Focus on Structure
 
 - [airtable.com](https://airtable.com).
 - [netlify.com](https://www.netlify.com/features).
