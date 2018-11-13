@@ -10,6 +10,7 @@ tags:
 ## Color
 
 [](https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886){:.card-preview data-image="logo"}
+[](https://refactoringui.com/previews/building-your-color-palette/){:.card-preview data-image="logo"}
 
 -  Use **color** and **weight** to create hierarchy instead of size.
 
