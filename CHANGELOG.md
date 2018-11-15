@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.6"></a>
+## [1.1.6](https://github.com/Kikobeats/kikobeats.com/compare/v1.1.5...v1.1.6) (2018-11-15)
+
+
+### Bug Fixes
+
+* remove unnecessary style ([3aa4e4c](https://github.com/Kikobeats/kikobeats.com/commit/3aa4e4c))
+
+
+
 <a name="1.1.5"></a>
 ## [1.1.5](https://github.com/Kikobeats/kikobeats.com/compare/v1.1.3...v1.1.5) (2018-11-13)
 
