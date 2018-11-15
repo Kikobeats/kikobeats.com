@@ -3,6 +3,13 @@
   color: $white;
 }
 
+// normal text is .lh-copy ~ 1.8
+// ensure title are ~ 1.25
+// credits: https://twitter.com/steveschoger/status/968519052800024577
+h1, h2, h3, h4, h5, h6 {
+  @extend .lh-title;
+}
+
 .anchorjs-link {
   color: rgba($near-black, .35);
 }
@@ -159,16 +166,5 @@
 
   a[data-visited]::after {
     text-decoration-color: $secondary-color;
-  }
-}
-
-/* mobile */
-
-@media screen and (max-width: 30em) {
-  #title {
-    &::after {
-      height: 28px;
-      top: 5px;
-    }
   }
 }

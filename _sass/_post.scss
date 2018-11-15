@@ -1,12 +1,4 @@
 .layout-post {
-  h2 {
-    margin-top: 5rem;
-  }
-
-  h3 {
-    margin-top: 4rem;
-  }
-
   p,
   ul,
   table {
@@ -142,13 +134,5 @@
     font-size: 90%;
     text-align: left;
     line-height: 1.6;
-  }
-}
-
-.layout-post,
-.layout-default {
-  h1:first-child,
-  h2:first-child, {
-    margin-top: 0;
   }
 }

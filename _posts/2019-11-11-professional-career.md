@@ -83,6 +83,6 @@ The benefit from the move from **Implementers** to **Finders** is about **autono
 ## Bibliography
 
 - [The Next Career Step for Senior Software Engineers](https://codewithoutrules.com/2018/10/10/beyond-senior-software-engineer/).
-- [My COmplete Salary History as a Software Engineer](https://humanwhocodes.com/blog/2018/10/my-somewhat-complete-salary-history-software-engineer).
+- [My Complete Salary History as a Software Engineer](https://humanwhocodes.com/blog/2018/10/my-somewhat-complete-salary-history-software-engineer).
 - [Salary Negotiation: Make More Money, Be More Valued](https://www.kalzumeus.com/2012/01/23/salary-negotiation/).
 - [Don't Call Yourself A Programmer, And Other Career Advice](https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/).
