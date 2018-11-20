@@ -3,11 +3,15 @@ language: node_js
 node_js:
   - lts/*
   - node
+ 
+script:
+  - npx urlint
 
 stages:
   - Test
   - name: Release
     if: commit_message !~ /(release|no-release)/
+
 
 jobs:
   include:
