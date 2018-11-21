@@ -42,10 +42,13 @@ The **4.5:1** contrast ratio is intended to address the loss of contrast that us
 - **AA Large**: Greater than `3`.
 - **AAA Large**: Greater than `4.5`.
 
-
-
 ## Libraries
 
 - [colorable](https://colorable.jxnblk.com/) – Color combination contrast tester.
 - [hello-color](http://jxnblk.com/hello-color/) – Functional color palette generator.
 - [randoma11y](https://randoma11y.com/#/explore) – Vote on random a11y color combinations.
+
+## Apps
+
+- [contrast](https://usecontrast.com/) – A macOS app for quick access to WCAG color contrast ratios.
+- [contraste](https://contrasteapp.com/) – Simple & free app for checking the accessibility of text.
