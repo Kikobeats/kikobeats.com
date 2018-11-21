@@ -24,7 +24,9 @@ In visual perception of the real world, contrast is determined by the difference
 
 **Contrast ratio** refers to how bright or dark colors appear on screens.
 
-**WCAG 2.0** guidelines dictate a minimum contrast ratio of **4.5:1** for the visual presentation of both text and images embedded as text.
+**WCAG 2.0** guidelines dictate a minimum contrast ratio of **4.5:1** that is equivalents to **AA** level.
+
+We found three defined levels for the visual presentation of both text and images embedded as text: **A** (minimum), **AA** (medium) and **AAA** (high). Level **AA** is considered "standard".
 
 [](https://www.boia.org/blog/how-contrast-ratio-pertains-to-website-accessibility){:.card-preview}
 
@@ -39,6 +41,8 @@ The **4.5:1** contrast ratio is intended to address the loss of contrast that us
 
 - **AA Large**: Greater than `3`.
 - **AAA Large**: Greater than `4.5`.
+
+
 
 ## Libraries
 
