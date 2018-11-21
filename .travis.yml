@@ -5,7 +5,7 @@ node_js:
   - node
  
 script:
-  - npx urlint
+  - npx urlint/urlint
 
 stages:
   - Test
