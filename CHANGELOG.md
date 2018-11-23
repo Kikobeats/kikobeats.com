@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.8"></a>
+## [1.1.8](https://github.com/Kikobeats/kikobeats.com/compare/v1.1.7...v1.1.8) (2018-11-23)
+
+
+### Bug Fixes
+
+* update microlink CDN ([6e66b97](https://github.com/Kikobeats/kikobeats.com/commit/6e66b97))
+
+
+
 <a name="1.1.7"></a>
 ## [1.1.7](https://github.com/Kikobeats/kikobeats.com/compare/v1.1.6...v1.1.7) (2018-11-21)
 
