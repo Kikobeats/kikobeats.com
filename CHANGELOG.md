@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.9"></a>
+## [1.1.9](https://github.com/Kikobeats/kikobeats.com/compare/v1.1.8...v1.1.9) (2018-11-26)
+
+
+### Bug Fixes
+
+* Disable typist effect  ([9a26489](https://github.com/Kikobeats/kikobeats.com/commit/9a26489)), closes [#10](https://github.com/Kikobeats/kikobeats.com/issues/10)
+
+
+
 <a name="1.1.8"></a>
 ## [1.1.8](https://github.com/Kikobeats/kikobeats.com/compare/v1.1.7...v1.1.8) (2018-11-23)
 
