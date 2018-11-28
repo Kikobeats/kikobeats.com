@@ -1,7 +1,7 @@
 {
   "name": "kikobeats.com",
   "description": "ma website yo",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
     "name": "Kiko Beats",
@@ -101,6 +101,6 @@
     ]
   },
   "contributors": [
-    "Travis CI <travis@travis-ci.org>"
+    "Anand Dyavanapalli <adyavanapalli@gmail.com>"
   ]
 }
