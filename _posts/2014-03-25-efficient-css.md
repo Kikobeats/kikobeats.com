@@ -20,12 +20,13 @@ tags:
 * Attribute, e.g. [type="text"]
 * Pseudo-classes/-elements, e.g. a:hover
 
+### Tools
+
+* [Specificity Calculator](https://specificity.keegan.st/)
+* [CSS Diner](http://flukeout.github.io/#)
 
 ### Resources
-* [Writing efficient CSS selectors
-](http://csswizardry.com/2011/09/writing-efficient-css-selectors/)
+
+* [Writing efficient CSS selectors](http://csswizardry.com/2011/09/writing-efficient-css-selectors/)
 * [Efficiently Rendering CSS by CSSTricks](http://css-tricks.com/efficiently-rendering-css/)
 * [Writing efficient CSS @ Mozilla developer](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS)
-
-### Bonus Track!
-* [CSS Diner](http://flukeout.github.io/#)
