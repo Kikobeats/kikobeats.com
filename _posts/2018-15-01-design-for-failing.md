@@ -7,6 +7,9 @@ tags:
 - product
 ---
 
+> An error should make it obvious how to fix the problem
+<a href='https://mobile.twitter.com/yifan_xing_e/status/1042294371763146752/'><cite>@runarorama</cite></a>
+
 Errors are frustating.
 
 But in the tech culture, the errors are everywhere all time.

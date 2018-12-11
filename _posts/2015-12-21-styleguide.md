@@ -57,6 +57,20 @@ Source code:
 <cite>Mark Twain</cite>
 ```
 
+#### **Quote with Link**
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+
+> Whenever you find yourself on the side of the majority, it is time to pause and reflect
+<a href='#'><cite>Mark Twain</cite></a>
+
+Source code:
+
+```
+> Whenever you find yourself on the side of the majority, it is time to pause and reflect 
+<a href='#'><cite>Mark Twain</cite></a>
+```
+
 It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 #### **Emoji**
