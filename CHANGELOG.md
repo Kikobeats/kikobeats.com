@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.14"></a>
+## [1.1.14](https://github.com/Kikobeats/kikobeats.com/compare/v1.1.13...v1.1.14) (2018-12-11)
+
+
+
 <a name="1.1.13"></a>
 ## [1.1.13](https://github.com/Kikobeats/kikobeats.com/compare/v1.1.12...v1.1.13) (2018-12-11)
 
