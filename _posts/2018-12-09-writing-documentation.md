@@ -7,6 +7,9 @@ tags:
 - design
 ---  
 
+> You have to sell what it is you're building in your documentation. It's not just describing what it is and how to use it. It's about telling interesting stories. 
+<cite>Rico Sta. Cruz</cite>
+
 ## Highlights
 
 - **Write like a human, not a machine**: Don’t be afraid to be funny, creative, and a bit silly.
