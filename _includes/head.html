@@ -10,21 +10,23 @@
 <meta name="og:logo" content="{{ site.logo }}" />
 
 {% if page.layout == 'post' %}
-<meta name="twitter:label1" value="Category" />
-<meta name="twitter:data1" value="{{ page.tags | join: ', ' | capitalize }}" />
-<meta name="twitter:label2" value="Reading time" />
+<meta name="twitter:label1" value="Reading time" />
 {% assign words = content | number_of_words %}
 {% if words
-< 360 %} <meta name="twitter:data2" value="1 min read" />
+< 360 %} <meta name="twitter:data1" value="1 min read" />
 {% else %}
-<meta name="twitter:data2" value="{{ words | divided_by:180 }} min read" />
+<meta name="twitter:data1" value="{{ words | divided_by:180 }} min read" />
 {% endif %}
 
+<meta name="twitter:label2" value="Twitter" />
+<meta name="twitter:data2" value="twitter.com/Kikobeats" />
+
 {% else %}
-<meta name="twitter:label1" value="Twitter" />
-<meta name="twitter:data1" value="twitter.com/Kikobeats" />
-<meta name="twitter:label2" value="GitHub" />
-<meta name="twitter:data2" value="github.com/Kikobeats" />
+<meta name="twitter:label1" value="GitHub" />
+<meta name="twitter:data1" value="github.com/Kikobeats" />
+<meta name="twitter:label2" value="Twitter" />
+<meta name="twitter:data2" value="twitter.com/Kikobeats" />
+
 {% endif %}
 
 {% seo %}
