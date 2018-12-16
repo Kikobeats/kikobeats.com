@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.15"></a>
+## [1.1.15](https://github.com/Kikobeats/kikobeats.com/compare/v1.1.14...v1.1.15) (2018-12-16)
+
+
+### Bug Fixes
+
+* setup better meta for logo ([684037f](https://github.com/Kikobeats/kikobeats.com/commit/684037f))
+
+
+
 <a name="1.1.14"></a>
 ## [1.1.14](https://github.com/Kikobeats/kikobeats.com/compare/v1.1.13...v1.1.14) (2018-12-11)
 
