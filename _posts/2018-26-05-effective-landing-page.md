@@ -24,7 +24,7 @@ We tend to focus just on design as differential factor, where a good landing pag
 
 The design is an important factor on landing pages but not the most important.
 
-If you need to do just one thing well, **improve your landing page content**. Be easy to understand what you want to transmit.
+If you need to do just one thing well, [**improve your landing page content**](https://stripe.com/atlas/guides/landing-page-copy). Be easy to understand what you want to transmit.
 
 ## Priorize the Information
 
@@ -142,4 +142,5 @@ Instead, I prefer show real feedback for real people.
 
 ### Copywriting
 
+- [Writing copy for landing pages](https://stripe.com/atlas/guides/landing-page-copy).
 - [Landing Page Copywriting for Conversion](http://thelandingpagecourse.com/landing-page-copywriting-for-conversion).
