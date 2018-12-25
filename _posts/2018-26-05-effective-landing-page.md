@@ -10,10 +10,10 @@ image: https://i.imgur.com/SJQMGQI.jpg
 Any landing page for a digital product should solve the following goals:
 
 - People understand your value proposition.
-- The website transmit the message clearly.
-- It helps you creating new customers.
+- The website transmits the message clearly.
+- It helps you create new customers.
 
-My experience building them it's difficult to achieve it because is extremely easy lose the objectives.
+My experience building them it's difficult to achieve it because is extremely easy to lose the objectives.
 
 ## Content Is the Key
 
