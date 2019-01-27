@@ -12,6 +12,8 @@ tags:
 
 ## Highlights
 
+[](https://github.com/jamiebuilds/documentation-handbook){:.card-preview}
+
 - **Write like a human, not a machine**: Don’t be afraid to be funny, creative, and a bit silly.
 - **Write as simply as possible**: Simple words, short sentences, bulleted lists and/or numbered lists, concrete examples. 
 - **Make easy to contribute**: Provide a simple way to anybody extend the documentation.
