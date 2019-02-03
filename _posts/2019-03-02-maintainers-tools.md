@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooling for Maintainers
+title: Tools for Maintainers
 date: '2019-02-03'
 image: https://i.imgur.com/nGcvLK1.jpg
 ---
