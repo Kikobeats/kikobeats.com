@@ -1,11 +1,11 @@
-<section class="layout-{{page.layout}} external-icon visited bg-white helvetica near-black pa4-l pa3">
+<section class="layout-{{page.layout}} external-icon visited bg-white sans-serif near-black pa4-l pa3">
   <ul class="list pl0 mauto pv4 ph5-l max-width-large">
     {% for post in site.posts %}
     {% unless post.draft %}
     {% capture currentdate %}{{post.date | date: "%Y"}}{% endcapture %}
 
     {% if currentdate != thedate %}
-    <h2 class="f2 bl bw3 f2 pl3 mt5 georgia">{{ currentdate }}</h2>
+    <h2 class="f2 bl bw3 f2 pl3 mt5 serif">{{ currentdate }}</h2>
     {% capture thedate %}{{currentdate}}{% endcapture %}
     {% endif %}
 
