@@ -1,5 +1,4 @@
 ---
-external: https://github.com/Kikobeats/automate-release
-url: https://github.com/Kikobeats/automate-release
+external: https://nicedoc.io/Kikobeats/automate-release
 date: '2018-10-10'
 ---
