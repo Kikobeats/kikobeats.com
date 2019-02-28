@@ -23,7 +23,6 @@
     "finepack": "latest",
     "git-authors-cli": "latest",
     "gulp": "latest",
-    "gulp-imagemin": "latest",
     "husky": "latest",
     "imageoptim-cli": "latest",
     "lint-staged": "latest",

@@ -2,7 +2,6 @@
 
 const condenseWhitespace = require('condense-whitespace')
 const browserSync = require('browser-sync').create()
-const imagemin = require('gulp-imagemin')
 const { spawn } = require('child_process')
 const gulp = require('gulp')
 
@@ -10,7 +9,16 @@ const log = require('acho')({
   outputType: type => '[jekyll]'
 })
 
-gulp.task('jekyll', () => {
+const toLog = type => buffer => {
+  buffer
+    .toString()
+    .split(/\n/)
+    .forEach(message => {
+      message.length > 2 && log[type](condenseWhitespace(message))
+    })
+}
+
+const jekyll = () => {
   const jekyll = spawn('bundle', [
     'exec',
     'jekyll',
@@ -20,39 +28,32 @@ gulp.task('jekyll', () => {
     '--drafts'
   ])
 
-  const logMessage = type => buffer => {
-    buffer
-      .toString()
-      .split(/\n/)
-      .forEach(message => {
-        message.length > 2 && log[type](condenseWhitespace(message))
-      })
-  }
-  ;[
-    { output: 'stdout', type: 'info' },
-    { output: 'stderr', type: 'error' }
-  ].forEach(({ output, type }) => jekyll[output].on('data', logMessage(type)))
-})
+  ;[{ output: 'stdout', type: 'info' }, { output: 'stderr', type: 'error' }].forEach(
+    ({ output, type }) => jekyll[output].on('data', toLog(type))
+  )
+}
 
-gulp.task('serve', () => {
+const serve = () => {
   browserSync.init({
     port: 1337,
-    open: false,
     server: {
       baseDir: '_site'
     }
   })
+}
 
-  gulp
-    .watch(['!_site/.sass-cache', '_site/**/*.*'])
-    .on('change', browserSync.reload)
-})
+function reload (done) {
+  browserSync.reload()
+  done()
+}
 
-gulp.task('images', () => {
-  gulp
-    .src('images/*')
-    .pipe(imagemin())
-    .pipe(gulp.dest('images'))
-})
+const watchFiles = () => gulp.watch(['!_site/.sass-cache', '_site/**/*.*']).on('change', reload)
 
-gulp.task('default', ['jekyll', 'serve'])
+const watch = gulp.parallel([watchFiles])
+
+const devServer = gulp.parallel([jekyll, serve])
+
+exports.serve = serve
+exports.jekyll = jekyll
+exports.watch = watch
+exports.default = gulp.series([devServer, watch])
