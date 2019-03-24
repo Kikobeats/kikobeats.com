@@ -1,0 +1,52 @@
+---
+layout: post
+title: Culture of Shipping
+date: '2019-03-24'
+image: https://i.imgur.com/Uvd4LYJ.jpg
+---
+
+## Build Less
+
+Do less than yours competitors to beat them.
+
+Change must be easy and cheap. Lower the cost of change by:
+
+* Less features.
+* Less options/preferences.
+* Less people and corporate structure (software is easy, people is hard).
+* Less software (each line of code needs to be maintained).
+
+## Be Yourself
+
+Smaller companies are closer to customers by default.
+
+The leaner your are, the easier it is to change. Differenciate yourself from bigger companies by:
+
+* Being personal and friendly.
+* Hire the right customer, build someting you can manage.
+* Decide the little details so your customers don't have to.
+
+## Make Opionated Software
+
+The best software has a vision: decide what your vision and run with it.
+
+Build software for general concepts and encourage people to create their own software:
+
+* Build software for yourself.
+* Forget feature requests. Be consistent.
+* Decisions are temporary so make the call and move on.
+
+## Software is Never Done
+
+* Later is eternal, now is fleeting.
+* Working is better than perfect.
+* Focus is better than features.
+* Compatibility is better than purity.
+* Simplicity is better than anything.
+
+## Bibliography
+
+* [Getting Real by Basecamp](https://basecamp.com/books/getting-real).
+* [What Working at Stripe Has Been Like by patio11](https://news.ycombinator.com/item?id=19422833).
+* [Definition of Done](https://github.com/dwyl/definition-of-done).
+* [Doneness at Wikipedia](https://en.wikipedia.org/wiki/Doneness).
