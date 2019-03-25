@@ -7,7 +7,7 @@ image: https://i.imgur.com/Uvd4LYJ.jpg
 
 ## Build Less
 
-Do less than yours competitors to beat them.
+Do less than your competitors to beat them.
 
 Change must be easy and cheap. Lower the cost of change by:
 
@@ -20,13 +20,13 @@ Change must be easy and cheap. Lower the cost of change by:
 
 Smaller companies are closer to customers by default.
 
-The leaner your are, the easier it is to change. Differenciate yourself from bigger companies by:
+The leaner you are, the easier it is to change. Differentiate yourself from bigger companies by:
 
 * Being personal and friendly.
-* Hire the right customer, build someting you can manage.
+* Hire the right customer, build something you can manage.
 * Decide the little details so your customers don't have to.
 
-## Make Opionated Software
+## Make Opinionated Software
 
 The best software has a vision: decide what your vision and run with it.
 
