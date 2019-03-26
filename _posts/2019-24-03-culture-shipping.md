@@ -13,7 +13,7 @@ Change must be easy and cheap. Lower the cost of change by:
 
 * Less features.
 * Less options/preferences.
-* Less people and corporate structure (software is easy, people is hard).
+* Less people and corporate structure (software is easy, people are hard).
 * Less software (each line of code needs to be maintained).
 
 ## Be Yourself
