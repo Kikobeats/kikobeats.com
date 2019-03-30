@@ -1,17 +1,14 @@
 {
   "name": "kikobeats.com",
   "description": "ma website yo",
-  "version": "1.1.19",
+  "version": "1.2.0",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
     "name": "Kiko Beats",
     "url": "https://kikobeats.com"
   },
   "contributors": [
-    {
-      "name": "Anand Dyavanapalli",
-      "email": "adyavanapalli@gmail.com"
-    }
+    "Anand Dyavanapalli <adyavanapalli@gmail.com>"
   ],
   "devDependencies": {
     "@commitlint/cli": "latest",

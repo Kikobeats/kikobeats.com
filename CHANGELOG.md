@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/Kikobeats/kikobeats.com/compare/v1.1.19...v1.2.0) (2019-03-30)
+
+
+### Bug Fixes
+
+* glitch effect ([90d7f21](https://github.com/Kikobeats/kikobeats.com/commit/90d7f21))
+* setup file date properly ([aa91fe8](https://github.com/Kikobeats/kikobeats.com/commit/aa91fe8))
+* update title ([db79f32](https://github.com/Kikobeats/kikobeats.com/commit/db79f32))
+
+
+### Features
+
+* add georgia as secondary font ([d34d5ec](https://github.com/Kikobeats/kikobeats.com/commit/d34d5ec))
+* add maintainers tools ([5907df2](https://github.com/Kikobeats/kikobeats.com/commit/5907df2))
+
+
+
 <a name="1.1.19"></a>
 ## [1.1.19](https://github.com/Kikobeats/kikobeats.com/compare/v1.1.18...v1.1.19) (2018-12-25)
 
