@@ -47,6 +47,7 @@ Build software for general concepts and encourage people to create their own sof
 ## Bibliography
 
 * [Getting Real by Basecamp](https://basecamp.com/books/getting-real).
+* [Lessons I've Learned from Three Million Downloads](http://jordansmith.io/lessons-ive-learned-from-three-million-downloads/).
 * [What Working at Stripe Has Been Like by patio11](https://news.ycombinator.com/item?id=19422833).
 * [Definition of Done](https://github.com/dwyl/definition-of-done).
 * [Doneness at Wikipedia](https://en.wikipedia.org/wiki/Doneness).
