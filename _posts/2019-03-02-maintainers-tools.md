@@ -55,7 +55,9 @@ Also, `scritch` allows you to define scripts in any scripting language, that's s
 
 ## Others
 
-![](https://i.imgur.com/YtZdSAs.png)
+<p><img src="https://i.imgur.com/YtZdSAs.png" alt="" style="
+    width: 400px;
+"></p>
 
 I included in this section things that I have not tried yet but what I would use if I had the opportunity.
 
