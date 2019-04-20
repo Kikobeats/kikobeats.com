@@ -55,6 +55,8 @@ Also, `scritch` allows you to define scripts in any scripting language, that's s
 
 ## Others
 
+![](https://i.imgur.com/YtZdSAs.png)
+
 I included in this section things that I have not tried yet but what I would use if I had the opportunity.
 
 - [hygen](https://github.com/jondot/hygen) – It generates specific scaffolding for projects. A good thing to have into big projects with multiple people.
