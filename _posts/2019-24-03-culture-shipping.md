@@ -46,9 +46,10 @@ Build software for general concepts and encourage people to create their own sof
 
 ## Bibliography
 
-* [Getting Real by Basecamp](https://basecamp.com/books/getting-real).
-* [API Evolution the Right Way](https://emptysqua.re/blog/api-evolution-the-right-way/).
-* [Lessons I've Learned from Three Million Downloads](http://jordansmith.io/lessons-ive-learned-from-three-million-downloads/).
-* [What Working at Stripe Has Been Like by patio11](https://news.ycombinator.com/item?id=19422833).
 * [Definition of Done](https://github.com/dwyl/definition-of-done).
 * [Doneness at Wikipedia](https://en.wikipedia.org/wiki/Doneness).
+* [Getting Real by Basecamp](https://basecamp.com/books/getting-real).
+* [API Evolution the Right Way](https://emptysqua.re/blog/api-evolution-the-right-way/).
+* [Lessons Learned From $0 to 7-Figures in Revenue](https://kinsta.com/blog/bootstrapping-startup/).
+* [What Working at Stripe Has Been Like by patio11](https://news.ycombinator.com/item?id=19422833).
+* [Lessons I've Learned from Three Million Downloads](http://jordansmith.io/lessons-ive-learned-from-three-million-downloads/).
