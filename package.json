@@ -8,7 +8,10 @@
     "url": "https://kikobeats.com"
   },
   "contributors": [
-    "Anand Dyavanapalli <adyavanapalli@gmail.com>"
+    {
+      "name": "Anand Dyavanapalli",
+      "email": "adyavanapalli@gmail.com"
+    }
   ],
   "devDependencies": {
     "@commitlint/cli": "latest",
@@ -40,9 +43,9 @@
     "lint": "standard-markdown && standard",
     "postrelease": "npm run release:tags && npm run release:github",
     "precommit": "lint-staged",
-    "prerelease": "npm run update:check && git-authors-cli",
+    "prerelease": "npm run update:check",
     "pretest": "npm run lint",
-    "release": "git add package.json && standard-version -a",
+    "release": "git-authors-cli && git add package.json && standard-version -a",
     "release:github": "conventional-github-releaser -p angular",
     "release:tags": "git push --follow-tags origin HEAD:master",
     "test": "exit 0",
@@ -90,11 +93,6 @@
     "ignore": [
       "js/prism.js"
     ]
-  },
-  "standard-version": {
-    "scripts": {
-      "prechangelog": "git-authors-cli"
-    }
   },
   "urlint": {
     "url": "https://kikobeats.com/sitemap.xml",
