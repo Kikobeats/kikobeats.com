@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.7](https://github.com/Kikobeats/kikobeats.com/compare/v1.3.6...v1.3.7) (2019-05-20)
+
+
+### Build System
+
+* change git-authors-cli position ([d02fd0c](https://github.com/Kikobeats/kikobeats.com/commit/d02fd0c))
+
+
+
 ### [1.3.6](https://github.com/Kikobeats/kikobeats.com/compare/v1.3.4...v1.3.6) (2019-05-15)
 
 
