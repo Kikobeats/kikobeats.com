@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.8](https://github.com/Kikobeats/kikobeats.com/compare/v1.3.7...v1.3.8) (2019-06-19)
+
+
+### Build System
+
+* update travis ([d460b1c](https://github.com/Kikobeats/kikobeats.com/commit/d460b1c))
+
+
+
 ### [1.3.7](https://github.com/Kikobeats/kikobeats.com/compare/v1.3.6...v1.3.7) (2019-05-20)
 
 
