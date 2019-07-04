@@ -15,7 +15,7 @@ Any landing page for a digital product should solve the following goals:
 
 My experience building them it's difficult to achieve it because is extremely easy to lose the objectives.
 
-## Content Is the Key
+## Content is the Key
 
 ![](https://i.imgur.com/qZ8XJUE.png)
 <figcaption>If you feel <a href="https://stripe.com/es/billing">Stripe</a> is beauty it's because the content matches with the design perfectly.</figcaption>
