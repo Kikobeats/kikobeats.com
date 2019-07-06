@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.11](https://github.com/Kikobeats/kikobeats.com/compare/v1.3.10...v1.3.11) (2019-07-06)
+
+
+### Build System
+
+* add link ([ee4ee6a](https://github.com/Kikobeats/kikobeats.com/commit/ee4ee6a))
+* avoice capitalize is ([729d483](https://github.com/Kikobeats/kikobeats.com/commit/729d483))
+
+
+
 ### [1.3.10](https://github.com/Kikobeats/kikobeats.com/compare/v1.3.9...v1.3.10) (2019-07-04)
 
 
