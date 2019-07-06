@@ -144,3 +144,4 @@ Instead, I prefer show real feedback for real people.
 
 - [Writing copy for landing pages](https://stripe.com/atlas/guides/landing-page-copy).
 - [Landing Page Copywriting for Conversion](http://thelandingpagecourse.com/landing-page-copywriting-for-conversion).
+- [What I Learned Analyzing 13 Years of Basecamp Home Pages](https://www.copygrad.com/2017/09/14/basecamp-copywriting).
