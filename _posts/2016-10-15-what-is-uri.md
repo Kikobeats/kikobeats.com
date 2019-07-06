@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What Is URI
+title: What is URI
 image: https://i.imgur.com/DvqYaeM.png
 date: '2016-10-15 09:57:40'
 tags:
