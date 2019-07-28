@@ -31,10 +31,11 @@ exclude:
 
 plugins:
   - jekyll-archives
-  - jekyll-sitemap
-  - jekyll-seo-tag
+  - jekyll-autoprefixer
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 defaults:
   -

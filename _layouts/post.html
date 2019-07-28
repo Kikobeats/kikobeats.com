@@ -7,9 +7,12 @@ layout: default
 
 <section
   class="layout-{{page.layout}} lh-copy f4 bg-white sans-serif mauto max-width-blog near-black ph5-l pt5-l pb3-l ph3 pv3">
-  <date class="ttu f6 b tracked light-silver db">
-    {{ page.date | date: "%B %d, %Y" }}
-  </date>
+  <span class="ttu f6 b tracked light-silver db">
+    <time datetime="{{page.date}}">{{ page.date | date: "%B %d, %Y" }}</time><span class="ph2">–</span>
+    <span>{{ page.date | timeago }}</span><span class="dn pageviews-container">, <span><span
+          class="pageviews-count">0</span> views.</span></span>
+  </span>
+
   {{content}}
 </section>
 {% include post-footer.html %}
@@ -17,6 +20,15 @@ layout: default
 {% include footer.html %}
 <script src="https://cdn.jsdelivr.net/combine/npm/prismjs@latest,npm/medium-zoom@latest"></script>
 <script src="https://cdn.jsdelivr.net/npm/@microlink/vanilla@latest/umd/microlink.min.js"></script>
+<script>
+  const id =
+    fetch('https://pageviews.kikobeats.com' + window.location.pathname + '?key=' + window.PAGEVIEWS_API_KEY)
+      .then(res => res.json())
+      .then(({ pageviews }) => {
+        document.querySelector('.pageviews-container').classList.remove('dn')
+        document.querySelector('.pageviews-count').textContent = pageviews
+      })
+</script>
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
     mediumZoom('layout-post img')
