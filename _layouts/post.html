@@ -21,13 +21,12 @@ layout: default
 <script src="https://cdn.jsdelivr.net/combine/npm/prismjs@latest,npm/medium-zoom@latest"></script>
 <script src="https://cdn.jsdelivr.net/npm/@microlink/vanilla@latest/umd/microlink.min.js"></script>
 <script>
-  const id =
-    fetch('https://pageviews.kikobeats.com' + window.location.pathname + '?key=' + window.PAGEVIEWS_API_KEY)
-      .then(res => res.json())
-      .then(({ pageviews }) => {
-        document.querySelector('.pageviews-container').classList.remove('dn')
-        document.querySelector('.pageviews-count').textContent = pageviews
-      })
+  fetch('https://pageviews.kikobeats.com' + window.location.pathname + '?key=' + window.PAGEVIEWS_API_KEY)
+    .then(res => res.json())
+    .then(({ pageviews }) => {
+      document.querySelector('.pageviews-container').classList.remove('dn')
+      document.querySelector('.pageviews-count').textContent = pageviews
+    })
 </script>
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
