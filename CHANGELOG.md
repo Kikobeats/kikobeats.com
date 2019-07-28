@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/Kikobeats/kikobeats.com/compare/v1.3.11...v1.4.0) (2019-07-28)
+
+
+### Bug Fixes
+
+* i'm silly ([d05cc6d](https://github.com/Kikobeats/kikobeats.com/commit/d05cc6d))
+
+
+### Features
+
+* add pageviews per posts ([c47d039](https://github.com/Kikobeats/kikobeats.com/commit/c47d039))
+
+
+
 ### [1.3.11](https://github.com/Kikobeats/kikobeats.com/compare/v1.3.10...v1.3.11) (2019-07-06)
 
 
