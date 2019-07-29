@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.1](https://github.com/Kikobeats/kikobeats.com/compare/v1.5.0...v1.5.1) (2019-07-29)
+
+
+### Bug Fixes
+
+* variable name ([658e2f1](https://github.com/Kikobeats/kikobeats.com/commit/658e2f1))
+
+
+
 ## [1.5.0](https://github.com/Kikobeats/kikobeats.com/compare/v1.3.11...v1.5.0) (2019-07-29)
 
 
