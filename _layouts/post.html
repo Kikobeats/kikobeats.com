@@ -23,9 +23,9 @@ layout: default
 <script>
   fetch('https://count.kikobeats.com/pageviews' + window.location.pathname + '?incr&key=' + window.PAGEVIEWS_API_KEY)
     .then(res => res.json())
-    .then(({ pageviews }) => {
+    .then(({ count }) => {
       document.querySelector('.pageviews-container').classList.remove('dn')
-      document.querySelector('.pageviews-count').textContent = pageviews
+      document.querySelector('.pageviews-count').textContent = count
     })
 </script>
 <script>
