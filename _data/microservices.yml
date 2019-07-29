@@ -9,7 +9,7 @@ featured:
     description: Get unified user avatar.
     link: https://unavatar.now.sh
     image: /images/unavatar.jpg
-  
+
   - name: changelog
     description: See the changelog for any NPM package.
     link: https://changes.now.sh
@@ -21,15 +21,10 @@ normal:
     description: Bob Sponja time cards as service.
     link: https://time.kikobeats.com
 
+  - name: count
+    description: counting things, as microservice.
+    link: https://github.com/Kikobeats/count-microservice
+
   - name: tweets
     description: Twitter timelines fetcher as service.
     link: https://tweets.kikobeats.com
-
-  - name: color
-    description: Get color information from any URL image.
-    link: https://color.kikobeats.com
-
-  - name: pdf
-    description: Get the PDF version of any website as service.
-    link: https://pdf.kikobeats.com
-
