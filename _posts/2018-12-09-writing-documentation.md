@@ -43,3 +43,4 @@ If you go on a long vacation now with no internet access, can someone on your te
 - [Documentation, Lessons Learned, by Sergio Xalambrí](https://sergiodxa.com/essays/documentation).
 - [Readme Driven Development, by Tom Preston-Werner](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html).
 - [Art of README, by Stephen Whitmore](https://github.com/noffle/art-of-readme).
+- [Composing better emails](https://iridakos.com/how-to/2019/06/26/composing-better-emails.html).
