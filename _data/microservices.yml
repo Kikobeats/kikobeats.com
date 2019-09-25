@@ -1,6 +1,6 @@
 featured:
 
-  - name: Tom
+  - name: tom
     description: Your backoffice as service.
     link: http://tom.js.org
     image: /images/tom.jpg
@@ -19,7 +19,7 @@ normal:
 
   - name: timecards
     description: Bob Sponja time cards as service.
-    link: https://time.kikobeats.com
+    link: https://timecards.kikobeats.com
 
   - name: count
     description: counting things, as microservice.
