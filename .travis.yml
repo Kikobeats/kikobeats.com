@@ -5,7 +5,7 @@ node_js:
   - node
 
 script:
-  - npx urlint
+  - npx urlint && curl -sL https://hc-ping.com/79188d8c-eec1-447a-b38e-3180b559e3c4
 
 stages:
   - Test
