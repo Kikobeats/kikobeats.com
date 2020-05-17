@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.13](https://github.com/Kikobeats/kikobeats.com/compare/v1.5.11...v1.5.13) (2020-05-17)
+
+
+### Bug Fixes
+
+* hit api if key exists ([9ab902e](https://github.com/Kikobeats/kikobeats.com/commit/9ab902e454218eaa846a2d077c336c89596ff80d))
+* load microlink/vanilla dependencies ([6a1f4e7](https://github.com/Kikobeats/kikobeats.com/commit/6a1f4e70db9448f3e481b6b56bb29ea3b3f89f80))
+* use umd for quicklink ([fa37724](https://github.com/Kikobeats/kikobeats.com/commit/fa3772459a893d405a7306a5a41c78096c687c77))
+
 ### [1.5.12](https://github.com/Kikobeats/kikobeats.com/compare/v1.5.11...v1.5.12) (2020-05-17)
 
 ### [1.5.11](https://github.com/Kikobeats/kikobeats.com/compare/v1.5.10...v1.5.11) (2020-05-08)
