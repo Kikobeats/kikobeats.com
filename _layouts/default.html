@@ -12,10 +12,11 @@
 </body>
 {% include links-visited.html %}
 {% include links-external.html %}
-<script src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js"></script>
+<script src="https://cdn.jsdelivr.net/combine/npm/anchor-js@4,npm/quicklink@2"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
     anchors.add();
+    quicklink.listen();
   });
 </script>
 {% include analytics.html %}
