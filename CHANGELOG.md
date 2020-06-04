@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.15](https://github.com/Kikobeats/kikobeats.com/compare/v1.5.14...v1.5.15) (2020-06-04)
+
+
+### Bug Fixes
+
+* add domain suffix ([c76f685](https://github.com/Kikobeats/kikobeats.com/commit/c76f68520d01886a8bbdb16a3c247b6a0eec0661))
+
 ### [1.5.14](https://github.com/Kikobeats/kikobeats.com/compare/v1.5.13...v1.5.14) (2020-05-17)
 
 ### [1.5.13](https://github.com/Kikobeats/kikobeats.com/compare/v1.5.11...v1.5.13) (2020-05-17)
