@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.16](https://github.com/Kikobeats/kikobeats.com/compare/v1.5.15...v1.5.16) (2020-06-14)
+
 ### [1.5.15](https://github.com/Kikobeats/kikobeats.com/compare/v1.5.14...v1.5.15) (2020-06-04)
 
 
