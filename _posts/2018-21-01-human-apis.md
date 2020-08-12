@@ -9,17 +9,15 @@ tags:
 
 ## Title Format
 
-I tend to format my styles. Although you can do that following different criteria, my main criteria is aesthetic
+I tend to format my styles. Although you can do that following different criteria, my main criteria is aesthetic.
 
-I found [`title`](https://github.com/zeit/title) very useful for that:
+I creted [`microsoft-capitalize`](https://github.com/kikobeats/microsoft-capitalize); it follows [Microsoft Copywriting styleguide](https://docs.microsoft.com/en-us/style-guide/capitalization) and it's simple and intuitive:
 
 ```js
-const title = require('title')
+const capitalize = require('microsoft-capitalize')
 
-title('noW deSktop and now cLI are prODUCts of zeIt')
-
-// Will result in:
-// "Now Desktop and Now CLI Are Products of ZEIT"
+capitalize('Microlink CDN: Global Edge Cache')
+// => 'Microlink CDN: Global edge cache'
 ```
 
 In addition, I created a [alfred-title](https://github.com/Kikobeats/alfred-title) for create format titles on the fly using [Alfred](https://www.alfredapp.com/)
