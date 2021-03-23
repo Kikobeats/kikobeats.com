@@ -23,11 +23,11 @@
     "finepack": "latest",
     "git-authors-cli": "latest",
     "gulp": "latest",
-    "husky": "latest",
     "imageoptim-cli": "latest",
     "lint-staged": "latest",
     "npm-check-updates": "latest",
     "prettier-standard": "latest",
+    "simple-git-hooks": "latest",
     "standard": "latest",
     "standard-markdown": "latest",
     "standard-version": "latest",
@@ -59,12 +59,6 @@
       "@commitlint/config-conventional"
     ]
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "package.json": [
       "finepack"
@@ -81,6 +75,12 @@
     "*.svg": [
       "svgo --pretty"
     ]
+  },
+  "simple-git-hooks": {
+    "hooks": {
+      "commit-msg": "npx commitlint --edit",
+      "pre-commit": "npx lint-staged"
+    }
   },
   "standard": {
     "ignore": [
