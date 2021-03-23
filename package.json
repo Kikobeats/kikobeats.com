@@ -77,10 +77,8 @@
     ]
   },
   "simple-git-hooks": {
-    "hooks": {
-      "commit-msg": "npx commitlint --edit",
-      "pre-commit": "npx lint-staged"
-    }
+    "commit-msg": "npx commitlint --edit",
+    "pre-commit": "npx lint-staged"
   },
   "standard": {
     "ignore": [
