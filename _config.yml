@@ -38,24 +38,23 @@ plugins:
   - jekyll-sitemap
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
+      image: /images/resume.png
       layout: "post"
       comments: true
-
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: "page"
-  -
-    scope:
+      image: /images/resume.png
+  - scope:
       path: "index.html"
     values:
       layout: "default"
+      image: /images/resume.png
 
 jekyll-archives:
   enabled:
