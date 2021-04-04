@@ -11,8 +11,7 @@ on:
 env:
   CI: true
 jobs:
-  lint:
-    name: lint
+  urlint:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -25,7 +24,6 @@ jobs:
         run: npx urlint && curl -sL https://hc-ping.com/79188d8c-eec1-447a-b38e-3180b559e3c4
 
   test:
-    name: Test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
