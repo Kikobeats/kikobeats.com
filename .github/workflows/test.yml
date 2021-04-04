@@ -1,0 +1,32 @@
+name: test
+on: [push, pull_request]
+env:
+  CI: true
+jobs:
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '15'
+      - name: Execution
+        run: npx urlint && curl -sL https://hc-ping.com/79188d8c-eec1-447a-b38e-3180b559e3c4
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '15'
+      - name: Install
+        run: npm install --no-package-lock
+      - name: Test
+        run: npm test
