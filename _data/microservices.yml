@@ -23,4 +23,4 @@ normal:
 
   - name: count
     description: counting things, as microservice.
-    link: https://github.com/Kikobeats/count-microservice
+    link: https://github.com/Kikobeats/count
