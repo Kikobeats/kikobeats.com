@@ -6,17 +6,20 @@ month=$(date +%m)
 day=$(date +%d)
 filename="_posts/$year-$month-$day-$title.md"
 
-# header=$(cat <<-END
-# ---\nlayout: post\ntitle: $title\ndate: '$year-$month-$day'\nimage: https://i.imgur.com/CFKl9PT.jpg\n---
-# END
-# )
+header=$(cat <<EOF
+---
+layout: post
+title: $title
+date: '$year-$month-$day'
+image: https://i.imgur.com/CFKl9PT.jpg
+---
 
-header="---\n
-layout: post\n
-title: $title\n
-date: '$year-$month-$day'\n
-image: https://i.imgur.com/CFKl9PT.jpg\n---
-\nHello world\n\n## Bibliography\n\n- [item](url)\n\n"
+hello world
 
+## Bibliography
 
-echo $header > $filename
+- [item](url)
+EOF
+)
+
+echo "$header" > "$filename"
