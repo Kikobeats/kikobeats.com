@@ -5,7 +5,7 @@ date: '2021-04-12'
 image: https://i.imgur.com/RBbrn51.jpg
 ---
 
-## How to not enter prison
+## How to avoid going to jail
 
 Let's say you’re a EU based company that has sold a digital product priced at €25. 
 
