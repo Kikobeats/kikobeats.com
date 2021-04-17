@@ -38,3 +38,9 @@ image: https://i.imgur.com/hAb5a7i.jpg
 - [zipcon.net/~swhite/docs/computers/browsers/fonttest.html](https://zipcon.net/~swhite/docs/computers/browsers/fonttest.html)
 - [web.mit.edu/jmorzins/www/fonts.html](https://web.mit.edu/jmorzins/www/fonts.html)
 - [www.cssfontstack.com/](https://www.cssfontstack.com/)
+
+## Language
+
+- Chinese (with https://m.baidu.com)
+- Japanese (with https://www.yahoo.co.jp/)
+- Korean (with https://www.naver.com/)
