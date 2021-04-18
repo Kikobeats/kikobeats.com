@@ -41,7 +41,7 @@ image: https://i.imgur.com/hAb5a7i.jpg
 
 ## Language
 
-- Chinese (with https://m.baidu.com)
-- Japanese (with https://www.yahoo.co.jp)
-- Korean (with https://www.naver.com)
-- Thai (with https://www.sanook.com)
+- [Chinese](https://m.baidu.com)
+- [Japanese](https://www.yahoo.co.jp)
+- [Korean](https://www.naver.com)
+- [Thai](https://www.sanook.com)
