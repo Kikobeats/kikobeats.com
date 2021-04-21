@@ -34,6 +34,7 @@ image: https://i.imgur.com/hAb5a7i.jpg
 
 ## Typography
 
+- [font-rendering.vercel.app](https://font-rendering.vercel.app)
 - [primer.style/design/foundations/typography](https://primer.style/design/foundations/typography)
 - [zipcon.net/~swhite/docs/computers/browsers/fonttest.html](https://zipcon.net/~swhite/docs/computers/browsers/fonttest.html)
 - [web.mit.edu/jmorzins/www/fonts.html](https://web.mit.edu/jmorzins/www/fonts.html)
