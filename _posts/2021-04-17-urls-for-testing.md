@@ -1,6 +1,6 @@
 ---
 layout: post
-title: URLs for Testing
+title: URLs for testing
 date: '2021-04-17'
 image: https://i.imgur.com/hAb5a7i.jpg
 ---
