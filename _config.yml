@@ -59,3 +59,5 @@ defaults:
 jekyll-archives:
   enabled:
     - categories
+
+
