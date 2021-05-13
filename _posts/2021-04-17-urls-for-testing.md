@@ -15,6 +15,7 @@ image: https://i.imgur.com/hAb5a7i.jpg
 - [test-timeout.vercel.app](https://test-timeout.vercel.app)
 - [test-http-login.vercel.app](https://test-http-login.vercel.app)
 - [test-alert.vercel.app](https://test-alert.vercel.app)
+- [httpstat.us/502](https://httpstat.us/502)
 - [test-redirect-drab.vercel.app/url=?https://example.com](https://test-redirect-drab.vercel.app/url=?https://example.com)
 
 ## WebGL
