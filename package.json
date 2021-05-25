@@ -38,7 +38,7 @@
     "node": ">= 14"
   },
   "scripts": {
-    "build": "NODE_ENV=production JEKYLL_ENV=production bundle exec jekyll clean && bundle exec jekyll build",
+    "build": "NODE_ENV=production JEKYLL_ENV=production bundle exec jekyll build",
     "dev": "gulp",
     "lint": "standard-markdown && standard",
     "postrelease": "npm run release:tags && npm run release:github",
