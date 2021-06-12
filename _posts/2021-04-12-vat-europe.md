@@ -27,9 +27,7 @@ Your invoices should have **VAT exempted** when:
 
 ## State of the Art
 
-If you are using Stripe, they've started rolling [tax](https://stripe.com/tax) feature to reduce the friction on your side.
-
-Alternatively, I wrote some software to simplify the things:
+If you are using Stripe, they've started rolling [tax](https://stripe.com/tax) feature to reduce the friction on your side. Alternatively, I wrote some software to simplify the things:
 
 - [req-country](https://github.com/Kikobeats/req-country) – Given a request, get the country associated with it. ISO 3166-1 alpha-2 compliant.
 - [country-vat](https://github.com/Kikobeats/country-vat) – Given a request, get the country associated with it. ISO 3166-1 alpha-2 compliant.
