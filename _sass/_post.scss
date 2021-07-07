@@ -1,4 +1,16 @@
+@font-face {
+  font-family: 'domain-icon';
+  src: url('/fonts/domain-ico
+  position: relative;
+  top: 2px;n.eot?npvpqe');
+  src: url('/fonts/domain-icon.eot?npvpqe#iefix') format('embedded-opentype'), url('/fonts/domain-icon.ttf?npvpqe') format('truetype'), url('/fonts/domain-icon.woff?npvpqe') format('woff'), url('/fonts/domain-icon.svg?npvpqe#domain-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 .layout-post {
+
   h1,
   h2,
   h3,
@@ -7,46 +19,56 @@
   h6 {
     @extend .serif;
   }
+
   p,
   ul,
   table {
     margin: $line-height 0;
   }
+
   .card-preview {
     text-decoration: none;
     display: block;
     max-width: 500px;
     margin: auto;
   }
+
   .card-preview~.card-preview {
     margin-top: 1.5rem;
   }
+
   .twitter-tweet {
     margin: 0 auto;
   }
+
   .microlink_card {
     border-radius: .42857em;
     line-height: normal;
     width: 100%;
     margin: auto;
+
     p {
       margin: 0;
     }
   }
+
   .microlink_card__media,
   .microlink_card__content_title,
   .microlink_card__content_description {
     margin: 0;
   }
+
   a:not(.anchorjs-link):not(.card-preview) {
     @extend .link-underline;
     @extend .near-black;
   }
+
   mark {
     background: $mark-color;
     padding: .05em .2em;
     border-radius: 3px;
   }
+
   hr {
     width: 25%;
     margin-top: 3rem;
@@ -55,14 +77,17 @@
     border: 0;
     background-color: $primary-color;
   }
+
   pre code {
     background: none;
     border: none;
   }
+
   p code,
   li code {
     padding: 4px;
   }
+
   blockquote {
     border-left: 3px solid $primary-color;
     margin: 2rem 0 2rem 0.5rem;
@@ -70,6 +95,7 @@
     font-size: 1.4rem;
     color: $gray;
   }
+
   blockquote cite {
     letter-spacing: .1em;
     text-transform: uppercase;
@@ -79,6 +105,7 @@
     color: $mid-gray;
     position: relative;
     top: -1px;
+
     &::before {
       content: '– ';
       @extend .serif;
@@ -86,12 +113,15 @@
       margin-right: .1rem;
     }
   }
+
   blockquote p:first-child {
     margin-top: 0;
   }
+
   blockquote p:last-child {
     margin-bottom: 0;
   }
+
   iframe,
   video,
   p img {
@@ -101,26 +131,58 @@
     max-width: 100%;
     text-align: center;
   }
+
   figcaption {
     font-size: 75%;
     color: #9b9b9b;
     text-align: center;
     margin-top: -1.25rem;
   }
+
   table th {
     padding: 5px 10px;
     border-bottom: 1px solid #ddd;
     vertical-align: bottom;
     font-weight: 600;
   }
+
   table td {
     padding: 10px;
     vertical-align: top;
   }
+
   table th,
   table td {
     font-size: 90%;
     text-align: left;
     line-height: 1.6;
+  }
+
+  a[href*="wikipedia.org"]:before {
+    font-family: 'domain-icon';
+    content: "\eac8";
+    position: relative;
+    top: 2px;
+  }
+
+  a[href*="twitter.com"]:before {
+    font-family: 'domain-icon';
+    content: "\ea96";
+    position: relative;
+    top: 2px;
+  }
+
+  a[href*="github.com"]:before {
+    font-family: 'domain-icon';
+    content: "\eaa0";
+    position: relative;
+    top: 2px;
+  }
+
+  a[href*="youtube.com"]:before {
+    font-family: 'domain-icon';
+    content: "\ea9d";
+    position: relative;
+    top: 2px;
   }
 }
