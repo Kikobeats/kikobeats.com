@@ -39,7 +39,7 @@ In fact, if we want to think where _physically_ the software is running, the dif
 
 The smarter way to improving software is by identifying the slowest part that is being used more time. Then the speed up will have a significantly higher impact than improving other minor software aspects. 
 
-That's is known as [Amdahl's law](https://en.wikipedia.org/wiki/Amdahl%27s_law).
+That's is known as [Amdahl's law](https://en.wikipedia.org/wiki/Amdahl's_law).
 
 If you want to be fast by default, you need to understand what is running under your software:
 

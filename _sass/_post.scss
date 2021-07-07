@@ -1,8 +1,6 @@
 @font-face {
   font-family: 'domain-icon';
-  src: url('/fonts/domain-ico
-  position: relative;
-  top: 2px;n.eot?npvpqe');
+  src: url('/fonts/domain-icon.eot?npvpqe');
   src: url('/fonts/domain-icon.eot?npvpqe#iefix') format('embedded-opentype'), url('/fonts/domain-icon.ttf?npvpqe') format('truetype'), url('/fonts/domain-icon.woff?npvpqe') format('woff'), url('/fonts/domain-icon.svg?npvpqe#domain-icon') format('svg');
   font-weight: normal;
   font-style: normal;
@@ -160,29 +158,29 @@
 
   a[href*="wikipedia.org"]:before {
     font-family: 'domain-icon';
-    content: "\eac8";
     position: relative;
     top: 2px;
+    content: "\eac8";
   }
 
   a[href*="twitter.com"]:before {
     font-family: 'domain-icon';
-    content: "\ea96";
     position: relative;
     top: 2px;
+    content: "\ea96";
   }
 
   a[href*="github.com"]:before {
     font-family: 'domain-icon';
-    content: "\eaa0";
     position: relative;
     top: 2px;
+    content: "\eaa0";
   }
 
   a[href*="youtube.com"]:before {
     font-family: 'domain-icon';
-    content: "\ea9d";
     position: relative;
     top: 2px;
+    content: "\ea9d";
   }
 }
