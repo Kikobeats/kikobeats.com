@@ -18,4 +18,4 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
       - name: Execution
-        run: npm install puppeteer && npx urlint && curl -sL https://hc-ping.com/79188d8c-eec1-447a-b38e-3180b559e3c4
+        run: npx urlint && curl -sL https://hc-ping.com/79188d8c-eec1-447a-b38e-3180b559e3c4
