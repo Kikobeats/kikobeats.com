@@ -42,19 +42,19 @@ defaults:
       path: ""
       type: "posts"
     values:
-      image: /images/resume.png
+      image: ""
       layout: "post"
       comments: true
   - scope:
       path: ""
     values:
       layout: "page"
-      image: /images/resume.png
+      image: https://kikobeats.com/images/resume.png
   - scope:
       path: "index.html"
     values:
       layout: "default"
-      image: /images/resume.png
+      image: https://kikobeats.com/images/resume.png
 
 jekyll-archives:
   enabled:
