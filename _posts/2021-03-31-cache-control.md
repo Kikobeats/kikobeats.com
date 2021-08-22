@@ -17,7 +17,7 @@ In that case, the strategy could be complemented very well [must-revalidate](htt
 
 
 ```bash
-Cache-Control: max-age=1, s-maxage=1, stale-while-revalidate=59
+Cache-Control: max-age=60, stale-while-revalidate=0
 ```
 
 In that way, the cached copy will always be used _while_ the data is being validated in the background, saving the user to be faced with a cache _MISS_ and refreshing the cache copy as soon as possible.
