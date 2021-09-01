@@ -1,52 +1,45 @@
 featured:
 
-  - name: acho
-    description: The &lt;Hackable/&gt; Log.
-    link: http://acho.js.org
-    image: /images/acho.jpg
+  - name: metascraper
+    description: HTML protocols normalization.
+    link: https://metascraper.js.org
+    image: /images/metascraper.jpg
 
   - name: browserless
     description: Chrome Headless API made easy.
     link: https://browserless.js.org
     image: /images/browserless.jpg
 
-  - name: MythBusters JS
-    description: A JavaScript optimization handbook.
-    link: https://mythbusters.js.org
-    image: /images/mythbuster.jpg
-
-  - name: svr
-    description: HTTP development server done right.
-    link: https://svr.js.org
-    image: /images/svr.jpg
-
-  - name: tom
-    description: Your backoffice as service.
-    link: http://tom.js.org
-    image: /images/tom.jpg
-
-  - name: unavatar
-    description: Get unified user avatar.
-    link: https://unavatar.io
-    image: /images/unavatar.jpg
+  - name: keyv
+    description: Universal key value storage.
+    link: https://browserless.js.org
+    image: /images/keyv.jpg
 
 normal:
 
-  - name: bumped
+  - name: MythBusters JS
+    description: A JavaScript optimization handbook.
+    link: https://mythbusters.js.org
+
+  - name: automate-release
     description: Make easy releasing software.
-    link: https://bumped.github.io
+    link: https://github.com/Kikobeats/automate-release
 
-  - name: osom
-    description: An Awesome Object Data Modeling.
-    link: http://osom.js.org
+  - name: reachable-url
+    description: Resolve any URL fast as possible.
+    link: https://github.com/Kikobeats/reachable-url
 
-  - name: metascraper
-    description: Get unified metadata from any website.
-    link: http://metascraper.js.org
+  - name: cacheable-response
+    description: HTTP caching layer.
+    link: https://github.com/Kikobeats/cacheable-response
 
   - name: timecards
     description: Bob Sponja time cards as service.
     link: https://timecards.kikobeats.com
+
+  - name: osom
+    description: An Awesome Object Data Modeling.
+    link: http://osom.js.org
 
   - name: count
     description: counting things, as microservice.
