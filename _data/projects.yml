@@ -13,7 +13,7 @@ featured:
   - name: MythBusters JS
     description: A JavaScript optimization handbook.
     link: https://mythbusters.js.org
-    image: /images/mythBusters.jpg
+    image: /images/mythbuster.jpg
 
   - name: svr
     description: HTTP development server done right.
