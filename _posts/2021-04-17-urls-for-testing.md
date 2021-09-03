@@ -51,3 +51,4 @@ image: https://i.imgur.com/hAb5a7i.jpg
 ## Proxy
 
 - [ipify](https://api64.ipify.org?format=json)
+- [httpbin](https://httpbin.org/anything?json)
