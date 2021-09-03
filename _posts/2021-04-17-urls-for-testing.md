@@ -47,3 +47,7 @@ image: https://i.imgur.com/hAb5a7i.jpg
 - [Japanese](https://www.yahoo.co.jp)
 - [Korean](https://www.naver.com)
 - [Thai](https://www.sanook.com)
+
+## Proxy
+
+- [ipify](https://api64.ipify.org?format=json)
