@@ -5,7 +5,7 @@ date: '2021-09-19'
 image: https://i.imgur.com/T9oy6FN.jpg
 ---
 
-At [microlink.io](https://microlink.io), keep the [Microlink API](https://api.microlink.io) faster is one of the core values proposition of the service, so always there is something that can be improved to decrease response time.
+At [microlink.io](https://microlink.io), keeping the [Microlink API](https://api.microlink.io) faster is one of the core values of the service, so always there is something that can be improved to decrease response time.
 
 One of those sweet spots I recently found is to complement an already caching strategy with a local strategy.
 
