@@ -5,11 +5,11 @@ date: '2021-09-19'
 image: https://i.imgur.com/T9oy6FN.jpg
 ---
 
-At [microlink.io](https://microlink.io), keep the [Microlink API](https://api.microlink.io) faster is one of the core values proposition of the service, so always there is something that can be improved in order to decrease response time.
+At [microlink.io](https://microlink.io), keep the [Microlink API](https://api.microlink.io) faster is one of the core values proposition of the service, so always there is something that can be improved to decrease response time.
 
-One of those sweet spot I recently found is to complement an already caching strategy with a local strategy.
+One of those sweet spots I recently found is to complement an already caching strategy with a local strategy.
 
-Historically, Microlink has used Redis as main volatile caching storage.
+Historically, Microlink has used Redis as the main volatile caching storage.
 
 ```
 +-------------+                                +-----------+
@@ -19,23 +19,23 @@ Historically, Microlink has used Redis as main volatile caching storage.
 +-------------+                                +-----------+
 ```
 
-An internal cache can be for lot of things, like:
+An internal cache can be for a lot of things, like:
 
-- Preventing to re-compute CPU intensive tasks under short period of time.
-- Resolve domains using DNS lookup and cache result for a while.
+- Preventing to re-compute CPU intensive tasks in a short time.
+- Resolve domains using DNS lookup and cache results for a while.
 - Check if an URL is reachable and HTTP statuses code associated.
 
-Sometimes real time is a unnecessary luxury. For those cases, saving time just reusing a value previously obtained is okay.
+Sometimes real-time is an unnecessary luxury. For those cases, saving time just reusing a value previously obtained is okay.
 
-Although it's performing great, there is always a worst scenario.
+Although it's performing great, there is always the worst scenario.
 
-What if the cost of calculate something is faster than access to the cache?
+What if the cost of calculating something is faster than access to the cache?
 
 Even Redis is one of the fastest storage out there, could be a situation where lookup into the cache is simply not worth it.
 
-In fact, that actually could be a big problem if your cache store is not close to your servers, since what you are gaining is being lost by simply the network requests distance.
+That actually could be a big problem if your cache store is not close to your servers, since what you are gaining is being lost by simply the network requests distance.
 
-A local strategy on top of your cache saves the party since it's using memory application (faster than a network call) as extra cache layer.
+A local strategy on top of your cache saves the party since it's using a memory application (faster than a network call) as an extra cache layer.
 
 ```
 +-------------+                                +-----------+
@@ -66,9 +66,9 @@ const keyv = new Keyv({
 })
 ```
 
-It's like a L1 and L2 cache for your application. 
+It's like an L1 and L2 cache for your application. 
 
-One of the cool things there is, when local cache fails, the value is copied from the remote cache, so like a real cache, it's following the principle of [locality of reference](https://en.wikipedia.org/wiki/Locality_of_reference).
+One of the cool things there is, when the local cache fails, the value is copied from the remote cache, so like a real cache, it's following the principle of [locality of reference](https://en.wikipedia.org/wiki/Locality_of_reference).
 
 ## Bibliography
 
