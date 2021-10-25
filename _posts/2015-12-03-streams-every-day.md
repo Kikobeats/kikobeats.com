@@ -121,12 +121,12 @@ They are a subclass of Readable/Writable streams because they interact with the 
 
 Interested libraries to use with streams are:
 
-* [progress-stream](https://www.npmjs.com/package/progress-stream), read the progress of a stream.
-* [throughv](https://github.com/mcollina/throughv), stream.Transform with parallel chunk processing.
-* [emit-stream](https://github.com/substack/emit-stream), turn event emitters into streams and streams into event emitters.
-* [pretty-stream](https://github.com/mafintosh/pretty-stream), format a stream to make it more human readable.
-* [squeak](https://github.com/kevva/squeak), a tiny stream log.
-* [hyperquest](https://github.com/substack/hyperquest), make streaming http requests.
+* [progress-stream](https://www.npmjs.com/package/progress-stream) – read the progress of a stream.
+* [throughv](https://github.com/mcollina/throughv) – stream.Transform with parallel chunk processing.
+* [emit-stream](https://github.com/substack/emit-stream) – turn event emitters into streams and streams into event emitters.
+* [pretty-stream](https://github.com/mafintosh/pretty-stream) – format a stream to make it more human readable.
+* [squeak](https://github.com/kevva/squeak) – a tiny stream log.
+* [hyperquest](https://github.com/substack/hyperquest) – make streaming http requests.
 
 ## Bibliography
 
