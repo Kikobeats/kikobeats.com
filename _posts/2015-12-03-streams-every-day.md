@@ -131,7 +131,6 @@ Interested libraries to use with streams are:
 ## Bibliography
 
 * [Awesome Node.js Streams](https://github.com/thejmazz/awesome-nodejs-streams)
-
 * [Streams @ Max Ogden](http://maxogden.com/node-streams.html)
 * [Stream Handbook @ Substack](https://github.com/substack/stream-handbook)
 * [Why I don't use Node's core 'stream' module @ rvagg](https://r.va.gg/2014/06/why-i-dont-use-nodes-core-stream-module.html)
