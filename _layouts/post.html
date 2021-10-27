@@ -21,7 +21,7 @@ layout: default
 <script src="https://cdn.jsdelivr.net/combine/npm/prismjs@latest,npm/medium-zoom@latest"></script>
 <script src="https://cdn.jsdelivr.net/combine/npm/react@16/umd/react.production.min.js,npm/react-dom@16/umd/react-dom.production.min.js,npm/react-is@16/umd/react-is.production.min.js,npm/styled-components@5/dist/styled-components.min.js,npm/@microlink/mql@latest/dist/mql.min.js,npm/@microlink/vanilla@latest/dist/microlink.min.js,npm/@microlink/hover-vanilla@latest/dist/microlink.min.js"></script>
 <script>
-    fetch(`https://count.vercel.app/pageviews/${window.location.pathname.substring(1).site.replace(/\/$/, '')}?incr`)
+    fetch(`https://count.vercel.app/pageviews/${window.location.pathname.substring(1).replace(/\/$/, '')}?incr`)
     .then(res => res.json())
     .then(({ count }) => {
       document.querySelector('.pageviews-container').classList.remove('dn')
