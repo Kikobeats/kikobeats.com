@@ -23,7 +23,7 @@ layout: default
 <script>
     fetch(`https://count.vercel.app/kikobeats/${window.location.pathname.substring(1).replace(/\/$/, '')}?incr`)
     .then(res => res.json())
-    .then(({ count }) => {
+    .then(count => {
       document.querySelector('.pageviews-container').classList.remove('dn')
       document.querySelector('.pageviews-count').textContent = count
     })
