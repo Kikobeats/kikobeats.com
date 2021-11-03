@@ -33,6 +33,14 @@ image: https://i.imgur.com/hAb5a7i.jpg
 - [www.copypastecharacter.com/](https://www.copypastecharacter.com/)
 - [unicode.org/emoji/charts/full-emoji-list.html](https://unicode.org/emoji/charts/full-emoji-list.html)
 
+## Markup
+
+- [Detect SVG URLs](https://compose-html.vercel.app?meta=%3Cmeta+property%3D%22og%3Aimage%22+content%3D%22https%3A%2F%2Fraw.githubusercontent.com%2Fmicrolinkhq%2Fsplashy%2Fnext%2Ftest%2Ffixtures%2Fw3c_home.svg%22%3E)
+- [Detect WebP URLs](https://compose-html.vercel.app?meta=%3Cmeta+property%3D%22og%3Aimage%22+content%3D%22https%3A%2F%2Fraw.githubusercontent.com%2Fmicrolinkhq%2Fsplashy%2Fmaster%2Ftest%2Ffixtures%2Fimage.webp%22%3E)
+- [Detect AVIF URLs](https://compose-html.vercel.app?meta=%3Cmeta+property%3D%22og%3Aimage%22+content%3D%22https%3A%2F%2Fraw.githubusercontent.com%2Fmicrolinkhq%2Fsplashy%2Fnext%2Ftest%2Ffixtures%2Fw3c_home.avif%22%3)
+- [Detect BMP URLs](https://compose-html.vercel.app?meta=%3Cmeta+property%3D%22og%3Aimage%22+content%3D%22https%3A%2F%2Fraw.githubusercontent.com%2Fmicrolinkhq%2Fsplashy%2Fmaster%2Ftest%2Ffixtures%2Fw3c_home.bmp%22%3E)
+- [Detect ICO URLs](https://compose-html.vercel.app?meta=%3Cmeta+property%3D%22og%3Aimage%22+content%3D%22https%3A%2F%2Fraw.githubusercontent.com%2Fmicrolinkhq%2Fsplashy%2Fnext%2Ftest%2Ffixtures%2Fw3c_home.ico%22%3E)
+
 ## Typography
 
 - [font-rendering.vercel.app](https://font-rendering.vercel.app)
