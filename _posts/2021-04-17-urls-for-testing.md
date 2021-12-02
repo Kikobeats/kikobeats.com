@@ -11,6 +11,8 @@ image: https://i.imgur.com/hAb5a7i.jpg
 - [vercel.com/new/templates](https://vercel.com/new/templates)
 - [i.imgur.com/CHE6ilh.jpg](https://i.imgur.com/CHE6ilh.jpg) ([source](https://wallpapersafari.com/w/UrvL4y/))
 - [test-decode-async.vercel.app](https://test-decode-async.vercel.app)
+- [test-redirection.vercel.app](https://test-redirection.vercel.app)
+- [test-403.vercel.app](https://test-403.vercel.app)
 - [test-404.vercel.app](https://test-404.vercel.app)
 - [test-timeout.vercel.app](https://test-timeout.vercel.app)
 - [test-http-login.vercel.app](https://test-http-login.vercel.app)
