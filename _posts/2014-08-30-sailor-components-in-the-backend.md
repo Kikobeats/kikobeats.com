@@ -28,8 +28,8 @@ I remember that I decided write in english to improve myself, and, still need to
 
 So, I have some challenges for the next months. The education, the job, and others projects that I want to launch in few time. Really Sailor is the master key to launch project in fast mode.
 
-Back home and see old friend is the best part. Finally this is the slides that resume sailor project.
+Back home and see old friend is the best part. Finally [these](https://speakerdeck.com/kikobeats/sailor-components-in-the-backend) are the slides that resume sailor project.
 
-[![](http://i.imgur.com/8ejNwbK.png)](https://speakerdeck.com/kikobeats/sailor-components-in-the-backend)
+![](http://i.imgur.com/8ejNwbK.png)
 
 C'mon!

@@ -100,13 +100,13 @@ A `Map` is the new `ECMAScript6` data structure. You can use a `Object` as a `Ma
 
 
 ```js
-var cluster = require('cluster')
-var http = require('http')
-var numCPUs = require('os').cpus().length
+const cluster = require('cluster')
+const http = require('http')
+const numCPUs = require('os').cpus().length
 
 if (cluster.isMaster) {
   // Fork workers.
-  for (var i = 0; i < numCPUs; i++) {
+  for (let i = 0; i < numCPUs; i++) {
     cluster.fork()
   }
 
@@ -135,14 +135,9 @@ Months ago I created [Fink](http://xn--rn8h.ws/), a URL Shortener service that I
 <figcaption>This text is the caption for the image</figcaption>
 ```
 
-#### **Linkable Image**
+#### Special Links
 
-Months ago I created [Fink](http://xn--rn8h.ws/), a URL Shortener service that I called it *for masses*.
-
-[![](http://placekitten.com/1024/768)](http://kikobeats.com)
-<figcaption>This text is the caption for the image</figcaption>
-
-```
-[![](http://placekitten.com/1024/768)](http://kikobeats.com)
-<figcaption>This text is the caption for the image</figcaption>
-```
+- This is a [youtube](https://www.youtube.com/watch?v=iIlN_FaN5kM) video
+- This is a [github](https://github.com/kikobeats/geneator-git) repo
+- This is a [wikipedia](https://en.wikipedia.org/wiki/Squirrel-cage_rotor) article
+- This is a [twitter](https://twitter.com/kikobeats) link
