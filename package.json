@@ -25,7 +25,7 @@
     "git-authors-cli": "latest",
     "gulp": "latest",
     "imageoptim-cli": "latest",
-    "lint-staged": "latest",
+    "nano-staged": "latest",
     "npm-check-updates": "latest",
     "prettier-standard": "latest",
     "simple-git-hooks": "latest",
@@ -43,7 +43,7 @@
     "dev": "gulp",
     "lint": "standard-markdown && standard",
     "postrelease": "npm run release:tags && npm run release:github",
-    "precommit": "lint-staged",
+    "precommit": "nano-staged",
     "prerelease": "npm run update:check",
     "pretest": "npm run lint",
     "release": "git-authors-cli && git add package.json && standard-version -a",
@@ -60,7 +60,7 @@
       "@commitlint/config-conventional"
     ]
   },
-  "lint-staged": {
+  "nano-staged": {
     "package.json": [
       "finepack"
     ],
@@ -79,7 +79,7 @@
   },
   "simple-git-hooks": {
     "commit-msg": "npx commitlint --edit",
-    "pre-commit": "npx lint-staged"
+    "pre-commit": "npx nano-staged"
   },
   "standard": {
     "ignore": [
