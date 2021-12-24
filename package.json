@@ -1,8 +1,8 @@
 {
   "name": "kikobeats.com",
   "description": "ma website yo",
-  "version": "1.5.17",
   "homepage": "https://kikobeats.com",
+  "version": "1.5.17",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
     "name": "Kiko Beats",
@@ -17,14 +17,9 @@
   "devDependencies": {
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
-    "acho": "latest",
-    "browser-sync": "latest",
-    "condense-whitespace": "latest",
     "conventional-github-releaser": "latest",
     "finepack": "latest",
     "git-authors-cli": "latest",
-    "gulp": "latest",
-    "imageoptim-cli": "latest",
     "nano-staged": "latest",
     "npm-check-updates": "latest",
     "prettier-standard": "latest",
@@ -32,7 +27,6 @@
     "standard": "latest",
     "standard-markdown": "latest",
     "standard-version": "latest",
-    "svgo": "latest",
     "tachyons-sass": "latest"
   },
   "engines": {
@@ -40,7 +34,10 @@
   },
   "scripts": {
     "build": "NODE_ENV=production JEKYLL_ENV=production bundle exec jekyll build",
-    "dev": "gulp",
+    "clean": "bundle exec jekyll clean",
+    "dev": "bundle exec jekyll serve --watch --drafts --incremental --livereload --port 1337",
+    "dev:server": "bundle exec jekyll serve --watch --drafts",
+    "dev:watch": "bundle exec jekyll serve --watch --incremental --drafts",
     "lint": "standard-markdown && standard",
     "postrelease": "npm run release:tags && npm run release:github",
     "precommit": "nano-staged",
@@ -61,20 +58,14 @@
     ]
   },
   "nano-staged": {
-    "package.json": [
-      "finepack"
-    ],
     "*.js": [
       "prettier-standard"
     ],
     "*.md": [
       "standard-markdown"
     ],
-    "*.{png,jpeg,jpg,gif}": [
-      "imageoptim --imagealpha"
-    ],
-    "*.svg": [
-      "svgo --pretty"
+    "package.json": [
+      "finepack"
     ]
   },
   "simple-git-hooks": {
