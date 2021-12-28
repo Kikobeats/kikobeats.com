@@ -62,3 +62,9 @@ image: https://i.imgur.com/hAb5a7i.jpg
 
 - [ipify](https://api64.ipify.org?format=json)
 - [httpbin](https://httpbin.org/anything?json)
+
+## Chrome
+
+- chrome://chrome-urls
+- chrome://version
+- chrome://flags
