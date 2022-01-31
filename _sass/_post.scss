@@ -156,7 +156,7 @@
     line-height: 1.6;
   }
 
-  a[href*="wikipedia.org"]:before {
+  a:not(.card-preview)[href*="wikipedia.org"]:before {
     font-family: 'domain-icon';
     position: relative;
     top: 2px;
@@ -165,7 +165,7 @@
     content: "\eac8";
   }
 
-  a[href*="twitter.com"]:before {
+  a:not(.card-preview)[href*="twitter.com"]:before {
     font-family: 'domain-icon';
     position: relative;
     top: 2px;
@@ -174,7 +174,7 @@
     content: "\ea96";
   }
 
-  a[href*="github.com"]:before {
+  a:not(.card-preview)[href*="github.com"]:before {
     font-family: 'domain-icon';
     position: relative;
     top: 2px;
@@ -183,7 +183,7 @@
     content: "\eaa0";
   }
 
-  a[href*="youtube.com"]:before {
+  a:not(.card-preview)[href*="youtube.com"]:before {
     font-family: 'domain-icon';
     position: relative;
     top: 2px;
