@@ -1,5 +1,4 @@
 featured:
-
   - name: metascraper
     description: HTML protocols normalization.
     link: https://metascraper.js.org
@@ -12,11 +11,10 @@ featured:
 
   - name: keyv
     description: Universal key value storage.
-    link: https://browserless.js.org
+    link: https://keyv.js.org
     image: /images/keyv.jpg
 
 normal:
-
   - name: MythBusters JS
     description: A JavaScript optimization handbook.
     link: https://mythbusters.js.org
