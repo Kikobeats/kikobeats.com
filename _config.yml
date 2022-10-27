@@ -16,9 +16,8 @@ social:
 twitter:
   username: kikobeats
 
-permalink: "/:title/"
+permalink: '/:title/'
 disqus_shortname: kikobeats
-google_analytics: UA-34372837-2
 
 exclude:
   - Gemfile
@@ -40,21 +39,21 @@ plugins:
 
 defaults:
   - scope:
-      path: ""
-      type: "posts"
+      path: ''
+      type: 'posts'
     values:
-      image: ""
-      layout: "post"
+      image: ''
+      layout: 'post'
       comments: true
   - scope:
-      path: ""
+      path: ''
     values:
-      layout: "page"
+      layout: 'page'
       image: https://kikobeats.com/images/resume.png
   - scope:
-      path: "index.html"
+      path: 'index.html'
     values:
-      layout: "default"
+      layout: 'default'
       image: https://kikobeats.com/images/resume.png
 
 jekyll-archives:
