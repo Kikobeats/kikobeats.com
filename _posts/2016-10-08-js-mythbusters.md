@@ -1,10 +1,10 @@
 ---
 layout: post
 title: JS MythBusters
-image: http://i.imgur.com/OTlHcQ7.jpg
+image: /images/js-mythbusters/header.jpeg
 date: '2016-10-08 11:04:05'
 tags:
-- product
+  - product
 ---
 
 Recently I run the website [JS MythBusters](https://mythbusters.js.org). The idea behind the site is **perfomance matters**. 

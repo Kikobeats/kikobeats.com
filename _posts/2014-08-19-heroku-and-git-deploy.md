@@ -3,10 +3,10 @@ layout: post
 title: '101: Survive a deploy with Heroku and Git'
 date: '2014-08-19 08:06:18'
 tags:
-- unix
+  - unix
 ---
 
-![](http://i.imgur.com/lwa0UZ8.png)
+![](/images/101-survive-a-deploy-with-heroku-and-git/lwa0uz8.png)
 
 ### Useful commands
 
@@ -41,9 +41,7 @@ heroku ps:scale web=1 --app=appName
 heroku git:remote -a appName
 ```
 
-<space-medium></space-medium>
-
-![](http://git-scm.com/images/logos/downloads/Git-Logo-1788C.png)
+![](/images/101-survive-a-deploy-with-heroku-and-git/imageslogosdownloadsgit-logo-1788c.png)
 
 ### Bonus: Git submodules
 

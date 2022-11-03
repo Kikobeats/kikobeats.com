@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Polyfill, Ponyfill & Prollyfill
-image: http://i.imgur.com/2TzbcBE.jpg
+title: 'Polyfill, Ponyfill & Prollyfill'
+image: /images/polyfill-ponyfill--prollyfill/header.jpeg
 date: '2015-06-06 14:52:52'
 tags:
-- computer-science
+  - computer-science
 ---
 
 Commonly we used it, but exists a *subtle* difference. Normally we use it for refer browser, node or javascript features, but I understand that you can extrapolate it for another language or environment.

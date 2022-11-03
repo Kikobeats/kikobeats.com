@@ -1,18 +1,18 @@
 ---
 layout: post
 title: 'Road to JavaScript #2'
-image: http://i.imgur.com/hW6Acgg.png
+image: /images/road-to-javascript-2/header.png
 date: '2014-11-13 04:06:08'
 tags:
-- javascript
-- database
-- frontend
+  - javascript
+  - database
+  - frontend
 ---
 
 
 ## 5 functions of the Console object you didn’t know
 
-![](http://i.imgur.com/4yJSXRv.png)
+![](/images/road-to-javascript-2/4yjsxrv.png)
 
 Incredible [post in shellycloud blog](https://shellycloud.com/blog/2014/11/five-functions-of-the-console-object-you-didnt-know) about the posibilities of use of `console` Object. More than only print strings!
 
@@ -24,17 +24,17 @@ Incredible [post in shellycloud blog](https://shellycloud.com/blog/2014/11/five-
 
 Specially in love with this slide:
 
-![](http://i.imgur.com/m9S5ds0.png)
+![](/images/road-to-javascript-2/m9s5ds0.png)
 
 ## PouchDB: Database syncs between client and server
 
-![](http://i.imgur.com/idUkjQd.jpg)
+![](/images/road-to-javascript-2/idukjqd.jpeg)
 
 [pouchdb](http://pouchdb.com/) is a super interesting project that use [CouchDB](https://couchdb.apache.org/) for mantain synchronized client and server databases.
 
 ## Ten Principles for Effective Front-end Development
 
-![](http://i.imgur.com/hkr1xmN.png)
+![](/images/road-to-javascript-2/hkr1xmn.png)
 
 by Harrys Roberts, most known as [@csswizardry](https://twitter.com/csswizardry). Do not be fooled, the talk is absolutely awesome for whatever area
 

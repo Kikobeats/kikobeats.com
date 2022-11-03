@@ -1,15 +1,15 @@
 ---
 layout: post
 title: What is URI
-image: https://i.imgur.com/DvqYaeM.png
+image: /images/what-is-uri/header.png
 date: '2016-10-15 09:57:40'
 tags:
-- computer-science
+  - computer-science
 ---
 
 # URI (Uniform Resource Identifier)
 
-![](https://i.imgur.com/ObD8dK2.jpg)
+![](/images/what-is-uri/obd8dk2.jpeg)
 
 URIs are a standard for identifying documents using a short string of numbers, letters, and symbols. They are defined by [RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax](https://tools.ietf.org/html/rfc3986). **URLs**, **URNs**, and **URCs** are all types of **URI**.
 

@@ -2,7 +2,7 @@
 layout: post
 title: Design for failing
 date: '2018-01-15'
-image: https://s3.envato.com/files/236735101/590.jpg
+image: /images/design-for-failing/header.jpeg
 tags:
   - product
 ---
@@ -22,7 +22,7 @@ When you design a error situation, think _how_ the user feels under this context
 
 At the end of the day, errors are part of the product and the business culture for communicating something was wrong.
 
-![](https://i.imgur.com/uTDI8tA.png)
+![](/images/design-for-failing/utdi8ta.png)
 
 <figcaption>Try Undos instead of prompting for confirmation.</figcaption>
 
@@ -32,25 +32,25 @@ Threy are not only for final user app: We need to communicate good errors messag
 
 Think in the user experience behind read a developer that looks like:
 
-![](https://i.imgur.com/ymk32Dw.png)
+![](/images/design-for-failing/ymk32dw.png)
 
 <figcaption>The raw error output looks difficult to read.</figcaption>
 
 Compare with see the same error with the correct identation and well printed:
 
-![](https://i.imgur.com/4oLFNNQ.png)
+![](/images/design-for-failing/4olfnnq.png)
 
 <figcaption><a href="https://github.com/AriaMinaei/pretty-error">pretty-errors</a> help you output good error presentations.</figcaption>
 
 Print good errors is important. Presentation is important. Human eye match is important!
 
-![](https://svr.js.org/demo.gif)
+![](/images/design-for-failing/demo.gif)
 
 <figcaption><a href="https://svr.js.org">svr</a> printing minimal errors, using color and icons to have a visual impact.</figcaption>
 
 Try to communicate **what** and **why** is happening with the less information possible, removing the unnecessary information for the current user abstraction layer.
 
-![](https://i.imgur.com/Y0f50dC.png)
+![](/images/design-for-failing/y0f50dc.png)
 
 <figcaption>At <a href="https://microlink.io">microlink.io</a> we always suggest a point to get more information.</figcaption>
 

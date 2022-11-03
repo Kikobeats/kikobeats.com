@@ -3,10 +3,10 @@ layout: post
 title: Fusion Drive for cool people
 date: '2014-10-07 13:49:36'
 tags:
-- hack
+  - hack
 ---
 
-![](http://i.imgur.com/PzdMd8t.jpg)
+![](/images/fusion-drive-for-cool-people/pzdmd8t.jpeg)
 
 [Fusion Drive](https://en.wikipedia.org/wiki/Fusion_Drive) is a Apple technology for make a logic unit like [RAID 0](https://en.wikipedia.org/wiki/Standard_RAID_levels#RAID_0) combining a traditional HDD and a SSD. You can the advantage of both: The system distribute the information that you use with more frequently in the SDD because you need feel that works fast, and also have too storage.
 

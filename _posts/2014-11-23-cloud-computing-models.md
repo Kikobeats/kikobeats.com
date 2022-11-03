@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Cloud Computing Service Models
-image: http://i.imgur.com/eVhmcDa.png
+image: /images/cloud-computing-service-models/header.png
 date: '2014-11-23 15:48:20'
 tags:
-- computer-science
+  - computer-science
 ---
 
-![](https://i.imgur.com/2KxLMUr.png)
+![](/images/cloud-computing-service-models/2kxlmur.png)
 
 Inside **cloud economy** we can found:
 
@@ -19,7 +19,7 @@ Inside **cloud economy** we can found:
 
 Also, take in consideration that the lower layers support the upper layers
 
-![](http://i.imgur.com/1soETWL.jpg)
+![](/images/cloud-computing-service-models/1soetwl.jpeg)
 
 At the end this cloud computing services models has under the [Everything as a service](https://simple.wikipedia.org/wiki/Everything_as_a_service) umbrella.
 

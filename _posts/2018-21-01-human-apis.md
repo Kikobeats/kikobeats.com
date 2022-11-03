@@ -2,9 +2,9 @@
 layout: post
 title: Human APIs
 date: '2018-01-21'
-image: https://i.imgur.com/TTS0TFn.jpg
+image: /images/human-apis/header.jpeg
 tags:
-- javascript
+  - javascript
 ---
 
 ## Title Format
@@ -22,7 +22,7 @@ capitalize('Microlink CDN: Global Edge Cache')
 
 In addition, I created a [alfred-title](https://github.com/Kikobeats/alfred-title) for create format titles on the fly using [Alfred](https://www.alfredapp.com/)
 
-![](https://github.com/Kikobeats/alfred-title/raw/master/demo.gif)
+![](/images/human-apis/kikobeatsalfred-titlerawmasterdemo.gif)
 
 ### Alternatives
 

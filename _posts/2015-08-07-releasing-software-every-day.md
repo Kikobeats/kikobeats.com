@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Releasing software every day
-image: http://i.imgur.com/PvI5Bux.jpg
+image: /images/releasing-software-every-day/header.jpeg
 date: '2015-08-07 15:14:46'
 tags:
-- craftsmanship
+  - craftsmanship
 ---
 
 My vision of the software changed drastically when I started using a control version. First a bit of `svn`, and later `git`. The fact that you can create a *checkpoints* of your code is simply glorious. More later, when I started to feel more comfortable with `git` I started using `git tags` in combination with [semver versioning](http://semver.org/).
@@ -13,7 +13,7 @@ In these days, is very common use NodeJS package for whatever thing. JS is a tin
 
 When I write a package, I try to be very clear with the propose saying why I wrote the package and add all elements that the package need for be used: write a little documentation, license, use a semver versioning politic, provide a browser version, travis integration,... Now I do it *quasi*-automatically, but I had to learn how to do it.
 
-![](http://i.imgur.com/SgdtZqq.jpg)
+![](/images/releasing-software-every-day/sgdtzqq.jpeg)
 
 ## Package routine
 
@@ -25,7 +25,7 @@ For economize the time, I adopt a package routine that I follow all time that I 
 - You can choose if you need a browser version and add the stuff necessary for create it. Now you can use `gulp` command for create a browser version using [Browserify](http://browserify.org/). Also it adds a section in the `README.md`.
 - You can choose if you need a CLI version and add a basic code to invoke the dependency for use in the terminal.
 
-![](https://i.imgur.com/PnjgSTj.gif)
+![](/images/releasing-software-every-day/pnjgstj.gif)
 
 This saves me a lot of time, seriously. Then I write tests and code of the package and release the first version (If I'm very sure that is stable I release `1.0.0`, in other case `0.1.0`). For do it, I use a little bash script that create a git tag version and push it in the master remote:
 

@@ -2,10 +2,10 @@
 layout: post
 title: What is Random
 date: '2017-10-5 16:00:00'
-image: https://i.imgur.com/C7s8inu.jpg
+image: /images/what-is-random/header.jpeg
 tags:
-- computer science
-- javascript
+  - computer science
+  - javascript
 ---
 
 **random** is a term used to describe the process of generate data with no correlation.
@@ -93,7 +93,7 @@ If you need specific random output for your user case, I recommend you use the f
 - [uuid](https://www.npmjs.com/package/uuid) – Universally unique identifier, supporting multiple versions.
 - [nanoid](https://github.com/ai/nanoid) – A tiny, secure URL-friendly unique string ID generator for JavaScript.
 
-![](https://i.imgur.com/rlCYVvc.png)
+![](/images/what-is-random/rlcyvvc.png)
 <figcaption><a href="https://alex7kom.github.io/nano-nanoid-cc">nanoid collision calculator</a> estimates the probability of a collision based on nanoid algorithm.</figcaption>
 
 The world is random. Computers aren't.

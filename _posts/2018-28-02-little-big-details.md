@@ -2,9 +2,9 @@
 layout: post
 title: Little UI Details
 date: '2018-02-28'
-image: https://i.imgur.com/jsILKdK.jpg
+image: /images/little-ui-details/header.jpeg
 tags:
-- design
+  - design
 ---
 
 ## Color
@@ -14,19 +14,19 @@ tags:
 
 -  Use **color** and **weight** to create hierarchy instead of size.
 
-![](https://i.imgur.com/3MfnkFs.png)
+![](/images/little-ui-details/3mfnkfs.png)
 
 - Never use [black](https://ianstormtaylor.com/design-tip-never-use-black). Combine a palette based on a color, from *lightest* to *darkest*. I like generate palette colors using [palx](https://palx.jxnblk.com).
 
-![](https://i.imgur.com/Xg6hOO7.png)
+![](/images/little-ui-details/xg6hoo7.png)
 
 - Don’t use grey text on colored backgrounds. **Satinate** or **opacity** are better options. [Monochrome](https://monochrome.jxnblk.com) is a good tool for do that.
 
-![](https://i.imgur.com/CANDnvL.png)
+![](/images/little-ui-details/candnvl.png)
 
 - Use **accent colors** (for example, at the border) to add color to a bland design.
 
-![](https://i.imgur.com/M3lu0HW.png)
+![](/images/little-ui-details/m3lu0hw.png)
 
 ## Motion
 
@@ -51,15 +51,15 @@ tags:
 
 - Choose your typography based on **legibility** and **context**.
 
-![](https://i.imgur.com/alxHB24.png)
+![](/images/little-ui-details/alxhb24.png)
 
 - Two font families are enough for distinguish between **heading** and **body**. A common pattern is use **Sans Serif** and **Sans** respectively. You can use [fontpair](https://fontpair.co) for do that.
 
-![](https://i.imgur.com/NjQs5sO.png)
+![](/images/little-ui-details/njqs5so.png)
 
 - Two font weights is usually enough: A **normal** font weight (400 or 500) and **bold** (600 or 700) for text you want to emphasize.
 
-![](https://i.imgur.com/1FgZ6Hb.png)
+![](/images/little-ui-details/1fgz6hb.png)
 
 - Font weights under 400 are **hard** to read.
 
@@ -69,15 +69,15 @@ tags:
 
 - Instead of using large blur and spread values to make box shadows more noticeable, use subtle and accomplish the same goal without being as distracting.
 
-![](https://i.imgur.com/hS0UJMl.png)
+![](/images/little-ui-details/hs0ujml.png)
 
 - If you need to use a **bright** background color, and white text on it, you can put the text a nice subtle shadow to make it more readable.
 
-![](https://i.imgur.com/ITWcfYN.jpg)
+![](/images/little-ui-details/itwcfyn.jpeg)
 
 - Use balance shadows, this means, it looks more natural. [Material Design](https://material.io/guidelines/material-design/elevation-shadows.html) has grateful [guidelines](https://codepen.io/sdthornton/pen/wBZdXq#code-area).
 
-![](https://i.imgur.com/pgxcqSt.png)
+![](/images/little-ui-details/pgxcqst.png)
 
 ## Buttons
 
@@ -85,7 +85,7 @@ tags:
 
 - Not every button needs a background color.
 
-![](https://i.imgur.com/DsJUOhi.png)
+![](/images/little-ui-details/dsjuohi.png)
 
 - **Primary** actions should be obvious. Solid, high contrast background colors work great here.
 

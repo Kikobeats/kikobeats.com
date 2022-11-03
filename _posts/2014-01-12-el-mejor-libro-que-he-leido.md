@@ -4,7 +4,7 @@ title: El mejor libro que he leído...
 date: '2014-01-12 16:32:04'
 ---
 
-![](http://imgur.com/b7qULWX.jpg)
+![](/images/el-mejor-libro-que-he-leído/b7qulwx.jpeg)
 
 ...No tiene nada de código en él.
 

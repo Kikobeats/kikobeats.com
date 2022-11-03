@@ -3,12 +3,12 @@ layout: post
 title: The power of ZSH
 date: '2014-06-30 11:08:03'
 tags:
-- computer-science
+  - computer-science
 ---
 
 This days I have discovered [zsh](https://en.wikipedia.org/wiki/Z_shell), [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) and finally [pure](https://github.com/sindresorhus/pure). 
 
-![](http://i.imgur.com/i3XKpDC.png)
+![](/images/the-power-of-zsh/i3xkpdc.png)
 
 Now, I'm happy.
 
@@ -26,18 +26,18 @@ $ geditor # open git modified files in Sublime Text
 
 Obviously Sublime and Chrome are my preferences and you can set up whatever you like. It's not bad if you are lazy, but if you are very lazy, you can type `glog` and get git log per commit clickable and linked with Github:
 
-![](http://i.imgur.com/zW513vW.png)
+![](/images/the-power-of-zsh/zw513vw.png)
 
 
 Until now, this features is common for zsh and bash, but, why zsh is better than bash?
 
 For example, for things like this: If you don't know what directory you want to enter, you can navigate between the options:
 
-![](http://i.imgur.com/PcZw976.png)
+![](/images/the-power-of-zsh/pczw976.png)
 
 or if you don't know the parameter for list hide files, you can check without going to man pages:
 
-![](http://i.imgur.com/nW8s2eH.png)
+![](/images/the-power-of-zsh/nw8s2eh.png)
 
 Simply zsh is sugar for the terminal. zsh extended bash.
 

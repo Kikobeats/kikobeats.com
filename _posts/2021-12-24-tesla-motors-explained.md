@@ -2,10 +2,10 @@
 layout: post
 title: Tesla motors explained
 date: '2021-12-24'
-image: https://i.imgur.com/GZ8HWjs.jpg
+image: /images/tesla-motors-explained/header.jpeg
 ---
 
-![](https://i.imgur.com/YKBD4tB.png)
+![](/images/tesla-motors-explained/ykbd4tb.png)
 
 [Tesla, Inc.](https://en.wikipedia.org/wiki/Tesla,_Inc.) is using an [alternating current](https://en.wikipedia.org/wiki/Alternating_current) (AC) design for all their cars motors.
 
@@ -21,7 +21,7 @@ This is the first kind of motor mounted by Tesla at Model S and X.
 
 It's based on [Nikola Tesla design](https://en.wikipedia.org/wiki/Nikola_Tesla#AC_and_the_induction_motor) (The company name is a tribute to him).
 
-![](https://i.imgur.com/SHbosQJ.png)
+![](/images/tesla-motors-explained/shbosqj.png)
 
 <figcaption>This motor is also known as <a href="https://en.wikipedia.org/wiki/Squirrel-cage_rotor">Squirrel-cage</a>.</figcaption>
 
@@ -33,13 +33,13 @@ In order to compensate this efficiency issue, batter pack sold with these cars i
 
 We can see this motor design as an improvement iteration over the induction motor.
 
-![https://www.youtube.com/watch?v=iIlN_FaN5kM](https://i.imgur.com/1XZBLZF.jpg)
+![https://www.youtube.com/watch?v=iIlN_FaN5kM](/images/tesla-motors-explained/1xzblzf.jpeg)
 
 <figcaption>The motor technology used on these motors are known as <a href="https://insideevs.com/news/461811/video-tesla-model-3-electric-motor-explained/">IPM-SynRM</a>.</figcaption>
 
 They need less input power for generating the same induction motor output power, being energetically most efficient since they don't have the lost efficency issue attached to induction motors.
 
-![](https://i.imgur.com/uHCOvM8.jpg)
+![](/images/tesla-motors-explained/uhcovm8.jpeg)
 
 <figcaption>The permanent magnet motor has been adopted as industry standard.</figcaption>
 
@@ -57,13 +57,13 @@ Tesla is transitioning their vehicles to use permanent magnet motors whenever is
 
 Tesla Model 3 (1860kg) and Model S (2241kg) are too different cars. 
 
-![https://www.youtube.com/watch?v=bNgB5z4MWRI](https://i.imgur.com/s57zoql.png)
+![https://www.youtube.com/watch?v=bNgB5z4MWRI](/images/tesla-motors-explained/s57zoql.png)
 
 <figcaption>The difference of numbers between Model S and 3 is huge.</figcaption>
 
 Theorically, permanent magnet motor supports higher torque, but they are drastically weak in physical strength by the motor form factor.
 
-![https://www.youtube.com/watch?v=bNgB5z4MWRI](https://i.imgur.com/6S13xIn.jpg)
+![https://www.youtube.com/watch?v=bNgB5z4MWRI](/images/tesla-motors-explained/6s13xin.jpeg)
 
 This causes that the permanent motor mounted by Tesla Model 3 is limited in order to avoid major issues like breaking the engine.
 
@@ -75,7 +75,7 @@ This is just in terms of powertrain: Drag coefficient, wheels, and suspension ar
 
 Tesla Model S/X [Plaid](https://en.wikipedia.org/wiki/Tesla_Model_S#Palladium_(Plaid)) (2022) is the last production iteration with the ultimate motor design mounted.
 
-![](https://i.imgur.com/NqRJzn5.jpg)
+![](/images/tesla-motors-explained/nqrjzn5.jpeg)
 
 <figcaption>Plaid is actually shipping a lot of powertrain improvements under the hood.</figcaption>
 
@@ -83,7 +83,7 @@ It's mounting three motors: one induction motor (front) and two permanent motors
 
 Those motors are also cove by a carbon sleeving, resolving the issue related to limited permament motors mounted in Model 3, being possible to unlock all the powertrain potential.
 
-![https://www.youtube.com/watch?v=bNgB5z4MWRI](https://i.imgur.com/QhojUVc.png)
+![https://www.youtube.com/watch?v=bNgB5z4MWRI](/images/tesla-motors-explained/qhojuvc.png)
 
 <figcaption>Carbon sleeving makes possible maximize motor performance.</figcaption>
 

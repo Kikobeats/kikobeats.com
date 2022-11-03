@@ -1,7 +1,7 @@
 ---
 layout: post
 title: React Resources
-image: https://i.imgur.com/6cJoQXs.jpg
+image: /images/react-resources/header.jpeg
 date: '2017-03-26 20:16:16'
 ---
 

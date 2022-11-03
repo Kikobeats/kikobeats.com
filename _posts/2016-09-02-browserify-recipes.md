@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Browserify Recipes
-image: https://i.imgur.com/Fj3PqJR.jpg
+image: /images/browserify-recipes/header.jpeg
 date: '2016-09-02 11:43:46'
 tags:
-- frontend
+  - frontend
 ---
 
 # Creating `require` module in the browser

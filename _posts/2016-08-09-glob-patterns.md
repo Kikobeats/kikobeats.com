@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Glob Patterns
-image: https://github.com/isaacs/node-glob/blob/master/oh-my-glob.gif?raw=true
+image: /images/glob-patterns/header.html
 date: '2016-08-09 14:02:17'
 tags:
-- unix
+  - unix
 ---
 
 A [glob](https://en.wikipedia.org/wiki/Glob_(programming)) is a short expression that lets you select a bunch of files. 99% of the time, there's an asterisk involved.

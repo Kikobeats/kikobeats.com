@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Synchronously asynchronous
-image: http://i.imgur.com/0gQtmR8.jpg
+image: /images/synchronously-asynchronous/header.jpeg
 date: '2015-07-26 16:12:57'
 tags:
-- javascript
-- computer-science
+  - javascript
+  - computer-science
 ---
 
 ## First of all, what's really means asynchronous?
@@ -16,7 +16,7 @@ By **synchronous** we mean a function that calls its callback on the same tick i
 
 NodeJS is based in asynchronous I/O operations. This architecture schema need a way to coordinate the async actions, and for this, is used the **event loop**.
 
-![](http://i.imgur.com/YvlQHW6.png)
+![](/images/synchronously-asynchronous/yvlqhw6.png)
 
 NodeJS used [V8 interpreter](https://en.wikipedia.org/wiki/V8_(JavaScript_engine)) that coverts (on the fly) JavaScript code into C++ code. In C++, for interact native threads with NodeJS events is used [libuv](https://github.com/libuv/libuv). This is pretty awesome because you don't need to think in threads or concurrency: Just need a provide a callback function and you callback will be caller when the operation finish. I can like see NodeJS as more high level language on the top of C++.
 
@@ -121,7 +121,7 @@ Somebody can think that defer an synchronous operation that can be finish quickl
 
 More precisely, `process.nextTick` defers the function **until a completely new stack.**
 
-![](http://i.imgur.com/rPPIYvF.png)
+![](/images/synchronously-asynchronous/rppiyvf.png)
 
 The next example is a good example about how to use `process.nextTick` for interleaving CPU usage and events in the event loop:
 

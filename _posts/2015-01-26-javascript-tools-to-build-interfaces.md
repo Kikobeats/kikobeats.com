@@ -1,24 +1,24 @@
 ---
 layout: post
 title: JavaScript tools to build interfaces
-image: http://i.imgur.com/s7B6Nsm.png
+image: /images/javascript-tools-to-build-interfaces/header.png
 date: '2015-01-26 11:46:00'
 tags:
-- javascript
-- frontend
+  - javascript
+  - frontend
 ---
 
 Transform a user interface concept into code is a task that can be resolved of different ways. The problem is how you organize your code that make scalable, easy to change and easy to maintain.
 
 Now all is more easy in the browser. New techonologies in the client side are appearing and we can create things more easy. So we go to analyze the top libraries and top to manipulate the DOM for creating modern webApps Applications.
 
-![](http://i.imgur.com/tGSXA94.png)
+![](/images/javascript-tools-to-build-interfaces/tgsxa94.png)
 
 ## [Polymer](https://www.polymer-project.org/)
 
 Polymer project is hosted by Google that unify [W3C specification](https://github.com/w3c/webcomponents) for use webcomponents in the client-side.
 
-![](http://i.imgur.com/5yWwXLz.png)
+![](/images/javascript-tools-to-build-interfaces/5ywwxlz.png)
 
 The most important of this feature is **Shadow DOM**, that make possible manipulate the DOM directly from JavaScript.
 
@@ -26,17 +26,17 @@ Also exists a set of complementary tools that you can use with polymer, such as 
 
 The mainly problem of the project is that you need to load a polyfill (~120kb) for support Web Components specification in your browser because the support of this new feature is a little poor.
 
-![](http://i.imgur.com/N7On6SX.png)
+![](/images/javascript-tools-to-build-interfaces/n7on6sx.png)
 
 Oficially the status of the project is *dev preview*, so is nice for little projects and prepare your body for the future, but definetly not completely ready for production.
 
-![](http://i.imgur.com/IMW6CJs.png)
+![](/images/javascript-tools-to-build-interfaces/imw6cjs.png)
 
 ## [React](https://facebook.github.io/react/)
 
 React is the approach by Facebook and Instragram engineer team. The main different between React and Polymer is that React use a **Virtual DOM** instead of **Shadow DOM**.
 
-![](http://i.imgur.com/W8K6jHe.png)
+![](/images/javascript-tools-to-build-interfaces/w8k6jhe.png)
 
 Basically in **Virtual DOM**, the DOM of the elements doens't really exist. It is manipulated in memory diffing the DOM tree and render after changes. If you view the code under a page built under ReactJS you don't see anything. So actually it is not the problem. The problem is related when the search scrappers such as Google or Bing (for say something, don't kill me) try to index your HTML and this simply doesn't exist. 
 
@@ -48,7 +48,7 @@ The cost of React in the frontend is a little more expensive than Polymer (~130k
 
 Also is in *dev preview*.
 
-![](http://i.imgur.com/30EFIi7.png)
+![](/images/javascript-tools-to-build-interfaces/30efii7.png)
 
 ## [Atoms](http://atoms.tapquo.com)
 
@@ -56,7 +56,7 @@ Also is in *dev preview*.
 
 The way that atoms structured the logic form to create a components is using a chemical equivalence: an atom is the element more basic (for example, an input), an molecule is a group of atom (for example a form) and a organism is a set of molecules (the views of your applications). This makes that you can structure your code very logic and easy to understand.
 
-![](http://i.imgur.com/6d2OnWH.png)
+![](/images/javascript-tools-to-build-interfaces/6d2onwh.png)
 
 This approach is inspired in the article [Atomic Design written by Brad Frost.](http://bradfrost.com/blog/post/atomic-web-design/).
 
@@ -70,7 +70,7 @@ The only bad part in this project is that need a better open source ecosystem. H
 
 In general, more people need to discover the project for feel the power.
 
-![](http://i.imgur.com/GsBYh36.png)
+![](/images/javascript-tools-to-build-interfaces/gsbyh36.png)
 
 ## [Meteor](http://meteor.com)
 
@@ -84,7 +84,7 @@ The documentation of the project is one of the best example about how to create 
 
 Personally I'm very happy using meteor in some projects. Depends of your opinion and of the project where you can to apply.
 
-![](http://i.imgur.com/0f6RlYB.png)
+![](/images/javascript-tools-to-build-interfaces/0f6rlyb.png)
 
 ## [Riot](https://github.com/muut/riotjs)
 
@@ -94,14 +94,14 @@ Riot is a little library (~2.5kb, awesome) that provide the necessary code that 
 
 It is inspired in React and use a Virtual DOM approach, but the size of the library in production is significantly more little:
 
-![](http://i.imgur.com/DIbi5lp.png)
-![](http://i.imgur.com/XmEFchU.png)
+![](/images/javascript-tools-to-build-interfaces/dibi5lp.png)
+![](/images/javascript-tools-to-build-interfaces/xmefchu.png)
 
 If you [compare](https://muut.com/riotjs/compare.html) a piece written in React and later with Riot is very similar and more human readable. Also it's look that a mature project (the current last stable version is 2.x).
 
 Maybe it lose in the part of SEO/Web Scrapping but depend of the use that you do it of him can be a good solution for determinate problems. The good news in this point that this vision is in the [roadmap](https://muut.com/riotjs/faq.html).
 
-![](http://i.imgur.com/oHvVJLo.png)
+![](/images/javascript-tools-to-build-interfaces/ohvvjlo.png)
 
 ## [Ractive](http://ractivejs.org)
 

@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Set Up MongoDB with Security
-image: http://i.imgur.com/g6MSv5k.png
+image: /images/set-up-mongodb-with-security/header.png
 date: '2015-01-18 21:19:25'
 tags:
-- database
+  - database
 ---
 
 First run mongodb instance:

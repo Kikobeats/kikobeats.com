@@ -2,10 +2,11 @@
 layout: post
 title: Writing Documentation
 date: '2018-09-12'
-image: https://i.imgur.com/zQ9xjyx.jpg
+image: /images/writing-documentation/header.jpeg
 tags:
-- design
----  
+  - design
+---
+  
 
 > You have to sell what it is you're building in your documentation. It's not just describing what it is and how to use it. It's about telling interesting stories. 
 <cite>Rico Sta. Cruz</cite>

@@ -1,17 +1,17 @@
 ---
 layout: post
 title: What is Solution Domain
-image: https://i.imgur.com/WuMtr8m.jpg
+image: /images/what-is-solution-domain/header.jpeg
 date: '2016-07-21 10:03:20'
 tags:
-- computer-science
+  - computer-science
 ---
 
 In a moment of the industry where every day we have new frameworks and tools, is a good moment to remember old things.
 
 While the **problem domain** defines the environment where the solution will come to work, the **solution domain** defines the abstract environment where the solution is developed. 
 
-![](https://i.imgur.com/3HGJ4CP.gif)
+![](/images/what-is-solution-domain/3hgj4cp.gif)
 
 The differences between those two domains are the cause for possible errors when the solution is planted into the **problem domain**.
 
@@ -33,7 +33,7 @@ What is the balance between the cost of the time to find a enough good solution?
 
 I always related it in a more visual way with the algorithm [Hill Climbing algorithm](https://en.wikipedia.org/wiki/Hill_climbing) that is part of algorithm intelligence division, used for search a good solution in a resonable fraction of time.
 
-![](https://i.imgur.com/31I2oPb.png)
+![](/images/what-is-solution-domain/31i2opb.png)
 
 ### References
 

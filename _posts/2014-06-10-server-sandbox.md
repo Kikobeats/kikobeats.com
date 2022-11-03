@@ -3,10 +3,10 @@ layout: post
 title: Server Sandbox
 date: '2014-06-10 06:13:24'
 tags:
-- product
+  - product
 ---
 
-![](https://raw.githubusercontent.com/Kikobeats/server-sandbox/docs/cover.jpg)
+![](/images/server-sandbox/kikobeatsserver-sandboxdocscover.jpeg)
 
 I have written a little book called [Server Sandbox](https://www.gitbook.io/book/kikobeats/server-sandbox) and the objective of this book is learn some protocols for internet. My english is very bad and only is readable because [Elena Torrï¿½](https://twitter.com/Elenarcolepsia) corrected some things.
 
@@ -15,7 +15,7 @@ But, Why I decided a write a little book?
 
 ## Practice Markdown
 
-![](http://i.imgur.com/zGnYHb3.png)
+![](/images/server-sandbox/zgnyhb3.png)
 
 I really love markdown and I think that is the **future of the processor of text**. I wanted to try if is possible use markdown instead of LibreOffice / Word / Whatever.
 
@@ -36,7 +36,7 @@ I think that Multiplataform Markdown editor is necessary, and need to be a good 
 
 ## Make University funny
 
-![](http://i.imgur.com/nTlkVpS.jpg)
+![](/images/server-sandbox/ntlkvps.jpeg)
 
 So yes, because my university sometimes is very bored. Some subjects and teachers are fun and interesting but not all. I decided to write my notes like a book of a subject and share it. I do prefer sharing my notes before they gather dust in my dropbox folder.
 

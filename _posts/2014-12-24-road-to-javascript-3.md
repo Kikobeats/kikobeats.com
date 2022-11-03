@@ -1,14 +1,14 @@
 ---
 layout: post
 title: 'Road to JavaScript #3'
-image: http://i.imgur.com/wOl61r1.jpg
+image: /images/road-to-javascript-3/header.jpeg
 date: '2014-12-24 07:57:03'
 tags:
-- javascript
-- database
+  - javascript
+  - database
 ---
 
-![](http://i.imgur.com/Zf3fUxo.png)
+![](/images/road-to-javascript-3/zf3fuxo.png)
 
 ## Truth, Equality in JavaScript and CoffeeScript
 
@@ -59,7 +59,7 @@ variable2 # => false
 Always is important know the values that things in JavaScript can return. To know it I recommend check [truth, equality and JavaScript](http://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript) and [Better JS equality table](http://strilanc.com/visualization/2014/03/27/Better-JS-Equality-Table.html).
 
 
-![](http://i.imgur.com/OYs6tGi.png)
+![](/images/road-to-javascript-3/oys6tgi.png)
 
 ## JavaScript Application Architecture On The Road To 2015
 
@@ -69,7 +69,7 @@ Personally I think that 2015 is the year of databases anywhere, in special in th
 
 About [ECMAScript 6 features](https://github.com/lukehoban/es6features) is true that some features are now available, but still need too much effort to be consolidated in this new year.
 
-![](http://i.imgur.com/b2cPhQa.png)
+![](/images/road-to-javascript-3/b2cphqa.png)
 
 ## Front-end Job Interview Questions
 
@@ -89,7 +89,7 @@ Definetely the right way to learn more about Functional Programming is try a pur
 
 About this, another useful library for JavaScript inspired in ClojureScript is [transducers.js](https://github.com/jlongster/transducers.js) that allow you use Clojure approach in JavaScript. To understand better check the author's post [one](http://jlongster.com/Transducers.js--A-JavaScript-Library-for-Transformation-of-Data) and [two](http://jlongster.com/Transducers.js-Round-2-with-Benchmarks).
 
-![](http://i.imgur.com/tXNSjAO.png)
+![](/images/road-to-javascript-3/txnsjao.png)
 
 ## Client, memory and Databases
 

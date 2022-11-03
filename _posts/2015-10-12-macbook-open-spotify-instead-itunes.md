@@ -1,10 +1,10 @@
 ---
 layout: post
 title: MacBook open Spotify instead of iTunes
-image: http://i.imgur.com/FsHNJ7u.jpg
+image: /images/macbook-open-spotify-instead-of-itunes/header.jpeg
 date: '2015-10-12 08:52:00'
 tags:
-- hack
+  - hack
 ---
 
 Times ago I used to use iTunes. Times when the iPod was the device for music fanatics, and the only way to sync up the library was using iTunes. But now, with services as Spotify, listen music in streaming is much more flexible. Now all changed.

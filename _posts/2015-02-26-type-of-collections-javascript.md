@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Different type of Collections in JavaScript
-image: http://i.imgur.com/p4VwGtO.jpg
+image: /images/different-type-of-collections-in-javascript/header.jpeg
 date: '2015-02-26 12:46:42'
 tags:
-- javascript
+  - javascript
 ---
 
 When you are using a programming language, you need use something for keep your data information. Someting as a *container*.
@@ -100,7 +100,7 @@ wmap.get(obj)
 
 ## You need more?
 
-![](http://i.imgur.com/wBQKyyv.png)
+![](/images/different-type-of-collections-in-javascript/wbqkyyv.png)
 
 Maybe you throw at fault other data structures. What's happens with `Heap`, `List`, `MultiMap`? 
 
