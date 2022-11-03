@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Analyzing JavaScript dependencies
-image: https://i.imgur.com/gyCeulk.jpg
+image: /images/analyzing-javascript-dependencies/header.jpeg
 date: '2017-08-12 15:03:02'
 tags:
-- javascript
+  - javascript
 ---
 
 In this blog post, I go to collect a set of tools used to help developers choose better dependencies and see the hidden cost of your choices.
@@ -12,7 +12,7 @@ In this blog post, I go to collect a set of tools used to help developers choose
   
 ## Packagephobia
 
-![](https://i.imgur.com/U5WP0LG.png)
+![](/images/analyzing-javascript-dependencies/u5wp0lg.png)
 
 [Packagephobia](https://packagephobia.now.sh/) reports you:
 
@@ -22,7 +22,7 @@ In this blog post, I go to collect a set of tools used to help developers choose
 
 ## Bundlephobia
 
-![](https://i.imgur.com/AQyExPj.png)
+![](/images/analyzing-javascript-dependencies/aqyexpj.png)
 
 [Bundlephobia](https://bundlephobia.com/) is pretty similar to packagephobia but oriented from a frontend side perspective, reporting you the size based of the webpack bundle size.
 
@@ -78,7 +78,7 @@ I love use this tool specially in projects with many contributors, where the cod
 
 ## size-limit
 
-![](https://github.com/ai/size-limit/raw/master/screenshots/example.png)
+![](/images/analyzing-javascript-dependencies/aisize-limitmainimgexample.png)
 
 [size-limit](https://github.com/ai/size-limit) is a tool to prevent JavaScript libraries bloat. With it, you know exactly for how many kilobytes your JS library increases the user bundle.
 
@@ -86,7 +86,7 @@ Adding `size-limit` to your continuous integration service (such as Travis CI) i
 
 ## next-update
 
-![](https://i.imgur.com/62wn5B2.png)
+![](/images/analyzing-javascript-dependencies/62wn5b2.png)
 
 [next-update](https://github.com/bahmutov/next-update) aims for automatize your upgrade dependencies process.
 

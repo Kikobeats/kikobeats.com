@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Fink, URL Shortener for Masses
-image: https://i.imgur.com/AvCF4mP.jpg
+title: 'Fink, URL Shortener for Masses'
+image: /images/fink-url-shortener-for-masses/header.jpeg
 date: '2016-02-27 19:28:20'
 tags:
-- product
+  - product
 ---
 
 Months ago I created [Fink](http://xn--rn8h.ws/), a URL Shortener service that I called it *for masses*.
@@ -63,12 +63,12 @@ It's interesting because when an emoji is present into a URL, itâ€‹ doesn't
 
 An URL (on Twitter) needs 23 characters. These characters are counted as representation of the link and doesn't matter what URL shortener you use for generate the link: All links are counted as 23 characters
 
-![](https://i.imgur.com/enzwRo5.png)
+![](/images/fink-url-shortener-for-masses/enzwro5.png)
 *140 - 117 = 23 characters for represent a normal link.*
 
 But if you use an URL based on emojis, instead of count it as 23 characters, the URL counts as the URL extension and now, the emoji is not represented as image!
 
-![](https://i.imgur.com/gh7eO4v.png)
+![](/images/fink-url-shortener-for-masses/gh7eo4v.png)
 *dafuq twitter, I have more space for words*
 
 It's means that, at the major part of the time, are saving space for write more in your tweets because rarely a URL shortener takes more than 22 characters.

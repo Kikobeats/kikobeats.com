@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Finepack, organizes your JSON files
-image: https://camo.githubusercontent.com/b337f0fc3944642696d04f453094b25c7a9312b9/687474703a2f2f692e696d6775722e636f6d2f4135367177716f2e706e67
+title: 'Finepack, organizes your JSON files'
+image: /images/finepack-organizes-your-json-files/header.png
 date: '2015-03-08 09:18:26'
 tags:
-- product
+  - product
 ---
 
 This week I wrote a library that I could write some time ago: [finepack](https://github.com/Kikobeats/finepack).

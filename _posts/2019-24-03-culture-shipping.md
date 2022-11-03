@@ -2,7 +2,7 @@
 layout: post
 title: Culture of Shipping
 date: '2019-03-24'
-image: https://i.imgur.com/Uvd4LYJ.jpg
+image: /images/culture-of-shipping/header.jpeg
 ---
 
 ## Build Less

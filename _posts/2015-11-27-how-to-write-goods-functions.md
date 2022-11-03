@@ -1,13 +1,13 @@
 ---
 layout: post
 title: 'Functions: The Right Way'
-image: https://i.imgur.com/A8myRDv.jpg
+image: /images/functions-the-right-way/header.jpeg
 date: '2015-11-27 22:07:32'
 tags:
-- craftsmanship
+  - craftsmanship
 ---
 
-![](https://i.imgur.com/Ve9my2x.png)
+![](/images/functions-the-right-way/ve9my2x.png)
 
 > Every function or piece of code should have one entry point (input) and one exit point (output).
 <cite>Edsger W. Dijkstra</cite>

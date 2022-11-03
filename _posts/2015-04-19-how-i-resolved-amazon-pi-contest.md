@@ -1,10 +1,10 @@
 ---
 layout: post
 title: How I resolved Amazon π Contest
-image: http://i.imgur.com/X2Ka2kZ.jpg
+image: /images/how-i-resolved-amazon-π-contest/header.jpeg
 date: '2015-04-19 16:45:32'
 tags:
-- hack
+  - hack
 ---
 
 Time in the past, a wild tweet appeared in my timeline:
@@ -39,7 +39,7 @@ This is the result of the code:
 
 It reports me the [0136776310.com](http://0136776310.com) and efectively, I resolved the first part of the contest:
 
-![](http://i.imgur.com/VRxy2EE.png)
+![](/images/how-i-resolved-amazon-π-contest/vrxy2ee.png)
 
 The next exercise was waiting me. I knew that a brute force is just a simple people filter for the first step, so I really wanted to resolved the next exercise.
 
@@ -51,6 +51,6 @@ Now the output of the exercise that will resolve the problem is, first, a primer
 
 And done!
 
-![](http://i.imgur.com/HfezX6c.png)
+![](/images/how-i-resolved-amazon-π-contest/hfezx6c.png)
 
 The truth is that I really liked it. I did not continue with the selection process because it was a bit heavy, but congratulations to Amazon for the hiring process.

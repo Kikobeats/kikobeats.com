@@ -3,10 +3,10 @@ layout: post
 title: Efficient CSS
 date: '2014-03-25 14:33:02'
 tags:
-- frontend
+  - frontend
 ---
 
-![](http://i.imgur.com/0b58qqE.jpg)
+![](/images/efficient-css/0b58qqe.jpeg)
 
 *Selectors have an inherent efficiency, and to quote Steve Souders, the order of more to less efficient CSS selectors goes thus:*
 

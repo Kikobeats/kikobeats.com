@@ -1,10 +1,10 @@
 ---
 layout: post
 title: 'CoffeeScript secrets: or= operator'
-image: http://i.imgur.com/URHcs5Z.jpg
+image: /images/coffeescript-secrets-or-operator/header.jpeg
 date: '2015-05-17 09:54:55'
 tags:
-- javascript
+  - javascript
 ---
 
 I'm sure that, like me, you are using this pattern in JavaScript for be sure about the value of a variable or assign one by default:

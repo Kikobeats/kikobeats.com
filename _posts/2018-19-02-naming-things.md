@@ -2,9 +2,9 @@
 layout: post
 title: Naming Things
 date: '2018-02-19'
-image: https://i.imgur.com/252uMRU.png
+image: /images/naming-things/header.png
 tags:
-- product
+  - product
 ---
 
 Because **naming is hard**, when you create a new project is important choose the right name.

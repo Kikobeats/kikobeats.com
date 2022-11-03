@@ -1,10 +1,10 @@
 ---
 layout: post
 title: UNIX for Developers
-image: http://i.imgur.com/s0cuS58.jpg
+image: /images/unix-for-developers/header.jpeg
 date: '2015-07-22 10:12:25'
 tags:
-- unix
+  - unix
 ---
 
 # Philosophy
@@ -23,7 +23,7 @@ tags:
 
 # Under NodeJS
 
-![](http://i.imgur.com/9ZLoYuu.png)
+![](/images/unix-for-developers/9zloyuu.png)
 
 1. *Write modules that do one thing well. Write a new module rather than complicate an old one.*
 2. *Write modules that encourage composition rather than extension.*
@@ -36,7 +36,7 @@ tags:
 
 # Keep in mind
 
-![](http://i.imgur.com/iiZRvoc.jpg)
+![](/images/unix-for-developers/iizrvoc.jpeg)
 
 1. *Working is better than perfect.*
 2. *Focus is better than features.*
@@ -45,7 +45,7 @@ tags:
 
 # Extra
 
-![](https://i.vimeocdn.com/video/389233413_640.jpg)
+![](/images/unix-for-developers/video389233413_640.jpeg)
 
 > When abstractions are kept to the minimum necessary, it's much easier to see which ones are good ideas and which ones are mistaken ideas. With larger collections of ideas branded into cohesive framework ideologies, it's very easy for unjustified abstractions to sneak in under the cover of the more useful pieces.
 <cite>[Substack](http://substack.net/how_I_write_modules)</cite>

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Sailor, Components in the backend
+title: 'Sailor, Components in the backend'
 date: '2014-08-30 07:54:11'
 tags:
-- product
+  - product
 ---
 
-![](https://avatars1.githubusercontent.com/u/8198912)
+![](/images/sailor-components-in-the-backend/u8198912.png)
 
 I started this summer trying something concepts and modifying the [Sails core](https://github.com/balderdashy/sails) and finally I launch my own open source project.
 
@@ -14,13 +14,13 @@ During this time I was in the [Ironhack Web Development Bootcamp in Barcelona](h
 
 The new academic year going to start in the [University of Murcia](http://www.um.es/web/english/). I feel like Harry Potter when Hogwarts starts again after the summer.
 
-![](http://i.imgur.com/pnTXyeN.jpg)
+![](/images/sailor-components-in-the-backend/pntxyen.jpeg)
 
 I learned a lot in Ironhack and I have some offers around Barcelona, but I feel that first I have to finish my academic education.
 
 This year is a little different because I'm going to specify my Computer Science bachellor in Technology of the information (most known as *networks*).
 
-![](https://i.imgur.com/3nnyMHA.jpg)
+![](/images/sailor-components-in-the-backend/3nnymha.jpeg)
 
 Really I'm interesting in work remotely. I like the idea of the [digital nomad](https://en.wikipedia.org/wiki/Digital_nomad) and to be honest I would like to work sails team. [Integrate my project with the core](https://github.com/balderdashy/sails/pull/2083) and crafting software together. *Time to time*.
 
@@ -30,6 +30,6 @@ So, I have some challenges for the next months. The education, the job, and othe
 
 Back home and see old friend is the best part. Finally [these](https://speakerdeck.com/kikobeats/sailor-components-in-the-backend) are the slides that resume sailor project.
 
-![](http://i.imgur.com/8ejNwbK.png)
+![](/images/sailor-components-in-the-backend/8ejnwbk.png)
 
 C'mon!

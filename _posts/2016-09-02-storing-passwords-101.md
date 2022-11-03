@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Storing Passwords 101
-image: https://i.imgur.com/Jlt6qh2.png
+image: /images/storing-passwords-101/header.png
 date: '2016-09-02 09:18:14'
 tags:
-- backend
+  - backend
 ---
 
 # Don't use hash algorithm
@@ -87,7 +87,7 @@ bcrypt.genSaltSync(11) // $2a$11$/7YSZ7uZH0ouTTDl4BAGve
 
 The salt is part of the final hash.
 
-![](http://dustwell.com/images/bcrypt_output_string2.png)
+![](/images/storing-passwords-101/web20190416200850im_httpdustwell.png)
 
 As you can see, it stores both the salt, and the hashed output in the string.
 
@@ -97,7 +97,7 @@ All this is useless if the input password is 12345.
 
 Best trick that I know for that: auto-generate strong password per service using [1Password](https://1password.com/):
 
-![](https://d17oy1vhnax1f7.cloudfront.net/items/3g0B2c0j2K3T360c1F0K/Screen%20Recording%202016-09-02%20at%2011.13%20am.gif?v=23905051)
+![](/images/storing-passwords-101/mediaopa8generate-password.png)
 
 # Bibliography
 

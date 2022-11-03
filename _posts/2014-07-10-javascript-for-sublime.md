@@ -3,20 +3,20 @@ layout: post
 title: Javascript for Sublime
 date: '2014-07-10 06:05:14'
 tags:
-- computer-science
+  - computer-science
 ---
 
-![](http://i.imgur.com/zcJn6x2.png)
+![](/images/javascript-for-sublime/zcjn6x2.png)
 
 ### [Better Javascript](https://sublime.wbond.net/packages/Better%20JavaScript)
 
 JavaScript have many ways to do something and sometimes Sublime Text can't interpeter good your Javascript code. For Example, If you define methods with `prototype` and try to use `cmd + R` shortcut to access it isn't possible. In general this plugin fix this type of errors an convert this:
 
-![](http://int3h.github.io/sublime-better-javascript/images/screenshot-bad-symbols.png)
+![](/images/javascript-for-sublime/sublime-better-javascriptimagesscreenshot-bad-symbols.png)
 
 in this:
 
-![](http://int3h.github.io/sublime-better-javascript/images/screenshot-good-symbols.png)
+![](/images/javascript-for-sublime/sublime-better-javascriptimagesscreenshot-good-symbols.png)
 
 ### [JavaScript Snippets](https://sublime.wbond.net/packages/JavaScript%20Snippets)
 
@@ -108,7 +108,7 @@ it('${1:description}', function() {
 
 Improve your worfklow with snippets for all method of the console and greate way to call it.
 
-![](https://raw.github.com/caiogondim/js-console-sublime-snippets/master/snippets.gif)
+![](/images/javascript-for-sublime/caiogondimjs-console-sublime-snippetsmastersnippets.gif)
 
 ```js
 /* Methods covered */
@@ -142,7 +142,7 @@ Also include the snippets for CoffeeScript.
 
 Snippets for manipulate the DOM and good snippets for NodeJS. If you decide install only a one package of snippets, this is the key.
 
-![](https://cloud.githubusercontent.com/assets/398893/3528110/d55390be-078b-11e4-8587-db23277b50af.gif)
+![](/images/javascript-for-sublime/assets3988933528110d55390be-078b-11e4-8587-db23277b50af.gif)
 
 List of Snippets:
 
@@ -336,7 +336,7 @@ You can try a demo [here](http://ternjs.net/doc/demo.html).
 
 ### [Sublimelinter for Javascript](https://sublime.wbond.net/packages/SublimeLinter-jshint)
 
-![](http://www.jshint.com/res/jshint-dark.png)
+![](/images/javascript-for-sublime/resjshint-dark.png)
 
 Linter is basic to write good code, and JSHint is the best linter for JavaScript . You must use it!
 

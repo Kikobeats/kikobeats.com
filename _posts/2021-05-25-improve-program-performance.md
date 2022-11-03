@@ -2,7 +2,7 @@
 layout: post
 title: How to improve a program perfomance
 date: '2021-05-25'
-image: https://i.imgur.com/FNixKk0.jpg
+image: /images/how-to-improve-a-program-perfomance/header.jpeg
 ---
 
 Essentially you have to do the following things, in a loop:

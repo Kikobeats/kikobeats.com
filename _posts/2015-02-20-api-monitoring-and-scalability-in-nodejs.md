@@ -1,10 +1,10 @@
 ---
 layout: post
 title: API Monitoring and Scalability in NodeJS
-image: http://i.imgur.com/0Wmkv62.png
+image: /images/api-monitoring-and-scalability-in-nodejs/header.png
 date: '2015-02-20 14:13:03'
 tags:
-- javascript
+  - javascript
 ---
 
 When you are a public service that have clients (or not necessary client, you can have users, but with clients all is more important) you need to know how the people are using the service.
@@ -17,9 +17,9 @@ Then, you need to monitoring.
 
 Depend of your stack this can be more or less complicated to integrate. I have a project called [zombts](zombts.com) that use the [Meteor](meteor.com) framework. Because is a very specific environment, exist a service called [Kadira](https://kadira.io) that is designed specificy for recollect information from Meteor server, so the integration it's very transparent because is very specific and offers you a good dashboard with uniform useful information (and it's looks very nice):
 
-![](http://i.imgur.com/IL8ZQtn.png)
+![](/images/api-monitoring-and-scalability-in-nodejs/il8zqtn.png)
 
-![](http://i.imgur.com/ZYBKQJv.png)
+![](/images/api-monitoring-and-scalability-in-nodejs/zybkqjv.png)
 
 But not always is that easy. 
 
@@ -65,8 +65,8 @@ In my personal case I used [PM2](https://github.com/Unitech/pm2). It provides me
 
 About the metrics integration part that was very simple and the result are amazing:
 
-![](http://i.imgur.com/DUObcds.png)
-![](http://i.imgur.com/1GSN71C.png)
-![](http://i.imgur.com/vihGDVn.png)
+![](/images/api-monitoring-and-scalability-in-nodejs/duobcds.png)
+![](/images/api-monitoring-and-scalability-in-nodejs/1gsn71c.png)
+![](/images/api-monitoring-and-scalability-in-nodejs/vihgdvn.png)
 
 The time that I spent to setup the load balancer + metrics was ridiculous and provide me some useful information that I was looking for. Definely I love it.

@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Streams for every day
-image: http://i.imgur.com/7O32Fbv.jpg
+image: /images/streams-for-every-day/header.jpeg
 date: '2015-12-03 14:28:25'
 tags:
-- javascript
+  - javascript
 ---
 
 > "Streams in node are one of the rare occasions when doing something the fast way is actually easier. SO USE THEM. not since bash has streaming been introduced into a high level language as nicely as it is in node."

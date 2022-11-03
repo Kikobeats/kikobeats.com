@@ -1,13 +1,13 @@
 ---
 layout: post
 title: 'Road to JavaScript #4'
-image: https://31.media.tumblr.com/tumblr_lv1i9b3GAn1r03eggo1_r1_500.gif
+image: /images/road-to-javascript-4/header.gif
 date: '2015-04-02 10:30:29'
 tags:
-- javascript
+  - javascript
 ---
 
-![](http://cyber.wizard.institute/mad_science_wizard.svg)
+![](/images/road-to-javascript-4/mad_science_wizard.svg)
 
 ## Cyberwizard Institute
 
@@ -21,13 +21,13 @@ I started reading [Career advice from Tom](https://github.com/cyberwizardinstitu
 
 Take some time and take a tour because it's worth.
 
-![](http://i.imgur.com/jSIEzyY.jpg)
+![](/images/road-to-javascript-4/jsiezyy.jpeg)
 
 ## Free for dev (|| nerd)
 
 [This](https://github.com/ripienaar/free-for-dev) is a list of awesome stuff that are free for developers: platform, servers, software... you can't say that you can't do it!
 
-![](http://i.imgur.com/zNWVPEG.jpg)
+![](/images/road-to-javascript-4/znwvpeg.jpeg)
 
 ## CSON, CoffeeScript JSON format
 
@@ -35,7 +35,7 @@ If you know a little of me, you know that I'm in love with CoffeeScript, but in 
 
 [CSON](https://github.com/bevry/cson) is the CoffeeScript JSON format out of the box. The library provides you all that you need for convert between format, read, write and I found it very elaborate. I want to use it!
 
-![](http://i.imgur.com/pkgRMY9.jpg)
+![](/images/road-to-javascript-4/pkgrmy9.jpeg)
 
 ## Tips for write better code
 

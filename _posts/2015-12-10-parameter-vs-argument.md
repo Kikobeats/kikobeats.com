@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Parameter vs Argument
-image: http://i.imgur.com/l7qBiO8.jpg
+image: /images/parameter-vs-argument/header.jpeg
 date: '2015-12-10 09:31:57'
 tags:
-- computer-science
+  - computer-science
 ---
 
 ```javascript

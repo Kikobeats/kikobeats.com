@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Base58 Is Base64 for Humans
-image: https://i.imgur.com/TXWfO18.jpg
+image: /images/base58-is-base64-for-humans/header.jpeg
 date: '2016-01-11 23:05:45'
 tags:
-- computer-science
+  - computer-science
 ---
 
 I discovered it reading the spanish version of the Wikipedia [bitcoin](https://es.wikipedia.org/wiki/Bitcoin#Direcciones) entry.

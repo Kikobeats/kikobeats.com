@@ -1,7 +1,7 @@
 ---
 layout: post
 title: styleguide
-image: http://oshl.edu.umh.es/wp-content/uploads/sites/371/2014/07/ghost_logo_big.png
+image: /images/styleguide/header.png
 date: '2015-12-21 22:58:36'
 ---
 
@@ -127,11 +127,11 @@ if (cluster.isMaster) {
 
 Months ago I created [Fink](http://xn--rn8h.ws/), a URL Shortener service that I called it *for masses*.
 
-![](http://placekitten.com/450/300)
+![](/images/styleguide/450300.jpeg)
 <figcaption>This text is the caption for the image</figcaption>
 
 ```
-![](http://placekitten.com/450/300)
+![](/images/styleguide/450300-1.jpeg)
 <figcaption>This text is the caption for the image</figcaption>
 ```
 

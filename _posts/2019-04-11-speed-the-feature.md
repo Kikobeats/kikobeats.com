@@ -2,10 +2,10 @@
 layout: post
 title: Speed is the feature
 date: '2019-11-04'
-image: https://i.imgur.com/rDY6kZq.jpg
+image: /images/speed-is-the-feature/header.jpeg
 ---
 
-![](https://i.imgur.com/M1QzuX6.png)
+![](/images/speed-is-the-feature/m1qzux6.png)
 
 <figcaption>Taking real time screenshots using <a href="https://api.microlink.io">api.microlink.io</a>, from 15s to ~900ms.</figcaption>
 
@@ -31,7 +31,7 @@ Yeah, I know, it sounds very obvious, but most of us, as programmers, think code
 
 In fact, if we want to think where _physically_ the software is running, the differences are even more obvious.
 
-![](https://i.imgur.com/HwOoD9Y.jpg)
+![](/images/speed-is-the-feature/hwood9y.jpeg)
 
 <figcaption>From <a href="https://twitter.com/frioux/status/918130735034314752">Systems Performance at Scale</a>.</figcaption>
 

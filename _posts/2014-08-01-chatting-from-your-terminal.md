@@ -3,14 +3,14 @@ layout: post
 title: Chatting from your terminal
 date: '2014-08-01 13:02:09'
 tags:
-- hack
+  - hack
 ---
 
-![](http://www.profanity.im/images/profanity_logo.png)
+![](/images/chatting-from-your-terminal/imagesprofanity_logo.png)
 
 If you are a real freak, you must hangouts/facebook/whatever-that-support-XMPP-protocol chat from terminal:
 
-![](http://i.imgur.com/LehabAL.png)
+![](/images/chatting-from-your-terminal/lehabal.png)
 
 ## How to
 
@@ -33,7 +33,7 @@ more information [here](http://www.profanity.im/reference.html#account).
 
 3) Login your account:
 
-![](http://i.imgur.com/Vdk8t5f.png)
+![](/images/chatting-from-your-terminal/vdk8t5f.png)
 
 ```
 /connect google
@@ -51,7 +51,7 @@ more information [here](http://www.profanity.im/reference.html#account).
 
 ## BONUS
 
-![](http://i.imgur.com/GbdAr9E.png)
+![](/images/chatting-from-your-terminal/gbdar9e.png)
 
 change the theme:
 

@@ -3,11 +3,11 @@ layout: post
 title: CoffeeScript Fat Arrow BUSTED
 date: '2014-09-21 09:25:43'
 tags:
-- javascript
-- computer-science
+  - javascript
+  - computer-science
 ---
 
-![](http://i.imgur.com/LScXF4p.png)
+![](/images/coffeescript-fat-arrow-busted/lscxf4p.png)
 
 **CoffeeScript** is much more than a simple language that compile to Javascript: It makes my code clean, readable and more easy to maintainable.
 
@@ -61,7 +61,5 @@ And ALWAYS remember that the key here is the **context**.
 
     If the function is an event handler or callback, the context is the event owner or caller.
     eg: button.onClick(makeManhattan)
-
-<space-medium></space-medium>
 
 Source: [1](http://michaeljosephkramer.com/2013/03/12/the-simplified-fat-arrow-guide-for-coffeescript/) | [2](http://maxrohde.com/2014/03/20/coffeescript-fat-arrow-explained/)

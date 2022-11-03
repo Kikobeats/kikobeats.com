@@ -2,9 +2,9 @@
 layout: post
 title: What is Contrast
 date: '2017-12-09 11:00:00'
-image: https://i.imgur.com/lRVCxUl.png
+image: /images/what-is-contrast/header.png
 tags:
-- web
+  - web
 ---
 
 <style>

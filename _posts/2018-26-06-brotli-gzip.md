@@ -2,9 +2,9 @@
 layout: post
 title: Brotli is the new gzip
 date: '2018-06-26'
-image: https://i.imgur.com/8LJazpw.jpg
+image: /images/brotli-is-the-new-gzip/header.jpeg
 tags:
-- computer-science
+  - computer-science
 ---
 
 ## What is brotli
@@ -15,13 +15,13 @@ tags:
 
 Although it is still in development, brotli aspires be the next general purpose compression algorithm for the web.
 
-![](https://i.imgur.com/lm8QGFQ.png)
+![](/images/brotli-is-the-new-gzip/lm8qgfq.png)
 
 Nowadays, **brotli** support in web browsers is above 80%.
 
 ## What about gzip
 
-![](https://i.imgur.com/djHRzz9.png)
+![](/images/brotli-is-the-new-gzip/djhrzz9.png)
 
 **gzip** is the de facto standard compression algorithm for the web. The initial release was 25 years ago 😱. 
 
@@ -33,7 +33,7 @@ brotli is a promising compression algorithm and every year is better, at least y
 
 If you are using a CDN like CloudFlare, probably they are already supporting it.
 
-![](https://i.imgur.com/XyuJuIV.png)
+![](/images/brotli-is-the-new-gzip/xyujuiv.png)
 <figcaption>Enable brotli support at CloudFlare is as easy as move this checkbox.</figcaption>
 
 If you are writing a web server, it depends on your programming language; [Node.js still not added as part of the core](https://github.com/nodejs/node/issues/18964) but for sure they will do that soon.

@@ -2,12 +2,12 @@
 layout: post
 title: Tools for Maintainers
 date: '2019-02-03'
-image: https://i.imgur.com/nGcvLK1.jpg
+image: /images/tools-for-maintainers/header.jpeg
 ---
 
 ## generator-git
 
-![](https://i.imgur.com/ZcusO79.png)
+![](/images/tools-for-maintainers/zcuso79.png)
 
 I created [generator-git](https://www.npmjs.com/package/generator-git) 4 years ago and it was my first way for automatizing my daily workflow.
 
@@ -19,7 +19,7 @@ Nowadays, it supports different libraries and settings and still, I use it.
 
 ## automate-release
 
-![](https://i.imgur.com/O5bKLQ9.png)
+![](/images/tools-for-maintainers/o5bklq9.png)
 
 [automate-release](https://github.com/Kikobeats/automate-release) is a recent addition into my workflow.
 
@@ -31,7 +31,7 @@ The service will create a new PR every time it detects one of the dependencies o
 
 Although this sounds a good idea, if you have a lot of projects, it adds you a lot of noise.
 
-![](https://camo.githubusercontent.com/974f3751150c8f4a5cfe6892ab26ef5873f3f27a/68747470733a2f2f692e696d6775722e636f6d2f7a4548346841382e706e67)
+![](/images/tools-for-maintainers/974f3751150c8f4a5cfe6892ab26ef5873f3f27a68747470733a2f2f692e696d6775722e636f6d2f7a4548346841382e706e67.png)
 
 That's the thing that [automate-release](https://github.com/Kikobeats/automate-release) solves: Remove me (*the human factor*) from the equation.
 

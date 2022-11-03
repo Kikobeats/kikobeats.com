@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Module Driven Development
-image: http://i.imgur.com/MeDXS49.png
+image: /images/module-driven-development/header.png
 date: '2015-07-13 12:48:21'
 tags:
-- craftsmanship
+  - craftsmanship
 ---
 
 From since a time ago, I was thinking how to write code without repeating. [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) in all its glory, and believe in me when I tell you that it isn't always easy.
 
 Think in an architecture of code so big, that's handle so many data and dispatch in different process. The code flows around the servers and programmers fights to keep the process alive under blocking errors. And every day the application is a little more big. Every day new code is put in production and could appear new problems and how much larger is the most difficult application to detect these errors. Normally we have to try different approach for localise the problems and fix it. We do not try to look like robots, implementing things under demand, but who has not felt like this before? 
 
-![](http://i.imgur.com/HiFRfXA.jpg)
+![](/images/module-driven-development/hifrfxa.jpeg)
 
 I dream with a future where the code can auto-reprogrammed. The code exists as entity and detects thats the behaviour with other entities is broken and solvent the problems dynamically. But just is a dream future, we have problems to resolve now.
 
@@ -21,7 +21,7 @@ Big architecture is different to *WAT THE HELL IS DOING THE F*CK*NG CODE*.
 
 Something can be big but composed for little pieces (in this case, of code) that connects the things. Like atoms in your body, and you in the earth, and the earth in the solar system, and you know, the universe is so big (and finite) but composed for the rest of things more small. Unimaginable small.
 
-![](http://i.imgur.com/y6dCeXx.png)
+![](/images/module-driven-development/y6dcexx.png)
 
 An definitely code need to have a similar behaviour.
 

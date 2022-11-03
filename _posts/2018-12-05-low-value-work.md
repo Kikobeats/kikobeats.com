@@ -2,9 +2,9 @@
 layout: post
 title: Low Value Work
 date: '2018-05-12'
-image: https://i.imgur.com/vVekCfe.jpg
+image: /images/low-value-work/header.jpeg
 tags:
-- productivity
+  - productivity
 ---
 
 > Low value activities keep you busy and stop you from getting real work done. Make time for work that matters.

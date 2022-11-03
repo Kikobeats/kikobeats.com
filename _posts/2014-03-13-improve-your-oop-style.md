@@ -3,10 +3,10 @@ layout: post
 title: Improve your OOP style
 date: '2014-03-13 07:13:07'
 tags:
-- craftsmanship
+  - craftsmanship
 ---
 
-<center>![](http://i.imgur.com/iJijUXU.jpg)</center>
+<center>![](/images/improve-your-oop-style/ijijuxu.png)</center>
 
 1. Use only one level of indentation per method. If you need more than one level, you need to create a second method and call it from the first. This is one of the most important constraints in the exercise.
 

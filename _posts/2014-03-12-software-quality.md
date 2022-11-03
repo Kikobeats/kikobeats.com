@@ -3,10 +3,10 @@ layout: post
 title: Software Quality
 date: '2014-03-12 10:43:09'
 tags:
-- craftsmanship
+  - craftsmanship
 ---
 
-![](http://i.imgur.com/wJt9kg8.jpg)
+![](/images/software-quality/wjt9kg8.jpeg)
 
 >When people say "this sucks" they mean one or more of the following:
 
