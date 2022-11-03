@@ -35,7 +35,7 @@
   "scripts": {
     "build": "NODE_ENV=production JEKYLL_ENV=production bundle exec jekyll build",
     "clean": "bundle exec jekyll clean",
-    "dev": "bundle exec jekyll serve --watch --drafts --livereload --port 1337",
+    "dev": "bundle exec jekyll serve --watch --drafts --livereload --port 1337 --host localhost",
     "lint": "standard-markdown && standard",
     "postrelease": "npm run release:tags && npm run release:github",
     "precommit": "nano-staged",
