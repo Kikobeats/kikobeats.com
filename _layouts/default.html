@@ -11,13 +11,12 @@
   {{ content }}
 </body>
 
-<script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver%2Cfetch"></script>
 <script src="https://cdn.jsdelivr.net/combine/npm/anchor-js@4,npm/quicklink@2/dist/quicklink.umd.min.js"></script>
 <script>
-  document.addEventListener("DOMContentLoaded", function (event) {
-    anchors.add();
-    quicklink.listen();
-  });
+  document.addEventListener("DOMContentLoaded", event => {
+    anchors.add()
+    quicklink.listen()
+  })
 </script>
 {% include analytics.html %}
 
