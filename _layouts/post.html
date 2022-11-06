@@ -32,20 +32,18 @@ layout: default
       document.querySelector('.pageviews-container').classList.remove('dn')
       document.querySelector('.pageviews-count').textContent = count
     })
-
 </script>
 <style>
   .microlink_hover,
   .microlink_card {
     background: white !important;
   }
-
 </style>
 <script>
-  document.addEventListener("DOMContentLoaded", function (event) {
+  document.addEventListener("DOMContentLoaded", event => {
     microlink('.card-preview')
-  });
-
+    mediumZoom('layout-post img')
+  })
 </script>
 <script>
   const loadScript = src => new Promise(function (resolve, reject) {
