@@ -70,11 +70,6 @@
     "commit-msg": "npx commitlint --edit",
     "pre-commit": "npx nano-staged"
   },
-  "standard": {
-    "ignore": [
-      "js/prism.js"
-    ]
-  },
   "urlint": {
     "url": [
       "https://kikobeats.com",
