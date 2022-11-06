@@ -16,6 +16,8 @@ social:
 twitter:
   username: kikobeats
 
+highlighter: none
+
 permalink: '/:title/'
 disqus_shortname: kikobeats
 

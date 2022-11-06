@@ -76,9 +76,17 @@
     background-color: $primary-color;
   }
 
-  pre code {
-    background: none;
-    border: none;
+  :not(pre) code, pre {
+    border: 1px solid rgb(234, 234, 234);
+    line-height: $line-height;
+    padding: 13px;
+    white-space: pre;
+    overflow: auto;
+    font-size: 13px;
+    tab-size: 2;
+    font-family: $code-font;
+    border-radius: 3px;
+    font-weight: normal;
   }
 
   p code,

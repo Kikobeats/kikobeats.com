@@ -16,15 +16,15 @@ Random number generation is used around many users cases over computers such as:
 - Generate unique keys from an API.
 - Create the key exchange between an HTTPS connection.
 
-As you can see, all these examples use a *random* factor, but they are different. Also computationally they are different so, how to?
+As you can see, all these examples use a _random_ factor, but they are different. Also computationally they are different so, how to?
 
 Like most of the things in life, it depends.
 
 ## Types of "random"
 
-We can distinguish at least three types of *random* data generators. These depends on our use case: Generally a high entropy process take more time (or 💰), but not always you need it.
+We can distinguish at least three types of _random_ data generators. These depends on our use case: Generally a high entropy process take more time (or 💰), but not always you need it.
 
-###  Truly Random
+### Truly Random
 
 The ideal case. True [randomness](https://en.wikipedia.org/wiki/Randomness), to which no pattern or algorithm applies. It's debatable whether this really exists.
 
@@ -38,7 +38,7 @@ At [Cloudflare](http://www.coastdigital.co.uk/2017/09/06/wall-entropy-cloudflare
 
 ### Pseudo Random
 
-Also known as *Pseudo-Random Number Generators* (**PRNGs**).
+Also known as _Pseudo-Random Number Generators_ (**PRNGs**).
 
 As the name suggest, is very close to truly random numbers generators, but the output is generated using a finite set of numbers:
 
@@ -56,7 +56,7 @@ In cryptographically terms, `Math.random` doest not provide a secure random numb
 
 A subsection inside PRNGs are Cryptographically Secure Pseudo-Random Number Generator (**CSPRNG**).
 
-Every random value that you need for security-related purposes (ie. anything where the possibility of an "attack" exists), should be generated using a CSPRNG.  This includes:
+Every random value that you need for security-related purposes (ie. anything where the possibility of an "attack" exists), should be generated using a CSPRNG. This includes:
 
 - Lottery numbers.
 - API keys.
@@ -68,9 +68,8 @@ Theses examples are very close with [nonce](https://en.wikipedia.org/wiki/Crypto
 
 In Node.js, the most widely available CSPRNG is the [crypto.randomBytes](https://nodejs.org/api/crypto.html#crypto_crypto_randombytes_size_callback):
 
-<script src="https://embed.runkit.com" data-element-id="runkit" data-node-version="8.6.0"></script>
-
-<div id="runkit">
+{: .runkit}
+```js
 const crypto = require('crypto')
 const {promisify} = require('util')
 
@@ -81,7 +80,7 @@ const randomBytes = promisify(crypto.randomBytes)
   console.log(`${buffer.length} bytes of random data`)
   console.log(buffer.toString('hex'))
 })()
-</div>
+```
 
 The code above generates raw pseudo random data.
 
@@ -94,6 +93,7 @@ If you need specific random output for your user case, I recommend you use the f
 - [nanoid](https://github.com/ai/nanoid) – A tiny, secure URL-friendly unique string ID generator for JavaScript.
 
 ![](/images/what-is-random/rlcyvvc.png)
+
 <figcaption><a href="https://alex7kom.github.io/nano-nanoid-cc">nanoid collision calculator</a> estimates the probability of a collision based on nanoid algorithm.</figcaption>
 
 The world is random. Computers aren't.

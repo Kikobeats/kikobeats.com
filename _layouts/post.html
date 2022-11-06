@@ -8,7 +8,8 @@ layout: default
 <section
   class="layout-{{page.layout}} lh-copy f4 bg-white sans-serif mauto max-width-blog near-black ph5-l pt5-l pb3-l ph3 pv3">
   <span class="ttu f6 b tracked light-silver db">
-    <time datetime="{{page.date}}">{{ page.date | date: "%B %d, %Y" }}</time><span class="ph2">–</span>
+    <time datetime="{{page.date}}">{{ page.date | date: "%B %d, %Y" }}</time><span
+      class="ph2">—</span>
     <span>{{ page.date | timeago }}</span><span class="dn pageviews-container">, <span><span
           class="pageviews-count">0</span> views.</span></span>
   </span>
@@ -19,23 +20,61 @@ layout: default
 {% include comments.html %}
 {% include footer.html %}
 <script src="https://cdn.jsdelivr.net/combine/npm/prismjs@latest,npm/medium-zoom@latest"></script>
-<script src="https://cdn.jsdelivr.net/combine/npm/react@16/umd/react.production.min.js,npm/react-dom@16/umd/react-dom.production.min.js,npm/react-is@16/umd/react-is.production.min.js,npm/styled-components@5/dist/styled-components.min.js,npm/@microlink/mql@latest/dist/mql.min.js,npm/@microlink/vanilla@latest/dist/microlink.min.js,npm/@microlink/hover-vanilla@latest/dist/microlink.min.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/combine/npm/react@16/umd/react.production.min.js,npm/react-dom@16/umd/react-dom.production.min.js,npm/react-is@16/umd/react-is.production.min.js,npm/styled-components@5/dist/styled-components.min.js,npm/@microlink/mql@latest/dist/mql.min.js,npm/@microlink/vanilla@latest/dist/microlink.min.js,npm/@microlink/hover-vanilla@latest/dist/microlink.min.js">
+</script>
 <script>
-    fetch(`https://count.vercel.app/kikobeats/${window.location.pathname.substring(1).replace(/\/$/, '')}?incr`)
+  fetch(
+      `https://count.vercel.app/kikobeats/${window.location.pathname.substring(1).replace(/\/$/, '')}?incr`
+    )
     .then(res => res.json())
     .then(count => {
       document.querySelector('.pageviews-container').classList.remove('dn')
       document.querySelector('.pageviews-count').textContent = count
     })
+
 </script>
 <style>
   .microlink_hover,
   .microlink_card {
     background: white !important;
   }
+
 </style>
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
     microlink('.card-preview')
   });
+
+</script>
+<script>
+  const loadScript = src => new Promise(function (resolve, reject) {
+    var s
+    s = document.createElement('script')
+    s.src = src
+    s.onload = resolve
+    s.onerror = reject
+    document.head.appendChild(s)
+  })
+
+  embedRunkit = async selector => {
+    const isRunkitLoaded = window.document.querySelector('#runkit')
+    if (!isRunkitLoaded) await loadScript('https://embed.runkit.com')
+
+    Array.from(document.querySelectorAll(selector)).forEach(element => {
+      RunKit.createNotebook({
+        element,
+        source: element.textContent,
+        clearParentContents: true,
+        onLoad: () => {
+          const iframe = element.querySelector('iframe')
+          element.style.border = 0
+          iframe.style.margin = 0
+        }
+      })
+    })
+
+  }
+
+  embedRunkit('.runkit')
 </script>
