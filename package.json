@@ -37,6 +37,7 @@
     "clean": "bundle exec jekyll clean",
     "dev": "bundle exec jekyll serve --watch --drafts --livereload --port 1337 --host localhost",
     "lint": "standard-markdown && standard",
+    "postinstall": "bundle install",
     "postrelease": "npm run release:tags && npm run release:github",
     "precommit": "nano-staged",
     "prerelease": "npm run update:check",
@@ -60,6 +61,7 @@
       "prettier-standard"
     ],
     "*.md": [
+      "node scripts/migrate-images.js",
       "standard-markdown"
     ],
     "package.json": [

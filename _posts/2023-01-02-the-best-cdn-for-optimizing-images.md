@@ -53,7 +53,7 @@ const imageUrl = (url, opts) =>
       Pass any other option.
       See https://images.weserv.nl/docs/quick-reference.html 
       
-      It's recommended to pass `w` to cut the image size.
+      It's recommended to pass `w` for cutting down the image size.
     */
     ...opts
   }).toString()}`

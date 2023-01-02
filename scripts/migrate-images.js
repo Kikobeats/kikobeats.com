@@ -6,17 +6,33 @@ const GithubSlugger = require('github-slugger')
 const matter = require('gray-matter')
 const mime = require('mime')
 const path = require('path')
-const got = require('got')
+
+const got = require('got').extend({
+  timeout: 8000,
+  responseType: 'buffer'
+})
 
 const isHttpUrl = input => input.startsWith('http')
+
+const mkdirp = filepath => mkdir(filepath).catch(() => {})
 
 const allPosts = async () =>
   (await readdir(path.resolve(__dirname, '../_posts'))).map(post => path.resolve('_posts', post))
 
+const imageUrl = (url, opts) =>
+  `https://images.weserv.nl/?${new URLSearchParams({
+    url,
+    l: 9,
+    af: '',
+    il: '',
+    n: -1,
+    ...opts
+  }).toString()}`
+
 const staticImage = async (url, destination) => {
   try {
     debug('fetching', url)
-    const { body: buffer, headers } = await got(url, { timeout: 8000, responseType: 'buffer' })
+    const { body: buffer, headers } = await got(imageUrl(url))
     const extension = mime.getExtension(headers['content-type'])
     const filepath = `${destination}.${extension}`
     await writeFile(filepath, buffer)
@@ -38,7 +54,7 @@ Promise.resolve(input).then(async posts => {
     let { content, data } = matter(file)
 
     const imagesFolder = path.join('images', slugger.slug(data.title))
-    await mkdir(imagesFolder).catch(() => {})
+    await mkdirp(imagesFolder)
 
     const save = () => writeFile(filepath, matter.stringify(content, data))
 
