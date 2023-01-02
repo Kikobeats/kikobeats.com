@@ -11,7 +11,7 @@ header=$(cat <<EOF
 layout: post
 title: $title
 date: '$year-$month-$day'
-image: https://i.imgur.com/CFKl9PT.jpg
+image: image: /images/urls-for-testing/header.jpeg
 ---
 
 hello world
