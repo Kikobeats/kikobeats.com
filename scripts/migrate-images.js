@@ -22,6 +22,7 @@ const allPosts = async () =>
 const imageUrl = (url, opts) =>
   `https://images.weserv.nl/?${new URLSearchParams({
     url,
+    default: url,
     l: 9,
     af: '',
     il: '',
