@@ -24,6 +24,14 @@
     margin: $line-height 0;
   }
 
+  &.external-icon {
+    [href^="http"]:not([href*="localhost"]):not([href*="kikobeats.com"])::after {
+      width: 10px;
+      height: 12px;
+      margin-left: 4px;
+    }
+  }
+
   .card-preview {
     text-decoration: none;
     display: block;

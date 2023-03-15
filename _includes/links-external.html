@@ -9,13 +9,15 @@
       if (parent.tagName === 'A') return parent
     })()
 
-  if (link.hostname != window.location.hostname) {
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-  }
+    if (link.hostname != window.location.hostname) {
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+    }
 
-  localStorage.setItem(window.visited.KEY_PREFIX + link.href, true);
-  window.visited()
+    if (window.visited) {
+      localStorage.setItem(window.visited.KEY_PREFIX + link.href, true);
+      window.visited()
+    }
   }
 
 </script>
