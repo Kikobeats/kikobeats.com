@@ -34,7 +34,7 @@ h6 {
 }
 
 .external-icon {
-  [href^="http"]:not([href*="localhost"]):not([href*="kikobeats.com"])::after {
+  [href^="http"]:not([href*="kikobeats.com"])::after {
     content: '';
     display: inline-block;
     width: 13px;

@@ -25,7 +25,7 @@
   }
 
   &.external-icon {
-    [href^="http"]:not([href*="localhost"]):not([href*="kikobeats.com"])::after {
+    [href^="http"]:not([href*="kikobeats.com"])::after {
       width: 10px;
       height: 12px;
       margin-left: 4px;
