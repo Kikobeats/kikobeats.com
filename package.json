@@ -14,12 +14,18 @@
       "email": "adyavanapalli@gmail.com"
     }
   ],
+  "dependencies": {
+    "mime": "~3.0.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
     "conventional-github-releaser": "latest",
+    "debug-logfmt": "latest",
     "finepack": "latest",
     "git-authors-cli": "latest",
+    "github-slugger": "1",
+    "gray-matter": "latest",
     "nano-staged": "latest",
     "npm-check-updates": "latest",
     "prettier-standard": "latest",
