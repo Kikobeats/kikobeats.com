@@ -8,6 +8,8 @@ image: /images/proxyfiying-in-nodejs/header.jpeg
 For historical reasons there are a lot of NPM modules for doing this, but nowadays, it's easier than ever just using native APIs:
 
 ```js
+const listen = require('async-listen')
+
 const createProxyServer = async (...args) => {
   const proxyServer = http.createServer((req, res) => {
     const proxyRequest = http.request(
@@ -24,13 +26,8 @@ const createProxyServer = async (...args) => {
     req.pipe(proxyRequest, { end: true })
   })
 
-  proxyServer.listen(...args)
-  await once(proxyServer, 'listening')
-
-  const { address, port, family } = proxyServer.address()
-  const host = family === 'IPv6' ? `[${address}]` : address
-
-  proxyServer.url = `http://${host}:${port}/`
+  const url = await listen(proxyServer)
+  proxyServer.url = url.toString()
 
   return proxyServer
 }
