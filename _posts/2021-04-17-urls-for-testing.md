@@ -18,7 +18,7 @@ image: /images/urls-for-testing/header.jpeg
 - [test-http-login.vercel.app](https://test-http-login.vercel.app)
 - [test-alert.vercel.app](https://test-alert.vercel.app)
 - [httpstat.us/502](https://httpstat.us/502)
-- [test-redirect-drab.vercel.app/url=?https://example.com](https://test-redirect-drab.vercel.app/url=?https://example.com)
+- [test-redirect-drab.vercel.app/?url=https://example.com](https://test-redirect-drab.vercel.app/?url=https://example.com)
 
 ## WebGL
 
@@ -58,9 +58,17 @@ image: /images/urls-for-testing/header.jpeg
 - [Korean](https://www.naver.com)
 - [Thai](https://www.sanook.com)
 
+## Fingerprint
+
+- [amiunique.org](https://amiunique.org/fp)
+- [areyouheadless](arh.antoinevastel.com/bots/areyouheadless)
+- [bot.sannysoft.com](https://bot.sannysoft.com/)
+- [creepjs](https://abrahamjuliot.github.io/creepjs/)
+- [fingerprintjs](https://fingerprintjs.github.io/fingerprintjs/)
+
 ## Proxy
 
-- [ipify](https://api64.ipify.org?format=json)
+- [geolocation.microlink.io](https://geolocation.microlink.io)
 - [httpbin](https://httpbin.org/anything?json)
 
 ## Chrome
