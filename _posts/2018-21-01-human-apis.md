@@ -7,11 +7,11 @@ tags:
   - javascript
 ---
 
-## Title Format
+## Title
 
 I tend to format my styles. Although you can do that following different criteria, my main criteria is aesthetic.
 
-I creted [`microsoft-capitalize`](https://github.com/kikobeats/microsoft-capitalize); it follows [Microsoft Copywriting styleguide](https://docs.microsoft.com/en-us/style-guide/capitalization) and it's simple and intuitive:
+I created [microsoft-capitalize](https://github.com/kikobeats/microsoft-capitalize); it follows [Microsoft Copywriting styleguide](https://docs.microsoft.com/en-us/style-guide/capitalization) and it's simple and intuitive:
 
 ```js
 const capitalize = require('microsoft-capitalize')
@@ -20,20 +20,11 @@ capitalize('Microlink CDN: Global Edge Cache')
 // => 'Microlink CDN: Global edge cache'
 ```
 
-In addition, I created a [alfred-title](https://github.com/Kikobeats/alfred-title) for create format titles on the fly using [Alfred](https://www.alfredapp.com/)
-
-![](/images/human-apis/kikobeatsalfred-titlerawmasterdemo.gif)
-
-### Alternatives
-
-- [titleize](https://github.com/sindresorhus/titleize) – Capitalize every word in a string.
-- [humanize-string](https://github.com/sindresorhus/humanize-string) – Convert a camelized/dasherized/underscored string into a humanized one.
-
-## Date Format
+## Date 
 
 Internationalization is difficult to get right at the best of times, luckily there is a [well supported](https://caniuse.com/#feat=internationalization) API for it now in most browsers.
 
-The method [`Object.prototype.toLocaleString()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/ToLocaleString) will format the current `Number`/`Date`/`Object` state into an international string locale representation.
+The method [toLocaleString()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/ToLocaleString) will format the current `Number`/`Date`/`Object` state into an international string locale representation.
 
 ```js
 const formatDate = ((date = new Date()),
@@ -41,48 +32,20 @@ const formatDate = ((date = new Date()),
   new Date(date).toLocaleString(lang, { month, day, year }))
 ```
 
-Using it on action
+There is another way to format dates, using [Intl.DateTimeFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat). It's specially useful for converting a timestamp to a specific timezone:
 
 ```js
-formatDate() // 'Dec 6, 2018'
-formatDate(new Date()) // 'Dec 6, 2018'
+const prettyDate = timestamp =>
+  `[${new Intl.DateTimeFormat('en-US', {
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric',
+    timeZone: 'Europe/Madrid', // this is my local timezone!
+    hour12: false
+  }).format(new Date(timestamp))}]`
 ```
 
-### Alternatives
-
-- [tinydate](https://www.npmjs.com/package/tinydate) – A tiny date formatter based on a pattern.
-- [ms](https://www.npmjs.com/package/ms) – Use this package to easily convert various time formats to milliseconds.
-- [pretty-ms](https://www.npmjs.com/package/pretty-ms) – Convert milliseconds to a human readable string.
-
-## Relative Time Format
-
-The new [`Intl`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) API introduces [`.RelativeTimeFormat`](https://github.com/tc39/proposal-intl-relative-time) for formatting time.
-
-```js
-const formatTime = (
-  date1 = new Date(),
-  date2 = new Date(),
-  { lang = 'en-us', unit = 'seconds', ...opts } = {}
-) => new Intl.RelativeTimeFormat(lang, opts).format(date2 - date1, unit)
-```
-
-Although it looks promising, still it's an early stage. 
-
-```js
-formatTime() // "in 0 seconds"
-formatTime(new Date('December 17, 1995 03:24:00'), new Date('December 17, 1995 03:24:00')) // "in 0 seconds"
-formatTime(new Date('December 17, 1995 03:24:00'), new Date('December 18, 1995 03:24:00')) // "in 86,400,000 seconds"
-formatTime(new Date('December 17, 1995 03:24:00'), new Date('December 18, 1995 03:24:00'), { unit: 'days' }) // "in 86,400,000 days, WTF"
-```
-
-Unfortunatly, it hasn't been designed for calculating time difference.
-
-### Alternatives
-
-- [twas](https://github.com/sebastiansandqvist/s-ago) – Smallest relative time string function.
-- [timeago.js](https://github.com/hustcc/timeago.js) Relative time formatter with localization support.
-
-## Number Format
+## Number
 
 The same approach could be used for format a `Number`:
 
@@ -104,9 +67,7 @@ formatter(1034532, 'de-DE') // 🇩🇪 Germany
 formatter(1034532, 'ar-EG') // 🇺🇪🇬 Egypt
 ```
 
-### How to Choose language
-
-You can use the browser for getting the user language preference
+You can use the browser for getting the user language preference:
 
 ```js
 const locale = navigator.language || navigator.userLanguage || 'en-US'
@@ -119,7 +80,24 @@ That's could be a good point to start. Next step could remember the user prefere
 - [human-number](https://github.com/Kikobeats/human-number) – Convert number to a human readable string.
 - [pretty-bytes](https://github.com/sindresorhus/pretty-bytes) – Convert bytes to a human readable string.
 
-## List Format
+## Relative Time
+
+The [Intl.RelativeTimeFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat) makes easy to formate relative time.
+
+```js
+const formatTime = (
+  date1 = new Date(),
+  date2 = new Date(),
+  { lang = 'en-us', unit = 'seconds', ...opts } = {}
+) => new Intl.RelativeTimeFormat(lang, opts).format(date2 - date1, unit)
+```
+
+### Alternatives
+
+- [twas](https://github.com/sebastiansandqvist/s-ago) – Smallest relative time string function.
+- [timeago.js](https://github.com/hustcc/timeago.js) Relative time formatter with localization support.
+
+## List
 
 ```js
 const listFormat = (list, { lang = 'en-us', ...opts } = {}) => new Intl.ListFormat(lang, opts).format(list)
