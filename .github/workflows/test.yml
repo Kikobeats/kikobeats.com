@@ -18,4 +18,4 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
       - name: Execution
-        run: npx urlint && curl -sL https://hc-ping.com/11da2ccb-b96d-4d89-94ca-aac1bc5bcbcf
+        run: npx urlint && curl -fsS -m 10 --retry 5 -o /dev/null https://hc-ping.com/11da2ccb-b96d-4d89-94ca-aac1bc5bcbcf
