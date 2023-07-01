@@ -16,7 +16,14 @@ h6 {
 }
 
 .anchorjs-link {
+  top: 2px;
   color: rgba($near-black, .35);
+  position: relative;
+}
+
+.relative .anchorjs-link {
+  position: absolute;
+  top: inherit;
 }
 
 .link-underline {
