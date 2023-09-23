@@ -69,7 +69,7 @@ Promise.resolve(input).then(async posts => {
       debug.warn('No post header image!', filepath)
     }
 
-    const regex = () => /\!\[(.*?)\]\((.*?)\)/gm
+    const regex = () => /!\[(.*?)\]\((.*?)\)/gm
 
     if (regex().test(content)) {
       const re = regex()

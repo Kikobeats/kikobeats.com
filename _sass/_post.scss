@@ -146,6 +146,15 @@
     text-align: center;
   }
 
+  @media screen and (min-width: 60em) {
+    iframe,
+    video,
+    p img {
+      /* .mw7 */
+      max-width: 32rem;
+    }
+  }
+
   figcaption {
     font-size: 75%;
     color: #9b9b9b;
