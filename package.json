@@ -14,6 +14,9 @@
       "email": "adyavanapalli@gmail.com"
     }
   ],
+  "dependencies": {
+    "sharp": "~0.32.6"
+  },
   "devDependencies": {
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
@@ -62,7 +65,7 @@
     ]
   },
   "nano-staged": {
-    "*.js,!*.min.js": [
+    "*.js": [
       "prettier-standard",
       "standard --fix"
     ],

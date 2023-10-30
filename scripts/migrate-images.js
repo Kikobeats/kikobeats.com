@@ -4,6 +4,7 @@ const { mkdir, readdir, readFile, writeFile } = require('fs/promises')
 const debug = require('debug-logfmt')('jekyll')
 const GithubSlugger = require('github-slugger')
 const matter = require('gray-matter')
+const sharp = require('sharp')
 const mime = require('mime')
 const path = require('path')
 
@@ -36,7 +37,12 @@ const staticImage = async (url, destination) => {
     const { body: buffer, headers } = await got(imageUrl(url))
     const extension = mime.getExtension(headers['content-type'])
     const filepath = `${destination}.${extension}`
-    await writeFile(filepath, buffer)
+
+    await sharp(buffer)
+      .png({ lossless: true, compressionLevel: 9 })
+      .jpeg({ quality: 80, progressive: true, compressionLevel: 6 })
+      .toFile(filepath)
+
     debug('fetched', url, '→', filepath)
     return `/${filepath}`
   } catch (err) {
