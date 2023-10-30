@@ -64,10 +64,14 @@ layout: default
       RunKit.createNotebook({
         element,
         source: element.textContent,
+        nodeVersion: '18',
         clearParentContents: true,
         onLoad: () => {
           const iframe = element.querySelector('iframe')
           element.style.border = 0
+          element.style.width = 'calc(100% + 200px)'
+          iframe.style.position = 'relative'
+          iframe.style.left = '-84px'
           iframe.style.margin = 0
         }
       })

@@ -147,7 +147,7 @@
   }
 
   @media screen and (min-width: 60em) {
-    iframe,
+    iframe:not([src^="https://runkit.com"]),
     video,
     p img {
       /* .mw7 */
