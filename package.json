@@ -3,6 +3,9 @@
   "description": "ma website yo",
   "homepage": "https://kikobeats.com",
   "version": "1.5.17",
+  "bin": {
+    "kikobeats": "bin/index.mjs"
+  },
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
     "name": "Kiko Beats",
@@ -21,10 +24,10 @@
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
     "@ksmithut/prettier-standard": "latest",
-    "conventional-github-releaser": "latest",
     "debug-logfmt": "latest",
     "finepack": "latest",
     "git-authors-cli": "latest",
+    "github-generate-release": "latest",
     "github-slugger": "1",
     "got": "11",
     "gray-matter": "latest",
@@ -35,7 +38,8 @@
     "standard": "latest",
     "standard-markdown": "latest",
     "standard-version": "latest",
-    "tachyons-sass": "latest"
+    "tachyons-sass": "latest",
+    "zx": "latest"
   },
   "engines": {
     "node": ">= 14"
@@ -51,7 +55,7 @@
     "prerelease": "npm run update:check",
     "pretest": "npm run lint",
     "release": "git-authors-cli && git add package.json && standard-version -a",
-    "release:github": "conventional-github-releaser -p angular",
+    "release:github": "github-generate-release",
     "release:tags": "git push --follow-tags origin HEAD:master",
     "test": "exit 0",
     "update": "ncu -u",
