@@ -8,6 +8,8 @@ import { slug, today } from '../util.mjs'
 
 const url = await question('Enter URL: ')
 
+const title = process.argv[2] ?? await question('Enter title: ')
+
 const { year, month, day } = await question('Enter date (DD-MM-YYYY): [today] ').then(date => {
   if (date === '') return today()
   const [year, month, day] = date.split('-')
@@ -21,8 +23,6 @@ if (existsSync(filename)) {
   process.exit(1)
 }
 
-const title = url.split('/').pop()
-
 await writeFile(filename, `
 ---
 external: ${url}
@@ -32,5 +32,3 @@ title: '${title}'
 `.trim())
 
 console.log(`\nThe file '${filename}' has been created ✨`)
-
-
