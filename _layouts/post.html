@@ -31,7 +31,7 @@ layout: default
     .then(res => res.json())
     .then(count => {
       document.querySelector('.pageviews-container').classList.remove('dn')
-      document.querySelector('.pageviews-count').textContent = count
+      document.querySelector('.pageviews-count').textContent = Number(count).toLocaleString('en-US')
     })
 </script>
 <style>
