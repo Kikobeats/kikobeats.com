@@ -31,7 +31,7 @@
     "github-slugger": "1",
     "got": "11",
     "gray-matter": "latest",
-    "mime": "latest",
+    "mime": "3",
     "nano-staged": "latest",
     "npm-check-updates": "latest",
     "simple-git-hooks": "latest",

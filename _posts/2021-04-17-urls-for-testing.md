@@ -5,6 +5,11 @@ date: '2021-04-17'
 image: /images/urls-for-testing/header.jpeg
 ---
 
+## Favicon
+
+- [test-data-uri.vercel.app](https://test-data-uri.vercel.app) ([128kb](https://test-data-uri.vercel.app?size=128kb), [256kb](https://test-data-uri.vercel.app?size=256kb), [1mb](https://test-data-uri.vercel.app?size=1mb))
+- [favicon-data-uri.vercel.app](https://favicon-data-uri.vercel.app/)
+
 ## Images
 
 - [example.com](https://example.com)
