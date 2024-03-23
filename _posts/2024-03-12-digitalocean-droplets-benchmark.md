@@ -11,8 +11,6 @@ image: /images/digitalocean-droplets-benchmark/header.jpeg
 
 DigitalOcean offers different kind of Droplets and I'm interested into find the sweet spot between money and performance.
 
-All these numbers are related to dedicated CPU builds.
-
 ## Methodology
 
 1. Create a DigitalOcean droplet for the desired droplet size.
@@ -246,6 +244,50 @@ YABS completed in 6 min 27 sec
 - cpu: 8x Intel(R) Xeon(R) Platinum 8358 CPU @ 2.60GHz
 - single core: 1507 / multi core: 5460 in 6 min 27 sec
 
+### Basic	– Premium Intel (4vCPU)
+
+<details>
+<summary>Full report</summary>
+<pre>
+Basic System Information:
+---------------------------------
+Uptime     : 0 days, 0 hours, 1 minutes
+Processor  : DO-Premium-Intel
+CPU cores  : 4 @ 1999.999 MHz
+AES-NI     : ✔ Enabled
+VM-x/AMD-V : ✔ Enabled
+RAM        : 7.7 GiB
+Swap       : 0.0 KiB
+Disk       : 232.4 GiB
+Distro     : Ubuntu 23.10
+Kernel     : 6.5.0-9-generic
+VM Type    : KVM
+IPv4/IPv6  : ✔ Online / ❌ Offline
+
+IPv4 Network Information:
+---------------------------------
+ISP        : DigitalOcean, LLC
+ASN        : AS14061 DigitalOcean, LLC
+Host       : DigitalOcean, LLC
+Location   : Santa Clara, California (CA)
+Country    : United States
+
+Geekbench 6 Benchmark Test:
+---------------------------------
+Test            | Value                         
+                |                               
+Single Core     | 912                           
+Multi Core      | 2783                          
+Full Test       | https://browser.geekbench.com/v6/cpu/5435587
+
+YABS completed in 8 min 34 sec
+</pre>
+</details>
+
+- slug: s-4vcpu-8gb
+- billed: $64/mo or $0.095/hr
+- cpu: 4x 1999.999 MHz
+- single core: 912 / multi core: 2783 in 8 min 34 sec
 
 ### Basic	– Premium AMD (4vCPU)
 
@@ -288,7 +330,7 @@ YABS completed in 8 min 46 sec
 </details>
 
 - slug: s-4vcpu-8gb-amd
-- billed: $84/mo or $0.125/hr
+- billed: $56/mo or $0.083/hr
 - cpu: 4x 1996.247 MHz
 - single core: 880 / multi core: 2776 in 8 min 46 sec
 
@@ -346,9 +388,10 @@ c-8vcpu-16gb-intel | $218/mo | 1507 | 6.9128440367
 s-8vcpu-16gb-amd   | $112/mo | 894  | 7.9821428571
 g-4vcpu-16gb       | $126/mo | 1085 | 8.6111111111
 g-4vcpu-16gb-intel | $151/mo | 1493 | 9.8874172185
-s-4vcpu-8gb-amd    | $84/mo  | 880  | 10.4761904762
 c-4vcpu-8gb-intel  | $109/mo | 1496 | 13.7247706422
+s-4vcpu-8gb        | $64/mo  | 912  | 14.25
 c-4vcpu-8gb        | $84/mo  | 1266 | 15.0714285714
+s-4vcpu-8gb-amd    | $56/mo  | 880  | 15.7142857143
 ```
 
 ### multi core
@@ -359,18 +402,20 @@ g-4vcpu-16gb-intel | $151/mo | 3129 | 20.7218543046
 c-8vcpu-16gb-intel | $218/mo | 5460 | 25.0458715596
 c-4vcpu-8gb-intel  | $109/mo | 3138 | 28.7889908257
 c-4vcpu-8gb        | $84/mo  | 2770 | 32.9761904762
-s-4vcpu-8gb-amd    | $84/mo  | 2776 | 33.0476190476
 s-8vcpu-16gb-amd   | $112/mo | 4293 | 38.3303571429
+s-4vcpu-8gb        | $64/mo  | 2783 | 43.484375
+s-4vcpu-8gb-amd    | $56/mo  | 2776 | 49.5714285714
 ```
 
 ### single core + multi core
 
 ```
-c-8vcpu-16gb-intel | $218/mo | 1507 | 25.8176059415
-s-8vcpu-16gb-amd   | $112/mo | 894  | 28.7039971617
-g-4vcpu-16gb       | $126/mo | 1085 | 33.6569826707
-g-4vcpu-16gb-intel | $151/mo | 1493 | 38.6764080442
-s-4vcpu-8gb-amd    | $84/mo  | 2776 | 43.5238095238
-c-4vcpu-8gb-intel  | $109/mo | 1496 | 46.7009611184
-c-4vcpu-8gb        | $84/mo  | 1266 | 53.4017857143
+g-4vcpu-16gb       | $126/mo | 1085 + 2382 | 27.5158730159
+g-4vcpu-16gb-intel | $151/mo | 1493 + 3129 | 30.6092715232
+c-8vcpu-16gb-intel | $218/mo | 1507 + 5460 | 31.9587155963
+c-4vcpu-8gb-intel  | $109/mo | 1496 + 3138 | 42.5137614679
+s-8vcpu-16gb-amd   | $112/mo | 894 + 4293  | 46.3125
+c-4vcpu-8gb        | $84/mo  | 1266 + 2770 | 48.0476190476
+s-4vcpu-8gb        | $64/mo  | 912 + 2783  | 57.734375
+s-4vcpu-8gb-amd    | $56/mo  | 880 + 2776  | 65.2857142857
 ```
