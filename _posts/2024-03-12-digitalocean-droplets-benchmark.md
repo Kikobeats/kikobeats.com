@@ -11,6 +11,8 @@ image: /images/digitalocean-droplets-benchmark/header.jpeg
 
 DigitalOcean offers different kind of Droplets and I'm interested into find the sweet spot between money and performance.
 
+All these numbers are related to dedicated CPU builds.
+
 ## Methodology
 
 1. Create a DigitalOcean droplet for the desired droplet size.
@@ -19,7 +21,7 @@ DigitalOcean offers different kind of Droplets and I'm interested into find the 
 
 ## Results
 
-#### General Purpose – Regular Intel
+### General Purpose – Regular Intel
 
 <details>
 <summary>Full report</summary>
@@ -64,7 +66,7 @@ YABS completed in 8 min 11 sec
 - cpu: 4x Intel(R) Xeon(R) Platinum 8168 CPU @ 2.70GHz
 - single core: 1085 / multi core: 2382 in 8 min 11 sec
 
-#### General Purpose — Premium Intel
+### General Purpose — Premium Intel
 
 <details>
 <summary>Full report</summary>
