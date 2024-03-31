@@ -4,7 +4,7 @@ title: Frases que te harán un mejor programador
 date: '2013-12-28 12:40:51'
 ---
 
-![](/images/frases-que-te-harán-un-mejor-programador/geeks-vs-nerdsgeek.jpeg)
+![](/images/frases-que-te-haran-un-mejor-programador/geeks-vs-nerdsgeek.jpeg)
 
 * Programar hacia la interfaz, no hacia la implementación *(Haz tu código lo más genérico posible)*.
 * Haz más con menos.

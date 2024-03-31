@@ -8,7 +8,7 @@ tags:
 
 ![](/images/server-sandbox/kikobeatsserver-sandboxdocscover.jpeg)
 
-I have written a little book called [Server Sandbox](https://www.gitbook.io/book/kikobeats/server-sandbox) and the objective of this book is learn some protocols for internet. My english is very bad and only is readable because [Elena Torrï¿½](https://twitter.com/Elenarcolepsia) corrected some things.
+I have written a little book called [Server Sandbox](https://www.gitbook.io/book/kikobeats/server-sandbox) and the objective of this book is learn some protocols for internet. My english is very bad and only is readable because [Elena Torró](https://twitter.com/Elenarcolepsia) corrected some things.
 
 But, Why I decided a write a little book?
 

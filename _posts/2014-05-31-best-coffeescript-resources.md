@@ -23,11 +23,11 @@ Essential if you want to know more about coffeescript.
 
 [Little book of Coffeescript](https://arcturo.github.io/library/coffeescript/index.html)
 
-### Coffeescript, un pequeï¿½o gran libro
+### Coffeescript, un pequeño gran libro
 
 Spanish book that explain very good all about coffeescript for javascript programmers, especially some concepts that programmers often do not consider.
 
-[Coffeescript, un pequeï¿½o gran libro](https://leanpub.com/coffeescript)
+[Coffeescript, un pequeño gran libro](https://leanpub.com/coffeescript)
 
 ### HardRock Coffeescript
 

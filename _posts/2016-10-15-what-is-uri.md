@@ -54,8 +54,8 @@ In addition, when you something like `google.com` in your browser that is not cu
 
 # Related modules I wrote
 
-* [parse-uri](https://github.com/kikobeats/parse-uri) â€“ Lightweight module for parse an URI.
-* [is-uri](https://github.com/kikobeats/is-uri) â€“ Determinate if a string is a valid URI.
+* [parse-uri](https://github.com/kikobeats/parse-uri) – Lightweight module for parse an URI.
+* [is-uri](https://github.com/kikobeats/is-uri) – Determinate if a string is a valid URI.
 
 # Bibliography
 

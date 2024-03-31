@@ -37,6 +37,7 @@
     "simple-git-hooks": "latest",
     "standard": "latest",
     "standard-markdown": "latest",
+    "unidecode": "latest",
     "standard-version": "latest",
     "tachyons-sass": "latest",
     "zx": "latest"
@@ -45,11 +46,11 @@
     "node": ">= 18"
   },
   "scripts": {
-    "build": "NODE_ENV=production JEKYLL_ENV=production bundle exec jekyll build",
-    "clean": "bundle exec jekyll clean",
+    "build": "NODE_ENV=production JEKYLL_ENV=production bundle exec jekyll build --verbose --trace",
+    "clean": "bundle exec jekyll clean && rm -rf node_mdoules",
     "dev": "bundle exec jekyll serve --watch --drafts --livereload --port 1337 --host localhost",
     "lint": "standard-markdown && standard",
-    "postinstall": "bundle install",
+    "postinstall": "gem install bundler && bundle install",
     "postrelease": "npm run release:tags && npm run release:github",
     "precommit": "nano-staged",
     "prerelease": "npm run update:check",

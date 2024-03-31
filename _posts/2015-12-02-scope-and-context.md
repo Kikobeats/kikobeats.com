@@ -29,6 +29,6 @@ tags:
 
 * Out of his scope, a variable is invisible.
 
-Read in the [CoffeeScript Book by Javi JimÃ©nez](https://leanpub.com/coffeescript).
+Read in the [CoffeeScript Book by soyjavi](https://leanpub.com/coffeescript).
 
 Quotes from [Kevin Chisholm](http://blog.kevinchisholm.com/javascript/difference-between-scope-and-context/) blog.

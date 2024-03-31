@@ -3,6 +3,7 @@
 const { mkdir, readdir, readFile, writeFile } = require('fs/promises')
 const debug = require('debug-logfmt')('jekyll')
 const GithubSlugger = require('github-slugger')
+const unidecode = require('unidecode')
 const matter = require('gray-matter')
 const sharp = require('sharp')
 const mime = require('mime')
@@ -60,7 +61,7 @@ Promise.resolve(input).then(async posts => {
     const file = await readFile(filepath)
     let { content, data } = matter(file)
 
-    const imagesFolder = path.join('images', slugger.slug(data.title))
+    const imagesFolder = path.join('images', slugger.slug(unidecode(data.title)))
     await mkdirp(imagesFolder)
 
     const save = () => writeFile(filepath, matter.stringify(content, data))
@@ -75,6 +76,9 @@ Promise.resolve(input).then(async posts => {
       debug.warn('No post header image!', filepath)
     }
 
+    /**
+     * It detects markdown image URLs like `![alt](url)`
+     */
     const regex = () => /!\[(.*?)\]\((.*?)\)/gm
 
     if (regex().test(content)) {

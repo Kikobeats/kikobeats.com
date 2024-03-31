@@ -49,17 +49,15 @@ Emojis don't work as normal characters: Meanwhile a character is represented com
 
 Based on the byte explanation, wouldn't be possible write a tweet of 140 emojis but it is, because Twitter convert emojis into images (using [twemoji](https://github.com/twitter/twemoji)) and count each one as one character.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="und" dir="ltr">ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€ðŸ€</p>&mdash; Kiko Beats âš¡ (@Kikobeats) <a href="https://twitter.com/Kikobeats/status/703168977254494209">February 26, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="art" dir="ltr">🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀</p>&mdash; #!/kiko/beats (@Kikobeats) <a href="https://twitter.com/Kikobeats/status/703168977254494209?ref_src=twsrc%5Etfw">February 26, 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 In general, services as social networks converts emojis into images. This is because, between other decisions, customization is important.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I do not advise sending the kiss emoji to people running Firefox OS. <a href="https://t.co/0kQKMM0vaQ">pic.twitter.com/0kQKMM0vaQ</a></p>&mdash; Jordan Hall (@DivineOmega) <a href="https://twitter.com/DivineOmega/status/696470046533619712">February 7, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I do not advise sending the kiss emoji to people running Firefox OS. <a href="https://t.co/0kQKMM0vaQ">pic.twitter.com/0kQKMM0vaQ</a></p>&mdash; Jordan Hall 💻 (@DivineOmega) <a href="https://twitter.com/DivineOmega/status/696470046533619712?ref_src=twsrc%5Etfw">February 7, 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## In a tweet as link
 
-It's interesting because when an emoji is present into a URL, itâ€‹ doesn't work as you can expect.
+It's interesting because when an emoji is present in a URL, it doesn't work as you might expect.
 
 An URL (on Twitter) needs 23 characters. These characters are counted as representation of the link and doesn't matter what URL shortener you use for generate the link: All links are counted as 23 characters
 
@@ -108,7 +106,7 @@ The point of the service is make URL short, so avoid same input with different o
 
 Two users that register the same URI get the same output. Simple!.
 
-Also I register an emoji URL domain to put a little of âœ¨.
+Also, I registered an emoji URL domain to add a touch of ✨.
 
 ## Technical Stack
 
@@ -124,9 +122,9 @@ On the other hand I had to write library [parse-uri](https://github.com/Kikobeat
 
 ### Frontend Side
 
-I was always thinking in writingâ€‹ a tiny frontend. I was looking for a tiny CSS blueprint that â€‹providesâ€‹ me a basic grid and elemental â€‹tagâ€‹ style, and I found [Milligram](https://milligram.github.io/). It â€‹wasâ€‹ a discovery!
+I was always thinking about writing a tiny frontend. I was looking for a tiny CSS blueprint that provides me a basic grid and elemental tag style, and I found [Milligram](https://milligram.github.io/). It was a discovery!
 
-Later I decided to compliment it with something*â€‹ like React but tinierâ€‹, to avoid interacting with DOM using jQuery (or equivalent). â€‹Inâ€‹ this case I chose [riotjs](http://riotjs.com/)  library and I'm happy with it.
+Later, I decided to complement it with something like React but tinier, to avoid interacting with the DOM using jQuery (or equivalent). In this case, I chose the [riotjs](http://riotjs.com/) library, and I'm happy with it.
 
 The result: less than 60KB between JS/CSS. this reinforced my concept of small around the project.
 

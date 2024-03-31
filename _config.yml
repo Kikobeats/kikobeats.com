@@ -33,7 +33,6 @@ exclude:
 
 plugins:
   - jekyll-archives
-  - jekyll-autoprefixer
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag

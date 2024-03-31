@@ -32,9 +32,9 @@ el.addEventListener("click", function(event) {
 and is very common in callbacks. But when you actually use?
 
 
-	Rule 1: You Donï¿½t Need the Fat Arrow If You Donï¿½t Use: class, this, and @.
+	Rule 1: You Don't Need the Fat Arrow If You Don't Use: class, this, and @.
 	Rule 2: Use the Fat Arrow when You Use @ in a Callback Definition in a Method.
-	Rule 3: Donï¿½t Use Methods as Callbacks and Avoid the Fat Arrow Operator in All Other Circumstances.
+	Rule 3: Don't Use Methods as Callbacks and Avoid the Fat Arrow Operator in All Other Circumstances.
     
 maybe the three rules can be resume in:
 
@@ -56,7 +56,7 @@ And ALWAYS remember that the key here is the **context**.
     The context is the thing to the left of the dot. Here, bartender is the context.
     eg: bartender.makeManhattan()
 
-    If thereï¿½s nothing to the left of the dot, the context is the global context.
+    If there's nothing to the left of the dot, the context is the global context.
     eg: makeManhattan()
 
     If the function is an event handler or callback, the context is the event owner or caller.
