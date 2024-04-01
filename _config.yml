@@ -37,6 +37,8 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-postcss-v2
+
 
 defaults:
   - scope:
