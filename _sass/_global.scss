@@ -107,18 +107,6 @@ h6 {
   }
 }
 
-@keyframes blink {
-  0% {
-    opacity: 1.0;
-  }
-  50% {
-    opacity: 0.0;
-  }
-  100% {
-    opacity: 1.0;
-  }
-}
-
 .selectedText {
   font-style: normal;
   background: $primary-color;
@@ -154,20 +142,6 @@ h6 {
 
 .cursor-code {
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" style="font-size:14px"><text y="16">💻</text></svg>'), auto;
-}
-
-#title {
-  &::after {
-    content: " ";
-    display: inline-block;
-    height: 43px;
-    position: relative;
-    top: 8px;
-    margin-left: 4px;
-    width: 2px;
-    background: $primary-color;
-    animation: blink 1s step-start 0s infinite;
-  }
 }
 
 @keyframes fadeIn {
