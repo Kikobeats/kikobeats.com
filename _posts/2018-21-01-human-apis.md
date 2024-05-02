@@ -11,7 +11,7 @@ tags:
 
 I tend to format my styles. Although you can do that following different criteria, my main criteria is aesthetic.
 
-I created [microsoft-capitalize](https://github.com/kikobeats/microsoft-capitalize); it follows [Microsoft Copywriting styleguide](https://docs.microsoft.com/en-us/style-guide/capitalization) and it's simple and intuitive:
+I created [microsoft-capitalize](https://github.com/kikobeats/microsoft-capitalize) just for that:
 
 ```js
 const capitalize = require('microsoft-capitalize')
@@ -20,7 +20,9 @@ capitalize('Microlink CDN: Global Edge Cache')
 // => 'Microlink CDN: Global edge cache'
 ```
 
-## Date 
+It follows [Microsoft Copywriting styleguide](https://docs.microsoft.com/en-us/style-guide/capitalization), which is simple and intuitive.
+
+## Date
 
 Internationalization is difficult to get right at the best of times, luckily there is a [well supported](https://caniuse.com/#feat=internationalization) API for it now in most browsers.
 
@@ -78,6 +80,30 @@ That's could be a good point to start. Next step could remember the user prefere
 ### Alternatives
 
 - [human-number](https://github.com/Kikobeats/human-number) – Convert number to a human readable string.
+
+## Bytes
+
+The [Intl.NumberFormat]() is an specific API for sensitive number formatting.
+
+It can be used for formatting bytes:
+
+```js
+const prettyBytes = new Intl.NumberFormat('en-US', {
+  notation: 'compact',
+  style: 'unit',
+  unit: 'byte',
+  unitDisplay: 'narrow',
+});
+
+prettyBytes.format(1024) // 1KB
+```
+
+Unfortunately, it isn't converting between units so you will need to write some code around. 
+
+See the [list of supported units](https://tc39.es/proposal-unified-intl-numberformat/section6/locales-currencies-tz_proposed_out.html#sec-issanctionedsimpleunitidentifier).
+
+### Alternatives
+
 - [pretty-bytes](https://github.com/sindresorhus/pretty-bytes) – Convert bytes to a human readable string.
 
 ## Relative Time
