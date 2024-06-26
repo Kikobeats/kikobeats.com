@@ -379,43 +379,45 @@ YABS completed in 8 min 3 sec
 - cpu: 8x 1996.247 MHz
 - single core: 894 / multi core: 4293 in 8 min 3 sec
 
-## Price-performance ratio
+## Price / performance ratio
+
+*(higher is better)*
 
 ### single core
 
 ```
-c-8vcpu-16gb-intel | $218/mo | 1507 | 6.9128440367
-s-8vcpu-16gb-amd   | $112/mo | 894  | 7.9821428571
-g-4vcpu-16gb       | $126/mo | 1085 | 8.6111111111
-g-4vcpu-16gb-intel | $151/mo | 1493 | 9.8874172185
-c-4vcpu-8gb-intel  | $109/mo | 1496 | 13.7247706422
-s-4vcpu-8gb        | $64/mo  | 912  | 14.25
-c-4vcpu-8gb        | $84/mo  | 1266 | 15.0714285714
-s-4vcpu-8gb-amd    | $56/mo  | 880  | 15.7142857143
+c-8vcpu-16gb-intel | 1507 | $218/mo | 6.9128440367
+s-8vcpu-16gb-amd   | 894  | $112/mo | 7.9821428571
+g-4vcpu-16gb       | 1085 | $126/mo | 8.6111111111
+g-4vcpu-16gb-intel | 1493 | $151/mo | 9.8874172185
+c-4vcpu-8gb-intel  | 1496 | $109/mo | 13.7247706422
+s-4vcpu-8gb        | 912  | $64/mo  | 14.25
+c-4vcpu-8gb        | 1266 | $84/mo  | 15.0714285714
+s-4vcpu-8gb-amd    | 880  | $56/mo  | 15.7142857143
 ```
 
 ### multi core
 
 ```
-g-4vcpu-16gb       | $126/mo | 2382 | 18.9047619048
-g-4vcpu-16gb-intel | $151/mo | 3129 | 20.7218543046
-c-8vcpu-16gb-intel | $218/mo | 5460 | 25.0458715596
-c-4vcpu-8gb-intel  | $109/mo | 3138 | 28.7889908257
-c-4vcpu-8gb        | $84/mo  | 2770 | 32.9761904762
-s-8vcpu-16gb-amd   | $112/mo | 4293 | 38.3303571429
-s-4vcpu-8gb        | $64/mo  | 2783 | 43.484375
-s-4vcpu-8gb-amd    | $56/mo  | 2776 | 49.5714285714
+g-4vcpu-16gb       | 2382 | $126/mo | 18.9047619048
+g-4vcpu-16gb-intel | 3129 | $151/mo | 20.7218543046
+c-8vcpu-16gb-intel | 5460 | $218/mo | 25.0458715596
+c-4vcpu-8gb-intel  | 3138 | $109/mo | 28.7889908257
+c-4vcpu-8gb        | 2770 | $84/mo  | 32.9761904762
+s-8vcpu-16gb-amd   | 4293 | $112/mo | 38.3303571429
+s-4vcpu-8gb        | 2783 | $64/mo  | 43.484375
+s-4vcpu-8gb-amd    | 2776 | $56/mo  | 49.5714285714
 ```
 
 ### single core + multi core
 
 ```
-g-4vcpu-16gb       | $126/mo | 1085 + 2382 | 27.5158730159
-g-4vcpu-16gb-intel | $151/mo | 1493 + 3129 | 30.6092715232
-c-8vcpu-16gb-intel | $218/mo | 1507 + 5460 | 31.9587155963
-c-4vcpu-8gb-intel  | $109/mo | 1496 + 3138 | 42.5137614679
-s-8vcpu-16gb-amd   | $112/mo | 894 + 4293  | 46.3125
-c-4vcpu-8gb        | $84/mo  | 1266 + 2770 | 48.0476190476
-s-4vcpu-8gb        | $64/mo  | 912 + 2783  | 57.734375
-s-4vcpu-8gb-amd    | $56/mo  | 880 + 2776  | 65.2857142857
+g-4vcpu-16gb       | 1085 + 2382 | $126/mo | 27.5158730159
+g-4vcpu-16gb-intel | 1493 + 3129 | $151/mo | 30.6092715232
+c-8vcpu-16gb-intel | 1507 + 5460 | $218/mo | 31.9587155963
+c-4vcpu-8gb-intel  | 1496 + 3138 | $109/mo | 42.5137614679
+s-8vcpu-16gb-amd   | 894 + 4293  | $112/mo | 46.3125
+c-4vcpu-8gb        | 1266 + 2770 | $84/mo  | 48.0476190476
+s-4vcpu-8gb        | 912 + 2783  | $64/mo  | 57.734375
+s-4vcpu-8gb-amd    | 880 + 2776  | $56/mo  | 65.2857142857
 ```
