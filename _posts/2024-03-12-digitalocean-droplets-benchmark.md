@@ -71,16 +71,16 @@ YABS completed in 8 min 11 sec
 <pre>
 Basic System Information:
 ---------------------------------
-Uptime     : 0 days, 0 hours, 1 minutes
-Processor  : Intel(R) Xeon(R) Platinum 8358 CPU @ 2.60GHz
-CPU cores  : 4 @ 2599.998 MHz
+Uptime     : 0 days, 0 hours, 0 minutes
+Processor  : INTEL(R) XEON(R) GOLD 6548N
+CPU cores  : 4 @ 2800.000 MHz
 AES-NI     : ✔ Enabled
 VM-x/AMD-V : ✔ Enabled
 RAM        : 15.6 GiB
 Swap       : 0.0 KiB
-Disk       : 58.1 GiB
-Distro     : Ubuntu 22.04.2 LTS
-Kernel     : 5.15.0-67-generic
+Disk       : 58.0 GiB
+Distro     : Ubuntu 24.04 LTS
+Kernel     : 6.8.0-31-generic
 VM Type    : KVM
 IPv4/IPv6  : ✔ Online / ❌ Offline
 
@@ -96,18 +96,18 @@ Geekbench 6 Benchmark Test:
 ---------------------------------
 Test            | Value                         
                 |                               
-Single Core     | 1493                          
-Multi Core      | 3129                          
-Full Test       | https://browser.geekbench.com/v6/cpu/5288945
+Single Core     | 1876                          
+Multi Core      | 4152                          
+Full Test       | https://browser.geekbench.com/v6/cpu/6684038
 
-YABS completed in 6 min 59 sec
+YABS completed in 6 min 9 sec
 </pre>
 </details>
 
 - slug: g-4vcpu-16gb-intel
 - billed: $151/mo or $0.2247/hr
 - cpu: 4x Intel(R) Xeon(R) Platinum 8358 CPU @ 2.60GHz
-- single core: 1493 / multi core: 3129 in 6 min 59 sec
+- single core: 1876 / multi core: 4152 in 6 min 9 sec
 
 ### CPU-Optimized	– Regular Intel
 
@@ -162,15 +162,15 @@ YABS completed in 7 min 33 sec
 Basic System Information:
 ---------------------------------
 Uptime     : 0 days, 0 hours, 1 minutes
-Processor  : Intel(R) Xeon(R) Platinum 8358 CPU @ 2.60GHz
-CPU cores  : 4 @ 2599.998 MHz
+Processor  : INTEL(R) XEON(R) GOLD 6548N
+CPU cores  : 4 @ 2800.000 MHz
 AES-NI     : ✔ Enabled
 VM-x/AMD-V : ✔ Enabled
 RAM        : 7.8 GiB
 Swap       : 0.0 KiB
 Disk       : 48.4 GiB
-Distro     : Ubuntu 22.04.2 LTS
-Kernel     : 5.15.0-67-generic
+Distro     : Ubuntu 24.04 LTS
+Kernel     : 6.8.0-31-generic
 VM Type    : KVM
 IPv4/IPv6  : ✔ Online / ❌ Offline
 
@@ -186,18 +186,18 @@ Geekbench 6 Benchmark Test:
 ---------------------------------
 Test            | Value                         
                 |                               
-Single Core     | 1496                          
-Multi Core      | 3138                          
-Full Test       | https://browser.geekbench.com/v6/cpu/5289000
+Single Core     | 1846                          
+Multi Core      | 4166                          
+Full Test       | https://browser.geekbench.com/v6/cpu/6683995
 
-YABS completed in 6 min 59 sec
+YABS completed in 6 min 10 sec
 </pre>
 </details>
 
 - slug: c-4vcpu-8gb-intel
 - billed: $109/mo or $0.1622/hr
-- cpu: 4x Intel(R) Xeon(R) Platinum 8358 CPU @ 2.60GHz
-- single core: 1496 / multi core: 3138 in 6 min 59 sec
+- cpu: 4x INTEL(R) XEON(R) GOLD 6548N @ 2.80GHz
+- single core: 1846 / multi core: 4166 in 6 min 10 sec
 
 ### CPU-Optimized	– Premium Intel (8vCPU)
 
@@ -206,16 +206,16 @@ YABS completed in 6 min 59 sec
 <pre>
 Basic System Information:
 ---------------------------------
-Uptime     : 0 days, 0 hours, 3 minutes
-Processor  : Intel(R) Xeon(R) Platinum 8358 CPU @ 2.60GHz
-CPU cores  : 8 @ 2593.904 MHz
+Uptime     : 0 days, 0 hours, 1 minutes
+Processor  : INTEL(R) XEON(R) GOLD 6548N
+CPU cores  : 8 @ 2800.000 MHz
 AES-NI     : ✔ Enabled
 VM-x/AMD-V : ✔ Enabled
 RAM        : 15.6 GiB
 Swap       : 0.0 KiB
 Disk       : 96.8 GiB
-Distro     : Ubuntu 23.10
-Kernel     : 6.5.0-9-generic
+Distro     : Ubuntu 24.04 LTS
+Kernel     : 6.8.0-31-generic
 VM Type    : KVM
 IPv4/IPv6  : ✔ Online / ❌ Offline
 
@@ -231,18 +231,18 @@ Geekbench 6 Benchmark Test:
 ---------------------------------
 Test            | Value                         
                 |                               
-Single Core     | 1507                          
-Multi Core      | 5460                          
-Full Test       | https://browser.geekbench.com/v6/cpu/5293753
+Single Core     | 1864                          
+Multi Core      | 7204                          
+Full Test       | https://browser.geekbench.com/v6/cpu/6683799
 
-YABS completed in 6 min 27 sec
+YABS completed in 5 min 37 sec
 </pre>
 </details>
 
 - slug: c-8vcpu-16gb-intel
 - billed: $218/mo or $0.324/hr
-- cpu: 8x Intel(R) Xeon(R) Platinum 8358 CPU @ 2.60GHz
-- single core: 1507 / multi core: 5460 in 6 min 27 sec
+- cpu: 8x INTEL(R) XEON(R) GOLD 6548N @ 2800.000 MHz
+- single core: 1864 / multi core: 7204 in 5 min 37 sec
 
 ### Basic	– Premium Intel (4vCPU)
 
@@ -379,32 +379,32 @@ YABS completed in 8 min 3 sec
 - cpu: 8x 1996.247 MHz
 - single core: 894 / multi core: 4293 in 8 min 3 sec
 
-## Price / performance ratio
+## performance-to-price ratio
 
 *(higher is better)*
 
 ### single core
 
 ```
-c-8vcpu-16gb-intel | 1507 | $218/mo | 6.9128440367
 s-8vcpu-16gb-amd   | 894  | $112/mo | 7.9821428571
+c-8vcpu-16gb-intel | 1864 | $218/mo | 8.5504587156
 g-4vcpu-16gb       | 1085 | $126/mo | 8.6111111111
-g-4vcpu-16gb-intel | 1493 | $151/mo | 9.8874172185
-c-4vcpu-8gb-intel  | 1496 | $109/mo | 13.7247706422
+g-4vcpu-16gb-intel | 1876 | $151/mo | 12.4238410596
 s-4vcpu-8gb        | 912  | $64/mo  | 14.25
 c-4vcpu-8gb        | 1266 | $84/mo  | 15.0714285714
 s-4vcpu-8gb-amd    | 880  | $56/mo  | 15.7142857143
+c-4vcpu-8gb-intel  | 1846 | $109/mo | 16.9357798165
 ```
 
 ### multi core
 
 ```
 g-4vcpu-16gb       | 2382 | $126/mo | 18.9047619048
-g-4vcpu-16gb-intel | 3129 | $151/mo | 20.7218543046
-c-8vcpu-16gb-intel | 5460 | $218/mo | 25.0458715596
-c-4vcpu-8gb-intel  | 3138 | $109/mo | 28.7889908257
+g-4vcpu-16gb-intel | 4152 | $151/mo | 27.4966887417
 c-4vcpu-8gb        | 2770 | $84/mo  | 32.9761904762
+c-8vcpu-16gb-intel | 7204 | $218/mo | 33.0458715596
 s-8vcpu-16gb-amd   | 4293 | $112/mo | 38.3303571429
+c-4vcpu-8gb-intel  | 4166 | $109/mo | 38.2201834862
 s-4vcpu-8gb        | 2783 | $64/mo  | 43.484375
 s-4vcpu-8gb-amd    | 2776 | $56/mo  | 49.5714285714
 ```
@@ -413,11 +413,11 @@ s-4vcpu-8gb-amd    | 2776 | $56/mo  | 49.5714285714
 
 ```
 g-4vcpu-16gb       | 1085 + 2382 | $126/mo | 27.5158730159
-g-4vcpu-16gb-intel | 1493 + 3129 | $151/mo | 30.6092715232
-c-8vcpu-16gb-intel | 1507 + 5460 | $218/mo | 31.9587155963
-c-4vcpu-8gb-intel  | 1496 + 3138 | $109/mo | 42.5137614679
+g-4vcpu-16gb-intel | 1876 + 4152 | $151/mo | 39.9205298013
+c-8vcpu-16gb-intel | 1864 + 7204 | $218/mo | 41.5963302752
 s-8vcpu-16gb-amd   | 894 + 4293  | $112/mo | 46.3125
 c-4vcpu-8gb        | 1266 + 2770 | $84/mo  | 48.0476190476
+c-4vcpu-8gb-intel  | 1846 + 4166 | $109/mo | 55.1559633028
 s-4vcpu-8gb        | 912 + 2783  | $64/mo  | 57.734375
 s-4vcpu-8gb-amd    | 880 + 2776  | $56/mo  | 65.2857142857
 ```
