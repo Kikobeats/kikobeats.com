@@ -17,9 +17,6 @@
       "email": "adyavanapalli@gmail.com"
     }
   ],
-  "dependencies": {
-    "sharp": "~0.33.0"
-  },
   "devDependencies": {
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
@@ -39,11 +36,13 @@
     "postcss": "latest",
     "postcss-cli": "latest",
     "postcss-focus": "latest",
+    "sharp": "latest",
     "simple-git-hooks": "latest",
     "standard": "latest",
     "standard-markdown": "latest",
     "standard-version": "latest",
     "tachyons-sass": "latest",
+    "unidecode": "latest",
     "zx": "latest"
   },
   "engines": {
