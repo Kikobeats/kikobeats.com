@@ -9,6 +9,8 @@ image: /images/urls-for-testing/header.jpeg
 
 - [test-data-uri.vercel.app](https://test-data-uri.vercel.app) ([128kb](https://test-data-uri.vercel.app?size=128kb), [256kb](https://test-data-uri.vercel.app?size=256kb), [1mb](https://test-data-uri.vercel.app?size=1mb))
 - [favicon-data-uri.vercel.app](https://favicon-data-uri.vercel.app/)
+- [test-favicon-ico.vercel.app](https://test-favicon-ico.vercel.app/)
+- [test-favicon-server.vercel.app](https://test-favicon-server.vercel.app/)
 
 ## Images
 
@@ -20,7 +22,7 @@ image: /images/urls-for-testing/header.jpeg
 - [test-alert.vercel.app](https://test-alert.vercel.app)
 - [test-decode-async.vercel.app](https://test-decode-async.vercel.app)
 - [test-http-login.vercel.app](https://test-http-login.vercel.app)
-- [test-redirection.vercel.app/?url=https://example.com](https://test-redirection.vercel.app/?url=https://example.com)
+
 - [test-timeout.vercel.app](https://test-timeout.vercel.app)
 - [time.kikobeats.com](https://time.kikobeats.com)
 - [vercel.com/new/templates](https://vercel.com/new/templates)
@@ -51,7 +53,7 @@ image: /images/urls-for-testing/header.jpeg
 
 ## Typography
 
-- [font-rendering.vercel.app](https://font-rendering.vercel.app)
+- [test-font-rendering.vercel.app](https://test-font-rendering.vercel.app)
 - [primer.style/design/foundations/typography](https://primer.style/design/foundations/typography)
 - [web.mit.edu/jmorzins/www/fonts.html](https://web.mit.edu/jmorzins/www/fonts.html)
 - [www.cssfontstack.com/](https://www.cssfontstack.com/)
@@ -76,6 +78,9 @@ image: /images/urls-for-testing/header.jpeg
 
 - [geolocation.microlink.io](https://geolocation.microlink.io)
 - [httpbin](https://httpbin.org/anything?json)
+- [test-http.vercel.app](https://test-http.vercel.app/)
+- [test-window-location.vercel.app](https://test-window-location.vercel.app/?url=https://example.com)
+- [test-redirection.vercel.app/?url=https://example.com](https://test-redirection.vercel.app/?url=https://example.com)
 
 ## Chrome
 

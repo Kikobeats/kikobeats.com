@@ -32,7 +32,6 @@
     "gray-matter": "latest",
     "mime": "3",
     "nano-staged": "latest",
-    "npm-check-updates": "latest",
     "postcss": "latest",
     "postcss-cli": "latest",
     "postcss-focus": "latest",
@@ -56,14 +55,11 @@
     "postinstall": "gem install bundler && bundle install",
     "postrelease": "npm run release:tags && npm run release:github",
     "precommit": "nano-staged",
-    "prerelease": "npm run update:check",
     "pretest": "npm run lint",
     "release": "git-authors-cli && git add package.json && standard-version -a",
     "release:github": "github-generate-release",
     "release:tags": "git push --follow-tags origin HEAD:master",
-    "test": "exit 0",
-    "update": "ncu -u",
-    "update:check": "ncu -- --error-level 2"
+    "test": "exit 0"
   },
   "private": true,
   "license": "MIT",
