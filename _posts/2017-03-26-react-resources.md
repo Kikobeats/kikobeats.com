@@ -7,26 +7,32 @@ date: '2017-03-26 20:16:16'
 
 ### Cheat Sheet
 
-- [reactpatterns.com](http://reactpatterns.com).
-- [react-bits](https://github.com/vasanthk/react-bits).
-- [reactcheatsheet.com](http://reactcheatsheet.com).
-- [ricostacruz cheatseet](http://ricostacruz.com/cheatsheets/react.html).
-- [React lifecycle methods diagram](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/).
-
-### Directories
-
-- [awesome-react](https://github.com/enaqx/awesome-react).
-- [awesome-react-components](https://github.com/brillout/awesome-react-components).
+- [reactpatterns.com](http://reactpatterns.com)
+- [react-bits](https://github.com/vasanthk/react-bits)
+- [reactcheatsheet.com](http://reactcheatsheet.com)
+- [ricostacruz cheatseet](http://ricostacruz.com/cheatsheets/react.html)
+- [React lifecycle methods diagram](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
 ### Helpers
 
-- [JSX Live Compiler](https://jsx-live.now.sh/).
-- [HTML to JSX Compiler](https://magic.reactjs.net/htmltojsx.htm).
-- [transform, Transform JS objects to get something useful](https://transform.now.sh/).
+- [JSX Live Compiler](https://jsx-live.now.sh/)
+- [HTML to JSX Compiler](https://magic.reactjs.net/htmltojsx.htm)
+- [transform, Transform JS objects to get something useful](https://transform.now.sh/)
 
-### Workflow
+### Tailwind components
 
-- [Defining Component APIs in React](http://jxnblk.com/writing/posts/defining-component-apis-in-react/). 
-- [When to break up a component into multiple components](https://blog.kentcdodds.com/when-to-break-up-a-component-into-multiple-components-4ee75ab53bbc).
+- [shadcn](https://ui.shadcn.com/docs/components/accordion)
+- [hextastudio](https://ui.hextastudio.in/docs/components/layout/Accordion)
+- [aceternity](https://ui.aceternity.com/components)
+- [magicui](https://magicui.design/docs/components/marquee)
 
-*Just a non exhaustive list of good react resources. Feel free to suggest resources!*
+### Picked components
+
+- [react-text-loop](https://github.com/braposo/react-text-loop)
+- [cmdk](https://github.com/pacocoursey/cmdk)
+- [kbar](https://github.com/timc1/kbar)
+
+### Hooks
+
+- [usehooks.com](https://github.com/uidotdev/usehooks)
+- [react-use](https://github.com/streamich/react-use)
