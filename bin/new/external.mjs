@@ -25,6 +25,7 @@ if (existsSync(filename)) {
 
 await writeFile(filename, `
 ---
+sitemap: false
 external: ${url}
 date: '${year}-${month}-${day}'
 title: '${title}'
