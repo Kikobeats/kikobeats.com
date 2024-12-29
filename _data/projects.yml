@@ -11,7 +11,7 @@ featured:
 
   - name: keyv
     description: Universal key value storage.
-    link: https://keyv.js.org
+    link: https://keyvhq.js.org
     image: /images/keyv.jpg
 
 normal:
@@ -37,7 +37,7 @@ normal:
 
   - name: osom
     description: An Awesome Object Data Modeling.
-    link: http://osom.js.org
+    link: https://osom.js.org
 
   - name: count
     description: counting things, as microservice.

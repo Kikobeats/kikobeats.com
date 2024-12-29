@@ -50,7 +50,7 @@ A local strategy on top of your cache saves the party since it's using a memory 
 +-------------+
 ```
 
-If you use [keyv](https://keyv.js.org), we recently released [@keyv/multi](https://github.com/microlinkhq/keyv/tree/master/packages/multi) to do exactly that:
+If you use [keyv](https://keyvhq.js.org), we recently released [@keyv/multi](https://github.com/microlinkhq/keyv/tree/master/packages/multi) to do exactly that:
 
 ```js
 const KeyvMulti = require('@keyvhq/multi')
@@ -73,4 +73,4 @@ One of the cool things there is, when the local cache fails, the value is copied
 ## Bibliography
 
 - [Redis server-assisted client side caching](https://redis.io/topics/client-side-caching)
-- [Keyv is a multi backend simple key-value storage](https://keyv.js.org)
+- [Keyv is a multi backend simple key-value storage](https://keyvhq.js.org)
