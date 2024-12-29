@@ -37,9 +37,13 @@ There is a complete [instructions](https://standartplast.com/es/instructions/doo
 
 ## Aerocell QP
 
+![](/images/standardplast/intrigo.png)
+
 There is a new lineup of products claiming to combine a sandwich in line layer (15 in 1), reducing the cost.
 
-![](/images/standardplast/intrigo.png)
-![](/images/standardplast/genio.png)
+There are two options: 
 
-I still didn't find too much information about that.
+- Genio: 6mm for interior floor, interior doors or front wheel arches.
+- Intrigo: 4mm for roof, hood, trunk, exerior doors, etc.
+
+According with a distributor, it's better than combine Aero + Accent.
