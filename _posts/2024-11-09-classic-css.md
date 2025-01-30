@@ -19,3 +19,4 @@ image: /images/classic-css-styles/header.png
 - [Windows 95 Screensavers](https://www.bryanbraun.com/after-dark-css/)
 - [BIOS style](https://github.com/vinibiavatti1/TuiCss)
 - [geocities](https://code.divshot.com/geo-bootstrap/)
+- [CS1.6](https://cs16.samke.me/)
