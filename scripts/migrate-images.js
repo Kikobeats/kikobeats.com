@@ -36,7 +36,7 @@ const staticImage = async (url, destination) => {
   try {
     debug('fetching', url)
     const { body: buffer, headers } = await got(imageUrl(url))
-    const extension = mime.getExtension(headers['content-type'])
+    const extension = mime.getExtension(headers['content-type']?.split(';')[0].trim().toLowerCase())
     const filepath = `${destination}.${extension}`
 
     await sharp(buffer)
