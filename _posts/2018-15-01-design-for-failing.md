@@ -12,7 +12,7 @@ tags:
 
 Errors are frustating. In the tech culture, the errors are everywhere all time.
 
-[](https://twitter.com/GregorySchier/status/732830868562182144){:.card-preview data-size="large"}
+[](https://x.com/GregorySchier/status/732830868562182144){:.card-preview data-size="large"}
 
 When you design a error situation, think _how_ the user feels under this context. A good error message should be:
 
@@ -28,7 +28,7 @@ At the end of the day, errors are part of the product and the business culture f
 
 Threy are not only for final user app: We need to communicate good errors message in all your developments layers.
 
-[](https://twitter.com/yifan_xing_e/status/1042294371763146752){:.card-preview data-size="large"}
+[](https://x.com/yifan_xing_e/status/1042294371763146752){:.card-preview data-size="large"}
 
 Think in the user experience behind read a developer that looks like:
 

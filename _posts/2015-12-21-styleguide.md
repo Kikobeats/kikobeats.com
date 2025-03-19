@@ -169,4 +169,4 @@ Months ago I created [Fink](http://xn--rn8h.ws/), a URL Shortener service that I
 - This is a [youtube](https://www.youtube.com/watch?v=iIlN_FaN5kM) video
 - This is a [github](https://github.com/kikobeats/geneator-git) repo
 - This is a [wikipedia](https://en.wikipedia.org/wiki/Squirrel-cage_rotor) article
-- This is a [twitter](https://twitter.com/kikobeats) link
+- This is a [twitter](https://x.com/kikobeats) link

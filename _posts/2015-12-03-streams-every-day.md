@@ -8,7 +8,7 @@ tags:
 ---
 
 > "Streams in node are one of the rare occasions when doing something the fast way is actually easier. SO USE THEM. not since bash has streaming been introduced into a high level language as nicely as it is in node."
-<cite>[@dominictarr](https://twitter.com/dominictarr) at [high level node style guide](https://gist.github.com/dominictarr/2401787).</cite>
+<cite>[@dominictarr](https://x.com/dominictarr) at [high level node style guide](https://gist.github.com/dominictarr/2401787).</cite>
 
 ## TL;DR
 

@@ -35,7 +35,7 @@ Why should it? What's the point to use a emoji magnet URI? Don't have sense for 
 
 I suppose that I think in that to be it more social friendly and funny.
 
-I started speaking about that with [@wa7son](https://twitter.com/wa7son) and he suggested me:
+I started speaking about that with [@wa7son](https://x.com/wa7son) and he suggested me:
 
 > Hey, maybe not possible use emojis in a magnet-uri, but what do you think about use a URL based on emoji that redirect to magnet URI <span>@wa7son</span>
 
@@ -49,11 +49,11 @@ Emojis don't work as normal characters: Meanwhile a character is represented com
 
 Based on the byte explanation, wouldn't be possible write a tweet of 140 emojis but it is, because Twitter convert emojis into images (using [twemoji](https://github.com/twitter/twemoji)) and count each one as one character.
 
-<blockquote class="twitter-tweet"><p lang="art" dir="ltr">🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀</p>&mdash; #!/kiko/beats (@Kikobeats) <a href="https://twitter.com/Kikobeats/status/703168977254494209?ref_src=twsrc%5Etfw">February 26, 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="art" dir="ltr">🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀</p>&mdash; #!/kiko/beats (@Kikobeats) <a href="https://x.com/Kikobeats/status/703168977254494209?ref_src=twsrc%5Etfw">February 26, 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 In general, services as social networks converts emojis into images. This is because, between other decisions, customization is important.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I do not advise sending the kiss emoji to people running Firefox OS. <a href="https://t.co/0kQKMM0vaQ">pic.twitter.com/0kQKMM0vaQ</a></p>&mdash; Jordan Hall 💻 (@DivineOmega) <a href="https://twitter.com/DivineOmega/status/696470046533619712?ref_src=twsrc%5Etfw">February 7, 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I do not advise sending the kiss emoji to people running Firefox OS. <a href="https://t.co/0kQKMM0vaQ">pic.twitter.com/0kQKMM0vaQ</a></p>&mdash; Jordan Hall 💻 (@DivineOmega) <a href="https://x.com/DivineOmega/status/696470046533619712?ref_src=twsrc%5Etfw">February 7, 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## In a tweet as link
 

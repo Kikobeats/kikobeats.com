@@ -10,4 +10,4 @@ tags:
 
 Not is the best moment for relational databases but I reckon it would have been useful in their day :P
 
-[original from @ashalynd](https://twitter.com/ashalynd/status/449828745495330817)
+[original from @ashalynd](https://x.com/ashalynd/status/449828745495330817)

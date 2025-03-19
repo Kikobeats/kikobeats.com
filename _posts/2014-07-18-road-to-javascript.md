@@ -14,7 +14,7 @@ All people know that Web components are the future, but nowadays exist different
 
 What? Don't know what are [Web Components](http://webcomponents.org/) and, most important answer, **why**?
 
-I'll try not to think you're being an outdated and teach you some things. Or better, [@addyosmani](https://twitter.com/addyosmani) teach you for me!
+I'll try not to think you're being an outdated and teach you some things. Or better, [@addyosmani](https://x.com/addyosmani) teach you for me!
 
 <iframe width="640" height="360" src="//www.youtube.com/embed/booRxAJblwM" frameborder="0" allowfullscreen></iframe>
 

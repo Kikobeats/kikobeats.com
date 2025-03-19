@@ -97,9 +97,8 @@
       "https://kikobeats.com/sitemap.xml"
     ],
     "whitelist": [
-      "https://*research.ibm.com*",
-      "https://windtoday.co*",
-      "https://www.linkedin.com/in/kikobeats"
+      "https://www.linkedin.com/in/kikobeats",
+      "https://timecards.kikobeats.com/",
     ]
   }
 }

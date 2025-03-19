@@ -28,5 +28,5 @@ All programming language have good and [bad parts](https://wiki.theory.org/YourL
 
 Maybe the next time when you check again your favorite project in a favorite language you will find a different and better way to resolve a problem.
 
-Thanks a [@rafadc](https://twitter.com/rafadc) for the conversation!
+Thanks a [@rafadc](https://x.com/rafadc) for the conversation!
 

@@ -34,7 +34,7 @@ Basically, the functionality of the stack is the same, but it can be interrupted
 
 ![](/images/javascript-event-loop/jmujjuz.png)
 
-It's a little difficult to imagine, but fortunately, [@philip_roberts](https://twitter.com/@philip_roberts) explains the concept very well in his talk at [JSConfeu](http://2014.jsconf.eu/):
+It's a little difficult to imagine, but fortunately, [@philip_roberts](https://x.com/@philip_roberts) explains the concept very well in his talk at [JSConfeu](http://2014.jsconf.eu/):
 
 <iframe width="630" height="390" src="//www.youtube.com/embed/8aGhZQkoFbQ" frameborder="0" allowfullscreen></iframe>
 
