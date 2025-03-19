@@ -16,7 +16,7 @@ However, speedy software isn't a feature you can add in a product sprint. It's a
 But how to constantly improve something that constantly change?
 
 > If you want to write fast software, use a slow computer
-<cite><a href='https://twitter.com/dominictarr/status/629992939738005504'>Dominic Tarr</a></cite>.
+<cite><a href='https://x.com/dominictarr/status/629992939738005504'>Dominic Tarr</a></cite>.
 
 There are a set of things that never – or _rarely_ – change, being [anticipation the key to performance](https://zeit.co/blog/next#anticipation-is-the-key-to-performance).
 
@@ -33,7 +33,7 @@ In fact, if we want to think where _physically_ the software is running, the dif
 
 ![](/images/speed-is-the-feature/hwood9y.jpeg)
 
-<figcaption>From <a href="https://twitter.com/frioux/status/918130735034314752">Systems Performance at Scale</a>.</figcaption>
+<figcaption>From <a href="https://x.com/frioux/status/918130735034314752">Systems Performance at Scale</a>.</figcaption>
 
 ### Understand what your code does
 

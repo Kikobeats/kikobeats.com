@@ -9,7 +9,7 @@ tags:
 
 Time in the past, a wild tweet appeared in my timeline:
 
-<blockquote class="twitter-tweet" lang="es"><p>Amazon is hiring in Spain! Give it a try! <a href="http://t.co/jH3YisaTeK">pic.twitter.com/jH3YisaTeK</a></p>&mdash; Jaime Vallori (@jvallori) <a href="https://twitter.com/jvallori/status/563046478521057280">febrero 4, 2015</a></blockquote>
+<blockquote class="twitter-tweet" lang="es"><p>Amazon is hiring in Spain! Give it a try! <a href="http://t.co/jH3YisaTeK">pic.twitter.com/jH3YisaTeK</a></p>&mdash; Jaime Vallori (@jvallori) <a href="https://x.com/jvallori/status/563046478521057280">febrero 4, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <br>

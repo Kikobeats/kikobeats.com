@@ -45,7 +45,7 @@ Because is the first version of the software, In this case I also use `npm publi
 
 Once you have your project, start a new laborious task: maintain it. Laborious is not necessary the same of *hard*, but you need to put more attention in the details.
 
-<center><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Instead of Major.Minor.Patch say Breaking.Feature.Bugfix - that&#39;s <a href="https://twitter.com/hashtag/SemVer?src=hash">#SemVer</a> in a nutshell.</p>&mdash; Robert Muehsig (@robert0muehsig) <a href="https://twitter.com/robert0muehsig/status/623397900274561024">July 21, 2015</a></blockquote>
+<center><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Instead of Major.Minor.Patch say Breaking.Feature.Bugfix - that&#39;s <a href="https://x.com/hashtag/SemVer?src=hash">#SemVer</a> in a nutshell.</p>&mdash; Robert Muehsig (@robert0muehsig) <a href="https://x.com/robert0muehsig/status/623397900274561024">July 21, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></center>
 
 A few months ago, I detected that I spent too much time doing it and I had to be aware of so many things when releasing the new version of my code. Sometimes committing human errors in the process, like create a tag version before exec the command to create the new browser build, forget update the changelog, update the new version in `package.json` but not in `bower.json`, and more stupid stuff. 
@@ -87,7 +87,7 @@ One thing about plugin system is that previously you don't need to install it: J
 
 This is the look using `bumped release` command with plugins:
 
-<center><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">releasing software like a pro <a href="http://t.co/hSfsZwpLuw">pic.twitter.com/hSfsZwpLuw</a></p>&mdash; Kiko Beats (@Kikobeats) <a href="https://twitter.com/Kikobeats/status/627041135408623616">July 31, 2015</a></blockquote>
+<center><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">releasing software like a pro <a href="http://t.co/hSfsZwpLuw">pic.twitter.com/hSfsZwpLuw</a></p>&mdash; Kiko Beats (@Kikobeats) <a href="https://x.com/Kikobeats/status/627041135408623616">July 31, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></center>
 
 Then just I have to push in the remote branch. I integrate this step in the bumped configuration files, but I prefer do it manually.

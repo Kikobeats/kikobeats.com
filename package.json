@@ -45,7 +45,7 @@
     "zx": "latest"
   },
   "engines": {
-    "node": ">= 18"
+    "node": ">= 20"
   },
   "scripts": {
     "build": "NODE_ENV=production JEKYLL_ENV=production bundle exec jekyll build --verbose --trace",
@@ -97,9 +97,11 @@
       "https://kikobeats.com/sitemap.xml"
     ],
     "whitelist": [
-      "https://*research.ibm.com*",
-      "https://windtoday.co*",
-      "https://www.linkedin.com/in/kikobeats"
+      "https://kikobeats.com/cdn-cgi/*",
+      "https://teslahunt.io/",
+      "https://timecards.kikobeats.com/",
+      "https://www.linkedin.com/in/kikobeats",
+      "https://x.com/*"
     ]
   }
 }

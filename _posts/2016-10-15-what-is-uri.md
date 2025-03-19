@@ -61,4 +61,4 @@ In addition, when you something like `google.com` in your browser that is not cu
 
 * @ Stackoverlfow [[1]](http://stackoverflow.com/questions/176264/what-is-the-difference-between-a-uri-a-url-and-a-urn/1984225#1984225)
 [[2]](http://stackoverflow.com/questions/176264/what-is-the-difference-between-a-uri-a-url-and-a-urn).
-* [@ Nacho Soto](https://twitter.com/NachoSoto/status/787043395747188736) inception.
+* [@ Nacho Soto](https://x.com/NachoSoto/status/787043395747188736) inception.

@@ -113,7 +113,7 @@ We tested a lot of websites and adjust the value for best effort. Of course it's
 
 A funny thing I discovered working on this part is that **it's incredible how badly looks the HTML from the top websites in the world**. They are not putting attention or doing any effort in have semantic and logical HTML markup.
 
-microlink codebase is based on [metascrapper](https://github.com/ianstormtaylor/metascraper) (where I'm contributor). Thanks [Ian Storm Taylor](https://twitter.com/ianstormtaylor) for create it, It's very inspirational.
+microlink codebase is based on [metascrapper](https://github.com/ianstormtaylor/metascraper) (where I'm contributor). Thanks [Ian Storm Taylor](https://x.com/ianstormtaylor) for create it, It's very inspirational.
 
 Probably I'm going to release this part in the future because it will be improved a lot adopting an open source community.
 
@@ -125,7 +125,7 @@ Probably **the landing page for a project is the most important part**. It will 
 
 I think we tends to create landing pages at the end of the process and we don't put all the attention that it needs: You are thinking in finish the project as soon as possible, but you need to keep in mind that **landing page will be last thing for you but the first thing people see**.
 
-I have to say special thanks to [Danny Saltaren](https://twitter.com/dsaltaren) and [mendesaltaren](https://www.mendesaltaren.com) team to helping me with the design. It's better than I ever imagined.
+I have to say special thanks to [Danny Saltaren](https://x.com/dsaltaren) and [mendesaltaren](https://www.mendesaltaren.com) team to helping me with the design. It's better than I ever imagined.
 
 Feedback in these step is very important: You need to validate how it looks before the launch day. I want to say thanks again to [Frontaneros community](https://github.com/Frontaneria) to provide me a lot of useful feedback.
 
