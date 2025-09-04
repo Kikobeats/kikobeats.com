@@ -16,6 +16,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
       - name: Execution
         run: npx urlint && curl -fsS -m 10 --retry 5 -o /dev/null https://hc-ping.com/11da2ccb-b96d-4d89-94ca-aac1bc5bcbcf
