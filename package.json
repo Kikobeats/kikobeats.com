@@ -20,6 +20,7 @@
   "devDependencies": {
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
+    "@kikobeats/content-type": "latest",
     "@ksmithut/prettier-standard": "latest",
     "cssnano": "latest",
     "cssnano-preset-advanced": "latest",

@@ -1,6 +1,7 @@
 'use strict'
 
 const { mkdir, readdir, readFile, writeFile } = require('fs/promises')
+const contentType = require('@kikobeats/content-type')
 const debug = require('debug-logfmt')('jekyll')
 const GithubSlugger = require('github-slugger')
 const unidecode = require('unidecode')
@@ -36,7 +37,7 @@ const staticImage = async (url, destination) => {
   try {
     debug('fetching', url)
     const { body: buffer, headers } = await got(imageUrl(url))
-    const extension = mime.getExtension(headers['content-type']?.split(';')[0].trim().toLowerCase())
+    const extension = mime.getExtension(contentType(headers['content-type']))
     const filepath = `${destination}.${extension}`
 
     await sharp(buffer)
