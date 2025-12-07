@@ -178,7 +178,6 @@ metadata:
   namespace: default
   annotations:
     kubernetes.io/ingress.class: nginx
-    cert-manager.io/cluster-issuer: letsencrypt
 spec:
   tls:
     - hosts:
