@@ -1,0 +1,31 @@
+- name: microlink.io
+  description: Enter URL, receive data.
+  tags: Node.js, API, SaaS
+  link: https://microlink.io
+  logo: https://cdn.microlink.io/logo/logo.png
+  changelog:
+    - description: Smarter proxy
+      link: https://microlink.io/smart-proxy
+      date: 2025-12-16
+    - description: Improved YouTube & Instagram
+      link: https://microlink.io/youtube-instagram
+      date: 2025-12-15
+    - description: Real-time website monitoring
+      link: https://microlink.io/website-monitoring
+      date: 2025-12-14
+
+- name: unavatar.io
+  description: Get unified user avatar.
+  tags: Node.js, API, SaaS
+  link: https://unavatar.io
+  logo: https://unavatar.io/fallback.png
+  changelog:
+    - description: Introducing PRO plan
+      link: https://microlink.io/pro
+      date: 2025-12-16
+    - description: Added TikTok support
+      link: https://microlink.io/tiktok
+      date: 2025-12-15
+    - description: Better domain resolution
+      link: https://microlink.io/domain-resolution
+      date: 2025-12-14

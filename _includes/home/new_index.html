@@ -1,0 +1,222 @@
+<div class="sans-serif near-black center pa4-l pa3" style="max-width: 800px">
+  <!-- Header -->
+  <header class="mb5 mt4-l mt3 flex items-center">
+    <div class="mr3 flex-shrink-0">
+      <img
+        id="avatar"
+        src="/images/avatar.jpg"
+        alt="Kiko Beats"
+        class="pointer br-100 w4 h4 db"
+        onmouseover="hover(this);"
+        onmouseout="unhover(this);"
+      />
+    </div>
+    <div>
+      <h1 class="f2 f1-ns fw7 mb2 mt0 lh-title">Kiko Beats</h1>
+      <div class="f5 mid-gray lh-title">
+        <a href="https://github.com/kikobeats" class="link near-black dim mr3">GitHub</a>
+        <a href="https://linkedin.com/in/kikobeats" class="link near-black dim mr3">LinkedIn</a>
+        <a href="https://x.com/kikobeats" class="link near-black dim">X</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Apps -->
+  <section class="mb5">
+    <h2 class="f6 ttu tracked fw5 mid-gray mb4">Running</h2>
+    <ul class="home-list list pl0 ma0">
+      {% for running in site.data.running %}
+      <li class="run-item">
+        <div class="run-logo flex-shrink-0">
+          <img src="{{ running.logo }}" alt="{{ running.name }} logo" class="db w-100 h-100" />
+        </div>
+
+        <div class="run-body f5 lh-copy">
+          <div class="mb1">
+            <span class="fw5 mr2 f4">
+              {% if running.link %}
+              <a href="{{ running.link }}" class="link near-black dim lh-title">{{
+                running.name
+              }}</a>
+              {% else %}
+              {{ running.name }}
+              {% endif %}
+            </span>
+            <span class="f5 near-black">{{ running.description }}</span>
+          </div>
+
+          {% if running.changelog %}
+          <div class="run-changelog">
+            {% for entry in running.changelog %}
+            <div class="run-changelog-item f5 black-70">
+              <span class="mid-gray mr2 lh-title">{{ entry.date | date: '%b %e' }}</span>
+              {% if entry.link %}
+              <a href="{{ entry.link }}" class="link blue dim lh-title">{{ entry.description }}</a>
+              {% else %}
+              <span class="lh-title">{{ entry.description }}</span>
+              {% endif %}
+            </div>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <!-- Experiences -->
+  <section class="mb5">
+    <h2 class="f6 ttu tracked fw5 mid-gray mb4 exp-kicker">Experiences</h2>
+    <ul class="home-list list pl0 ma0">
+      {% for job in site.data.experiences %}
+      <li class="exp-item">
+        <div class="exp-logo flex-shrink-0">
+          <img src="{{ job.logo }}" alt="{{ job.company }} logo" class="db w-100 h-100" />
+        </div>
+
+        <div class="exp-body lh-copy">
+          <div class="exp-top">
+            <a href="{{ job.link }}" class="exp-company link near-black dim lh-title fw5 f4">{{
+              job.company
+            }}</a>
+            <div class="exp-date lh-title mid-gray f5">{{ job.date }}</div>
+          </div>
+
+          {% if job.tagline %}
+          <div class="exp-subtitle lh-title mid-gray f5">{{ job.tagline }}</div>
+          {% endif %} {% if job.description %}
+          <div class="exp-desc lh-copy black-70 f5">
+            {{ job.description }}
+          </div>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <!-- Blog -->
+  <section class="mb5">
+    <h2 class="f6 ttu tracked fw5 mid-gray mb4">Blog</h2>
+    <div class="home-list">
+      {% assign posts = "" | split: "" %}
+      {% for post in site.posts %}
+      {% unless post.draft or post.external %}
+      {% assign posts = posts | push: post %}
+      {% endunless %}
+      {% endfor %}
+
+      {% for post in posts limit:5 %}
+      <div class="flex-ns justify-between items-baseline">
+        <div class="mb2 mb0-ns pr4-ns">
+          <a href="{{ post.url }}" class="link near-black dim lh-title fw5 f4">{{ post.title }}</a>
+        </div>
+        <div class="mid-gray f5 flex-shrink-0 lh-title">{{ post.date | date: '%B %Y' }}</div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <p class="f5 mid-gray mt4 mb0 lh-copy">
+      Browse all posts on my <a class="link blue dim" href="/blog">blog</a> posts.
+    </p>
+  </section>
+
+  <!-- Open Source -->
+  <section class="mb5">
+    <h2 class="f6 ttu tracked fw5 mid-gray mb4">Open Source</h2>
+    <div class="home-list">
+      {% for oss in site.data.opensource %}
+      <div class="lh-copy">
+        <div class="mb1">
+          <span class="fw5 f4 mr2">
+            {% if oss.link %}
+            <a href="{{ oss.link }}" class="link near-black dim lh-title">{{ oss.name }}</a>
+            {% else %}
+            {{ oss.name }}
+            {% endif %}
+          </span>
+          {% if oss.stars %}
+          <span class="f5 mid-gray mr2 lh-title">★ {{ oss.stars }}</span>
+          {% endif %}
+          <span class="f5 near-black">{{ oss.description }}</span>
+        </div>
+        <div class="f5 mid-gray">{{ oss.tags }}</div>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="f5 mid-gray mt4 mb0 lh-copy">
+      Browse all my <a class="link blue dim" href="/oss">open source</a> projects.
+    </p>
+  </section>
+
+  <!-- Fun Projects -->
+  <section class="mb5">
+    <h2 class="f6 ttu tracked fw5 mid-gray mb4">Fun Projects</h2>
+    <div class="home-list">
+      {% for fun in site.data.fun_projects %}
+      <div class="lh-copy">
+        <div class="mb1">
+          <span class="fw5 f4 mr2">
+            {% if fun.link %}
+            <a href="{{ fun.link }}" class="link near-black dim lh-title">{{ fun.name }}</a>
+            {% else %}
+            {{ fun.name }}
+            {% endif %}
+          </span>
+          <span class="f5 near-black">{{ fun.description }}</span>
+        </div>
+        <div class="f5 mid-gray">{{ fun.tags }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+</div>
+
+<script>
+  var avatars = ['/images/avatar.jpg', '/images/avatar-glitch.jpg']
+  var el = document.getElementById('avatar')
+  var times = [3000, 150, 3000, 300, 1000, 800]
+  var index = 0
+  var glitchPreloaded = false
+  var isHovered = false
+
+  function hover(element) {
+    isHovered = true
+    element.setAttribute('src', '/images/avatar-glitch.jpg')
+    element.classList.add('animate-glitch')
+  }
+  function unhover(element) {
+    isHovered = false
+    element.setAttribute('src', '/images/avatar.jpg')
+    element.classList.remove('animate-glitch')
+  }
+
+  function glitchEffect() {
+    if (!glitchPreloaded) return
+    var isGlitch = index % 2 === 0
+    var avatar = isGlitch ? '/images/avatar-glitch.jpg' : '/images/avatar.jpg'
+    var timing = times[index % times.length]
+    setTimeout(function () {
+      // Don't fight the hover easter egg. While hovered, keep the hover state in control.
+      if (!isHovered) el.setAttribute('src', avatar)
+      index = index + 1
+      glitchEffect()
+    }, timing)
+  }
+
+  // Ensure the glitch avatar is in the browser cache before we start toggling.
+  ;(function preloadGlitchAvatar() {
+    var img = new Image()
+    img.onload = function () {
+      glitchPreloaded = true
+      glitchEffect()
+    }
+    img.onerror = function () {
+      // Even if it fails, don't block the rest of the page.
+      glitchPreloaded = true
+      glitchEffect()
+    }
+    img.src = '/images/avatar-glitch.jpg'
+  })()
+</script>

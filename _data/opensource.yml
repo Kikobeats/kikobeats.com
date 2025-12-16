@@ -1,0 +1,16 @@
+- name: metascraper
+  description: HTML protocols normalization.
+  tags: Node.js, Library
+  link: https://metascraper.js.org
+  stars: 3000
+
+- name: browserless
+  description: Chrome Headless API made easy.
+  tags: Node.js, Puppeteer
+  link: https://browserless.js.org
+  stars: 4000
+
+- name: keyv
+  description: Simple key-value storage with support for multiple backends.
+  tags: Node.js, Database
+  link: https://keyvhq.js.org

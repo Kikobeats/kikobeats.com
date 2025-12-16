@@ -69,9 +69,12 @@ h6 {
   }
 }
 
+// Avatar glitch effect (used on homepage)
 .animate-glitch {
   animation: glitch 0.9s infinite;
 }
+
+
 
 @keyframes zomg {
   0% {
@@ -185,4 +188,157 @@ h6 {
 
 .sans-serif {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+.flex-shrink-0 { flex-shrink: 0; }
+
+// Design scale (allowed values only).
+$ui-scale: (2px, 4px, 8px, 16px, 24px, 32px);
+
+$home-list-logo-size: nth($ui-scale, 6); // 32px
+$home-list-item-gap: nth($ui-scale, 5);  // 24px
+
+// Home: consistent spacing between list items across sections.
+// Works for both <ul> lists and <div> wrappers.
+.home-list > * + * {
+  margin-top: $home-list-item-gap;
+}
+
+.exp-item {
+  display: flex;
+  gap: nth($ui-scale, 6);
+  padding-bottom: nth($ui-scale, 5);
+  align-items: flex-start;
+}
+
+.exp-logo {
+  width: $home-list-logo-size;
+  height: $home-list-logo-size;
+  margin-top: nth($ui-scale, 1);
+}
+
+.exp-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+// Home: running list
+.run-item {
+  display: flex;
+  gap: nth($ui-scale, 4);
+  align-items: flex-start;
+}
+
+.run-logo {
+  width: $home-list-logo-size;
+  height: $home-list-logo-size;
+  margin-top: nth($ui-scale, 1);
+}
+
+.run-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.run-body {
+  width: 100%;
+  min-width: 0;
+}
+
+.run-changelog {
+  margin-top: nth($ui-scale, 3);
+}
+
+.run-changelog > * + * {
+  margin-top: nth($ui-scale, 3);
+}
+
+.run-changelog-item {
+  position: relative;
+  padding-left: nth($ui-scale, 5);
+  max-width: min(42rem, 80%);
+}
+
+.run-changelog-item::before {
+  content: '↳';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: inherit;
+}
+
+.exp-logo-fallback {
+  width: $home-list-logo-size;
+  height: $home-list-logo-size;
+  border-radius: 0;
+  background: transparent;
+  color: rgba($near-black, 0.75);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.exp-body {
+  width: 100%;
+  min-width: 0;
+}
+
+.exp-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: nth($ui-scale, 4);
+}
+
+.exp-company {
+  display: inline-block;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.exp-subtitle {
+  margin-top: nth($ui-scale, 3);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.exp-date {
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding-top: 0;
+}
+
+.exp-desc {
+  position: relative;
+  margin-top: nth($ui-scale, 3);
+  // Keep the description from visually colliding with the right-aligned date.
+  // Responsive within the 800px container.
+  max-width: min(42rem, 80%);
+  padding-left: nth($ui-scale, 5);
+}
+
+.exp-desc::before {
+  content: '↳';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: inherit;
+}
+
+@media (max-width: 480px) {
+  .exp-item {
+    gap: nth($ui-scale, 5);
+    padding: nth($ui-scale, 4) 0;
+  }
 }
