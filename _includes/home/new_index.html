@@ -6,6 +6,8 @@
         id="avatar"
         src="/images/avatar.jpg"
         alt="Kiko Beats"
+        width="128"
+        height="128"
         class="pointer br-100 w4 h4 db"
         onmouseover="hover(this);"
         onmouseout="unhover(this);"
@@ -28,7 +30,7 @@
       {% for running in site.data.running %}
       <li class="run-item">
         <div class="run-logo flex-shrink-0">
-          <img src="{{ running.logo }}" alt="{{ running.name }} logo" class="db w-100 h-100" />
+          <img src="{{ running.logo }}" alt="{{ running.name }} logo" width="32" height="32" class="db w-100 h-100" />
         </div>
 
         <div class="run-body f5 lh-copy">
@@ -72,7 +74,7 @@
       {% for job in site.data.experiences %}
       <li class="exp-item">
         <div class="exp-logo flex-shrink-0">
-          <img src="{{ job.logo }}" alt="{{ job.company }} logo" class="db w-100 h-100" />
+          <img src="{{ job.logo }}" alt="{{ job.company }} logo" width="32" height="32" class="db w-100 h-100" />
         </div>
 
         <div class="exp-body lh-copy">

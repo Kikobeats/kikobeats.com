@@ -54,7 +54,7 @@
     "clean": "bundle exec jekyll clean && rm -rf node_mdoules",
     "dev": "bundle exec jekyll serve --watch --drafts --livereload --port 1337 --host localhost",
     "lint": "standard",
-    "postinstall": "gem install bundler && bundle install && node scripts/fetch-oss.js ",
+    "postinstall": "gem install bundler && bundle install && node scripts/fetch-oss.js",
     "postrelease": "npm run release:tags && npm run release:github",
     "precommit": "nano-staged",
     "pretest": "npm run lint",
