@@ -26,7 +26,7 @@
     </div>
 
     <div class="oss-metrics mid-gray f5 flex-shrink-0 lh-title">
-      {% if include.repo.downloads and include.repo.downloads > 0 %}
+      {% if include.show_downloads != "false" and include.repo.downloads and include.repo.downloads > 0 %}
       <span class="oss-metric oss-metric--downloads">
         <span class="oss-count" data-count="{{ include.repo.downloads | default: 0 }}">{{ include.repo.downloads | default: 0 }}</span>
         <span class="oss-icon" aria-hidden="true">↓</span>

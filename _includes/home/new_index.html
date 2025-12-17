@@ -163,7 +163,7 @@
     <div class="home-list">
       {% assign oss_repos = site.data.oss | sort: "stars" | reverse %}
       {% for repo in oss_repos limit:5 %}
-      {% include oss/item.html repo=repo %}
+      {% include oss/item.html repo=repo show_downloads="false" %}
       {% endfor %}
     </div>
     <p class="f5 mid-gray mt4 mb0 lh-copy">
