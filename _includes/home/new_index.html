@@ -15,7 +15,7 @@
     </div>
     <div>
       <h1 class="f3 f1-ns fw7 mb2 mt0 lh-title">Kiko Beats</h1>
-      <div class="f6 f5-ns mid-gray lh-title">
+      <div class="f6 f5-ns black-50 lh-title">
         <a reel="noopener noreferrer" target="_blank" href="https://github.com/kikobeats" class="link near-black dim mr3">GitHub</a>
         <a reel="noopener noreferrer" target="_blank" href="https://linkedin.com/in/kikobeats" class="link near-black dim mr3">LinkedIn</a>
         <a reel="noopener noreferrer" target="_blank" href="https://x.com/kikobeats" class="link near-black dim">X</a>
@@ -25,7 +25,7 @@
 
   <!-- Running -->
   <section class="mb5">
-    <h2 class="f6 ttu tracked fw5 mid-gray mb4">Running</h2>
+    <h2 class="f6 ttu tracked fw5 black-70 mb4">Running</h2>
     <ul class="home-list list pl0 ma0">
       {% for running in site.data.running %}
       <li class="run-item">
@@ -50,8 +50,8 @@
           {% if running.changelog %}
           <div class="run-changelog">
             {% for entry in running.changelog %}
-            <div class="run-changelog-item f5 black-70">
-              <span class="run-changelog-date mid-gray lh-title">{{ entry.date | date: '%b %d' }}</span>
+            <div class="run-changelog-item f5">
+              <span class="run-changelog-date black-50 lh-title">{{ entry.date | date: '%b %d' }}</span>
               {% if entry.link %}
               <a href="{{ entry.link }}" class="link blue dim lh-title">{{ entry.description }}</a>
               {% else %}
@@ -69,7 +69,7 @@
 
   <!-- Experiences -->
   <section class="mb5">
-    <h2 class="f6 ttu tracked fw5 mid-gray mb4 exp-kicker">Experiences</h2>
+    <h2 class="f6 ttu tracked fw5 black-70 mb4">Experiences</h2>
     <ul class="home-list list pl0 ma0">
       {% for job in site.data.experiences %}
       <li class="exp-item">
@@ -82,13 +82,13 @@
             <a href="{{ job.link }}" class="exp-company link near-black dim lh-title fw5 f4">{{
               job.company
             }}</a>
-            <div class="exp-date lh-title mid-gray f5">{{ job.date }}</div>
+            <div class="exp-date lh-title black-50 f5">{{ job.date }}</div>
           </div>
 
           {% if job.tagline %}
-          <div class="exp-subtitle lh-title mid-gray f5">{{ job.tagline }}</div>
+          <div class="exp-subtitle lh-title black-50 f5">{{ job.tagline }}</div>
           {% endif %} {% if job.description %}
-          <div class="exp-desc lh-copy black-70 f5 max-w-copy">
+          <div class="exp-desc lh-copy f5 max-w-copy">
             {{ job.description }}
           </div>
           {% endif %}
@@ -100,7 +100,7 @@
 
   <!-- Blog -->
   <section class="mb5">
-    <h2 class="f6 ttu tracked fw5 mid-gray mb4">Blog</h2>
+    <h2 class="f6 ttu tracked fw5 black-70 mb4">Blog</h2>
     <div class="home-list">
       {% assign posts = "" | split: "" %}
       {% for post in site.posts %}
@@ -115,7 +115,7 @@
           <div class="mb2 mb0-ns pr4-ns">
             <a href="{{ post.url }}" class="link near-black dim lh-title fw5 f4">{{ post.title }}</a>
           </div>
-          <div class="mid-gray f5 flex-shrink-0 lh-title">{{ post.date | date: '%B %Y' }}</div>
+          <div class="black-50 f5 flex-shrink-0 lh-title">{{ post.date | date: '%B %Y' }}</div>
         </div>
 
         {% comment %}
@@ -144,7 +144,7 @@
         {% endif %}
 
         {% if sentence != "" %}
-        <div class="black-70 f5 lh-copy mt2 max-w-copy">
+        <div class="f5 lh-copy mt2 max-w-copy">
           {{ sentence }}{{ punct }}
         </div>
         {% endif %}
@@ -152,28 +152,28 @@
       {% endfor %}
     </div>
 
-    <p class="f5 mid-gray mt4 mb0 lh-copy">
+    <p class="f5 mt4 mb0 lh-copy">
       Browse all posts on my <a class="link blue dim" href="/blog">blog</a> posts.
     </p>
   </section>
 
   <!-- Open Source -->
   <section class="">
-    <h2 class="f6 ttu tracked fw5 mid-gray mb4">Open Source</h2>
+    <h2 class="f6 ttu tracked fw5 black-70 mb4">Open Source</h2>
     <div class="home-list">
       {% assign oss_repos = site.data.oss | sort: "stars" | reverse %}
       {% for repo in oss_repos limit:5 %}
       {% include oss/item.html repo=repo show_downloads="false" %}
       {% endfor %}
     </div>
-    <p class="f5 mid-gray mt4 mb0 lh-copy">
+    <p class="f5 mt4 mb0 lh-copy">
       Browse all my <a class="link blue dim" href="/oss">open source</a> projects.
     </p>
   </section>
 
   <!-- Fun Projects -->
   <!-- <section class="mb5">
-    <h2 class="f6 ttu tracked fw5 mid-gray mb4">Fun Projects</h2>
+    <h2 class="f6 ttu tracked fw5 black-70 mb4">Fun Projects</h2>
     <div class="home-list">
       {% for fun in site.data.fun_projects %}
       <div class="lh-copy">
@@ -187,7 +187,7 @@
           </span>
           <span class="f5 near-black">{{ fun.description }}</span>
         </div>
-        <div class="f5 mid-gray">{{ fun.tags }}</div>
+        <div class="f5 black-50">{{ fun.tags }}</div>
       </div>
       {% endfor %}
     </div>

@@ -1,19 +1,27 @@
-<main class="sans-serif near-black center pa4-l pa3 external-icon mw-800">
+<main class="sans-serif near-black center pa4-l pa3 external-icon" style="max-width: 800px">
   <header class="mb5 mt2">
     <h1 class="lh-title fw6 f2 f1-ns mt0 mb2">Open Source</h1>
-    <div class="mid-gray f5 lh-copy">
+    <div class="f5 lh-copy">
       A list of repositories I maintain across my organizations. Sorted by GitHub stars.
     </div>
   </header>
 
   <div class="home-list oss-list">
-    {% for repo in site.data.oss %}
-    {% include oss/item.html repo=repo %}
-    {% endfor %}
+    {% for repo in site.data.oss %} {% include oss/item.html repo=repo %} {% endfor %}
   </div>
 </main>
 
 <script>
+  function humanizeNumber(n, fn) {
+    const ALPHABET = ['K', 'M', 'B', 'T']
+    const TRESHOLD = 1e3
+
+    let idx = 0
+    while (n >= TRESHOLD && ++idx <= ALPHABET.length) n /= TRESHOLD
+    if (fn) n = fn(n)
+    return String(idx === 0 ? n : n + ALPHABET[idx - 1])
+  }
+
   ;(function formatOssCounts() {
     var els = document.querySelectorAll('.oss-count[data-count]')
     for (var i = 0; i < els.length; i++) {
@@ -21,7 +29,7 @@
       var raw = el.getAttribute('data-count')
       var n = Number(raw)
       if (!Number.isFinite(n)) continue
-      el.textContent = n.toLocaleString('en-US')
+      el.textContent = humanizeNumber(n, n => Number(n.toFixed(1)))
     }
   })()
 </script>

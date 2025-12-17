@@ -2,9 +2,10 @@
 ---
 @charset 'utf-8';
 
-$gold            : #D4A14B;
-$primary-color   : $gold;
-$secondary-color : #ddd;
+@import "../node_modules/tachyons-sass/scss/variables";
+
+$primary-color   : $near-black;
+$secondary-color : $silver;
 $mark-color      : #feda9e;
 
 $code-font       : Menlo,Monaco,Lucida Console,Liberation Mono, DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace, serif;

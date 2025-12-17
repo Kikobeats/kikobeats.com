@@ -1,7 +1,7 @@
 <main class="sans-serif near-black center pa4-l pa3 visited external-icon mw-800">
   <header class="mb5 mt2">
     <h1 class="lh-title fw6 f2 f1-ns mt0 mb2">Blog</h1>
-    <div class="mid-gray f5 lh-copy">
+    <div class="f5 lh-copy">
       Writing about shipping software, building products, and learning in public.
     </div>
   </header>
@@ -22,7 +22,7 @@
   </div>
   {% endif %}
 
-  <h2 class="f6 ttu tracked fw5 mid-gray mb4 {% unless forloop.first %}mt5{% endunless %}">{{ year }}</h2>
+  <h2 class="f6 ttu tracked fw5 black-50 mb4 {% unless forloop.first %}mt5{% endunless %}">{{ year }}</h2>
   <div class="home-list">
   {% capture current_year %}{{ year }}{% endcapture %}
   {% endif %}
@@ -31,7 +31,7 @@
       <div class="mb2 mb0-ns pr4-ns">
         <a href="{{ post.url }}" class="link near-black dim lh-title fw5 f4">{{ post.title }}</a>
       </div>
-      <div class="mid-gray f5 flex-shrink-0 lh-title">{{ post.date | date: "%B %Y" }}</div>
+      <div class="black-50 f5 flex-shrink-0 lh-title">{{ post.date | date: "%B %Y" }}</div>
     </div>
   {% endfor %}
 
