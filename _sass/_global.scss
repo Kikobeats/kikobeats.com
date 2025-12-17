@@ -358,7 +358,7 @@ body {
 }
 
 .oss-metric--stars .oss-count {
-  min-width: 4ch;
+  min-width: 6ch;
 }
 
 // Utility: keep long copy from stretching too wide.
@@ -422,6 +422,18 @@ body {
 .run-changelog-item {
   position: relative;
   padding-left: nth($ui-scale, 5);
+  display: flex;
+  align-items: baseline;
+  gap: nth($ui-scale, 3);
+}
+
+.run-changelog-date {
+  flex: 0 0 auto;
+  // Fixed-ish width so descriptions align despite date length.
+  width: 5.5ch; // "Sep 15" / "Oct 31"
+  // Keep the "extra" space on the right, not the left.
+  text-align: left;
+  font-variant-numeric: tabular-nums;
 }
 
 .run-changelog-item::before {

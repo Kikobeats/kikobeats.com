@@ -50,7 +50,7 @@ defaults:
   - scope:
       path: ''
     values:
-      layout: 'page'
+      layout: 'default'
       image: https://kikobeats.com/images/resume.png
   - scope:
       path: 'index.html'
