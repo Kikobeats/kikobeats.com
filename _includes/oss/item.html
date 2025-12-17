@@ -47,7 +47,7 @@
     {{ desc }}{% if desc_last != "." %}.{% endif %}
   </div>
   {% endif %} {% if include.repo.keywords and include.repo.keywords.size > 0 %}
-  <div class="black-50 f5 lh-copy max-w-copy">
+  <div class="black-60 f5 lh-copy max-w-copy">
     {% for keyword in include.repo.keywords limit: 5 %}
     <span class="mr2">#{{ keyword }}</span>
     {% endfor %}

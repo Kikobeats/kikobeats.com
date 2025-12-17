@@ -22,7 +22,7 @@
   </div>
   {% endif %}
 
-  <h2 class="f6 ttu tracked fw5 black-50 mb4 {% unless forloop.first %}mt5{% endunless %}">{{ year }}</h2>
+  <h2 class="f6 ttu tracked fw5 black-60 mb4 {% unless forloop.first %}mt5{% endunless %}">{{ year }}</h2>
   <div class="home-list">
   {% capture current_year %}{{ year }}{% endcapture %}
   {% endif %}
@@ -31,7 +31,7 @@
       <div class="mb2 mb0-ns pr4-ns">
         <a href="{{ post.url }}" class="link near-black dim lh-title fw5 f4">{{ post.title }}</a>
       </div>
-      <div class="black-50 f5 flex-shrink-0 lh-title">{{ post.date | date: "%B %Y" }}</div>
+      <div class="black-60 f5 flex-shrink-0 lh-title">{{ post.date | date: "%B %Y" }}</div>
     </div>
   {% endfor %}
 
