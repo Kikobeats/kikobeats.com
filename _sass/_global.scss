@@ -22,7 +22,7 @@ $home-list-item-gap: nth($ui-scale, 5); // 24px
 }
 
 // normal text is .lh-copy ~ 1.8
-// ensure title are ~ 1.25
+// ensure title are ~ 1.25n
 // credits: https://x.com/steveschoger/status/968519052800024577
 h1,
 h2,
@@ -361,6 +361,11 @@ body {
   min-width: 4ch;
 }
 
+// Utility: keep long copy from stretching too wide.
+.max-w-copy {
+  max-width: min(42rem, 80%);
+}
+
 .exp-item {
   display: flex;
   gap: nth($ui-scale, 6);
@@ -417,7 +422,6 @@ body {
 .run-changelog-item {
   position: relative;
   padding-left: nth($ui-scale, 5);
-  max-width: min(42rem, 80%);
 }
 
 .run-changelog-item::before {
@@ -482,7 +486,6 @@ body {
   margin-top: nth($ui-scale, 3);
   // Keep the description from visually colliding with the right-aligned date.
   // Responsive within the 800px container.
-  max-width: min(42rem, 80%);
   padding-left: nth($ui-scale, 5);
 }
 

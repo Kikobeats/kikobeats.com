@@ -48,7 +48,7 @@
           {% if running.changelog %}
           <div class="run-changelog">
             {% for entry in running.changelog %}
-            <div class="run-changelog-item f5 black-70">
+            <div class="run-changelog-item f5 black-70 max-w-copy">
               <span class="mid-gray mr2 lh-title">{{ entry.date | date: '%b %e' }}</span>
               {% if entry.link %}
               <a href="{{ entry.link }}" class="link blue dim lh-title">{{ entry.description }}</a>
@@ -86,7 +86,7 @@
           {% if job.tagline %}
           <div class="exp-subtitle lh-title mid-gray f5">{{ job.tagline }}</div>
           {% endif %} {% if job.description %}
-          <div class="exp-desc lh-copy black-70 f5">
+          <div class="exp-desc lh-copy black-70 f5 max-w-copy">
             {{ job.description }}
           </div>
           {% endif %}
@@ -108,11 +108,44 @@
       {% endfor %}
 
       {% for post in posts limit:5 %}
-      <div class="flex-ns justify-between items-baseline">
-        <div class="mb2 mb0-ns pr4-ns">
-          <a href="{{ post.url }}" class="link near-black dim lh-title fw5 f4">{{ post.title }}</a>
+      <div>
+        <div class="flex-ns justify-between items-baseline">
+          <div class="mb2 mb0-ns pr4-ns">
+            <a href="{{ post.url }}" class="link near-black dim lh-title fw5 f4">{{ post.title }}</a>
+          </div>
+          <div class="mid-gray f5 flex-shrink-0 lh-title">{{ post.date | date: '%B %Y' }}</div>
         </div>
-        <div class="mid-gray f5 flex-shrink-0 lh-title">{{ post.date | date: '%B %Y' }}</div>
+
+        {% comment %}
+          Prefer excerpt, but fall back to full content.
+          Use newline replacement (not strip_newlines) to avoid "glued" sentences that break splitting.
+        {% endcomment %}
+        {% assign raw_text = post.excerpt | strip_html | replace: '
+', ' ' | replace: '  ', ' ' | strip %}
+        {% if raw_text == "" %}
+        {% assign raw_text = post.content | strip_html | replace: '
+', ' ' | replace: '  ', ' ' | strip %}
+        {% endif %}
+
+        {% assign sentence = raw_text | strip %}
+        {% assign punct = "." %}
+
+        {% if sentence contains "." %}
+        {% assign sentence = sentence | split: "." | first | strip %}
+        {% assign punct = "." %}
+        {% elsif sentence contains "!" %}
+        {% assign sentence = sentence | split: "!" | first | strip %}
+        {% assign punct = "!" %}
+        {% elsif sentence contains "?" %}
+        {% assign sentence = sentence | split: "?" | first | strip %}
+        {% assign punct = "?" %}
+        {% endif %}
+
+        {% if sentence != "" %}
+        <div class="black-70 f5 lh-copy mt2 max-w-copy">
+          {{ sentence }}{{ punct }}
+        </div>
+        {% endif %}
       </div>
       {% endfor %}
     </div>
@@ -126,23 +159,9 @@
   <section class="mb5">
     <h2 class="f6 ttu tracked fw5 mid-gray mb4">Open Source</h2>
     <div class="home-list">
-      {% for oss in site.data.opensource %}
-      <div class="lh-copy">
-        <div class="mb1">
-          <span class="fw5 f4 mr2">
-            {% if oss.link %}
-            <a href="{{ oss.link }}" class="link near-black dim lh-title">{{ oss.name }}</a>
-            {% else %}
-            {{ oss.name }}
-            {% endif %}
-          </span>
-          {% if oss.stars %}
-          <span class="f5 mid-gray mr2 lh-title">★ {{ oss.stars }}</span>
-          {% endif %}
-          <span class="f5 near-black">{{ oss.description }}</span>
-        </div>
-        <div class="f5 mid-gray">{{ oss.keywords }}</div>
-      </div>
+      {% assign oss_repos = site.data.oss | sort: "stars" | reverse %}
+      {% for repo in oss_repos limit:5 %}
+      {% include oss/item.html repo=repo %}
       {% endfor %}
     </div>
     <p class="f5 mid-gray mt4 mb0 lh-copy">
@@ -151,7 +170,7 @@
   </section>
 
   <!-- Fun Projects -->
-  <section class="mb5">
+  <!-- <section class="mb5">
     <h2 class="f6 ttu tracked fw5 mid-gray mb4">Fun Projects</h2>
     <div class="home-list">
       {% for fun in site.data.fun_projects %}
@@ -170,7 +189,7 @@
       </div>
       {% endfor %}
     </div>
-  </section>
+  </section> -->
 </div>
 
 <script>
@@ -218,5 +237,16 @@
       glitchEffect()
     }
     img.src = '/images/avatar-glitch.jpg'
+  })()
+
+  ;(function formatOssCounts() {
+    var els = document.querySelectorAll('.oss-count[data-count]')
+    for (var i = 0; i < els.length; i++) {
+      var el2 = els[i]
+      var raw = el2.getAttribute('data-count')
+      var n = Number(raw)
+      if (!Number.isFinite(n)) continue
+      el2.textContent = n.toLocaleString('en-US')
+    }
   })()
 </script>
