@@ -7,6 +7,24 @@ layout: default
     <a class="link blue dim f5 lh-title" href="/blog">← Blog</a>
   </div>
 
+  {% if page.image %}
+  <header class="post-hero mb5 sans-serif" style="background-image: url('{{ page.image }}');">
+    <div class="post-hero__inner">
+      <h1 class="post-hero__title lh-title fw7 f2 f1-ns mt0 mb3 bg-white dib ph4 pv3">
+        {{ page.title }}
+      </h1>
+    </div>
+  </header>
+  <div class="mid-gray f5 lh-title mb5 tc">
+    <time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    <span class="mh2">·</span>
+    <span>{{ page.date | timeago }}</span>
+    <span class="dn pageviews-container">
+      <span class="mh2">·</span>
+      <span><span class="pageviews-count">0</span> views</span>
+    </span>
+  </div>
+  {% else %}
   <header class="layout-post mb5">
     <h1 class="lh-title fw6 mt0 mb2">{{ page.title }}</h1>
     <div class="mid-gray f5 lh-title">
@@ -19,6 +37,7 @@ layout: default
       </span>
     </div>
   </header>
+  {% endif %}
 
   <article class="layout-post layout-{{ page.layout }} external-icon lh-copy f5">
     {{ content }}
@@ -28,9 +47,6 @@ layout: default
 </main>
 {% include footer.html %}
 <script src="https://cdn.jsdelivr.net/combine/npm/prismjs@latest,npm/medium-zoom@latest"></script>
-<script
-  src="https://cdn.jsdelivr.net/combine/npm/react@16/umd/react.production.min.js,npm/react-dom@16/umd/react-dom.production.min.js,npm/react-is@16/umd/react-is.production.min.js,npm/styled-components@5/dist/styled-components.min.js,npm/@microlink/mql@latest/dist/mql.min.js,npm/@microlink/vanilla@latest/dist/microlink.min.js,npm/@microlink/hover-vanilla@latest/dist/microlink.min.js">
-</script>
 <script>
   fetch(`https://count.vercel.app/kikobeats/${window.location.pathname.substring(1).replace(/\/$/, '')}?incr`)
     .then(res => res.json())
@@ -43,16 +59,34 @@ layout: default
     })
     .catch(() => {})
 </script>
-<style>
-  .microlink_hover,
-  .microlink_card {
-    background: white !important;
-  }
-</style>
 <script>
   document.addEventListener("DOMContentLoaded", event => {
-    microlink('.card-preview')
     mediumZoom('.layout-post img')
+
+    const cards = document.querySelectorAll('.card-preview')
+    cards.forEach(card => {
+      const url = card.getAttribute('href')
+      if (!url) return
+
+      fetch(`https://api.microlink.io/?url=${encodeURIComponent(url)}`)
+        .then(res => res.json())
+        .then(item => {
+          const { title, description, image, logo, publisher } = item.data
+          card.innerHTML = `
+             ${image?.url ? `<div class="card-preview-image" style="background-image: url('${image.url}');"></div>` : ''}
+             <div class="card-preview-content">
+               <div class="card-preview-title">${title}</div>
+               <div class="card-preview-desc">${description}</div>
+               <div class="card-preview-footer">
+                   ${logo?.url ? `<img class="card-preview-logo" src="${logo.url}" />` : ''}
+                   <span>${publisher}</span>
+               </div>
+             </div>
+           `
+           card.classList.add('is-loaded')
+        })
+        .catch(e => console.error(e))
+    })
   })
 </script>
 <script>
