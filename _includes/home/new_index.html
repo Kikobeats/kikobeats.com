@@ -23,7 +23,7 @@
     </div>
   </header>
 
-  <!-- Apps -->
+  <!-- Running -->
   <section class="mb5">
     <h2 class="f6 ttu tracked fw5 mid-gray mb4">Running</h2>
     <ul class="home-list list pl0 ma0">
@@ -51,7 +51,7 @@
           <div class="run-changelog">
             {% for entry in running.changelog %}
             <div class="run-changelog-item f5 black-70 max-w-copy">
-              <span class="mid-gray mr2 lh-title">{{ entry.date | date: '%b %e' }}</span>
+              <span class="run-changelog-date mid-gray lh-title">{{ entry.date | date: '%b %d' }}</span>
               {% if entry.link %}
               <a href="{{ entry.link }}" class="link blue dim lh-title">{{ entry.description }}</a>
               {% else %}
