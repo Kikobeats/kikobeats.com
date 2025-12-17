@@ -4,7 +4,7 @@
   date: 2021 - 2025
   description: Making the Web, faster. Next.js contributor. Engineering at Edge Functions. Web Standards.
   link: https://vercel.com
-  logo: https://vercel.com/favicon.ico
+  logo: images/experiences/vercel.jpeg
 
 - company: Tesla Hunt
   title: Founder
@@ -12,28 +12,28 @@
   date: 2020 - 2025
   description: Real-time Tesla Certified Pre Owned (CPO) vehicles monitoring over Europe market.
   link: https://teslahunt.io
-  logo: https://teslahunt.io/rounded.svg
+  logo: images/experiences/teslahunt.jpeg
 
 - company: IBM Research
   title: Senior Web Engineer
   tagline: Senior Web Engineer
   date: 2019 - 2021
   link: https://research.ibm.com
-  logo: https://www.ibm.com/favicon.ico
+  logo: images/experiences/ibm.jpeg
 
 - company: Ironhack
   title: JavaScript Teacher
   tagline: JavaScript Teacher
   date: 2017 - 2018
   link: https://ironhack.com
-  logo: https://www.datocms-assets.com/14946/1690965068-default.png?auto=format&h=192&w=192
+  logo: images/experiences/ironhack.jpeg
 
 - company: Audiense
   title: Product Engineer
   tagline: Product Engineer
   date: 2015 - 2018
   link: https://audiense.com
-  logo: https://cdn.prod.website-files.com/61a61781d327712f7cb32e56/6875675352ac0a709814ac2a_favicon-32.svg
+  logo: images/experiences/audiense.jpeg
 
 - company: Rakuten
   title: Software Junior Engineer
@@ -41,4 +41,4 @@
   date: 2015 - 2016
   description: Part of European development team called EU TaskForce as Full Stack Engineer. Developing, scaling and improving the IT architecture between Japan and the European marketplace (Spain, England and Germany).
   link: https://rakuten.com
-  logo: https://prod-kuato.rakuten.tv/favicon.ico
+  logo: images/experiences/rakuten.jpeg
