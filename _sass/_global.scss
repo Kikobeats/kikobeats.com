@@ -352,17 +352,6 @@ body {
   text-align: center;
 }
 
-// Fixed widths so ★ doesn't drift as digits change.
-@media (min-width: 30em) {
-  .oss-metric--downloads .oss-count {
-    min-width: 13ch; // e.g. 1,124,140,968
-  }
-
-  .oss-metric--stars .oss-count {
-    min-width: 6ch;
-  }
-}
-
 // Utility: keep long copy from stretching too wide.
 .max-w-copy {
   max-width: min(42rem, 80%);
