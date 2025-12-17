@@ -21,15 +21,14 @@
         GitHub
       </a>
       {% if include.repo.npmUrl %}
-      <span class="mh1">·</span>
       {% unless include.show_downloads == "false" %}
+      <span class="mh1">·</span>
       <span class="oss-metric oss-metric--downloads pr1">
         <span class="oss-count" data-count="{{ include.repo.downloads | default: 0 }}">{{
           include.repo.downloads | default: 0
         }}</span>
         <span aria-hidden="true">↓</span>
       </span>
-      {% endunless %}
       <a
         href="{{ include.repo.npmUrl }}"
         class="link blue dim lh-title"
@@ -38,6 +37,7 @@
       >
         NPM
       </a>
+      {% endunless %}
       {% endif %}
     </div>
   </div>
