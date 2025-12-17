@@ -6,15 +6,15 @@
       </span>
     </div>
     <div class="db di-ns f5">
-      <span class="oss-metric oss-metric--stars pr2">
+      <span class="oss-metric oss-metric--stars pr1">
         <span class="oss-count" data-count="{{ include.repo.stars | default: 0 }}">{{
           include.repo.stars | default: 0
         }}</span>
-        <span class="oss-icon" aria-hidden="true">★</span>
+        <span aria-hidden="true">★</span>
       </span>
       <a
         href="{{ include.repo.githubUrl }}"
-        class="ml0 ml2-ns link blue dim lh-title"
+        class="link blue dim lh-title"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -22,11 +22,11 @@
       </a>
       {% if include.repo.npmUrl %}
       <span class="mh1">·</span>
-      <span class="oss-metric oss-metric--downloads pr2">
+      <span class="oss-metric oss-metric--downloads pr1">
         <span class="oss-count" data-count="{{ include.repo.downloads | default: 0 }}">{{
           include.repo.downloads | default: 0
         }}</span>
-        <span class="oss-icon" aria-hidden="true">↓</span>
+        <span aria-hidden="true">↓</span>
       </span>
       <a
         href="{{ include.repo.npmUrl }}"

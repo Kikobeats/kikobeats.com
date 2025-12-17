@@ -14,11 +14,32 @@
       />
     </div>
     <div>
-      <h1 class="f3 f1-ns fw7 mb2 mt0 lh-title">Kiko Beats</h1>
+      <h1 class="f3 f1-ns fw7 lh-title ma0">Kiko Beats</h1>
+      <div class="f4 fw4 black-80 mt2 mb3">Building web infra & open source</div>
       <div class="f6 f5-ns black-60 lh-title">
-        <a reel="noopener noreferrer" target="_blank" href="https://github.com/kikobeats" class="link near-black dim mr3">GitHub</a>
-        <a reel="noopener noreferrer" target="_blank" href="https://linkedin.com/in/kikobeats" class="link near-black dim mr3">LinkedIn</a>
-        <a reel="noopener noreferrer" target="_blank" href="https://x.com/kikobeats" class="link near-black dim">X</a>
+        <a
+          reel="noopener noreferrer"
+          target="_blank"
+          href="https://github.com/kikobeats"
+          class="link fw5 near-black dim"
+          >GitHub</a
+        >
+        <span class="mh1">·</span>
+        <a
+          reel="noopener noreferrer"
+          target="_blank"
+          href="https://linkedin.com/in/kikobeats"
+          class="link fw5 near-black dim"
+          >LinkedIn</a
+        >
+        <span class="mh1">·</span>
+        <a
+          reel="noopener noreferrer"
+          target="_blank"
+          href="https://x.com/kikobeats"
+          class="link fw5 near-black dim"
+          >X</a
+        >
       </div>
     </div>
   </header>
@@ -30,7 +51,13 @@
       {% for running in site.data.running %}
       <li class="run-item">
         <div class="run-logo flex-shrink-0">
-          <img src="{{ running.logo }}" alt="{{ running.name }} logo" width="32" height="32" class="db w-100 h-100" />
+          <img
+            src="{{ running.logo }}"
+            alt="{{ running.name }} logo"
+            width="32"
+            height="32"
+            class="db w-100 h-100"
+          />
         </div>
 
         <div class="run-body f5 lh-copy">
@@ -51,7 +78,9 @@
           <div class="run-changelog">
             {% for entry in running.changelog %}
             <div class="run-changelog-item f5">
-              <span class="run-changelog-date black-60 lh-title">{{ entry.date | date: '%b %d' }}</span>
+              <span class="run-changelog-date black-60 lh-title">{{
+                entry.date | date: '%b %d'
+              }}</span>
               {% if entry.link %}
               <a href="{{ entry.link }}" class="link blue dim lh-title">{{ entry.description }}</a>
               {% else %}
@@ -74,7 +103,13 @@
       {% for job in site.data.experiences %}
       <li class="exp-item">
         <div class="exp-logo flex-shrink-0">
-          <img src="{{ job.logo }}" alt="{{ job.company }} logo" width="32" height="32" class="db w-100 h-100" />
+          <img
+            src="{{ job.logo }}"
+            alt="{{ job.company }} logo"
+            width="32"
+            height="32"
+            class="db w-100 h-100"
+          />
         </div>
 
         <div class="exp-body lh-copy">
@@ -102,51 +137,30 @@
   <section class="mb5">
     <h2 class="f6 ttu tracked fw5 black-70 mb4">Blog</h2>
     <div class="home-list">
-      {% assign posts = "" | split: "" %}
-      {% for post in site.posts %}
-      {% unless post.draft or post.external %}
-      {% assign posts = posts | push: post %}
-      {% endunless %}
-      {% endfor %}
-
-      {% for post in posts limit:5 %}
+      {% assign posts = "" | split: "" %} {% for post in site.posts %} {% unless post.draft or
+      post.external %} {% assign posts = posts | push: post %} {% endunless %} {% endfor %} {% for
+      post in posts limit:5 %}
       <div>
         <div class="flex-ns justify-between items-baseline">
           <div class="mb2 mb0-ns pr4-ns">
-            <a href="{{ post.url }}" class="link near-black dim lh-title fw5 f4">{{ post.title }}</a>
+            <a href="{{ post.url }}" class="link near-black dim lh-title fw5 f4">{{
+              post.title
+            }}</a>
           </div>
           <div class="black-60 f5 flex-shrink-0 lh-title">{{ post.date | date: '%B %Y' }}</div>
         </div>
 
-        {% comment %}
-          Prefer excerpt, but fall back to full content.
-          Use newline replacement (not strip_newlines) to avoid "glued" sentences that break splitting.
-        {% endcomment %}
-        {% assign raw_text = post.excerpt | strip_html | replace: '
-', ' ' | replace: '  ', ' ' | strip %}
-        {% if raw_text == "" %}
-        {% assign raw_text = post.content | strip_html | replace: '
-', ' ' | replace: '  ', ' ' | strip %}
-        {% endif %}
-
-        {% assign sentence = raw_text | strip %}
-        {% assign punct = "." %}
-
-        {% if sentence contains "." %}
-        {% assign sentence = sentence | split: "." | first | strip %}
-        {% assign punct = "." %}
-        {% elsif sentence contains "!" %}
-        {% assign sentence = sentence | split: "!" | first | strip %}
-        {% assign punct = "!" %}
-        {% elsif sentence contains "?" %}
-        {% assign sentence = sentence | split: "?" | first | strip %}
-        {% assign punct = "?" %}
-        {% endif %}
-
-        {% if sentence != "" %}
-        <div class="f5 lh-copy mt2 max-w-copy">
-          {{ sentence }}{{ punct }}
-        </div>
+        {% comment %} Prefer excerpt, but fall back to full content. Use newline replacement (not
+        strip_newlines) to avoid "glued" sentences that break splitting. {% endcomment %} {% assign
+        raw_text = post.excerpt | strip_html | replace: ' ', ' ' | replace: ' ', ' ' | strip %} {%
+        if raw_text == "" %} {% assign raw_text = post.content | strip_html | replace: ' ', ' ' |
+        replace: ' ', ' ' | strip %} {% endif %} {% assign sentence = raw_text | strip %} {% assign
+        punct = "." %} {% if sentence contains "." %} {% assign sentence = sentence | split: "." |
+        first | strip %} {% assign punct = "." %} {% elsif sentence contains "!" %} {% assign
+        sentence = sentence | split: "!" | first | strip %} {% assign punct = "!" %} {% elsif
+        sentence contains "?" %} {% assign sentence = sentence | split: "?" | first | strip %} {%
+        assign punct = "?" %} {% endif %} {% if sentence != "" %}
+        <div class="f5 lh-copy mt2 max-w-copy">{{ sentence }}{{ punct }}</div>
         {% endif %}
       </div>
       {% endfor %}
@@ -161,10 +175,8 @@
   <section class="">
     <h2 class="f6 ttu tracked fw5 black-70 mb4">Open Source</h2>
     <div class="home-list">
-      {% assign oss_repos = site.data.oss | sort: "stars" | reverse %}
-      {% for repo in oss_repos limit:5 %}
-      {% include oss/item.html repo=repo show_downloads="false" %}
-      {% endfor %}
+      {% assign oss_repos = site.data.oss | sort: "stars" | reverse %} {% for repo in oss_repos
+      limit:5 %} {% include oss/item.html repo=repo show_downloads="false" %} {% endfor %}
     </div>
     <p class="f5 mt4 mb0 lh-copy">
       Browse all my <a class="link blue dim" href="/oss">open source</a> projects.
@@ -241,7 +253,6 @@
     }
     img.src = '/images/avatar-glitch.jpg'
   })()
-
   ;(function formatOssCounts() {
     var els = document.querySelectorAll('.oss-count[data-count]')
     for (var i = 0; i < els.length; i++) {

@@ -340,18 +340,6 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
-.oss-metric .oss-count {
-  display: inline-block;
-  text-align: right;
-}
-
-// Keep the icon columns stable.
-.oss-icon {
-  display: inline-block;
-  width: 1ch;
-  text-align: center;
-}
-
 // Utility: keep long copy from stretching too wide.
 .max-w-copy {
   max-width: min(42rem, 80%);
