@@ -7,7 +7,7 @@ image: /images/k8s-wildcard-ssl/header.jpeg
 
 Managing SSL certificates manually is a pain. This guide shows how to automate wildcard SSL certificates (`*.yourdomain.com`) on Kubernetes using `cert-manager`, Let's Encrypt, and Cloudflare DNS validation.
 
-## 1. Install ingress-nginx
+## Install ingress-nginx
 
 First, we need an Ingress Controller. `ingress-nginx` acts as the entry point for your cluster, receiving external traffic and routing it to your internal services. Crucially, it also handles SSL termination, meaning it decrypts HTTPS traffic before passing it to your application.
 
@@ -31,7 +31,7 @@ kubectl get svc -n ingress-nginx
 
 Look for the `EXTERNAL-IP`. This is the IP address you should configure in your DNS records (e.g., an A record for `*.yourdomain.com` pointing to this IP).
 
-## 2. Install cert-manager
+## Install cert-manager
 
 Next, we install `cert-manager`. This Kubernetes controller watches for certificate requests and communicates with Issuers (like Let's Encrypt) to obtain signed certificates. It handles the complex negotiation and ensures certificates are renewed before they expire.
 
@@ -51,7 +51,7 @@ Verify the pods are running:
 kubectl get pods -n cert-manager
 ```
 
-## 3. Create Cloudflare API token
+## Create Cloudflare API token
 
 To issue a **wildcard** certificate (e.g., `*.microlink.io`), Let's Encrypt requires a **DNS-01 Challenge**. Unlike the HTTP-01 challenge (which verifies ownership by checking a file on a web server), the DNS-01 challenge requires you to create a specific DNS TXT record.
 
@@ -67,7 +67,7 @@ Include → Specific Zone → microlink.io
 
 4. Click "Continue to summary" → "Create Token" and copy the token.
 
-## 4. Store Cloudflare API token as K8s secret
+## Store Cloudflare API token as K8s secret
 
 Kubernetes needs to access this token securely to communicate with the Cloudflare API. We'll store it as a Secret in the `cert-manager` namespace.
 
@@ -85,7 +85,7 @@ Verify the secret exists:
 kubectl get secret cloudflare-api-token-secret -n cert-manager
 ```
 
-## 5. Create ClusterIssuer
+## Create ClusterIssuer
 
 A `ClusterIssuer` is a Kubernetes resource that tells `cert-manager` *who* to ask for certificates (Let's Encrypt) and *how* to verify ownership (using the Cloudflare DNS challenge).
 
@@ -124,7 +124,7 @@ Check its status to ensure it's ready:
 kubectl describe clusterissuer letsencrypt
 ```
 
-## 6. Create Wildcard Certificate
+## Create Wildcard Certificate
 
 Now we explicitly request the certificate. We'll define a `Certificate` resource that specifies the domains we want (`microlink.io` and `*.microlink.io`) and points to the `ClusterIssuer` we just created.
 
@@ -164,7 +164,7 @@ Once successful, the signed certificate and private key will be stored in a secr
 kubectl get secret microlink-wildcard-tls
 ```
 
-## 7. Ingress with wildcard hosts
+## Ingress with wildcard hosts
 
 Finally, we configure our Ingress resource to use the generated certificate. The `tls` section references the `microlink-wildcard-tls` secret, ensuring that traffic matching our hosts is served over HTTPS.
 

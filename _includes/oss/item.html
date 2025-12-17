@@ -1,0 +1,58 @@
+<div class="lh-copy">
+  <div class="flex flex-column flex-row-ns justify-between-ns items-baseline-ns">
+    <div>
+      <span class="lh-title fw5 f4">
+        {{ include.repo.fullName }}
+      </span>
+    </div>
+    <div class="db di-ns f5">
+      <span class="oss-metric oss-metric--stars pr1">
+        <span class="oss-count" data-count="{{ include.repo.stars | default: 0 }}">{{
+          include.repo.stars | default: 0
+        }}</span>
+        <span aria-hidden="true">★</span>
+      </span>
+      <a
+        href="{{ include.repo.githubUrl }}"
+        class="link blue dim lh-title"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+      {% if include.repo.npmUrl %}
+      {% unless include.show_downloads == "false" %}
+      <span class="mh1">·</span>
+      <span class="oss-metric oss-metric--downloads pr1">
+        <span class="oss-count" data-count="{{ include.repo.downloads | default: 0 }}">{{
+          include.repo.downloads | default: 0
+        }}</span>
+        <span aria-hidden="true">↓</span>
+      </span>
+      <a
+        href="{{ include.repo.npmUrl }}"
+        class="link blue dim lh-title"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        NPM
+      </a>
+      {% endunless %}
+      {% endif %}
+    </div>
+  </div>
+
+  {% if include.repo.description %}
+  <div class="mv2 mt0-ns f5 lh-copy max-w-copy">
+    {% assign desc = include.repo.description | strip %} {% assign desc_last = desc | slice: -1, 1
+    %}
+    {{ desc }}{% if desc_last != "." %}.{% endif %}
+  </div>
+  {% endif %} {% if include.repo.keywords and include.repo.keywords.size > 0 %}
+  <div class="black-60 f5 lh-copy max-w-copy">
+    {% for keyword in include.repo.keywords limit: 5 %}
+    <span class="mr2">#{{ keyword }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>

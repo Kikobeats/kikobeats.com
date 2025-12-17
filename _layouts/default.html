@@ -9,6 +9,18 @@
 
 <body>
   {{ content }}
+  {% include bottom-bar.html %}
+
+  <!-- SVG filters (for "liquid glass" effects) -->
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position: absolute">
+    <defs>
+      <!-- Inspired by jellyfin-theme liquid-glass ("liquidGlass" filter) -->
+      <filter id="liquidGlass" x="-40%" y="-40%" width="180%" height="180%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.012 0.02" numOctaves="2" seed="2" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="18" xChannelSelector="R" yChannelSelector="G" />
+      </filter>
+    </defs>
+  </svg>
 </body>
 
 <script src="https://cdn.jsdelivr.net/combine/npm/anchor-js@4,npm/quicklink@2/dist/quicklink.umd.min.js"></script>

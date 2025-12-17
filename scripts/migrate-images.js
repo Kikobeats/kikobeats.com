@@ -62,6 +62,10 @@ Promise.resolve(input).then(async posts => {
     const file = await readFile(filepath)
     let { content, data } = matter(file)
 
+    if (!data.title) {
+      debug.warn('No post title!', filepath)
+      continue
+    }
     const imagesFolder = path.join('images', slugger.slug(unidecode(data.title)))
     await mkdirp(imagesFolder)
 

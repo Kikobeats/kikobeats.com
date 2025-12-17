@@ -1,20 +1,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-{% if page.url %}
-<meta property="og:url" content="{{ site.url }}{{ page.url }}">
-{% endif %}
-
-{% if page.title %}
-<meta name="twitter:title" content="{{ page.title }}" />
-<meta property="og:image:alt" content="{{ page.title }}" />
-<meta name="twitter:image:alt" content="{{ page.title }}" />
-{% endif %}
-
-
-<meta name="twitter:image" content="{{ page.image | default: site.logo }}" />
-<meta property="og:logo" content="{{ site.url }}{{ site.logo }}" />
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
 
 {% if page.layout == 'post' %}
 <meta name="twitter:label1" value="Reading time" />
@@ -39,5 +26,5 @@
 {% seo %}
 {% feed_meta %}
 
-<link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
+<link rel="shortcut icon" href="{{ site.baseurl }}/favicon.png">
 <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">

@@ -1,0 +1,44 @@
+- company: Vercel
+  title: Senior Software Engineer
+  tagline: Senior Software Engineer · Full-time
+  date: 2021 - 2025
+  description: Making the Web, faster. Next.js contributor. Engineering at Edge Functions. Web Standards.
+  link: https://vercel.com
+  logo: images/experiences/vercel.jpeg
+
+- company: Tesla Hunt
+  title: Founder
+  tagline: Founder
+  date: 2020 - 2025
+  description: Real-time Tesla Certified Pre Owned (CPO) vehicles monitoring over Europe market.
+  link: https://teslahunt.io
+  logo: images/experiences/teslahunt.jpeg
+
+- company: IBM Research
+  title: Senior Web Engineer
+  tagline: Senior Web Engineer
+  date: 2019 - 2021
+  link: https://research.ibm.com
+  logo: images/experiences/ibm.jpeg
+
+- company: Ironhack
+  title: JavaScript Teacher
+  tagline: JavaScript Teacher
+  date: 2017 - 2018
+  link: https://ironhack.com
+  logo: images/experiences/ironhack.jpeg
+
+- company: Audiense
+  title: Product Engineer
+  tagline: Product Engineer
+  date: 2015 - 2018
+  link: https://audiense.com
+  logo: images/experiences/audiense.jpeg
+
+- company: Rakuten
+  title: Software Junior Engineer
+  tagline: Software Junior Engineer
+  date: 2015 - 2016
+  description: Part of European development team called EU TaskForce as Full Stack Engineer. Developing, scaling and improving the IT architecture between Japan and the European marketplace (Spain, England and Germany).
+  link: https://rakuten.com
+  logo: images/experiences/rakuten.jpeg

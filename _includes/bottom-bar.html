@@ -1,0 +1,158 @@
+<nav class="bottom-bar sans-serif" aria-label="Primary">
+  {% assign is_home = false %} {% assign is_blog = false %} {% assign is_oss = false %} {% if
+  page.url == "/" %} {% assign is_home = true %} {% endif %} {% if page.url == "/blog/" or page.url
+  == "/blog" %} {% assign is_blog = true %} {% endif %} {% if page.url == "/oss/" or page.url ==
+  "/oss" %} {% assign is_oss = true %} {% endif %} {% if page.layout == "post" %} {% assign is_blog
+  = true %} {% endif %}
+
+  <div class="bottom-bar__inner">
+    <a
+      class="bottom-bar__item {% if is_home %}is-active{% endif %}"
+      href="/"
+      aria-label="Home"
+      title="Home"
+    >
+      {% if is_home %}
+      <svg
+        class="bottom-bar__icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+      >
+        <path
+          d="M21 20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V9.48907C3 9.18048 3.14247 8.88917 3.38606 8.69972L11.3861 2.47749C11.7472 2.19663 12.2528 2.19663 12.6139 2.47749L20.6139 8.69972C20.8575 8.88917 21 9.18048 21 9.48907V20Z"
+        ></path>
+      </svg>
+      {% else %}
+      <svg
+        class="bottom-bar__icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+      >
+        <path
+          d="M21 20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V9.48907C3 9.18048 3.14247 8.88917 3.38606 8.69972L11.3861 2.47749C11.7472 2.19663 12.2528 2.19663 12.6139 2.47749L20.6139 8.69972C20.8575 8.88917 21 9.18048 21 9.48907V20ZM19 19V9.97815L12 4.53371L5 9.97815V19H19Z"
+        ></path>
+      </svg>
+      {% endif %}
+      <span class="f5-l f6 lh-title bottom-bar__label {% if is_home %}fw5 db{% else %}dn db-ns{% endif %}">Home</span>
+    </a>
+
+    <a
+      class="bottom-bar__item {% if is_blog %}is-active{% endif %}"
+      href="/blog"
+      aria-label="Blog"
+      title="Blog"
+    >
+      {% if is_blog %}
+      <svg
+        class="bottom-bar__icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+      >
+        <path
+          d="M5 2H19C19.5523 2 20 2.44772 20 3V22.1433C20 22.4194 19.7761 22.6434 19.5 22.6434C19.4061 22.6434 19.314 22.6168 19.2344 22.5669L12 18.0313L4.76559 22.5669C4.53163 22.7136 4.22306 22.6429 4.07637 22.4089C4.02647 22.3293 4 22.2373 4 22.1433V3C4 2.44772 4.44772 2 5 2Z"
+        ></path>
+      </svg>
+      {% else %}
+      <svg
+        class="bottom-bar__icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+      >
+        <path
+          d="M5 2H19C19.5523 2 20 2.44772 20 3V22.1433C20 22.4194 19.7761 22.6434 19.5 22.6434C19.4061 22.6434 19.314 22.6168 19.2344 22.5669L12 18.0313L4.76559 22.5669C4.53163 22.7136 4.22306 22.6429 4.07637 22.4089C4.02647 22.3293 4 22.2373 4 22.1433V3C4 2.44772 4.44772 2 5 2ZM18 4H6V19.4324L12 15.6707L18 19.4324V4Z"
+        ></path>
+      </svg>
+      {% endif %}
+      <span class="f5-l f6 lh-title bottom-bar__label {% if is_blog %}fw5 db{% else %}dn db-ns{% endif %}">Blog</span>
+    </a>
+
+    <a
+      class="bottom-bar__item {% if is_oss %}is-active{% endif %}"
+      href="/oss"
+      aria-label="OSS"
+      title="OSS"
+    >
+      {% if is_oss %}
+      <svg
+        class="bottom-bar__icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+      >
+        <path
+          d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z"
+        ></path>
+      </svg>
+      {% else %}
+      <svg
+        class="bottom-bar__icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+      >
+        <path
+          d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM4 5V19H20V5H4ZM12 15H18V17H12V15ZM8.66685 12L5.83842 9.17157L7.25264 7.75736L11.4953 12L7.25264 16.2426L5.83842 14.8284L8.66685 12Z"
+        ></path>
+      </svg>
+      {% endif %}
+      <span class="f5-l f6 lh-title bottom-bar__label {% if is_oss %}fw5 db{% else %}dn db-ns{% endif %}">OSS</span>
+    </a>
+
+    <div class="bottom-bar__sep" aria-hidden="true"></div>
+
+    <a
+      class="bottom-bar__item"
+      href="https://github.com/kikobeats"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="GitHub"
+      title="GitHub"
+    >
+      <svg class="bottom-bar__icon" viewBox="0 0 32 32" aria-hidden="true">
+        <path
+          fill="currentColor"
+          d="M16 2C7.2 2 0 9.2 0 18c0 7 4.6 12.9 11 15 .8.1 1-.3 1-.7v-2.6c-4.5 1-5.5-2.2-5.5-2.2-.7-1.9-1.8-2.4-1.8-2.4-1.5-1 .1-1 .1-1 1.7.1 2.6 1.8 2.6 1.8 1.5 2.6 3.9 1.9 4.8 1.4.1-1.1.6-1.9 1.1-2.3-3.6-.4-7.4-1.8-7.4-8a6.2 6.2 0 0 1 1.6-4.3c-.2-.4-.7-2 .2-4.1 0 0 1.4-.4 4.4 1.6a15.2 15.2 0 0 1 8 0c3-2 4.4-1.6 4.4-1.6.9 2.1.3 3.7.2 4.1A6.2 6.2 0 0 1 24 18c0 6.2-3.8 7.6-7.4 8 .6.5 1.1 1.6 1.1 3.2v4.1c0 .4.2.9 1 .7 6.4-2.1 11-8 11-15C32 9.2 24.8 2 16 2Z"
+        />
+      </svg>
+      <!-- <span class="f5-l f6 lh-title fw5 bottom-bar__label">GitHub</span> -->
+    </a>
+
+    <a
+      class="bottom-bar__item"
+      href="https://www.linkedin.com/in/kikobeats"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn"
+      title="LinkedIn"
+    >
+      <svg class="bottom-bar__icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          fill="currentColor"
+          d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+        />
+      </svg>
+      <!-- <span class="f5-l f6 lh-title fw5 bottom-bar__label">LinkedIn</span> -->
+    </a>
+
+    <a
+      class="bottom-bar__item"
+      href="https://x.com/kikobeats"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="X"
+      title="X"
+    >
+      <svg class="bottom-bar__icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          fill="currentColor"
+          d="M18.9 2H22l-6.8 7.8L23.2 22h-6.4l-5-6.2L6.4 22H2l7.3-8.4L1 2h6.6l4.5 5.6L18.9 2Zm-1.1 18h1.8L6.6 3.9H4.7L17.8 20Z"
+        />
+      </svg>
+      <!-- <span class="f5-l f6 lh-title fw5 bottom-bar__label">X</span> -->
+    </a>
+  </div>
+</nav>

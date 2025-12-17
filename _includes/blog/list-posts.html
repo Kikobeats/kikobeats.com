@@ -1,28 +1,41 @@
-<section class="layout-{{page.layout}} external-icon visited bg-white sans-serif near-black pa4-l pa3">
-  <ul class="list pl0 mauto pv4 ph5-l max-width-large">
-    {% for post in site.posts %}
-    {% unless post.draft %}
-    {% capture currentdate %}{{post.date | date: "%Y"}}{% endcapture %}
+<main class="sans-serif near-black center pa4-l pa3 visited external-icon mw-800">
+  <header class="mb5 mt2">
+    <h1 class="lh-title fw6 f2 f1-ns mt0 mb2">Blog</h1>
+    <div class="f5 lh-copy">
+      Writing about shipping software, building products, and learning in public.
+    </div>
+  </header>
 
-    {% if currentdate != thedate %}
-    <h2 class="f2 bl bw3 f2 pl3 mt5 serif">{{ currentdate }}</h2>
-    {% capture thedate %}{{currentdate}}{% endcapture %}
-    {% endif %}
+  {% assign posts = "" | split: "" %}
+  {% for post in site.posts %}
+  {% unless post.draft or post.external %}
+  {% assign posts = posts | push: post %}
+  {% endunless %}
+  {% endfor %}
 
-    <li class="flex flex-row-l flex-column-reverse items-center-l mb2-l mb4">
-      {% include post-link.html class="near-black link link-dotted f3-l f4 lh-copy" style="margin-right: auto;"
-      post=post %}
+  {% capture current_year %}{% endcapture %}
+  {% for post in posts %}
+  {% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
 
-      <date class="ttu f6 b mr2 tracked light-silver fr-l db">
-        {{ post.date | date: "%B %e, %Y" }}
-      </date>
-    </li>
-    {% endunless %}
-    {% endfor %}
-  </ul>
-</section>
-<style>
-  .layout-default h2:first-child {
-    margin-top: 0;
-  }
-</style>
+  {% if year != current_year %}
+  {% if current_year != "" %}
+  </div>
+  {% endif %}
+
+  <h2 class="f6 ttu tracked fw5 black-60 mb4 {% unless forloop.first %}mt5{% endunless %}">{{ year }}</h2>
+  <div class="home-list">
+  {% capture current_year %}{{ year }}{% endcapture %}
+  {% endif %}
+
+    <div class="flex-ns justify-between items-baseline">
+      <div class="mb2 mb0-ns pr4-ns">
+        <a href="{{ post.url }}" class="link near-black dim lh-title fw5 f4">{{ post.title }}</a>
+      </div>
+      <div class="black-60 f5 flex-shrink-0 lh-title">{{ post.date | date: "%B %Y" }}</div>
+    </div>
+  {% endfor %}
+
+  {% if posts.size > 0 %}
+  </div>
+  {% endif %}
+</main>

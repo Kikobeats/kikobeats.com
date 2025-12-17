@@ -1,0 +1,25 @@
+- name: microlink.io
+  description: Enter URL, receive data.
+  tags: Node.js, API, SaaS
+  link: https://microlink.io
+  logo: https://cdn.microlink.io/logo/logo.png
+  changelog:
+    - description: Documentation revamped
+      link: https://x.com/microlinkhq/status/1984203909716693309
+      date: 2025-10-31
+    - description: 16K pixels full-page screenshots
+      link: https://x.com/microlinkhq/status/1975546232220365240
+      date: 2025-10-07
+    - description: LLVM-friendly output
+      link: https://x.com/microlinkhq/status/1967522490496024788
+      date: 2025-09-15
+
+- name: unavatar.io
+  description: Get unified user avatar.
+  tags: Node.js, API, SaaS
+  link: https://unavatar.io
+  logo: https://unavatar.io/fallback.png
+  changelog:
+    - description: Introducing PRO plan
+      link: https://mailchi.mp/de2ea37e476f/unavatar-is-now-ga
+      date: 2025-12-15
