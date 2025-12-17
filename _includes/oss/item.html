@@ -1,6 +1,6 @@
 <div class="lh-copy">
   <div class="flex flex-column flex-row-ns justify-between-ns items-baseline-ns">
-    <div class="mb2 mb0-ns pr4-ns">
+    <div>
       <span class="lh-title fw5 f4">
         {{ include.repo.fullName }}
       </span>
@@ -22,12 +22,14 @@
       </a>
       {% if include.repo.npmUrl %}
       <span class="mh1">·</span>
+      {% unless include.show_downloads == "false" %}
       <span class="oss-metric oss-metric--downloads pr1">
         <span class="oss-count" data-count="{{ include.repo.downloads | default: 0 }}">{{
           include.repo.downloads | default: 0
         }}</span>
         <span aria-hidden="true">↓</span>
       </span>
+      {% endunless %}
       <a
         href="{{ include.repo.npmUrl }}"
         class="link blue dim lh-title"
@@ -41,7 +43,7 @@
   </div>
 
   {% if include.repo.description %}
-  <div class="f5 lh-copy max-w-copy">
+  <div class="mv2 mt0-ns f5 lh-copy max-w-copy">
     {% assign desc = include.repo.description | strip %} {% assign desc_last = desc | slice: -1, 1
     %}
     {{ desc }}{% if desc_last != "." %}.{% endif %}
