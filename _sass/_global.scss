@@ -1,3 +1,9 @@
+// Design scale (allowed values only).
+$ui-scale: (2px, 4px, 8px, 16px, 24px, 32px, 48px);
+
+$home-list-logo-size: nth($ui-scale, 6); // 32px
+$home-list-item-gap: nth($ui-scale, 5); // 24px
+
 ::selection {
   background-color: $primary-color;
   color: $white;
@@ -66,7 +72,7 @@ h6 {
     background-position: center;
     background-size: 100%;
     position: relative;
-    margin-left: 2px;
+    margin-left: nth($ui-scale, 2);
     text-align: center;
   }
 }
@@ -212,12 +218,6 @@ h6 {
   flex-shrink: 0;
 }
 
-// Design scale (allowed values only).
-$ui-scale: (2px, 4px, 8px, 16px, 24px, 32px, 48px);
-
-$home-list-logo-size: nth($ui-scale, 6); // 32px
-$home-list-item-gap: nth($ui-scale, 5); // 24px
-
 // Floating bottom navigation (site-wide)
 body {
   // Keep content readable above the fixed bar.
@@ -247,6 +247,7 @@ body {
   border-radius: 9999px;
   position: relative;
   background-color: var(--liquid-glass-bg);
+  -webkit-backdrop-filter: var(--liquid-glass-blur);
   backdrop-filter: var(--liquid-glass);
   border: 1px solid var(--liquid-glass-border);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12), 0 1px 0 rgba(255, 255, 255, 0.35) inset;
@@ -319,6 +320,45 @@ body {
 // Works for both <ul> lists and <div> wrappers.
 .home-list > * + * {
   margin-top: $home-list-item-gap;
+}
+
+// OSS: ensure the same vertical rhythm even if a page overrides `.home-list`.
+.oss-list > * + * {
+  margin-top: $home-list-item-gap;
+}
+
+// OSS: align metrics regardless of number of digits.
+.oss-metrics {
+  display: inline-flex;
+  align-items: center;
+}
+
+.oss-metric {
+  display: inline-flex;
+  align-items: center;
+  gap: nth($ui-scale, 2);
+  font-variant-numeric: tabular-nums;
+}
+
+.oss-metric .oss-count {
+  display: inline-block;
+  text-align: right;
+}
+
+// Keep the icon columns stable.
+.oss-icon {
+  display: inline-block;
+  width: 1ch;
+  text-align: center;
+}
+
+// Fixed widths so ★ doesn't drift as digits change.
+.oss-metric--downloads .oss-count {
+  min-width: 13ch; // e.g. 1,124,140,968
+}
+
+.oss-metric--stars .oss-count {
+  min-width: 4ch;
 }
 
 .exp-item {

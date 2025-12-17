@@ -1,0 +1,79 @@
+<main class="sans-serif near-black center pa4-l pa3 external-icon" style="max-width: 800px">
+  <header class="mb5 mt2">
+    <h1 class="lh-title fw6 f2 f1-ns mt0 mb2">Open Source</h1>
+    <div class="mid-gray f5 lh-copy">
+      A list of repositories I maintain across my organizations. Sorted by GitHub stars.
+    </div>
+  </header>
+
+  <div class="home-list oss-list">
+    {% for repo in site.data.oss %}
+    <div>
+      <div class="flex-ns justify-between items-baseline">
+        <div class="mb2 mb0-ns pr4-ns">
+          <span class="lh-title fw5 f4">
+            {{ repo.fullName }}
+          </span>
+          <a
+            href="{{ repo.githubUrl }}"
+            class="ml2 link blue dim lh-title"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+          {% if repo.npmUrl %}
+          <span class="mh1">·</span>
+          <a
+            href="{{ repo.npmUrl }}"
+            class="link blue dim lh-title"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            NPM
+          </a>
+          {% endif %}
+        </div>
+        <div class="oss-metrics mid-gray f5 flex-shrink-0 lh-title">
+          {% if repo.downloads and repo.downloads > 0 %}
+          <span class="oss-metric oss-metric--downloads">
+            <span class="oss-count" data-count="{{ repo.downloads | default: 0 }}">{{ repo.downloads | default: 0 }}</span>
+            <span class="oss-icon" aria-hidden="true">↓</span>
+          </span>
+          {% endif %}
+
+          <span class="oss-metric oss-metric--stars">
+            <span class="oss-count gold" data-count="{{ repo.stars | default: 0 }}">{{ repo.stars | default: 0 }}</span>
+            <span class="oss-icon gold" aria-hidden="true">★</span>
+          </span>
+        </div>
+      </div>
+
+      {% if repo.description %}
+      <div class="black-70 f5 lh-copy mt2">
+        {% assign desc = repo.description | strip %}
+        {% assign desc_last = desc | slice: -1, 1 %}
+        {{ desc }}{% if desc_last != "." %}.{% endif %}
+      </div>
+      {% endif %} {% if repo.keywords and repo.keywords.size > 0 %}
+      <div class="mid-gray f5 lh-copy">
+        {% for keyword in repo.keywords limit: 5 %}<span class="nowrap mr2">#{{ keyword }}</span>{% endfor %}
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</main>
+
+<script>
+  ;(function formatOssCounts() {
+    var els = document.querySelectorAll('.oss-count[data-count]')
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i]
+      var raw = el.getAttribute('data-count')
+      var n = Number(raw)
+      if (!Number.isFinite(n)) continue
+      el.textContent = n.toLocaleString('en-US')
+    }
+  })()
+</script>
