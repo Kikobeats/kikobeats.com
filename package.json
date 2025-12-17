@@ -52,7 +52,7 @@
   "scripts": {
     "build": "NODE_ENV=production JEKYLL_ENV=production bundle exec jekyll build --verbose --trace",
     "clean": "bundle exec jekyll clean && rm -rf node_mdoules",
-    "dev": "bundle exec jekyll serve --watch --drafts --livereload --port 1337 --host localhost",
+    "dev": "bundle exec jekyll serve --host 0.0.0.0 --watch --drafts --livereload --port 1337",
     "lint": "standard",
     "postinstall": "gem install bundler && bundle install && node scripts/fetch-oss.js",
     "postrelease": "npm run release:tags && npm run release:github",

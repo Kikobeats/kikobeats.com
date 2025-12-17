@@ -2,20 +2,20 @@
 layout: default
 ---
 
-<main class="sans-serif near-black center pa4-l pa3" style="max-width: 800px">
-  <div class="mb4">
+<main class="sans-serif near-black center pa4-l pa3 mw-800">
+  <div class="mb4-l mb3">
     <a class="link blue dim f5 lh-title" href="/blog">← Blog</a>
   </div>
 
   {% if page.image %}
-  <header class="post-hero mb5 sans-serif" style="background-image: url('{{ page.image }}');">
+  <header class="post-hero mb5-l mb4 sans-serif" style="background-image: url('{{ page.image }}');">
     <div class="post-hero__inner">
       <h1 class="post-hero__title lh-title fw7 f2 f1-ns mt0 mb3 bg-white dib ph4 pv3">
         {{ page.title }}
       </h1>
     </div>
   </header>
-  <div class="mid-gray f5 lh-title mb5 tc">
+  <div class="mid-gray f5 lh-title mb5-l mb4 tc">
     <time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
     <span class="mh2">·</span>
     <span>{{ page.date | timeago }}</span>

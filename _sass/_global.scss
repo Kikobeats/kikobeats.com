@@ -368,7 +368,7 @@ body {
 
 .exp-item {
   display: flex;
-  gap: nth($ui-scale, 6);
+  gap: nth($ui-scale, 4);
   padding-bottom: nth($ui-scale, 5);
   align-items: flex-start;
 }
@@ -421,7 +421,6 @@ body {
 
 .run-changelog-item {
   position: relative;
-  padding-left: nth($ui-scale, 5);
   display: flex;
   align-items: baseline;
   gap: nth($ui-scale, 3);
@@ -438,10 +437,8 @@ body {
 
 .run-changelog-item::before {
   content: '↳';
-  position: absolute;
-  left: 0;
-  top: 0;
   color: inherit;
+  flex-shrink: 0;
 }
 
 .exp-logo-fallback {
@@ -496,22 +493,21 @@ body {
 .exp-desc {
   position: relative;
   margin-top: nth($ui-scale, 3);
-  // Keep the description from visually colliding with the right-aligned date.
-  // Responsive within the 800px container.
-  padding-left: nth($ui-scale, 5);
-}
-
-.exp-desc::before {
-  content: '↳';
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: inherit;
+  display: flex;
+  align-items: baseline;
+  gap: nth($ui-scale, 3);
 }
 
 @media (max-width: 480px) {
   .exp-item {
-    gap: nth($ui-scale, 5);
+    gap: nth($ui-scale, 4);
     padding: nth($ui-scale, 4) 0;
+  }
+
+  .bottom-bar__inner {
+    padding-left: nth($ui-scale, 3);
+    padding-right: nth($ui-scale, 3);
+    gap: nth($ui-scale, 2);
+    background: rgba(255, 255, 255, .95);
   }
 }

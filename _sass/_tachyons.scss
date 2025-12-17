@@ -1,69 +1,9 @@
 @import "../node_modules/tachyons-sass/tachyons.scss";
 
-.mw6 {
-  max-width: 28rem;
-}
-
-.tracked-light {
-  letter-spacing: 0.05em;
-}
-
 .lh-copy {
   line-height: $line-height;
 }
 
-.h0 {
-  height: 0;
-}
-
-.lh-1p125 {
-  line-height: 1.125;
-}
-
-.m0 {
-  margin: 0;
-}
-
-.max-width-large {
-  max-width: 1200px;
-}
-
-.max-width-extra-large {
-  max-width: 1400px;
-}
-
-.max-width-blog {
-  max-width: 48rem;
-}
-
-.ml-16px {
-  margin-left: -16px;
-}
-
-.ml-8px {
-  margin-left: -8px;
-}
-
-.ml3 {
-  margin-left: 16px;
-}
-
-.mlauto {
-  margin-left: auto;
-}
-
-.mr-16px {
-  margin-right: -16px;
-}
-
-.mr-8px {
-  margin-right: -8px;
-}
-
-.pb50 {
-  padding-bottom: 50%;
-}
-
-.mauto {
-  margin: auto;
+.mw-800 {
+  max-width: 800px;
 }

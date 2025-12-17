@@ -1,21 +1,21 @@
-<div class="sans-serif near-black center pa4-l pa3" style="max-width: 800px">
+<div class="sans-serif near-black center pa4-l pa3 mw-800">
   <!-- Header -->
   <header class="mb5 mt4-l mt3 flex items-center">
-    <div class="mr3 flex-shrink-0">
+    <div class="mr3 mr4-ns flex-shrink-0">
       <img
         id="avatar"
         src="/images/avatar.jpg"
         alt="Kiko Beats"
         width="128"
         height="128"
-        class="pointer br-100 w4 h4 db"
+        class="pointer br-100 w3 h3 w4-ns h4-ns db"
         onmouseover="hover(this);"
         onmouseout="unhover(this);"
       />
     </div>
     <div>
-      <h1 class="f2 f1-ns fw7 mb2 mt0 lh-title">Kiko Beats</h1>
-      <div class="f5 mid-gray lh-title">
+      <h1 class="f3 f1-ns fw7 mb2 mt0 lh-title">Kiko Beats</h1>
+      <div class="f6 f5-ns mid-gray lh-title">
         <a reel="noopener noreferrer" target="_blank" href="https://github.com/kikobeats" class="link near-black dim mr3">GitHub</a>
         <a reel="noopener noreferrer" target="_blank" href="https://linkedin.com/in/kikobeats" class="link near-black dim mr3">LinkedIn</a>
         <a reel="noopener noreferrer" target="_blank" href="https://x.com/kikobeats" class="link near-black dim">X</a>
@@ -50,7 +50,7 @@
           {% if running.changelog %}
           <div class="run-changelog">
             {% for entry in running.changelog %}
-            <div class="run-changelog-item f5 black-70 max-w-copy">
+            <div class="run-changelog-item f5 black-70">
               <span class="run-changelog-date mid-gray lh-title">{{ entry.date | date: '%b %d' }}</span>
               {% if entry.link %}
               <a href="{{ entry.link }}" class="link blue dim lh-title">{{ entry.description }}</a>
@@ -158,7 +158,7 @@
   </section>
 
   <!-- Open Source -->
-  <section class="mb5">
+  <section class="">
     <h2 class="f6 ttu tracked fw5 mid-gray mb4">Open Source</h2>
     <div class="home-list">
       {% assign oss_repos = site.data.oss | sort: "stars" | reverse %}
@@ -193,6 +193,7 @@
     </div>
   </section> -->
 </div>
+{% include links-external.html %}
 
 <script>
   var avatars = ['/images/avatar.jpg', '/images/avatar-glitch.jpg']

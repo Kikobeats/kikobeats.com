@@ -26,15 +26,20 @@
     </div>
 
     <div class="oss-metrics mid-gray f5 flex-shrink-0 lh-title">
-      {% if include.show_downloads != "false" and include.repo.downloads and include.repo.downloads > 0 %}
+      {% if include.show_downloads != "false" and include.repo.downloads and include.repo.downloads
+      > 0 %}
       <span class="oss-metric oss-metric--downloads">
-        <span class="oss-count" data-count="{{ include.repo.downloads | default: 0 }}">{{ include.repo.downloads | default: 0 }}</span>
+        <span class="oss-count" data-count="{{ include.repo.downloads | default: 0 }}">{{
+          include.repo.downloads | default: 0
+        }}</span>
         <span class="oss-icon" aria-hidden="true">↓</span>
       </span>
       {% endif %}
 
       <span class="oss-metric oss-metric--stars">
-        <span class="oss-count gold" data-count="{{ include.repo.stars | default: 0 }}">{{ include.repo.stars | default: 0 }}</span>
+        <span class="oss-count gold" data-count="{{ include.repo.stars | default: 0 }}">{{
+          include.repo.stars | default: 0
+        }}</span>
         <span class="oss-icon gold" aria-hidden="true">★</span>
       </span>
     </div>
@@ -42,16 +47,15 @@
 
   {% if include.repo.description %}
   <div class="black-70 f5 lh-copy mt2 max-w-copy">
-    {% assign desc = include.repo.description | strip %}
-    {% assign desc_last = desc | slice: -1, 1 %}
+    {% assign desc = include.repo.description | strip %} {% assign desc_last = desc | slice: -1, 1
+    %}
     {{ desc }}{% if desc_last != "." %}.{% endif %}
   </div>
-  {% endif %}
-
-  {% if include.repo.keywords and include.repo.keywords.size > 0 %}
-  <div class="mid-gray f5 lh-copy">
-    {% for keyword in include.repo.keywords limit: 5 %}<span class="nowrap mr2">#{{ keyword }}</span>{% endfor %}
+  {% endif %} {% if include.repo.keywords and include.repo.keywords.size > 0 %}
+  <div class="mid-gray f5 lh-copy max-w-copy">
+    {% for keyword in include.repo.keywords limit: 5 %}
+    <span class="mr2">#{{ keyword }}</span>
+    {% endfor %}
   </div>
   {% endif %}
 </div>
-
