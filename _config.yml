@@ -19,7 +19,6 @@ twitter:
 highlighter: none
 
 permalink: '/:title/'
-disqus_shortname: kikobeats
 
 exclude:
   - Gemfile
@@ -47,7 +46,7 @@ defaults:
     values:
       image: ''
       layout: 'post'
-      comments: true
+      comments: false
   - scope:
       path: ''
     values:

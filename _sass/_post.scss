@@ -1,31 +1,59 @@
 @font-face {
   font-family: 'domain-icon';
   src: url('/fonts/domain-icon.eot?npvpqe');
-  src: url('/fonts/domain-icon.eot?npvpqe#iefix') format('embedded-opentype'), url('/fonts/domain-icon.ttf?npvpqe') format('truetype'), url('/fonts/domain-icon.woff?npvpqe') format('woff'), url('/fonts/domain-icon.svg?npvpqe#domain-icon') format('svg');
+  src: url('/fonts/domain-icon.eot?npvpqe#iefix') format('embedded-opentype'),
+    url('/fonts/domain-icon.ttf?npvpqe') format('truetype'),
+    url('/fonts/domain-icon.woff?npvpqe') format('woff'),
+    url('/fonts/domain-icon.svg?npvpqe#domain-icon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
 .layout-post {
-
-  h1,
-  h2,
-  h3,
+  // Match the new home: modern sans-serif + minimal type scale
+  h1 {
+    @extend .lh-title;
+    @extend .fw6;
+    @extend .f2;
+    @extend .mt4;
+    @extend .mb3;
+  }
+  h2 {
+    @extend .lh-title;
+    @extend .fw6;
+    @extend .f3;
+    @extend .mt4;
+    @extend .mb3;
+  }
+  h3 {
+    @extend .lh-title;
+    @extend .fw6;
+    @extend .f4;
+    @extend .mt4;
+    @extend .mb3;
+  }
   h4,
   h5,
   h6 {
-    @extend .serif;
+    @extend .lh-title;
+    @extend .fw6;
+    @extend .f5;
+    @extend .mt4;
+    @extend .mb2;
   }
 
   p,
   ul,
-  table {
-    margin: $line-height 0;
+  ol,
+  table,
+  blockquote,
+  pre {
+    @extend .mv3;
   }
 
   &.external-icon {
-    [href^="http"]:not([href*="kikobeats.com"])::after {
+    [href^='http']:not([href*='kikobeats.com'])::after {
       width: 10px;
       height: 12px;
       margin-left: 4px;
@@ -39,7 +67,7 @@
     margin: auto;
   }
 
-  .card-preview~.card-preview {
+  .card-preview ~ .card-preview {
     margin-top: 1.5rem;
   }
 
@@ -48,7 +76,7 @@
   }
 
   .microlink_card {
-    border-radius: .42857em;
+    border-radius: 0.42857em;
     line-height: normal;
     width: 100%;
     margin: auto;
@@ -64,14 +92,20 @@
     margin: 0;
   }
 
+  // Post links should look like links (home uses blue for links).
   a:not(.anchorjs-link):not(.card-preview) {
-    @extend .link-underline;
-    @extend .near-black;
+    @extend .blue;
+    text-decoration: underline;
+    text-decoration-color: rgba($blue, 0.35);
+    text-underline-position: under;
+  }
+  a:not(.anchorjs-link):not(.card-preview):hover {
+    text-decoration-color: $blue;
   }
 
   mark {
     background: $mark-color;
-    padding: .05em .2em;
+    padding: 0.05em 0.2em;
     border-radius: 3px;
   }
 
@@ -84,7 +118,8 @@
     background-color: $primary-color;
   }
 
-  :not(pre) code, pre {
+  :not(pre) code,
+  pre {
     border: 1px solid rgb(234, 234, 234);
     line-height: $line-height;
     padding: 13px;
@@ -106,12 +141,11 @@
     border-left: 3px solid $primary-color;
     margin: 2rem 0 2rem 0.5rem;
     padding: 1rem 1.25rem;
-    font-size: 1.4rem;
-    color: $gray;
+    @extend .mid-gray;
   }
 
   blockquote cite {
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     font-size: 17px;
     font-style: normal;
@@ -123,8 +157,8 @@
     &::before {
       content: '– ';
       @extend .serif;
-      margin-left: .2rem;
-      margin-right: .1rem;
+      margin-left: 0.2rem;
+      margin-right: 0.1rem;
     }
   }
 
@@ -181,39 +215,5 @@
     line-height: 1.6;
   }
 
-  a:not(.card-preview)[href*="wikipedia.org"]:before {
-    font-family: 'domain-icon';
-    position: relative;
-    top: 2px;
-    right: 2px;
-    padding: 2px;
-    content: "\eac8";
-  }
-
-  a:not(.card-preview)[href*="x.com"]:before {
-    font-family: 'domain-icon';
-    position: relative;
-    top: 2px;
-    right: 2px;
-    padding: 2px;
-    content: "\ea96";
-  }
-
-  a:not(.card-preview)[href*="github.com"]:before {
-    font-family: 'domain-icon';
-    position: relative;
-    top: 2px;
-    right: 2px;
-    padding: 2px;
-    content: "\eaa0";
-  }
-
-  a:not(.card-preview)[href*="youtube.com"]:before {
-    font-family: 'domain-icon';
-    position: relative;
-    top: 2px;
-    right: 2px;
-    padding: 2px;
-    content: "\ea9d";
-  }
+  // Keep the post UI minimal: remove domain icons.
 }

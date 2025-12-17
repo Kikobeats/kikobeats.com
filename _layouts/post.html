@@ -3,36 +3,47 @@ layout: default
 ---
 
 {% include navbar.html %}
-{% include blog/hero-header.html title=page.title image=page.image %}
 
-<section
-  class="layout-{{page.layout}} external-icon lh-copy f4 bg-white sans-serif mauto max-width-blog near-black ph5-l pt5-l pb3-l ph3 pv3">
-  <span class="ttu f6 b tracked light-silver db">
-    <time datetime="{{page.date}}">{{ page.date | date: "%B %d, %Y" }}</time><span
-      class="ph2">—</span>
-    <span>{{ page.date | timeago }}</span><span class="dn pageviews-container">, <span><span
-          class="pageviews-count">0</span> views.</span></span>
-  </span>
+<main class="sans-serif near-black center pa4-l pa3" style="max-width: 800px">
+  <div class="mb4">
+    <a class="link blue dim f5 lh-title" href="/blog">← Blog</a>
+  </div>
 
-  {{content}}
+  <header class="layout-post mb5">
+    <h1 class="lh-title fw6 mt0 mb2">{{ page.title }}</h1>
+    <div class="mid-gray f5 lh-title">
+      <time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      <span class="mh2">·</span>
+      <span>{{ page.date | timeago }}</span>
+      <span class="dn pageviews-container">
+        <span class="mh2">·</span>
+        <span><span class="pageviews-count">0</span> views</span>
+      </span>
+    </div>
+  </header>
+
+  <article class="layout-post layout-{{ page.layout }} external-icon lh-copy f5">
+    {{ content }}
+  </article>
+
   {% include links-external.html %}
-</section>
-{% include post-footer.html %}
-{% include comments.html %}
+</main>
 {% include footer.html %}
 <script src="https://cdn.jsdelivr.net/combine/npm/prismjs@latest,npm/medium-zoom@latest"></script>
 <script
   src="https://cdn.jsdelivr.net/combine/npm/react@16/umd/react.production.min.js,npm/react-dom@16/umd/react-dom.production.min.js,npm/react-is@16/umd/react-is.production.min.js,npm/styled-components@5/dist/styled-components.min.js,npm/@microlink/mql@latest/dist/mql.min.js,npm/@microlink/vanilla@latest/dist/microlink.min.js,npm/@microlink/hover-vanilla@latest/dist/microlink.min.js">
 </script>
 <script>
-  fetch(
-      `https://count.vercel.app/kikobeats/${window.location.pathname.substring(1).replace(/\/$/, '')}?incr`
-    )
+  fetch(`https://count.vercel.app/kikobeats/${window.location.pathname.substring(1).replace(/\/$/, '')}?incr`)
     .then(res => res.json())
     .then(count => {
-      document.querySelector('.pageviews-container').classList.remove('dn')
-      document.querySelector('.pageviews-count').textContent = Number(count).toLocaleString('en-US')
+      var container = document.querySelector('.pageviews-container')
+      var el = document.querySelector('.pageviews-count')
+      if (!container || !el) return
+      container.classList.remove('dn')
+      el.textContent = Number(count).toLocaleString('en-US')
     })
+    .catch(() => {})
 </script>
 <style>
   .microlink_hover,
@@ -43,7 +54,7 @@ layout: default
 <script>
   document.addEventListener("DOMContentLoaded", event => {
     microlink('.card-preview')
-    mediumZoom('layout-post img')
+    mediumZoom('.layout-post img')
   })
 </script>
 <script>
