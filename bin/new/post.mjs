@@ -26,7 +26,9 @@ await writeFile(filename, `
 layout: post
 title: ${title}
 date: '${year}-${month}-${day}'
-image: /images/urls-for-testing/header.jpeg
+og_image:
+  canvas:
+    background_image: /images/urls-for-testing/header.jpeg
 ---
 
 hello world

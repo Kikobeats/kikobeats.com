@@ -1,7 +1,9 @@
 ---
 layout: post
 title: 'Reassign: Padowan to Jedi'
-image: /images/reassign-padowan-to-jedi/header.jpeg
+og_image:
+  canvas:
+    background_image: /images/reassign-padowan-to-jedi/header.jpeg
 date: '2015-12-13 10:10:54'
 tags:
   - javascript

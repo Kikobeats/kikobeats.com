@@ -2,7 +2,9 @@
 layout: post
 title: Design for failing
 date: '2018-01-15'
-image: /images/design-for-failing/header.jpeg
+og_image:
+  canvas:
+    background_image: /images/design-for-failing/header.jpeg
 tags:
   - product
 ---

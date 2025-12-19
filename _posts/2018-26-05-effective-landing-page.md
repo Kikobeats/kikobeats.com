@@ -2,7 +2,9 @@
 layout: post
 title: Effective Landing Page
 date: '2018-05-26'
-image: /images/effective-landing-page/header.jpeg
+og_image:
+  canvas:
+    background_image: /images/effective-landing-page/header.jpeg
 ---
 
 ## What Does Effective Mean

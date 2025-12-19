@@ -2,7 +2,9 @@
 layout: post
 title: Standardplast lineup
 date: '2024-12-28'
-image: /images/urls-for-testing/header.jpeg
+og_image:
+  canvas:
+    background_image: /images/urls-for-testing/header.jpeg
 ---
 
 I want to apply some [standardplast](https://standartplast.com/) products over my car to improve heat insulation and sound proofing.

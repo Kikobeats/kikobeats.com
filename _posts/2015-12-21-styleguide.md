@@ -1,7 +1,9 @@
 ---
 layout: post
 title: styleguide
-image: /images/styleguide/header.png
+og_image:
+  canvas:
+    background_image: /images/styleguide/header.png
 date: '2015-12-21 22:58:36'
 ---
 

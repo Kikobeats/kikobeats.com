@@ -2,7 +2,9 @@
 layout: post
 title: Human APIs
 date: '2018-01-21'
-image: /images/human-apis/header.jpeg
+og_image:
+  canvas:
+    background_image: /images/human-apis/header.jpeg
 tags:
   - javascript
 ---

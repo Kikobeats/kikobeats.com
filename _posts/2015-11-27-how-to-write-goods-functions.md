@@ -1,7 +1,9 @@
 ---
 layout: post
 title: 'Functions: The Right Way'
-image: /images/functions-the-right-way/header.jpeg
+og_image:
+  canvas:
+    background_image: /images/functions-the-right-way/header.jpeg
 date: '2015-11-27 22:07:32'
 tags:
   - craftsmanship

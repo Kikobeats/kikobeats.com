@@ -2,7 +2,9 @@
 layout: post
 title: Naming Things
 date: '2018-02-19'
-image: /images/naming-things/header.png
+og_image:
+  canvas:
+    background_image: /images/naming-things/header.png
 tags:
   - product
 ---

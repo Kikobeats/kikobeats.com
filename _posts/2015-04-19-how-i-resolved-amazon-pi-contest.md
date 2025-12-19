@@ -1,7 +1,9 @@
 ---
 layout: post
 title: How I resolved Amazon π Contest
-image: /images/how-i-resolved-amazon-pi-contest/header.jpeg
+og_image:
+  canvas:
+    background_image: /images/how-i-resolved-amazon-pi-contest/header.jpeg
 date: '2015-04-19 16:45:32'
 tags:
   - hack

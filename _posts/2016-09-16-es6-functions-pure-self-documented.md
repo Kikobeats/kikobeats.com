@@ -1,7 +1,9 @@
 ---
 layout: post
 title: 'ES6 Functions:  Pure &amp; self documented'
-image: /images/es6-functions--pure--self-documented/header.jpeg
+og_image:
+  canvas:
+    background_image: /images/es6-functions--pure--self-documented/header.jpeg
 date: '2016-09-16 21:59:14'
 tags:
   - javascript

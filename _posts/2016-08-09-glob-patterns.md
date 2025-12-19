@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Glob Patterns
-image: /images/glob-patterns/header.html
+og_image:
+  canvas:
+    background_image: /images/avatar-glitch.jpg
 date: '2016-08-09 14:02:17'
 tags:
   - unix

@@ -1,7 +1,9 @@
 ---
 layout: post
 title: 'Fink, URL Shortener for Masses'
-image: /images/fink-url-shortener-for-masses/header.jpeg
+og_image:
+  canvas:
+    background_image: /images/fink-url-shortener-for-masses/header.jpeg
 date: '2016-02-27 19:28:20'
 tags:
   - product

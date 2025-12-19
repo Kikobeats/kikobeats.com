@@ -2,7 +2,9 @@
 layout: post
 title: Low Value Work
 date: '2018-05-12'
-image: /images/low-value-work/header.jpeg
+og_image:
+  canvas:
+    background_image: /images/low-value-work/header.jpeg
 tags:
   - productivity
 ---

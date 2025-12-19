@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Google 6^5th rule
-image: /images/google-65th-rule/header.png
+og_image:
+  canvas:
+    background_image: /images/google-65th-rule/header.png
 date: '2015-12-03 11:19:00'
 tags:
   - frontend

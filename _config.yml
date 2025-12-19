@@ -35,9 +35,9 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-og-image
   - jekyll-sitemap
   - jekyll-postcss-v2
-  - jekyll-og-image
 
 og_image:
   output_dir: images/og
@@ -59,19 +59,16 @@ defaults:
       path: ''
       type: 'posts'
     values:
-      image: ''
       layout: 'post'
       comments: false
   - scope:
       path: ''
     values:
       layout: 'default'
-      image: https://kikobeats.com/images/resume.png
   - scope:
       path: 'index.html'
     values:
       layout: 'default'
-      image: https://kikobeats.com/images/resume.png
 
 jekyll-archives:
   enabled:

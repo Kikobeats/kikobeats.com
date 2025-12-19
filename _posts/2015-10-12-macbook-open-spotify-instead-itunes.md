@@ -1,7 +1,9 @@
 ---
 layout: post
 title: MacBook open Spotify instead of iTunes
-image: /images/macbook-open-spotify-instead-of-itunes/header.jpeg
+og_image:
+  canvas:
+    background_image: /images/macbook-open-spotify-instead-of-itunes/header.jpeg
 date: '2015-10-12 08:52:00'
 tags:
   - hack

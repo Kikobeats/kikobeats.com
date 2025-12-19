@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Parameter vs Argument
-image: /images/parameter-vs-argument/header.jpeg
+og_image:
+  canvas:
+    background_image: /images/parameter-vs-argument/header.jpeg
 date: '2015-12-10 09:31:57'
 tags:
   - computer-science

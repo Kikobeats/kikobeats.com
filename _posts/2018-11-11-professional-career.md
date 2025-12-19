@@ -2,7 +2,9 @@
 layout: post
 title: Professional Career
 date: '2018-11-11'
-image: /images/professional-career/header.jpeg
+og_image:
+  canvas:
+    background_image: /images/professional-career/header.jpeg
 ---
 
 ## Jobs Titles Are a Lie

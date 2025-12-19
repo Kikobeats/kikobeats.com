@@ -2,7 +2,9 @@
 layout: post
 title: Introducing microlink.io
 date: '2017-10-29 11:00:00'
-image: /images/microlink.jpg
+og_image:
+  canvas:
+    background_image: /images/microlink.jpg
 tags:
 - product
 ---

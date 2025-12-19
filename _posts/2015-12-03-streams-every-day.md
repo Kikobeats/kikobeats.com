@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Streams for every day
-image: /images/streams-for-every-day/header.jpeg
+og_image:
+  canvas:
+    background_image: /images/streams-for-every-day/header.jpeg
 date: '2015-12-03 14:28:25'
 tags:
   - javascript

@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Module Driven Development
-image: /images/module-driven-development/header.png
+og_image:
+  canvas:
+    background_image: /images/module-driven-development/header.png
 date: '2015-07-13 12:48:21'
 tags:
   - craftsmanship

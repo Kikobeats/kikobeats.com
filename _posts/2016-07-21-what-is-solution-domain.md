@@ -1,7 +1,9 @@
 ---
 layout: post
 title: What is Solution Domain
-image: /images/what-is-solution-domain/header.jpeg
+og_image:
+  canvas:
+    background_image: /images/what-is-solution-domain/header.jpeg
 date: '2016-07-21 10:03:20'
 tags:
   - computer-science

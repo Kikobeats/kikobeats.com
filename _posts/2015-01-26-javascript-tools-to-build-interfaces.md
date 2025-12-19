@@ -1,7 +1,9 @@
 ---
 layout: post
 title: JavaScript tools to build interfaces
-image: /images/javascript-tools-to-build-interfaces/header.png
+og_image:
+  canvas:
+    background_image: /images/javascript-tools-to-build-interfaces/header.png
 date: '2015-01-26 11:46:00'
 tags:
   - javascript

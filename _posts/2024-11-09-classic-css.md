@@ -2,7 +2,9 @@
 layout: post
 title: Classic CSS styles
 date: '2024-11-09'
-image: /images/classic-css-styles/header.png
+og_image:
+  canvas:
+    background_image: /images/classic-css-styles/header.png
 ---
 
 - [The Sims](https://thesimscss.inbn.dev/)

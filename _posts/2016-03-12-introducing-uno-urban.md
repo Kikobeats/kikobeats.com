@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Introducing Uno Urban
-image: /images/introducing-uno-urban/header.jpeg
+og_image:
+  canvas:
+    background_image: /images/introducing-uno-urban/header.jpeg
 date: '2016-03-12 17:11:30'
 tags:
   - product

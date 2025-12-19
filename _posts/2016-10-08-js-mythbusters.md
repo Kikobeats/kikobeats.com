@@ -1,7 +1,9 @@
 ---
 layout: post
 title: JS MythBusters
-image: /images/js-mythbusters/header.jpeg
+og_image:
+  canvas:
+    background_image: /images/js-mythbusters/header.jpeg
 date: '2016-10-08 11:04:05'
 tags:
   - product

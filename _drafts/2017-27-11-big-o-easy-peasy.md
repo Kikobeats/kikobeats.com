@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Big O, easy peasy way
+title: 'Big O, easy peasy way'
 date: '2017-11-27 11:00:00'
-image: https://i.imgur.com/uIqvOAb.png
+og_image:
+  canvas:
+    background_image: 'https://i.imgur.com/uIqvOAb.png'
 tags:
-- computer-science
+  - computer-science
 ---
 
 ## Visualization
 
-![](https://i.imgur.com/sRshqTG.png9)
+![](/images/big-o-easy-peasy-way/srshqtg.png)
 
 ## Nomenclature
 

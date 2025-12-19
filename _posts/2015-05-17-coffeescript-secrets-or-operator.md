@@ -1,7 +1,9 @@
 ---
 layout: post
 title: 'CoffeeScript secrets: or= operator'
-image: /images/coffeescript-secrets-or-operator/header.jpeg
+og_image:
+  canvas:
+    background_image: /images/coffeescript-secrets-or-operator/header.jpeg
 date: '2015-05-17 09:54:55'
 tags:
   - javascript
