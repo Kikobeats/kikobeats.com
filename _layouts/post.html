@@ -7,8 +7,9 @@ layout: default
     <a class="link blue dim f5 lh-title" href="/blog">← Blog</a>
   </div>
 
-  {% if page.image %}
-  <header class="post-hero mb5-l mb4 sans-serif" style="background-image: url('{{ page.image }}');">
+  {% assign hero_image = page.hero_image | default: page.og_image.canvas.background_image | default: page.image.path | default: page.image %}
+  {% if hero_image %}
+  <header class="post-hero mb5-l mb4 sans-serif" style="background-image: url('{{ hero_image }}');">
     <div class="post-hero__inner">
       <h1 class="post-hero__title lh-title fw7 f2 f1-ns mt0 mb3 bg-white dib ph4 pv3">
         {{ page.title }}

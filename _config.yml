@@ -37,6 +37,21 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-postcss-v2
+  - jekyll-og-image
+
+og_image:
+  output_dir: images/og
+  collections:
+    - posts
+    - pages
+  domain: "kikobeats.com"
+  image: "/images/avatar-glitch.jpg"
+  header:
+    font_family: "Roboto, Bold"
+    color: "#333333"
+  content:
+    font_family: "Roboto, Bold"
+    color: "#333333"
 
 
 defaults:

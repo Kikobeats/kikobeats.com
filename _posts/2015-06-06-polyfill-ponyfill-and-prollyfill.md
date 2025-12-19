@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Polyfill, Ponyfill & Prollyfill'
+title: 'Polyfill, Ponyfill &amp; Prollyfill'
 image: /images/polyfill-ponyfill--prollyfill/header.jpeg
 date: '2015-06-06 14:52:52'
 tags:
