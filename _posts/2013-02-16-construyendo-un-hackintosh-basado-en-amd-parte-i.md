@@ -2,8 +2,6 @@
 layout: post
 title: Construyendo un Hackintosh basado en AMD (Parte I)
 date: '2013-02-16 08:36:16'
-tags:
-- hack
 ---
 
 Actualmente tengo Windows 7 y la verdad es que no pienso actualizar a la versión 8. Como tengo un Macbook Pro, es bastante follón tener programas en el mac y luego tener las versiones equivalentes de éstos programas en Windows. A eso, hay que sumarle que como Windows está basado en NTFS el sistema se deteriora muchísimo más rápida, es más proponso a sufrir ataques de seguridad, etc.

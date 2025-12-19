@@ -5,8 +5,6 @@ og_image:
   canvas:
     background_image: /images/different-type-of-collections-in-javascript/header.jpeg
 date: '2015-02-26 12:46:42'
-tags:
-  - javascript
 ---
 
 When you are using a programming language, you need use something for keep your data information. Someting as a *container*.

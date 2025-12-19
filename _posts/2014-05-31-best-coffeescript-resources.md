@@ -2,9 +2,6 @@
 layout: post
 title: Best CoffeeScript resources
 date: '2014-05-31 14:47:10'
-tags:
-  - javascript
-  - computer-science
 ---
 
 ![](/images/best-coffeescript-resources/projectsdesigncoffee-script_logo-01.html)

@@ -2,8 +2,6 @@
 layout: post
 title: '101: Survive a deploy with Heroku and Git'
 date: '2014-08-19 08:06:18'
-tags:
-  - unix
 ---
 
 ![](/images/101-survive-a-deploy-with-heroku-and-git/lwa0uz8.png)

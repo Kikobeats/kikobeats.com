@@ -2,8 +2,6 @@
 layout: post
 title: Efficient CSS
 date: '2014-03-25 14:33:02'
-tags:
-  - frontend
 ---
 
 ![](/images/efficient-css/0b58qqe.jpeg)

@@ -5,8 +5,6 @@ date: '2018-05-12'
 og_image:
   canvas:
     background_image: /images/low-value-work/header.jpeg
-tags:
-  - productivity
 ---
 
 > Low value activities keep you busy and stop you from getting real work done. Make time for work that matters.

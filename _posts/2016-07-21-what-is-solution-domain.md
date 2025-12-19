@@ -5,8 +5,6 @@ og_image:
   canvas:
     background_image: /images/what-is-solution-domain/header.jpeg
 date: '2016-07-21 10:03:20'
-tags:
-  - computer-science
 ---
 
 In a moment of the industry where every day we have new frameworks and tools, is a good moment to remember old things.

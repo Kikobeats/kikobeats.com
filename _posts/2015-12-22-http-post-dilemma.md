@@ -5,8 +5,6 @@ og_image:
   canvas:
     background_image: /images/http-post-dilemma/header.png
 date: '2015-12-22 17:31:02'
-tags:
-  - computer-science
 ---
 
 ## as URL encoded

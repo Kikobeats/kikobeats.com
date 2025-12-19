@@ -5,8 +5,6 @@ og_image:
   canvas:
     background_image: /images/fink-url-shortener-for-masses/header.jpeg
 date: '2016-02-27 19:28:20'
-tags:
-  - product
 ---
 
 Months ago I created [Fink](http://xn--rn8h.ws/), a URL Shortener service that I called it *for masses*.

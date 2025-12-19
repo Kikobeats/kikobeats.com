@@ -5,8 +5,6 @@ og_image:
   canvas:
     background_image: /images/js-mythbusters/header.jpeg
 date: '2016-10-08 11:04:05'
-tags:
-  - product
 ---
 
 Recently I run the website [JS MythBusters](https://mythbusters.js.org). The idea behind the site is **perfomance matters**. 

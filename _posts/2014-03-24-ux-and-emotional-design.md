@@ -2,8 +2,6 @@
 layout: post
 title: UX and emotional design
 date: '2014-03-24 09:18:10'
-tags:
-  - frontend
 ---
 
 ![](/images/ux-and-emotional-design/66irmuv.jpeg)

@@ -5,8 +5,6 @@ date: '2018-01-15'
 og_image:
   canvas:
     background_image: /images/design-for-failing/header.jpeg
-tags:
-  - product
 ---
 
 > An error should make it obvious how to fix the problem

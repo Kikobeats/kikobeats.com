@@ -5,10 +5,6 @@ og_image:
   canvas:
     background_image: /images/road-to-javascript-2/header.png
 date: '2014-11-13 04:06:08'
-tags:
-  - javascript
-  - database
-  - frontend
 ---
 
 

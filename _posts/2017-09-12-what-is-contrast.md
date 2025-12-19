@@ -5,8 +5,6 @@ date: '2017-12-09 11:00:00'
 og_image:
   canvas:
     background_image: /images/what-is-contrast/header.png
-tags:
-  - web
 ---
 
 <style>

@@ -5,8 +5,6 @@ og_image:
   canvas:
     background_image: /images/es6-functions--pure--self-documented/header.jpeg
 date: '2016-09-16 21:59:14'
-tags:
-  - javascript
 ---
 
 <script src="https://gist.github.com/Kikobeats/c8c0dc43b6148c80f702fbcab3d2c419.js"></script>

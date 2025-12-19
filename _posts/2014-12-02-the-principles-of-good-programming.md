@@ -5,8 +5,6 @@ og_image:
   canvas:
     background_image: /images/the-principles-of-good-programming/header.jpeg
 date: '2014-12-02 09:10:57'
-tags:
-  - craftsmanship
 ---
 
 ## [DRY - Don't repeat yourself](http://en.wikipedia.org/wiki/Don%27t_repeat_yourself).

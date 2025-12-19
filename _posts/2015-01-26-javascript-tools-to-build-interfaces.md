@@ -5,9 +5,6 @@ og_image:
   canvas:
     background_image: /images/javascript-tools-to-build-interfaces/header.png
 date: '2015-01-26 11:46:00'
-tags:
-  - javascript
-  - frontend
 ---
 
 Transform a user interface concept into code is a task that can be resolved of different ways. The problem is how you organize your code that make scalable, easy to change and easy to maintain.

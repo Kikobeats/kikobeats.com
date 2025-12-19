@@ -2,8 +2,6 @@
 layout: post
 title: Your programming language sucks
 date: '2014-08-03 06:33:01'
-tags:
-  - computer-science
 ---
 
 ![](/images/your-programming-language-sucks/frw6fv4.jpeg)

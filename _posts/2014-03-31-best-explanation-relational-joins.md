@@ -2,8 +2,6 @@
 layout: post
 title: Best explanation relational joins
 date: '2014-03-31 03:33:59'
-tags:
-  - database
 ---
 
 ![](/images/best-explanation-relational-joins/n3atjlm.jpeg)

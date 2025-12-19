@@ -5,8 +5,6 @@ date: '2018-02-19'
 og_image:
   canvas:
     background_image: /images/naming-things/header.png
-tags:
-  - product
 ---
 
 Because **naming is hard**, when you create a new project is important choose the right name.

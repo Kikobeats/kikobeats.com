@@ -5,8 +5,6 @@ og_image:
   canvas:
     background_image: /images/base58-is-base64-for-humans/header.jpeg
 date: '2016-01-11 23:05:45'
-tags:
-  - computer-science
 ---
 
 I discovered it reading the spanish version of the Wikipedia [bitcoin](https://es.wikipedia.org/wiki/Bitcoin#Direcciones) entry.

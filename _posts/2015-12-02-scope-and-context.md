@@ -5,8 +5,6 @@ og_image:
   canvas:
     background_image: /images/scope-and-context-together-but-not-mixed/header.jpeg
 date: '2015-12-02 21:14:55'
-tags:
-  - javascript
 ---
 
 ## About Context

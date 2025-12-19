@@ -5,8 +5,6 @@ date: '2018-06-26'
 og_image:
   canvas:
     background_image: /images/brotli-is-the-new-gzip/header.jpeg
-tags:
-  - computer-science
 ---
 
 ## What is brotli

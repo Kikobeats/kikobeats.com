@@ -2,8 +2,6 @@
 layout: post
 title: Chatting from your terminal
 date: '2014-08-01 13:02:09'
-tags:
-  - hack
 ---
 
 ![](/images/chatting-from-your-terminal/imagesprofanity_logo.png)

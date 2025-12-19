@@ -2,8 +2,6 @@
 layout: post
 title: Fusion Drive for cool people
 date: '2014-10-07 13:49:36'
-tags:
-  - hack
 ---
 
 ![](/images/fusion-drive-for-cool-people/pzdmd8t.jpeg)

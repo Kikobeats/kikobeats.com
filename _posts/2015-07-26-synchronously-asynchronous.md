@@ -5,9 +5,6 @@ og_image:
   canvas:
     background_image: /images/synchronously-asynchronous/header.jpeg
 date: '2015-07-26 16:12:57'
-tags:
-  - javascript
-  - computer-science
 ---
 
 ## First of all, what's really means asynchronous?

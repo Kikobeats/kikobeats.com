@@ -5,9 +5,6 @@ og_image:
   canvas:
     background_image: /images/road-to-javascript-3/header.jpeg
 date: '2014-12-24 07:57:03'
-tags:
-  - javascript
-  - database
 ---
 
 ![](/images/road-to-javascript-3/zf3fuxo.png)

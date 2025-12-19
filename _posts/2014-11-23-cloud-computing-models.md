@@ -5,8 +5,6 @@ og_image:
   canvas:
     background_image: /images/cloud-computing-service-models/header.png
 date: '2014-11-23 15:48:20'
-tags:
-  - computer-science
 ---
 
 ![](/images/cloud-computing-service-models/2kxlmur.png)

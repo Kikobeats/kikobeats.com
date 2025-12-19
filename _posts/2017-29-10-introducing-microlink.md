@@ -5,8 +5,6 @@ date: '2017-10-29 11:00:00'
 og_image:
   canvas:
     background_image: /images/microlink.jpg
-tags:
-- product
 ---
 
 Months ago, I decided move for create [very downloaded but questionably useful npm packages](https://www.npmjs.com/package/emojis-list) to use these packages in create real projects. Something that I can show to my mum.

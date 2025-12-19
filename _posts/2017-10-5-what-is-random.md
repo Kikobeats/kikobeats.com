@@ -5,9 +5,6 @@ date: '2017-10-5 16:00:00'
 og_image:
   canvas:
     background_image: /images/what-is-random/header.jpeg
-tags:
-  - computer science
-  - javascript
 ---
 
 **random** is a term used to describe the process of generate data with no correlation.

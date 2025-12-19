@@ -5,8 +5,6 @@ og_image:
   canvas:
     background_image: /images/analyzing-javascript-dependencies/header.jpeg
 date: '2017-08-12 15:03:02'
-tags:
-  - javascript
 ---
 
 In this blog post, I go to collect a set of tools used to help developers choose better dependencies and see the hidden cost of your choices.

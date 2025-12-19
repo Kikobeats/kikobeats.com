@@ -5,8 +5,6 @@ og_image:
   canvas:
     background_image: /images/unix-for-developers/header.jpeg
 date: '2015-07-22 10:12:25'
-tags:
-  - unix
 ---
 
 # Philosophy

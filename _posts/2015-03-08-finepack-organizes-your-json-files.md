@@ -5,8 +5,6 @@ og_image:
   canvas:
     background_image: /images/finepack-organizes-your-json-files/header.png
 date: '2015-03-08 09:18:26'
-tags:
-  - product
 ---
 
 This week I wrote a library that I could write some time ago: [finepack](https://github.com/Kikobeats/finepack).

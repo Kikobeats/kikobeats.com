@@ -5,8 +5,6 @@ og_image:
   canvas:
     background_image: /images/avatar-glitch.jpg
 date: '2016-08-09 14:02:17'
-tags:
-  - unix
 ---
 
 A [glob](https://en.wikipedia.org/wiki/Glob_(programming)) is a short expression that lets you select a bunch of files. 99% of the time, there's an asterisk involved.

@@ -5,8 +5,6 @@ date: '2018-02-28'
 og_image:
   canvas:
     background_image: /images/little-ui-details/header.jpeg
-tags:
-  - design
 ---
 
 ## Color

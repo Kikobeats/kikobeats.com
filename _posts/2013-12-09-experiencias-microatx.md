@@ -2,8 +2,6 @@
 layout: post
 title: Experiencias microATX
 date: '2013-12-09 10:38:58'
-tags:
-- hack
 ---
 
 Hace un tiempo monté un ordenador  a un familiar que quería comprar un clónico y me ofrecí a llevarle el tema. Como quería que fuera "pequeñito" optamos por comprar un modelo microATX. Lo de pequeñito va entre comillas porque la caja, una <strong>Bitfenix Prodigy M </strong>(en un principio queríamos ir a por una Phenom, pero era imposible pillarlas y salía por el mismo precio) no es que sea de lo más pequeña, aunque sí que es muy mona ella.

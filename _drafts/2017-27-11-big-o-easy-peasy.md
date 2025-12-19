@@ -5,8 +5,6 @@ date: '2017-11-27 11:00:00'
 og_image:
   canvas:
     background_image: 'https://i.imgur.com/uIqvOAb.png'
-tags:
-  - computer-science
 ---
 
 ## Visualization
