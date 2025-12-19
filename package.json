@@ -50,7 +50,7 @@
     "node": ">= 20"
   },
   "scripts": {
-    "build": "NODE_ENV=production JEKYLL_ENV=production bundle exec jekyll build --verbose --trace",
+    "build": "yum install -y vips-devel && NODE_ENV=production JEKYLL_ENV=production bundle exec jekyll build --verbose --trace",
     "clean": "bundle exec jekyll clean && rm -rf node_mdoules",
     "dev": "bundle exec jekyll serve --host 0.0.0.0 --watch --drafts --livereload --port 1337",
     "lint": "standard",
