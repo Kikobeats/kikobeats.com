@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Finepack, organizes your JSON files'
-og_image:
-  canvas:
-    background_image: /images/finepack-organizes-your-json-files/header.png
+image: images/finepack-organizes-your-json-files/header.png
 date: '2015-03-08 09:18:26'
 ---
 

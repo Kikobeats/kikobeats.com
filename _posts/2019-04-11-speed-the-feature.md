@@ -2,9 +2,7 @@
 layout: post
 title: Speed is the feature
 date: '2019-11-04'
-og_image:
-  canvas:
-    background_image: /images/speed-is-the-feature/header.jpeg
+image: images/speed-is-the-feature/header.jpeg
 ---
 
 ![](/images/speed-is-the-feature/m1qzux6.png)

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Streams for every day
-og_image:
-  canvas:
-    background_image: /images/streams-for-every-day/header.jpeg
+image: images/streams-for-every-day/header.jpeg
 date: '2015-12-03 14:28:25'
 ---
 

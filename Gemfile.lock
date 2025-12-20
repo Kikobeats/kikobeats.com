@@ -49,11 +49,6 @@ GEM
       jekyll (>= 3.6, < 5.0)
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
-    jekyll-og-image (2.0.0)
-      jekyll (>= 3.4, < 5.0)
-      jekyll-seo-tag (~> 2.8)
-      ruby-vips (~> 2.2.0)
-      zeitwerk (~> 2.6)
     jekyll-paginate (1.1.0)
     jekyll-postcss-v2 (1.0.2)
     jekyll-sass-converter (3.0.0)
@@ -73,7 +68,6 @@ GEM
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    logger (1.7.0)
     mercenary (0.4.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
@@ -85,9 +79,6 @@ GEM
     rexml (3.2.8)
       strscan (>= 3.0.9)
     rouge (4.2.1)
-    ruby-vips (2.2.5)
-      ffi (~> 1.12)
-      logger
     safe_yaml (1.0.5)
     sass-embedded (1.72.0)
       google-protobuf (>= 3.25, < 5.0)
@@ -125,7 +116,6 @@ GEM
       unicode-display_width (>= 1.1.1, < 3)
     unicode-display_width (2.5.0)
     webrick (1.8.2)
-    zeitwerk (2.7.4)
 
 PLATFORMS
   aarch64-linux
@@ -154,7 +144,6 @@ DEPENDENCIES
   jekyll
   jekyll-archives
   jekyll-feed
-  jekyll-og-image
   jekyll-paginate
   jekyll-postcss-v2
   jekyll-seo-tag

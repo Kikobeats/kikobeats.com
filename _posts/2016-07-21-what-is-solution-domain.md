@@ -1,9 +1,7 @@
 ---
 layout: post
 title: What is Solution Domain
-og_image:
-  canvas:
-    background_image: /images/what-is-solution-domain/header.jpeg
+image: images/what-is-solution-domain/header.jpeg
 date: '2016-07-21 10:03:20'
 ---
 

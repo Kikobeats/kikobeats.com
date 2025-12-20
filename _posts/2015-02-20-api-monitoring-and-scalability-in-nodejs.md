@@ -1,9 +1,7 @@
 ---
 layout: post
 title: API Monitoring and Scalability in NodeJS
-og_image:
-  canvas:
-    background_image: /images/api-monitoring-and-scalability-in-nodejs/header.png
+image: images/api-monitoring-and-scalability-in-nodejs/header.png
 date: '2015-02-20 14:13:03'
 ---
 

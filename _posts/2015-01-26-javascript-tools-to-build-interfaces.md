@@ -1,9 +1,7 @@
 ---
 layout: post
 title: JavaScript tools to build interfaces
-og_image:
-  canvas:
-    background_image: /images/javascript-tools-to-build-interfaces/header.png
+image: images/javascript-tools-to-build-interfaces/header.png
 date: '2015-01-26 11:46:00'
 ---
 

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Analyzing JavaScript dependencies
-og_image:
-  canvas:
-    background_image: /images/analyzing-javascript-dependencies/header.jpeg
+image: images/analyzing-javascript-dependencies/header.jpeg
 date: '2017-08-12 15:03:02'
 ---
 

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Google 6^5th rule
-og_image:
-  canvas:
-    background_image: /images/google-65th-rule/header.png
+image: images/google-65th-rule/header.png
 date: '2015-12-03 11:19:00'
 ---
 

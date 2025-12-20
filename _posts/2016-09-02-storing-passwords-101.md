@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Storing Passwords 101
-og_image:
-  canvas:
-    background_image: /images/storing-passwords-101/header.png
+image: images/storing-passwords-101/header.png
 date: '2016-09-02 09:18:14'
 ---
 

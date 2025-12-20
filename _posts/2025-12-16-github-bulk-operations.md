@@ -2,9 +2,7 @@
 layout: post
 title: GitHub bulk operations
 date: '2025-12-16'
-og_image:
-  canvas:
-    background_image: "/images/github-bulk-operations/header.jpeg"
+image: "images/github-bulk-operations/header.jpeg"
 
 ---
 

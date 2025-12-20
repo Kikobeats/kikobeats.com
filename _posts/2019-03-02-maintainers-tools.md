@@ -2,9 +2,7 @@
 layout: post
 title: Tools for Maintainers
 date: '2019-02-03'
-og_image:
-  canvas:
-    background_image: /images/tools-for-maintainers/header.jpeg
+image: images/tools-for-maintainers/header.jpeg
 ---
 
 ## generator-git

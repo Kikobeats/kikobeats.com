@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Different type of Collections in JavaScript
-og_image:
-  canvas:
-    background_image: /images/different-type-of-collections-in-javascript/header.jpeg
+image: images/different-type-of-collections-in-javascript/header.jpeg
 date: '2015-02-26 12:46:42'
 ---
 

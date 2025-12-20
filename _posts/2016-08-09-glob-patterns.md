@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Glob Patterns
-og_image:
-  canvas:
-    background_image: /images/avatar-glitch.jpg
+image: images/avatar-glitch.jpg
 date: '2016-08-09 14:02:17'
 ---
 

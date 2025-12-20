@@ -2,9 +2,7 @@
 layout: post
 title: 'Big O, easy peasy way'
 date: '2017-11-27 11:00:00'
-og_image:
-  canvas:
-    background_image: 'https://i.imgur.com/uIqvOAb.png'
+image: /images/big-o-easy-peasy-way/header.png
 ---
 
 ## Visualization

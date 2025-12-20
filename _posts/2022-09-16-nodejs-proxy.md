@@ -2,9 +2,7 @@
 layout: post
 title: Proxyfiying in Node.js
 date: '2022-09-16'
-og_image:
-  canvas:
-    background_image: /images/proxyfiying-in-nodejs/header.jpeg
+image: images/proxyfiying-in-nodejs/header.jpeg
 ---
 
 For historical reasons there are a lot of NPM modules for doing this, but nowadays, it's easier than ever just using native APIs:

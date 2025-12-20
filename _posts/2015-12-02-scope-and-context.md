@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Scope and Context: Together but not mixed'
-og_image:
-  canvas:
-    background_image: /images/scope-and-context-together-but-not-mixed/header.jpeg
+image: images/scope-and-context-together-but-not-mixed/header.jpeg
 date: '2015-12-02 21:14:55'
 ---
 

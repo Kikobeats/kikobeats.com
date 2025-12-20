@@ -2,9 +2,7 @@
 layout: post
 title: Writing Documentation
 date: '2018-09-12'
-og_image:
-  canvas:
-    background_image: /images/writing-documentation/header.jpeg
+image: images/writing-documentation/header.jpeg
 ---
   
 

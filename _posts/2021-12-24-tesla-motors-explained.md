@@ -2,9 +2,7 @@
 layout: post
 title: Tesla motors explained
 date: '2021-12-24'
-og_image:
-  canvas:
-    background_image: /images/tesla-motors-explained/header.jpeg
+image: images/tesla-motors-explained/header.jpeg
 ---
 
 ![](/images/tesla-motors-explained/ykbd4tb.png)

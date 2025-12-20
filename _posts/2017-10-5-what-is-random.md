@@ -2,9 +2,7 @@
 layout: post
 title: What is Random
 date: '2017-10-5 16:00:00'
-og_image:
-  canvas:
-    background_image: /images/what-is-random/header.jpeg
+image: images/what-is-random/header.jpeg
 ---
 
 **random** is a term used to describe the process of generate data with no correlation.

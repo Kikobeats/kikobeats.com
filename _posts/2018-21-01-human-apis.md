@@ -2,9 +2,7 @@
 layout: post
 title: Human APIs
 date: '2018-01-21'
-og_image:
-  canvas:
-    background_image: /images/human-apis/header.jpeg
+image: images/human-apis/header.jpeg
 ---
 
 ## Title

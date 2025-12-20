@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Parameter vs Argument
-og_image:
-  canvas:
-    background_image: /images/parameter-vs-argument/header.jpeg
+image: images/parameter-vs-argument/header.jpeg
 date: '2015-12-10 09:31:57'
 ---
 

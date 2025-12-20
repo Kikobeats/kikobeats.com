@@ -2,9 +2,7 @@
 layout: post
 title: Applying VAT in Europe
 date: '2021-04-12'
-og_image:
-  canvas:
-    background_image: /images/applying-vat-in-europe/header.jpeg
+image: images/applying-vat-in-europe/header.jpeg
 ---
 
 ## How to avoid going to jail

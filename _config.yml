@@ -35,24 +35,13 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
-  - jekyll-og-image
   - jekyll-sitemap
   - jekyll-postcss-v2
 
 og_image:
   output_dir: images/og
-  collections:
-    - posts
-    - pages
-  domain: "kikobeats.com"
-  image: "/images/avatar-glitch.jpg"
-  header:
-    font_family: "Roboto, Bold"
-    color: "#333333"
-  content:
-    font_family: "Roboto, Bold"
-    color: "#333333"
-
+  base_url: https://og-kikobeats.vercel.app/
+  # force: true
 
 defaults:
   - scope:

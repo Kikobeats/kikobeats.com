@@ -287,11 +287,6 @@
   text-align: center;
 }
 
-.post-hero__title {
-  // Keep the title box crisp on photos.
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
-}
-
 @media (max-width: 480px) {
   .post-hero {
     padding: 2.5rem 0;

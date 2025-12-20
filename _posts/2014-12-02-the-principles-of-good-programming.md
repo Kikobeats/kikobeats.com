@@ -1,9 +1,7 @@
 ---
 layout: post
 title: The Principles of Good Programming
-og_image:
-  canvas:
-    background_image: /images/the-principles-of-good-programming/header.jpeg
+image: images/the-principles-of-good-programming/header.jpeg
 date: '2014-12-02 09:10:57'
 ---
 

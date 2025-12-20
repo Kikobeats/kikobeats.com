@@ -1,9 +1,7 @@
 ---
 layout: post
 title: The secrets between Gulp and Browserify
-og_image:
-  canvas:
-    background_image: /images/the-secrets-between-gulp-and-browserify/header.jpeg
+image: images/the-secrets-between-gulp-and-browserify/header.jpeg
 date: '2014-12-12 16:30:31'
 ---
 

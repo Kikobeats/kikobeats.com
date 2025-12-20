@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Module Driven Development
-og_image:
-  canvas:
-    background_image: /images/module-driven-development/header.png
+image: images/module-driven-development/header.png
 date: '2015-07-13 12:48:21'
 ---
 

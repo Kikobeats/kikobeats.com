@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Base58 Is Base64 for Humans
-og_image:
-  canvas:
-    background_image: /images/base58-is-base64-for-humans/header.jpeg
+image: images/base58-is-base64-for-humans/header.jpeg
 date: '2016-01-11 23:05:45'
 ---
 

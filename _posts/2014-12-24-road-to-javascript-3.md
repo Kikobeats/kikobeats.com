@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Road to JavaScript #3'
-og_image:
-  canvas:
-    background_image: /images/road-to-javascript-3/header.jpeg
+image: images/road-to-javascript-3/header.jpeg
 date: '2014-12-24 07:57:03'
 ---
 

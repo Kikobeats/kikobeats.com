@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Polyfill, Ponyfill &amp; Prollyfill'
-og_image:
-  canvas:
-    background_image: /images/polyfill-ponyfill--prollyfill/header.jpeg
+image: images/polyfill-ponyfill--prollyfill/header.jpeg
 date: '2015-06-06 14:52:52'
 ---
 

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Cloud Computing Service Models
-og_image:
-  canvas:
-    background_image: /images/cloud-computing-service-models/header.png
+image: images/cloud-computing-service-models/header.png
 date: '2014-11-23 15:48:20'
 ---
 

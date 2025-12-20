@@ -1,9 +1,7 @@
 ---
 layout: post
 title: What is URI
-og_image:
-  canvas:
-    background_image: /images/what-is-uri/header.png
+image: images/what-is-uri/header.png
 date: '2016-10-15 09:57:40'
 ---
 

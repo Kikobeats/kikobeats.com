@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Releasing software every day
-og_image:
-  canvas:
-    background_image: /images/releasing-software-every-day/header.jpeg
+image: images/releasing-software-every-day/header.jpeg
 date: '2015-08-07 15:14:46'
 ---
 

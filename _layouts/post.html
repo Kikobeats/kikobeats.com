@@ -7,10 +7,10 @@ layout: default
     <a class="link blue dim f5 lh-title" href="/blog">← Blog</a>
   </div>
 
-  {% if page.og_image.canvas.background_image %}
-  <header class="post-hero mb5-l mb4 sans-serif" style="background-image: url('{{ page.og_image.canvas.background_image }}');">
+  {% if page.background_image %}
+  <header class="post-hero mb5-l mb4 sans-serif" style="background-image: url('{{ page.background_image | prepend: '/' | replace: '//', '/' }}');">
     <div class="post-hero__inner">
-      <h1 class="post-hero__title lh-title fw7 f2 f1-ns mt0 mb3 bg-white dib ph4 pv3">
+      <h1 class="post-hero__title lh-title fw7 f2 f1-ns ma0 bg-white dib ph4 pv3">
         {{ page.title }}
       </h1>
     </div>

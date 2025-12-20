@@ -2,9 +2,7 @@
 layout: post
 title: Spotify → YouTube Music
 date: '2025-11-14'
-og_image:
-  canvas:
-    background_image: /images/spotify---youtube-music/header.jpeg
+image: images/spotify---youtube-music/header.jpeg
 ---
 
 Moving from Spotify to YouTube Music takes a few steps, but once you’re set up, the experience is great.
