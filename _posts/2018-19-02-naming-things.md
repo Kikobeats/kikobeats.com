@@ -2,8 +2,9 @@
 layout: post
 title: Naming Things
 date: '2018-02-19'
-image: images/naming-things/header.png
 ---
+
+![](/images/naming-things/header.png)
 
 Because **naming is hard**, when you create a new project is important choose the right name.
 

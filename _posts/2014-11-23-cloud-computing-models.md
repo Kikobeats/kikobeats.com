@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Cloud Computing Service Models
-image: images/cloud-computing-service-models/header.png
 date: '2014-11-23 15:48:20'
 ---
 
 ![](/images/cloud-computing-service-models/2kxlmur.png)
 
 Inside **cloud economy** we can found:
+
+![](/images/cloud-computing-service-models/header.png)
 
 * [SaaS (Software as a Service)](https://en.wikipedia.org/wiki/Software_as_a_service): When the software is hosted and you pay for a subscription. "on-demand software" as well. Examples: Spotify, Gmail, Skype,...
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Road to JavaScript #4'
-image: images/road-to-javascript-4/header.gif
 date: '2015-04-02 10:30:29'
 ---
 

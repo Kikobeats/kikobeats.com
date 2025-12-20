@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Storing Passwords 101
-image: images/storing-passwords-101/header.png
 date: '2016-09-02 09:18:14'
 ---
+
+![](/images/storing-passwords-101/header.png)
 
 # Don't use hash algorithm
 

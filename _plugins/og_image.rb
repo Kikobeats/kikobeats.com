@@ -11,26 +11,69 @@ module Jekyll
     priority :low
 
     def generate(site)
-      Jekyll.logger.info "OG Image:", "Starting generation..."
-      @site = site
+      return if site.config['serving']
       @config = site.config['og_image'] || {}
+      log_level = (@config['log_level'] || 'info').to_s.downcase
+
+      case log_level
+      when 'debug' then Jekyll.logger.adjust_verbosity(verbose: true)
+      when 'error' then Jekyll.logger.adjust_verbosity(quiet: true)
+      end
+
+      log "Starting generation..."
+      @site = site
       @base_url = @config['base_url'] || 'https://og.kikobeats.com'
       @output_dir = @config['output_dir'] || 'images/og'
       @force = @config['force'] || false
+      @generated_count = 0
+      @skipped_count = 0
 
       process_collection(site.posts.docs, 'posts')
       process_collection(site.pages.reject { |p| !p.html? }, 'pages')
-      Jekyll.logger.info "OG Image:", "Finished."
+      log "Finished (#{@generated_count} generated, #{@skipped_count} skipped)."
     end
 
     private
 
+    def log(msg, level = :info)
+      severity = { debug: 0, info: 1, warn: 2, error: 3 }
+      current_level = severity[(@config['log_level'] || 'info').to_s.downcase.to_sym] || 1
+      requested_level = severity[level] || 1
+
+      Jekyll.logger.send(level, "OG Image:", msg) if requested_level >= current_level
+    end
+
     def process_collection(items, type)
-      Jekyll.logger.info "OG Image:", "Processing #{items.size} #{type}..."
+      log "Processing #{items.size} #{type}...", :debug
       items.each do |item|
+        # Special logic for pages
+        if type == 'pages'
+          log "Processing item with url: #{item.url}", :debug
+          title_map = @config['title_map'] || {}
+          url_key = item.url.sub(/\/$/, '')
+          url_key = '/' if url_key == ''
+          mapped_title = title_map[url_key]
+
+          if mapped_title
+            item.data['title'] ||= mapped_title
+          else
+            raise "OG Image: No title mapping found for page #{item.url} in _config.yml. Please add it to og_image.title_map"
+          end
+          item.data['image'] ||= 'images/hero-header.jpg'
+        end
+
         # Fix for Jekyll::Page not having basename_without_ext
         item_basename = item.respond_to?(:basename_without_ext) ? item.basename_without_ext : File.basename(item.name, ".*")
-        slug = item.data['slug'] || item_basename || item.name.split('.').first
+
+        # Use a more unique slug for pages to avoid collisions (e.g. multiple index.md files)
+        if type == 'pages'
+          page_slug = item.url.sub(/\/index\.html$/, '/').gsub(/^\/|\/$/, '').gsub('/', '-')
+          page_slug = 'index' if page_slug.empty?
+          slug = item.data['slug'] || page_slug
+        else
+          slug = item.data['slug'] || item_basename || item.name.split('.').first
+        end
+
         filename = "#{slug}.png"
 
         # Local paths
@@ -42,7 +85,7 @@ module Jekyll
 
         # Don't generate OG image if post is marked as "external"
         if item.data['external']
-          Jekyll.logger.debug "OG Image:", "Skipping #{filename}, post is external."
+          log "Skipping #{filename}, post is external.", :debug
           next
         end
 
@@ -50,7 +93,7 @@ module Jekyll
         bg_image_path = item.data['image'].is_a?(String) ? item.data['image'] : item.data['background_image']
 
         if bg_image_path.nil? || bg_image_path.empty?
-          Jekyll.logger.debug "OG Image:", "Skipping #{filename}, no background image provided."
+          log "Skipping #{filename}, no background image provided.", :debug
           next
         end
 
@@ -62,7 +105,8 @@ module Jekyll
         if should_download
           download_image(item, absolute_path)
         else
-          Jekyll.logger.debug "OG Image:", "Skipping #{filename}, already exists."
+          log "Skipping #{filename}, already exists.", :debug
+          @skipped_count += 1
         end
 
         # Update metadata for SEO tag and other layouts
@@ -102,7 +146,8 @@ module Jekyll
           curl_args << "--data-binary '@#{bg_image_path}'"
         end
       end
-      Jekyll.logger.info "OG Image:", "Fetch: #{curl_args.join(' ')}"
+      curl_cmd = curl_args.join(' ')
+      log "Fetch: #{curl_cmd}", :debug
 
       begin
         http = Net::HTTP.new(uri.host, uri.port)
@@ -119,7 +164,7 @@ module Jekyll
               request.body = File.read(full_bg_path)
               request.content_type = 'application/octet-stream'
             else
-              Jekyll.logger.warn "OG Image:", "Background image not found: #{full_bg_path}"
+              log "Background image not found: #{full_bg_path}", :warn
             end
           end
         end
@@ -130,12 +175,15 @@ module Jekyll
           File.open(dest, 'wb') do |file|
             file.write(response.body)
           end
-          Jekyll.logger.info "OG Image:", "Saved to #{dest}"
+          log "Saved to #{dest}"
+          @generated_count += 1
         else
-          Jekyll.logger.error "OG Image:", "Failed to fetch image for #{item.url}: #{response.code} #{response.message}"
+          log "Failed to fetch image for #{item.url}: #{response.code} #{response.message}", :error
+          log " - Reproduce with: #{curl_cmd}", :error
         end
       rescue => e
-        Jekyll.logger.error "OG Image:", "Failed to fetch image for #{item.url}: #{e.message}"
+        log "Failed to fetch image for #{item.url}: #{e.message}", :error
+        log " - Reproduce with: #{curl_cmd}", :error
       end
     end
   end

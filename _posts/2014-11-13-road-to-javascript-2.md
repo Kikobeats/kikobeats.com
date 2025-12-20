@@ -1,10 +1,10 @@
 ---
 layout: post
 title: 'Road to JavaScript #2'
-image: images/road-to-javascript-2/header.png
 date: '2014-11-13 04:06:08'
 ---
 
+![](/images/road-to-javascript-2/header.png)
 
 ## 5 functions of the Console object you didn’t know
 

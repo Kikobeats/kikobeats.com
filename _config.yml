@@ -39,9 +39,16 @@ plugins:
   - jekyll-postcss-v2
 
 og_image:
+  log_level: info
   output_dir: images/og
   base_url: https://og-kikobeats.vercel.app/
+  # base_url: http://localhost:3000
   # force: true
+  title_map:
+    /: Kiko Beats
+    /oss: Open Source
+    /blog: Blog
+    /404: 404
 
 defaults:
   - scope:
