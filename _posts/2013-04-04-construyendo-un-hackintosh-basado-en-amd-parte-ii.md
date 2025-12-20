@@ -2,8 +2,6 @@
 layout: post
 title: Construyendo un Hackintosh basado en AMD (Parte II)
 date: '2013-04-04 18:33:11'
-tags:
-- hack
 ---
 
 Tras la <a href="http://kikobeats.com/construyendo-un-hackintosh-basado-en-amd-parte-i/">primera entrega</a> en donde presentaba un poco mis intenciones nos metemos de lleno en el proceso de obtención de un Hackintosh basado en un procesador <strong>AMD</strong>.

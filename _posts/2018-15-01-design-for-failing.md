@@ -2,9 +2,7 @@
 layout: post
 title: Design for failing
 date: '2018-01-15'
-image: /images/design-for-failing/header.jpeg
-tags:
-  - product
+image: images/design-for-failing/header.jpeg
 ---
 
 > An error should make it obvious how to fix the problem

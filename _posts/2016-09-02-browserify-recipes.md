@@ -1,10 +1,8 @@
 ---
 layout: post
 title: Browserify Recipes
-image: /images/browserify-recipes/header.jpeg
+image: images/browserify-recipes/header.jpeg
 date: '2016-09-02 11:43:46'
-tags:
-  - frontend
 ---
 
 # Creating `require` module in the browser

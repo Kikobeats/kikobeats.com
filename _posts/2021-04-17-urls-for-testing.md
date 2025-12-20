@@ -2,7 +2,7 @@
 layout: post
 title: URLs for testing
 date: '2021-04-17'
-image: /images/urls-for-testing/header.jpeg
+image: images/urls-for-testing/header.jpeg
 ---
 
 ## Favicon

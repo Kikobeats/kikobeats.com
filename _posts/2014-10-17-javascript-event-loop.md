@@ -2,8 +2,6 @@
 layout: post
 title: JavaScript Event Loop
 date: '2014-10-17 04:48:33'
-tags:
-  - javascript
 ---
 
 ![](/images/javascript-event-loop/vtfxrtv.gif)

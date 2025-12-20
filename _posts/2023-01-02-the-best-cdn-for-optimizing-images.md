@@ -2,7 +2,7 @@
 layout: post
 title: The best CDN for optimizing images
 date: '2023-01-02'
-image: /images/the-best-cdn-for-optimizing-images/header.jpeg
+image: images/the-best-cdn-for-optimizing-images/header.jpeg
 ---
 
 Internet is wild and a lot of services out there can be used to accomplish image optimization on-fly.

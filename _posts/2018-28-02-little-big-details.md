@@ -2,9 +2,7 @@
 layout: post
 title: Little UI Details
 date: '2018-02-28'
-image: /images/little-ui-details/header.jpeg
-tags:
-  - design
+image: images/little-ui-details/header.jpeg
 ---
 
 ## Color

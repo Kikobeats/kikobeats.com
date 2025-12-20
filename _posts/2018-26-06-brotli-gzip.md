@@ -2,9 +2,7 @@
 layout: post
 title: Brotli is the new gzip
 date: '2018-06-26'
-image: /images/brotli-is-the-new-gzip/header.jpeg
-tags:
-  - computer-science
+image: images/brotli-is-the-new-gzip/header.jpeg
 ---
 
 ## What is brotli

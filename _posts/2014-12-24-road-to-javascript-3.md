@@ -1,11 +1,8 @@
 ---
 layout: post
 title: 'Road to JavaScript #3'
-image: /images/road-to-javascript-3/header.jpeg
+image: images/road-to-javascript-3/header.jpeg
 date: '2014-12-24 07:57:03'
-tags:
-  - javascript
-  - database
 ---
 
 ![](/images/road-to-javascript-3/zf3fuxo.png)

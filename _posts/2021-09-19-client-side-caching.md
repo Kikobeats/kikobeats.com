@@ -2,7 +2,7 @@
 layout: post
 title: Client-Side Caching
 date: '2021-09-19'
-image: /images/client-side-caching/header.jpeg
+image: images/client-side-caching/header.jpeg
 ---
 
 At [microlink.io](https://microlink.io), keeping the [Microlink API](https://api.microlink.io) faster is one of the core values of the service, so always there is something that can be improved to decrease response time.

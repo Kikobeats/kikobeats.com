@@ -2,8 +2,6 @@
 layout: post
 title: 'Sailor, Components in the backend'
 date: '2014-08-30 07:54:11'
-tags:
-  - product
 ---
 
 ![](/images/sailor-components-in-the-backend/u8198912.png)

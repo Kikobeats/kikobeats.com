@@ -2,8 +2,6 @@
 layout: post
 title: Software Quality
 date: '2014-03-12 10:43:09'
-tags:
-  - craftsmanship
 ---
 
 ![](/images/software-quality/wjt9kg8.jpeg)

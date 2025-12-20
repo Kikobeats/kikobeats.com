@@ -1,11 +1,10 @@
 ---
 layout: post
 title: Set Up MongoDB with Security
-image: /images/set-up-mongodb-with-security/header.png
 date: '2015-01-18 21:19:25'
-tags:
-  - database
 ---
+
+<img src="/images/set-up-mongodb-with-security/header.png" style="max-width:250px;width:100%;" alt="MongoDB Security Header"/>
 
 First run mongodb instance:
 

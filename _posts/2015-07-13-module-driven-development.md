@@ -1,11 +1,10 @@
 ---
 layout: post
 title: Module Driven Development
-image: /images/module-driven-development/header.png
 date: '2015-07-13 12:48:21'
-tags:
-  - craftsmanship
 ---
+
+![](/images/module-driven-development/header.png)
 
 From since a time ago, I was thinking how to write code without repeating. [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) in all its glory, and believe in me when I tell you that it isn't always easy.
 

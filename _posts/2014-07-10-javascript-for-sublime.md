@@ -2,8 +2,6 @@
 layout: post
 title: Javascript for Sublime
 date: '2014-07-10 06:05:14'
-tags:
-  - computer-science
 ---
 
 ![](/images/javascript-for-sublime/zcjn6x2.png)

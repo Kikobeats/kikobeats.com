@@ -2,8 +2,6 @@
 layout: post
 title: Updating Hackintosh from 10.8 to Mavericks (10.9)
 date: '2013-11-05 03:42:02'
-tags:
-- hack
 ---
 
 <a href="http://kikobeats.files.wordpress.com/2013/11/mavericks-hackintosh.png"><img class="size-medium wp-image-1188 aligncenter" alt="mavericks-hackintosh" src="http://kikobeats.files.wordpress.com/2013/11/mavericks-hackintosh.png?w=300" width="300" height="131" /></a>

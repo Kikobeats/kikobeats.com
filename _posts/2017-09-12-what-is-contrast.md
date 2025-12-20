@@ -2,17 +2,7 @@
 layout: post
 title: What is Contrast
 date: '2017-12-09 11:00:00'
-image: /images/what-is-contrast/header.png
-tags:
-  - web
 ---
-
-<style>
-.f-headline-l {
-  background: #d599ab;
-  color: #2b6151;
-}
-</style>
 
 **Contrast** is the difference in luminance or color that makes an object (or its representation in an image or display) distinguishable. 
 

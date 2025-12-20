@@ -2,9 +2,6 @@
 layout: post
 title: CoffeeScript Fat Arrow BUSTED
 date: '2014-09-21 09:25:43'
-tags:
-  - javascript
-  - computer-science
 ---
 
 ![](/images/coffeescript-fat-arrow-busted/lscxf4p.png)

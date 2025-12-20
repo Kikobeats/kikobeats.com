@@ -2,8 +2,6 @@
 layout: post
 title: Hackintosh Setup
 date: '2013-09-14 13:28:02'
-tags:
-- hack
 ---
 
 <p style="text-align:left;">Hace tiempo que pasé de mi intento de Hackintosh en AMD a uno basado en Intel. Hoy lo he actualizado a la última versión oficial de Apple en Mountain Lion, la versión 10.8.5.</p>

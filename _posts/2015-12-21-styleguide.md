@@ -1,9 +1,10 @@
 ---
 layout: post
 title: styleguide
-image: /images/styleguide/header.png
 date: '2015-12-21 22:58:36'
 ---
+
+![](/images/styleguide/header.png)
 
 #### **Headers**
 

@@ -1,11 +1,10 @@
 ---
 layout: post
 title: API Monitoring and Scalability in NodeJS
-image: /images/api-monitoring-and-scalability-in-nodejs/header.png
 date: '2015-02-20 14:13:03'
-tags:
-  - javascript
 ---
+
+![](/images/api-monitoring-and-scalability-in-nodejs/header.png)
 
 When you are a public service that have clients (or not necessary client, you can have users, but with clients all is more important) you need to know how the people are using the service.
 

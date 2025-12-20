@@ -2,7 +2,7 @@
 layout: post
 title: The best `Cache-Control` strategy
 date: '2021-03-31'
-image: /images/the-best-cache-control-strategy/header.jpeg
+image: images/the-best-cache-control-strategy/header.jpeg
 ---
 
 A wild tweet from appeared on my timeline:

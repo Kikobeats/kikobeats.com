@@ -2,8 +2,6 @@
 layout: post
 title: Improve your OOP style
 date: '2014-03-13 07:13:07'
-tags:
-  - craftsmanship
 ---
 
 <center>![](/images/improve-your-oop-style/ijijuxu.png)</center>

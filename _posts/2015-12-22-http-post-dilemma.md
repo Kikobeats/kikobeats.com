@@ -1,11 +1,10 @@
 ---
 layout: post
 title: HTTP POST Dilemma
-image: /images/http-post-dilemma/header.png
 date: '2015-12-22 17:31:02'
-tags:
-  - computer-science
 ---
+
+![](/images/http-post-dilemma/header.png)
 
 ## as URL encoded
 

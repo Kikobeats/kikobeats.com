@@ -1,10 +1,8 @@
 ---
 layout: post
 title: 'Reassign: Padowan to Jedi'
-image: /images/reassign-padowan-to-jedi/header.jpeg
+image: images/reassign-padowan-to-jedi/header.jpeg
 date: '2015-12-13 10:10:54'
-tags:
-  - javascript
 ---
 
 # Smelly Code

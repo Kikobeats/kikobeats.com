@@ -2,7 +2,7 @@
 layout: post
 title: Tools for colors
 date: '2022-11-03'
-image: /images/tools-for-colors/header.jpeg
+image: images/tools-for-colors/header.jpeg
 ---
 
 - [color.adobe.com](https://color.adobe.com) —

@@ -2,8 +2,6 @@
 layout: post
 title: The power of ZSH
 date: '2014-06-30 11:08:03'
-tags:
-  - computer-science
 ---
 
 This days I have discovered [zsh](https://en.wikipedia.org/wiki/Z_shell), [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) and finally [pure](https://github.com/sindresorhus/pure). 

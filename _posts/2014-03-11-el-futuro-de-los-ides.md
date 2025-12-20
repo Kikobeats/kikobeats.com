@@ -2,8 +2,6 @@
 layout: post
 title: El futuro de los IDE's
 date: '2014-03-11 18:17:09'
-tags:
-  - computer-science
 ---
 
 > La sencillez es la máxima softisticación. Él había buscado la sencillez que se obtiene como resultado de controlar la complejidad, no de ignorarla.

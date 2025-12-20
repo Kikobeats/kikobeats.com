@@ -2,7 +2,7 @@
 layout: post
 title: Local IP address
 date: '2023-01-04'
-image: /images/local-ip-address/header.jpeg
+image: images/local-ip-address/header.jpeg
 ---
 
 Given the following HTTP server:

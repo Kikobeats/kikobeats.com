@@ -1,10 +1,8 @@
 ---
 layout: post
 title: Releasing software every day
-image: /images/releasing-software-every-day/header.jpeg
+image: images/releasing-software-every-day/header.jpeg
 date: '2015-08-07 15:14:46'
-tags:
-  - craftsmanship
 ---
 
 My vision of the software changed drastically when I started using a control version. First a bit of `svn`, and later `git`. The fact that you can create a *checkpoints* of your code is simply glorious. More later, when I started to feel more comfortable with `git` I started using `git tags` in combination with [semver versioning](http://semver.org/).

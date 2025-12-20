@@ -2,8 +2,6 @@
 layout: post
 title: 'Road to JavaScript #1'
 date: '2014-07-18 09:56:17'
-tags:
-  - javascript
 ---
 
 ![](/images/road-to-javascript-1/toqburq.png)

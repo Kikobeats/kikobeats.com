@@ -1,10 +1,8 @@
 ---
 layout: post
 title: Introducing Uno Urban
-image: /images/introducing-uno-urban/header.jpeg
+image: images/introducing-uno-urban/header.jpeg
 date: '2016-03-12 17:11:30'
-tags:
-  - product
 ---
 
 Months ago, I started develop my own blog theme for Ghost and I did it open source under the name of [Uno Zen](https://github.com/Kikobeats/uno-zen).

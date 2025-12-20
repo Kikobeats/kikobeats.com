@@ -1,10 +1,8 @@
 ---
 layout: post
 title: The secrets between Gulp and Browserify
-image: /images/the-secrets-between-gulp-and-browserify/header.jpeg
+image: images/the-secrets-between-gulp-and-browserify/header.jpeg
 date: '2014-12-12 16:30:31'
-tags:
-  - javascript
 ---
 
 If you are part of the Node.js community maybe for you the name of [subtack](https://github.com/substack) is familiar. It's one of the most active user of the community and authors of many projects and modules.

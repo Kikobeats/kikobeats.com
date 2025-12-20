@@ -1,10 +1,8 @@
 ---
 layout: post
 title: 'Functions: The Right Way'
-image: /images/functions-the-right-way/header.jpeg
+image: images/functions-the-right-way/header.jpeg
 date: '2015-11-27 22:07:32'
-tags:
-  - craftsmanship
 ---
 
 ![](/images/functions-the-right-way/ve9my2x.png)

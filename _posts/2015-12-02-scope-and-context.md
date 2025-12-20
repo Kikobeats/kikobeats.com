@@ -1,10 +1,8 @@
 ---
 layout: post
 title: 'Scope and Context: Together but not mixed'
-image: /images/scope-and-context-together-but-not-mixed/header.jpeg
+image: images/scope-and-context-together-but-not-mixed/header.jpeg
 date: '2015-12-02 21:14:55'
-tags:
-  - javascript
 ---
 
 ## About Context

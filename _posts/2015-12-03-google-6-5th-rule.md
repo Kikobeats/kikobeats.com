@@ -1,12 +1,10 @@
 ---
 layout: post
 title: Google 6^5th rule
-image: /images/google-65th-rule/header.png
 date: '2015-12-03 11:19:00'
-tags:
-  - frontend
-  - craftsmanship
 ---
+
+![](/images/google-65th-rule/header.png)
 
 A very nice metric used by the Google Team for the [Google+ Redesign](https://developers.google.com/web/showcase/case-study/googleplus) that I want to conserved in this publication.
 

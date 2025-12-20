@@ -1,11 +1,10 @@
 ---
 layout: post
 title: What is URI
-image: /images/what-is-uri/header.png
 date: '2016-10-15 09:57:40'
-tags:
-  - computer-science
 ---
+
+![](/images/what-is-uri/header.png)
 
 # URI (Uniform Resource Identifier)
 

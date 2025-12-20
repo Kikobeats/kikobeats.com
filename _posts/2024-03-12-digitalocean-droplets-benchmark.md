@@ -2,7 +2,7 @@
 layout: post
 title: DigitalOcean Droplets Benchmark
 date: '2024-03-12'
-image: /images/digitalocean-droplets-benchmark/header.jpeg
+image: images/digitalocean-droplets-benchmark/header.jpeg
 ---
 
 <style>

@@ -2,7 +2,7 @@
 layout: post
 title: K8s wildcard SSL
 date: '2025-11-20'
-image: /images/k8s-wildcard-ssl/header.jpeg
+image: images/k8s-wildcard-ssl/header.jpeg
 ---
 
 Managing SSL certificates manually is a pain. This guide shows how to automate wildcard SSL certificates (`*.yourdomain.com`) on Kubernetes using `cert-manager`, Let's Encrypt, and Cloudflare DNS validation.
