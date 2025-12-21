@@ -1,4 +1,4 @@
-title: Kikobeats
+title: Kiko Beats
 email: josefrancisco.verdu@gmail.com
 description: A millennial doing stuff on internet that ships software every day and builds digital products.
 github: kikobeats
@@ -45,7 +45,7 @@ og_image:
   # base_url: http://localhost:3000
   # force: true
   title_map:
-    /: Kiko Beats
+    /: Building web infra & open source
     /oss: Open Source
     /blog: Blog
     /404: 404
