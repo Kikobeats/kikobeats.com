@@ -175,7 +175,7 @@ const createNpmTokenSecret = async (repo, opts) => {
 const GH_USERNAME = 'Kikobeats'
 
 const GH_ORGANIZATIONS = [
-  'kikobeats',
+  GH_USERNAME,
   'microlinkhq',
   'teslahunt',
   'urlint',
