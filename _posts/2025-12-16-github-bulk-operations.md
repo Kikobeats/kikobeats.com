@@ -2,8 +2,7 @@
 layout: post
 title: GitHub bulk operations
 date: '2025-12-16'
-image: "images/github-bulk-operations/header.jpeg"
-
+image: images/github-bulk-operations/header.jpeg
 ---
 
 ![](/images/github-bulk-operations/npm-revoked.jpeg)
@@ -88,7 +87,7 @@ The `github-create-secret` library allows you to create, update, and check repos
 ```js
 import createSecret from 'github-create-secret'
 
-const createNpmTokenSecret = async (repo, ...opts) => {
+const createNpmTokenSecret = async (repo, opts) => {
   return await createSecret({
     owner: repo.owner.login,
     repo: repo.name,
@@ -163,7 +162,7 @@ async function listRepos (username, { withForks = false } = {}) {
   return withForks ? repos : repos.filter(repo => !repo.fork)
 }
 
-const createNpmTokenSecret = async (repo, ...opts) => {
+const createNpmTokenSecret = async (repo, opts) => {
   return await createSecret({
     owner: repo.owner.login,
     repo: repo.name,
