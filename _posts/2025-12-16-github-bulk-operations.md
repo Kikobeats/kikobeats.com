@@ -149,7 +149,7 @@ import createSecret from 'github-create-secret'
 
 const octokit = new Octokit({ auth: process.env.GH_TOKEN })
 
-async function listRepos (username, { withForks = false } = {}) {
+async function listRepos (username) {
   const repos = await octokit.paginate(
     octokit.rest.repos.listForAuthenticatedUser,
     {
@@ -159,7 +159,7 @@ async function listRepos (username, { withForks = false } = {}) {
     }
   )
 
-  return withForks ? repos : repos.filter(repo => !repo.fork)
+  return repos.filter(repo => !repo.fork && !repo.archived)
 }
 
 const createNpmTokenSecret = async (repo, opts) => {
