@@ -136,6 +136,21 @@ listFormat(['Paco', 'Pepe'], { type: 'disjunction' }) // "Paco or Pepe"
 
 - [humanize-list](https://github.com/johno/humanize-list) – Comma delimit an array for human readability.
 
+## Cache Header
+
+Setting a `Cache-Control` header can be tricky to remember. [pretty-cache-header](https://github.com/jjenzz/pretty-cache-header) makes it more human-readable:
+
+```js
+const cacheHeader = require('pretty-cache-header')
+
+cacheHeader({
+  public: true,
+  maxAge: '1 day',
+  staleWhileRevalidate: '1 week'
+})
+// => 'public, max-age=86400, stale-while-revalidate=604800'
+```
+
 ## Bibliography
 
 - [JS things I never knew existed](http://air.ghost.io/js-things-i-never-knew-existed/)
