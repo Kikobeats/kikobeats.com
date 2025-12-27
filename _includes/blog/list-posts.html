@@ -8,7 +8,7 @@
 
   {% assign posts = "" | split: "" %}
   {% for post in site.posts %}
-  {% unless post.draft or post.external %}
+  {% unless post.draft %}
   {% assign posts = posts | push: post %}
   {% endunless %}
   {% endfor %}
@@ -29,7 +29,7 @@
 
     <div class="flex-ns justify-between items-baseline">
       <div class="mb2 mb0-ns pr4-ns">
-        <a href="{{ post.url }}" class="link near-black dim lh-title fw5 f4">{{ post.title }}</a>
+        <a href="{{ post.external | default: post.url }}" class="link near-black dim lh-title fw5 f4">{{ post.title }}</a>
       </div>
       <div class="black-60 f5 flex-shrink-0 lh-title">{{ post.date | date: "%B %Y" }}</div>
     </div>
