@@ -157,7 +157,7 @@
         replace: ' ', ' ' | strip %} {% endif %} {% assign sentence = raw_text | strip %} {% assign
         punct = "." %} {% if sentence contains "." %} {% assign sentence = sentence | split: "." |
         first | strip %} {% assign punct = "." %} {% elsif sentence contains "!" %} {% assign
-        sentence = sentence | split: "!" | first | strip %} {% assign punct = "!" %} {% elsif
+        sentence = sentence | split: "!" | first | strip %} {% assign punct = "! " %} {% elsif
         sentence contains "?" %} {% assign sentence = sentence | split: "?" | first | strip %} {%
         assign punct = "?" %} {% endif %} {% if sentence != "" %}
         <div class="f5 lh-copy mt2 max-w-copy">{{ sentence }}{{ punct }}</div>
@@ -264,3 +264,4 @@
     }
   })()
 </script>
+

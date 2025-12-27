@@ -2,4 +2,4 @@
 layout: default
 ---
 
-{% include home/new_index.html %}
+{% include home.html %}
