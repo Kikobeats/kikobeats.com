@@ -11,7 +11,6 @@ module Jekyll
     priority :low
 
     def generate(site)
-      return if site.config['serving']
       @config = site.config['og_image'] || {}
       log_level = (@config['log_level'] || 'info').to_s.downcase
 
