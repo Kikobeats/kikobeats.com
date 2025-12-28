@@ -7,8 +7,16 @@ layout: default
     <a class="link blue dim f5 lh-title" href="/blog">← Blog</a>
   </div>
 
-  {% if page.background_image %}
-  <header class="post-hero mb5-l mb4 sans-serif" style="background-image: url('{{ page.background_image | prepend: '/' | replace: '//', '/' }}');">
+  {% assign background_image = page.background_image %}
+  {% if background_image == nil and page.image.path == nil %}
+    {% assign background_image = page.image %}
+  {% endif %}
+
+  {% if background_image %}
+    {% unless background_image contains '://' %}
+      {% assign background_image = background_image | prepend: '/' | replace: '//', '/' %}
+    {% endunless %}
+  <header class="post-hero mb5-l mb4 sans-serif" style="background-image: url('{{ background_image }}');">
     <div class="post-hero__inner">
       <h1 class="post-hero__title lh-title fw7 f2 f1-ns ma0 bg-white dib ph4 pv3">
         {{ page.title }}
