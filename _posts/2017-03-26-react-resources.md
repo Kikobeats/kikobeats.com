@@ -27,6 +27,7 @@ date: '2017-03-26 20:16:16'
 - [magicui](https://magicui.design/docs/components/marquee)
 - [originui](https://originui.com/)
 - [table.sadmn.com](https://table.sadmn.com/)
+- [hover.dev](https://www.hover.dev)
 
 ### Picked components
 

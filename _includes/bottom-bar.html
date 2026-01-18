@@ -156,3 +156,17 @@
     </a>
   </div>
 </nav>
+
+<script>
+  (() => {
+    const { body } = document
+    if (!body || body.classList.contains('has-hovered')) return
+
+    const enableHover = () => {
+      body.classList.add('has-hovered')
+    }
+
+    window.addEventListener('pointermove', enableHover, { once: true })
+    window.addEventListener('touchstart', enableHover, { once: true })
+  })()
+</script>
