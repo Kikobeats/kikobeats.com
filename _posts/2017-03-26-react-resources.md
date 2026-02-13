@@ -31,6 +31,7 @@ date: '2017-03-26 20:16:16'
 
 ### Picked components
 
+- [siddz.com/components](https://siddz.com/components)
 - [cmdk](https://github.com/pacocoursey/cmdk)
 - [kbar](https://github.com/timc1/kbar)
 - [marquee](https://github.com/joyco-studio/marquee)
