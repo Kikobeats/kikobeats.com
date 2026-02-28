@@ -28,6 +28,7 @@ date: '2017-03-26 20:16:16'
 - [originui](https://originui.com/)
 - [table.sadmn.com](https://table.sadmn.com/)
 - [hover.dev](https://www.hover.dev)
+- [efferd.com](https://efferd.com/)
 
 ### Picked components
 
