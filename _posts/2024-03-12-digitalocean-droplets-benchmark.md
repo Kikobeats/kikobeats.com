@@ -19,7 +19,7 @@ DigitalOcean offers different kind of Droplets and I'm interested into find the 
 
 ## Results
 
-### General Purpose – Regular Intel
+### General Purpose – Regular Intel (4vCPU)
 
 <details>
 <summary>Full report</summary>
@@ -64,7 +64,7 @@ YABS completed in 8 min 11 sec
 - cpu: 4x Intel(R) Xeon(R) Platinum 8168 CPU @ 2.70GHz
 - single core: 1085 / multi core: 2382 in 8 min 11 sec
 
-### General Purpose — Premium Intel
+### General Purpose — Premium Intel (4vCPU)
 
 <details>
 <summary>Full report</summary>
@@ -109,7 +109,7 @@ YABS completed in 6 min 9 sec
 - cpu: 4x Intel(R) Xeon(R) Platinum 8358 CPU @ 2.60GHz
 - single core: 1876 / multi core: 4152 in 6 min 9 sec
 
-### CPU-Optimized	– Regular Intel
+### CPU-Optimized	– Regular Intel (4vCPU)
 
 <details>
 <summary>Full report</summary>
@@ -403,8 +403,8 @@ g-4vcpu-16gb       | 2382 | $126/mo | 18.9047619048
 g-4vcpu-16gb-intel | 4152 | $151/mo | 27.4966887417
 c-4vcpu-8gb        | 2770 | $84/mo  | 32.9761904762
 c-8vcpu-16gb-intel | 7204 | $218/mo | 33.0458715596
-s-8vcpu-16gb-amd   | 4293 | $112/mo | 38.3303571429
 c-4vcpu-8gb-intel  | 4166 | $109/mo | 38.2201834862
+s-8vcpu-16gb-amd   | 4293 | $112/mo | 38.3303571429
 s-4vcpu-8gb        | 2783 | $64/mo  | 43.484375
 s-4vcpu-8gb-amd    | 2776 | $56/mo  | 49.5714285714
 ```
@@ -421,3 +421,13 @@ c-4vcpu-8gb-intel  | 1846 + 4166 | $109/mo | 55.1559633028
 s-4vcpu-8gb        | 912 + 2783  | $64/mo  | 57.734375
 s-4vcpu-8gb-amd    | 880 + 2776  | $56/mo  | 65.2857142857
 ```
+
+## Conclusion
+
+If the goal is to maximize **performance per dollar**, the winner is **`s-4vcpu-8gb-amd`**.
+
+- Best value in multi-core performance-per-price.
+- Best value in combined single-core + multi-core performance-per-price.
+- Very competitive in single-core value while being the cheapest option tested.
+
+If the goal is **highest raw CPU performance** (not value), **`c-8vcpu-16gb-intel`** is the fastest in absolute multi-core score.
