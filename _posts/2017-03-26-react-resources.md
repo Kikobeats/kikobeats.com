@@ -22,7 +22,6 @@ date: '2017-03-26 20:16:16'
 ### Tailwind components
 
 - [shadcn](https://ui.shadcn.com/docs/components/accordion)
-- [hextastudio](https://ui.hextastudio.in/docs/components/layout/Accordion)
 - [aceternity](https://ui.aceternity.com/components)
 - [magicui](https://magicui.design/docs/components/marquee)
 - [originui](https://originui.com/)
