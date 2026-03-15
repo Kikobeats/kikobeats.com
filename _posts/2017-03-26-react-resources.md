@@ -21,13 +21,15 @@ date: '2017-03-26 20:16:16'
 
 ### Tailwind components
 
-- [shadcn](https://ui.shadcn.com/docs/components/accordion)
 - [aceternity](https://ui.aceternity.com/components)
+- [efferd.com](https://efferd.com/)
+- [hover.dev](https://www.hover.dev)
 - [magicui](https://magicui.design/docs/components/marquee)
 - [originui](https://originui.com/)
+- [shadcn](https://ui.shadcn.com/docs/components/accordion)
+- [shadcnblocks.com](https://www.shadcnblocks.com/blocks)
+- [shadcnstudio.com](https://shadcnstudio.com/blocks)
 - [table.sadmn.com](https://table.sadmn.com/)
-- [hover.dev](https://www.hover.dev)
-- [efferd.com](https://efferd.com/)
 
 ### Picked components
 
@@ -36,6 +38,7 @@ date: '2017-03-26 20:16:16'
 - [kbar](https://github.com/timc1/kbar)
 - [marquee](https://github.com/joyco-studio/marquee)
 - [react-text-loop](https://github.com/braposo/react-text-loop)
+- [blocks.so](https://blocks.so/)
 
 ### Hooks
 
