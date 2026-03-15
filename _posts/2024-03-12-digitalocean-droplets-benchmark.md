@@ -424,10 +424,10 @@ s-4vcpu-8gb-amd    | 880 + 2776  | $56/mo  | 65.2857142857
 
 ## Conclusion
 
-If the goal is to maximize **performance per dollar**, the winner is **`s-4vcpu-8gb-amd`**.
+If the goal is to maximize **performance per dollar**, the winner is **s-4vcpu-8gb-amd**.
 
 - Best value in multi-core performance-per-price.
 - Best value in combined single-core + multi-core performance-per-price.
 - Very competitive in single-core value while being the cheapest option tested.
 
-If the goal is **highest raw CPU performance** (not value), **`c-8vcpu-16gb-intel`** is the fastest in absolute multi-core score.
+If the goal is **highest raw CPU performance** (not value), **c-8vcpu-16gb-intel** is the fastest in absolute multi-core score.
