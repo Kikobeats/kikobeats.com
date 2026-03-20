@@ -4,6 +4,9 @@
   link: https://microlink.io
   logo: https://cdn.microlink.io/logo/logo.png
   changelog:
+    - description: Introduced optimo
+      link: https://x.com/Kikobeats/status/2034247373057130619
+      date: 2025-03-18
     - description: Documentation revamped
       link: https://x.com/microlinkhq/status/1984203909716693309
       date: 2025-10-31
@@ -20,6 +23,12 @@
   link: https://unavatar.io
   logo: https://unavatar.io/fallback.png
   changelog:
+    - description: Added Mastodon
+      link: https://unavatar.io/#/?id=mastodon
+      date: 2025-03-20
+    - description: Added LinkedIn
+      link: https://unavatar.io/#/?id=linkedin
+      date: 2025-03-20
     - description: Introducing PRO plan
       link: https://mailchi.mp/de2ea37e476f/unavatar-is-now-ga
       date: 2025-12-15
