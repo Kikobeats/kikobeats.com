@@ -21,7 +21,6 @@
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
     "@kikobeats/content-type": "latest",
-    "@ksmithut/prettier-standard": "latest",
     "@octokit/rest": "latest",
     "cssnano": "latest",
     "cssnano-preset-advanced": "latest",
@@ -77,7 +76,6 @@
   },
   "nano-staged": {
     "*.js": [
-      "prettier-standard",
       "standard --fix"
     ],
     "*.md": [
