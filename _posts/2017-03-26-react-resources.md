@@ -50,3 +50,7 @@ date: '2017-03-26 20:16:16'
 ### Shaders
 
 - [paper.design](https://shaders.paper.design/)
+
+### Text Effects
+
+- [text-effects.colorion.co/](https://text-effects.colorion.co/)
