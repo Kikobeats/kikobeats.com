@@ -47,10 +47,14 @@ const getRootPackageName = async repo => {
   }
 }
 
-const allRepos = await listUserRepos(GH_USERNAME)
+const allRepos = (await Promise.all(GH_ORGANIZATIONS.map(listUserRepos))).flat()
 
-const repos = allRepos.filter(
-  repo => GH_ORGANIZATIONS.includes(repo.owner.login) && !repo.fork && !repo.archived
+const repos = Array.from(
+  new Map(
+    allRepos
+      .filter(repo => GH_ORGANIZATIONS.includes(repo.owner.login) && !repo.fork && !repo.archived)
+      .map(repo => [repo.full_name, repo])
+  ).values()
 )
 
 const data = []
