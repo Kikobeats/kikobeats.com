@@ -4,15 +4,15 @@
   link: https://microlink.io
   logo: https://cdn.microlink.io/logo/logo.png
   changelog:
-    - description: Microlink SDK 2.0
-      link: https://github.com/microlinkhq/microlink
-      date: 2026-07-06
-    - description: MCP server support
-      link: https://microlink.io/integrations/mcp
-      date: 2026-06-30
-    - description: optimo, image & video optimizer
-      link: https://optimo.microlink.io/
-      date: 2026-03-18
+    - description: Free development key, no card required
+      link: https://dashboard.microlink.io
+      date: 2026-09-30
+    - description: Microlink skill for AI agents
+      link: https://microlink.io/ai
+      date: 2026-09-21
+    - description: Browser functions API
+      link: https://microlink.io/function
+      date: 2026-09-07
 
 - name: unavatar.io
   description: Get unified user avatar.
@@ -20,12 +20,12 @@
   link: https://unavatar.io
   logo: https://unavatar.io/web-app-manifest-512x512.png
   changelog:
-    - description: +72 providers supported
+    - description: +75 providers supported
       link: https://unavatar.io/
-      date: 2026-06-12
+      date: 2026-09-16
+    - description: BIMI brand logos support
+      link: https://unavatar.io/bimi
+      date: 2026-08-31
     - description: Publishable keys support
       link: https://unavatar.io/
       date: 2026-05-12
-    - description: PRO plan available
-      link: https://mailchi.mp/de2ea37e476f/unavatar-is-now-ga
-      date: 2025-12-15
