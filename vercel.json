@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [{ "type": "header", "key": "user-agent", "value": "(?:curl|HTTPie|xh)/.*" }],
+      "missing": [{ "type": "header", "key": "x-original" }],
+      "destination": "/index.txt"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/",
+      "headers": [{ "key": "Vary", "value": "User-Agent, X-Original" }]
+    },
+    {
+      "source": "/index.txt",
+      "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }]
+    }
+  ]
+}
