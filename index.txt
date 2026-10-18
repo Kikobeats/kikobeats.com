@@ -2,17 +2,15 @@
 layout: null
 permalink: /index.txt
 sitemap: false
+width: 76
+column: 56
 ---
-{%- assign width = 76 -%}
-{%- assign column = 56 %}
-
   {{ site.title | ansi: 'bold' }}
   {{ site.og_image.title_map['/'] | ansi: 'dim' }}
 
   {{ 'https://github.com/kikobeats' | ansi: 'blue' }}
   {{ 'https://linkedin.com/in/kikobeats' | ansi: 'blue' }}
   {{ 'https://x.com/kikobeats' | ansi: 'blue' }}
-
 
   {{ 'RUNNING' | ansi: 'bold, magenta' }}
 {% for running in site.data.running %}
@@ -22,37 +20,32 @@ sitemap: false
     {{ entry.date | date: '%b %d' | ansi: 'dim' }}  {{ entry.description }}
 {%- endfor %}
 {% endfor %}
-
   {{ 'EXPERIENCES' | ansi: 'bold, magenta' }}
 {% for job in site.data.experiences %}
-  {{ job.company | pad: column | ansi: 'bold' }}{{ job.date | ansi: 'dim' }}
+  {{ job.company | pad: page.column | ansi: 'bold' }}{{ job.date | ansi: 'dim' }}
   {{ job.tagline | ansi: 'dim' }}
 {%- if job.description %}
-{{ job.description | wrap: width, 2 }}
+{{ job.description | wrap: page.width, 2 }}
 {%- endif %}
 {% endfor %}
-
   {{ 'BLOG' | ansi: 'bold, magenta' }}
 {% assign posts = site.posts | where_exp: 'post', 'post.draft != true' | where_exp: 'post', 'post.external == nil' %}
 {%- for post in posts limit: 5 %}
-  {{ post.title | pad: column | ansi: 'bold' }}{{ post.date | date: '%B %Y' | ansi: 'dim' }}
+  {{ post.title | pad: page.column | ansi: 'bold' }}{{ post.date | date: '%B %Y' | ansi: 'dim' }}
   {{ post.url | absolute_url | ansi: 'blue' }}
 {% endfor %}
   All posts: {{ '/blog' | absolute_url | ansi: 'blue' }}
 
-
   {{ 'OPEN SOURCE' | ansi: 'bold, magenta' }}
 {% assign oss_repos = site.data.oss | sort: 'stars' | reverse %}
 {%- for repo in oss_repos limit: 5 %}
-  {{ repo.fullName | pad: column | ansi: 'bold' }}{{ repo.stars | default: 0 | delimit | append: ' ★' | ansi: 'yellow' }}
+  {{ repo.fullName | pad: page.column | ansi: 'bold' }}{{ repo.stars | default: 0 | delimit | append: ' ★' | ansi: 'yellow' }}
 {%- if repo.description %}
-{{ repo.description | sentence | wrap: width, 2 }}
+{{ repo.description | sentence | wrap: page.width, 2 }}
 {%- endif %}
   {{ repo.githubUrl | ansi: 'blue' }}
 {% endfor %}
   All projects: {{ '/oss' | absolute_url | ansi: 'blue' }}
 
-
   {{ site.email | ansi: 'bold' }}
   {{ 'now' | date: '%Y' | prepend: '© ' | append: ' ' | append: site.title | ansi: 'dim' }}
-
