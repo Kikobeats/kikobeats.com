@@ -14,3 +14,7 @@ group :jekyll_plugins do
 	gem 'jekyll-feed'
   gem 'jekyll-postcss-v2'
 end
+
+group :test do
+  gem 'minitest'
+end

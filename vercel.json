@@ -1,0 +1,15 @@
+{
+  "routes": [
+    {
+      "src": "/",
+      "headers": { "Vary": "User-Agent, X-Original" },
+      "continue": true
+    },
+    {
+      "src": "/",
+      "has": [{ "type": "header", "key": "user-agent", "value": "(?:curl|HTTPie|xh)/.*" }],
+      "missing": [{ "type": "header", "key": "x-original" }],
+      "dest": "/index.txt"
+    }
+  ]
+}
