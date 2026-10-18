@@ -11,3 +11,20 @@
 - `vercel.json` routes `/` to `/index.txt` when the `User-Agent` starts with `curl/`, `HTTPie/` or `xh/`.
 - Send `X-Original: true` to get the regular HTML: `curl -H 'X-Original: true' kikobeats.com`.
 - `npm test` checks the filters and, after `npm run build`, that every line of the built page fits in 80 columns.
+
+### Cloudflare
+
+Plain `curl kikobeats.com` uses `http://`. Two Cloudflare pieces keep that request away from Vercel's forced HTTP to HTTPS redirect:
+
+- Redirect rule `curl without protocol`: 301 to HTTPS for every `not ssl` request, except `/` from `curl/`, `HTTPie/` or `xh/`.
+- Snippet `terminal_homepage_https` (rule `not ssl and http.request.uri.path eq "/"`): refetches the page over HTTPS, so Vercel never sees HTTP:
+
+```js
+export default {
+  async fetch (request) {
+    const url = new URL(request.url)
+    url.protocol = 'https:'
+    return fetch(new Request(url, request))
+  }
+}
+```
