@@ -52,4 +52,12 @@ class TerminalFiltersTest < Minitest::Test
       assert visible.length <= MAX_COLUMNS, "line exceeds #{MAX_COLUMNS} columns: #{visible}"
     end
   end
+
+  def test_built_page_has_compact_spacing
+    skip 'run `npm run build` first' unless File.exist?(BUILT_PAGE)
+    page = File.read(BUILT_PAGE)
+    refute page.start_with?("\n"), 'page starts with a blank line'
+    refute_match(/\n[ \t]*\n[ \t]*\n/, page, 'page has consecutive blank lines')
+    assert page.end_with?("\n") && !page.end_with?("\n\n"), 'page must end with exactly one newline'
+  end
 end
