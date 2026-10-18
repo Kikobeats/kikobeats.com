@@ -10,4 +10,4 @@
 - `index.txt` is the template, built to `/index.txt` with the filters in `_plugins/terminal.rb`.
 - `vercel.json` routes `/` to `/index.txt` when the `User-Agent` starts with `curl/`, `HTTPie/` or `xh/`.
 - Send `X-Original: true` to get the regular HTML: `curl -H 'X-Original: true' kikobeats.com`.
-- `npm test` checks the filters and that every line of the built page fits in 80 columns.
+- `npm test` checks the filters and, after `npm run build`, that every line of the built page fits in 80 columns.
