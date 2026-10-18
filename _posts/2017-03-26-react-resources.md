@@ -40,6 +40,7 @@ date: '2017-03-26 20:16:16'
 - [marquee](https://github.com/joyco-studio/marquee)
 - [react-text-loop](https://github.com/braposo/react-text-loop)
 - [blocks.so](https://blocks.so/)
+- [interior.dev](https://www.interior.dev/)
 
 ### Hooks
 
@@ -54,3 +55,4 @@ date: '2017-03-26 20:16:16'
 ### Text Effects
 
 - [text-effects.colorion.co/](https://text-effects.colorion.co/)
+- [fancycomponents](https://www.fancycomponents.dev/)
