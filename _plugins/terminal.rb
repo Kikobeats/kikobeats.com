@@ -40,11 +40,19 @@ module Jekyll
     end
 
     def compact(input)
+      return '' if input.nil?
+
       number = input.to_f
       unit, divisor = COMPACT_UNITS.find { |_, value| number >= value * COMPACT_ROUNDS_UP_FROM } || ['', 1]
       scaled = number / divisor
       digits = scaled < COMPACT_DECIMALS_BELOW ? 1 : 0
       "#{format("%.#{digits}f", scaled).sub(/\.0$/, '')}#{unit}"
+    end
+
+    def metric_link(url, value, unit, width)
+      return ansi(url, 'blue') if value.to_s.empty?
+
+      "#{ansi(pad(url, width), 'blue')}#{ansi(value, 'bold')} #{ansi(unit, 'dim')}"
     end
 
     def sentence(input)

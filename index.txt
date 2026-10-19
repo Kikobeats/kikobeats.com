@@ -4,29 +4,26 @@ permalink: /index.txt
 sitemap: false
 width: 76
 column: 56
+link_column: 40
 ---
   {{ site.title | ansi: 'bold' }}
   {{ site.og_image.title_map['/'] | ansi: 'dim' }}
-
-  {{ 'https://github.com/kikobeats' | ansi: 'blue' }}
-  {{ 'https://linkedin.com/in/kikobeats' | ansi: 'blue' }}
-  {{ 'https://x.com/kikobeats' | ansi: 'blue' }}
 {%- assign numbers = site.data.numbers %}
-{%- if numbers %}
+{%- assign stars = numbers.githubStars | delimit %}
+{%- assign followers = numbers.xFollowers | delimit %}
+{%- assign downloads = numbers.npmDownloadsPerMonth | compact %}
 
-  {{ 'NUMBERS' | ansi: 'bold, magenta' }}
-
-  {{ 'github stars' | pad: page.column }}{{ numbers.githubStars | compact | ansi: 'bold' }}
-  {{ 'npm downloads / month' | pad: page.column }}{{ numbers.npmDownloadsPerMonth | compact | ansi: 'bold' }}
-{%- if numbers.cloudflareRequestsPerMonth %}
-  {{ 'cloudflare requests / month' | pad: page.column }}{{ numbers.cloudflareRequestsPerMonth | compact | ansi: 'bold' }}
-{%- endif %}
-{%- endif %}
+  {{ 'https://github.com/kikobeats' | metric_link: stars, '★', page.link_column }}
+  {{ 'https://x.com/kikobeats' | metric_link: followers, 'followers', page.link_column }}
+  {{ 'https://npm.im/~kikobeats' | metric_link: downloads, 'downloads/mo', page.link_column }}
+  {{ 'https://linkedin.com/in/kikobeats' | ansi: 'blue' }}
 
   {{ 'RUNNING' | ansi: 'bold, magenta' }}
 {% for running in site.data.running %}
   {{ running.name | ansi: 'bold' }}  {{ running.description }}
-  {{ running.link | ansi: 'blue' }}
+{%- assign host = running.link | remove: 'https://' | remove: '/' %}
+{%- assign requests = numbers.requestsPerMonth[host] | compact %}
+  {{ running.link | metric_link: requests, 'reqs/mo', page.link_column }}
 {%- for entry in running.changelog %}
     {{ entry.date | date: '%b %d' | ansi: 'dim' }}  {{ entry.description }}
 {%- endfor %}

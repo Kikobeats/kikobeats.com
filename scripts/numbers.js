@@ -1,4 +1,5 @@
 const CLOUDFLARE_API = 'https://api.cloudflare.com/client/v4'
+const FXTWITTER_API = 'https://api.fxtwitter.com'
 const ZONES_PER_PAGE = 50
 const ZONES_PER_QUERY = 10
 const DAYS_PER_MONTH = 30
@@ -7,6 +8,7 @@ const MS_PER_DAY = 24 * 60 * 60 * 1000
 const REQUESTS_QUERY = `query ($zoneTags: [string!], $since: Date!, $until: Date!) {
   viewer {
     zones(filter: { zoneTag_in: $zoneTags }) {
+      zoneTag
       httpRequests1dGroups(limit: ${
         DAYS_PER_MONTH + 1
       }, filter: { date_geq: $since, date_lt: $until }) {
@@ -47,34 +49,48 @@ const cloudflare = async ({ fetch, token, path, body }) => {
   return payload
 }
 
-const listZoneTags = async ({ fetch, token }) => {
-  const tags = []
+const listZones = async ({ fetch, token }) => {
+  const zones = []
   for (let page = 1; ; page++) {
     const { result, result_info: info } = await cloudflare({
       fetch,
       token,
       path: `/zones?per_page=${ZONES_PER_PAGE}&page=${page}`
     })
-    tags.push(...result.map(zone => zone.id))
-    if (page >= info.total_pages) return tags
+    zones.push(...result.map(({ id, name }) => ({ id, name })))
+    if (page >= info.total_pages) return zones
   }
 }
 
-export const cloudflareRequestsPerMonth = async ({ fetch, token, now }) => {
-  const zoneTags = await listZoneTags({ fetch, token })
+const sumRequests = groups => groups.reduce((total, group) => total + group.sum.requests, 0)
+
+export const cloudflareRequestsPerMonthByZone = async ({ fetch, token, now }) => {
+  const zones = await listZones({ fetch, token })
+  const nameById = new Map(zones.map(zone => [zone.id, zone.name]))
   const range = lastMonthRange(now)
-  const totals = await Promise.all(
-    chunk(zoneTags, ZONES_PER_QUERY).map(async zoneTagsChunk => {
+  const results = await Promise.all(
+    chunk([...nameById.keys()], ZONES_PER_QUERY).map(async zoneTags => {
       const { data } = await cloudflare({
         fetch,
         token,
         path: '/graphql',
-        body: { query: REQUESTS_QUERY, variables: { zoneTags: zoneTagsChunk, ...range } }
+        body: { query: REQUESTS_QUERY, variables: { zoneTags, ...range } }
       })
-      return data.viewer.zones
-        .flatMap(zone => zone.httpRequests1dGroups)
-        .reduce((total, group) => total + group.sum.requests, 0)
+      return data.viewer.zones.map(zone => [
+        nameById.get(zone.zoneTag),
+        sumRequests(zone.httpRequests1dGroups)
+      ])
     })
   )
-  return totals.reduce((total, requests) => total + requests, 0)
+  return Object.fromEntries(results.flat())
+}
+
+export const xFollowers = async ({ fetch, username }) => {
+  const res = await fetch(`${FXTWITTER_API}/${username}`)
+  const payload = await res.json()
+  const followers = payload.user?.followers
+  if (!res.ok || !Number.isInteger(followers)) {
+    throw new Error(`FxTwitter ${username}: HTTP ${res.status} ${payload.message ?? ''}`.trim())
+  }
+  return followers
 }

@@ -1,10 +1,11 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import {
-  cloudflareRequestsPerMonth,
+  cloudflareRequestsPerMonthByZone,
   githubStars,
   lastMonthRange,
-  npmDownloadsPerMonth
+  npmDownloadsPerMonth,
+  xFollowers
 } from '../scripts/numbers.js'
 import { npmDownloads } from '../scripts/npm-downloads.js'
 
@@ -12,7 +13,11 @@ const NOW = new Date('2026-10-19T12:00:00Z')
 
 const repos = [{ stars: 10, downloadsLastMonth: 100 }, { stars: 5 }, { downloadsLastMonth: 7 }]
 
-const jsonResponse = (payload, status = 200) => ({ ok: status < 400, json: async () => payload })
+const jsonResponse = (payload, status = 200) => ({
+  ok: status < 400,
+  status,
+  json: async () => payload
+})
 
 const stubCloudflare = ({ zonePages, requestsByZone, graphqlErrors }) => {
   const calls = []
@@ -22,7 +27,7 @@ const stubCloudflare = ({ zonePages, requestsByZone, graphqlErrors }) => {
       const page = Number(new URL(url).searchParams.get('page'))
       return jsonResponse({
         success: true,
-        result: zonePages[page - 1].map(id => ({ id })),
+        result: zonePages[page - 1].map(id => ({ id, name: `${id}.com` })),
         result_info: { total_pages: zonePages.length }
       })
     }
@@ -32,6 +37,7 @@ const stubCloudflare = ({ zonePages, requestsByZone, graphqlErrors }) => {
       data: {
         viewer: {
           zones: zoneTags.map(tag => ({
+            zoneTag: tag,
             httpRequests1dGroups: requestsByZone[tag].map(requests => ({ sum: { requests } }))
           }))
         }
@@ -54,17 +60,19 @@ test('lastMonthRange covers the 30 days before today, today excluded', () => {
   assert.deepEqual(lastMonthRange(NOW), { since: '2026-09-19', until: '2026-10-19' })
 })
 
-test('cloudflareRequestsPerMonth sums every zone across pages and query chunks', async () => {
+test('cloudflareRequestsPerMonthByZone sums daily requests per zone name across pages and query chunks', async () => {
   const zones = Array.from({ length: 12 }, (_, index) => `zone${index}`)
-  const requestsByZone = Object.fromEntries(zones.map(zone => [zone, [1, 2]]))
+  const requestsByZone = Object.fromEntries(zones.map((zone, index) => [zone, [index, 100]]))
   const { fetch, calls } = stubCloudflare({
     zonePages: [zones.slice(0, 7), zones.slice(7)],
     requestsByZone
   })
 
-  const total = await cloudflareRequestsPerMonth({ fetch, token: 'token', now: NOW })
+  const requests = await cloudflareRequestsPerMonthByZone({ fetch, token: 'token', now: NOW })
 
-  assert.equal(total, 36)
+  assert.equal(Object.keys(requests).length, 12)
+  assert.equal(requests['zone0.com'], 100)
+  assert.equal(requests['zone11.com'], 111)
   const graphqlCalls = calls.filter(call => call.url.endsWith('/graphql'))
   assert.deepEqual(
     graphqlCalls.map(call => JSON.parse(call.init.body).variables.zoneTags.length),
@@ -74,13 +82,13 @@ test('cloudflareRequestsPerMonth sums every zone across pages and query chunks',
   assert.deepEqual(JSON.parse(graphqlCalls[0].init.body).variables.since, '2026-09-19')
 })
 
-test('cloudflareRequestsPerMonth throws on GraphQL errors instead of reporting zero', async () => {
+test('cloudflareRequestsPerMonthByZone throws on GraphQL errors instead of reporting zero', async () => {
   const { fetch } = stubCloudflare({
     zonePages: [['zone0']],
     graphqlErrors: [{ message: 'not authorized' }]
   })
   await assert.rejects(
-    cloudflareRequestsPerMonth({ fetch, token: 'token', now: NOW }),
+    cloudflareRequestsPerMonthByZone({ fetch, token: 'token', now: NOW }),
     /not authorized/
   )
 })
@@ -158,4 +166,19 @@ test('npmDownloads throws after persistent rate limits instead of reporting zero
     /HTTP 429/
   )
   assert.equal(urls.length, 5)
+})
+
+test('xFollowers reads the follower count from FxTwitter', async () => {
+  const urls = []
+  const fetch = async url => {
+    urls.push(url)
+    return jsonResponse({ code: 200, user: { followers: 4132 } })
+  }
+  assert.equal(await xFollowers({ fetch, username: 'kikobeats' }), 4132)
+  assert.deepEqual(urls, ['https://api.fxtwitter.com/kikobeats'])
+})
+
+test('xFollowers throws when the user is missing instead of reporting zero', async () => {
+  const fetch = async () => jsonResponse({ code: 404, message: 'User not found' }, 404)
+  await assert.rejects(xFollowers({ fetch, username: 'nobody' }), /HTTP 404 User not found/)
 })

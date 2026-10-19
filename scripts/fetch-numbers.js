@@ -1,26 +1,40 @@
 import { readFile, writeFile } from 'fs/promises'
-import { cloudflareRequestsPerMonth, githubStars, npmDownloadsPerMonth } from './numbers.js'
+import {
+  cloudflareRequestsPerMonthByZone,
+  githubStars,
+  npmDownloadsPerMonth,
+  xFollowers
+} from './numbers.js'
+
+const X_USERNAME = 'kikobeats'
 
 const repos = JSON.parse(await readFile('_data/oss.json', 'utf8'))
 const token = process.env.CLOUDFLARE_API_TOKEN
 
-const cloudflareRequests = async () => {
-  if (!token) {
-    console.warn('⚠ CLOUDFLARE_API_TOKEN is unset, skipping Cloudflare requests')
-    return null
-  }
+const optional = async (label, compute, fallback) => {
   try {
-    return await cloudflareRequestsPerMonth({ fetch, token })
+    return await compute()
   } catch (error) {
-    console.warn(`⚠ Cloudflare requests unavailable: ${error.message}`)
-    return null
+    console.warn(`⚠ ${label} unavailable: ${error.message}`)
+    return fallback
   }
+}
+
+const requestsPerMonth = () => {
+  if (token) return cloudflareRequestsPerMonthByZone({ fetch, token })
+  console.warn('⚠ CLOUDFLARE_API_TOKEN is unset, skipping Cloudflare requests')
+  return {}
 }
 
 const numbers = {
   githubStars: githubStars(repos),
   npmDownloadsPerMonth: npmDownloadsPerMonth(repos),
-  cloudflareRequestsPerMonth: await cloudflareRequests()
+  xFollowers: await optional(
+    'X followers',
+    () => xFollowers({ fetch, username: X_USERNAME }),
+    null
+  ),
+  requestsPerMonth: await optional('Cloudflare requests', requestsPerMonth, {})
 }
 
 await writeFile('_data/numbers.json', JSON.stringify(numbers, null, 2))

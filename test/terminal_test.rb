@@ -40,7 +40,16 @@ class TerminalFiltersTest < Minitest::Test
     assert_equal '95M', compact(95_123_456)
     assert_equal '1.2B', compact(1_236_726_902)
     assert_equal '1M', compact(999_950)
-    assert_equal '0', compact(nil)
+    assert_equal '', compact(nil)
+  end
+
+  def test_metric_link_aligns_value_after_padded_url
+    assert_equal "\e[34mhttps://a.io  \e[0m\e[1m5\e[0m \e[2mreqs/mo\e[0m", metric_link('https://a.io', '5', 'reqs/mo', 14)
+  end
+
+  def test_metric_link_shows_bare_url_without_value
+    assert_equal "\e[34mhttps://a.io\e[0m", metric_link('https://a.io', '', 'reqs/mo', 14)
+    assert_equal "\e[34mhttps://a.io\e[0m", metric_link('https://a.io', nil, 'reqs/mo', 14)
   end
 
   def test_sentence_adds_missing_period_only
