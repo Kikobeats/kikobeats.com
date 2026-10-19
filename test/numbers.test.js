@@ -178,7 +178,18 @@ test('xFollowers reads the follower count from FxTwitter', async () => {
   assert.deepEqual(urls, ['https://api.fxtwitter.com/kikobeats'])
 })
 
-test('xFollowers throws when the user is missing instead of reporting zero', async () => {
-  const fetch = async () => jsonResponse({ code: 404, message: 'User not found' }, 404)
-  await assert.rejects(xFollowers({ fetch, username: 'nobody' }), /HTTP 404 User not found/)
+test('xFollowers falls back to VxTwitter when FxTwitter fails', async () => {
+  const fetch = async url =>
+    url.startsWith('https://api.fxtwitter.com')
+      ? jsonResponse({ code: 404, message: 'User not found' }, 404)
+      : jsonResponse({ followers_count: 4132 })
+  assert.equal(await xFollowers({ fetch, username: 'kikobeats' }), 4132)
+})
+
+test('xFollowers throws when every source fails instead of reporting zero', async () => {
+  const fetch = async () => jsonResponse({ message: 'User not found' }, 404)
+  await assert.rejects(
+    xFollowers({ fetch, username: 'nobody' }),
+    /fxtwitter.*HTTP 404 User not found; .*vxtwitter.*HTTP 404/
+  )
 })

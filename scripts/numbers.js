@@ -1,5 +1,8 @@
 const CLOUDFLARE_API = 'https://api.cloudflare.com/client/v4'
-const FXTWITTER_API = 'https://api.fxtwitter.com'
+const X_FOLLOWER_SOURCES = [
+  { url: 'https://api.fxtwitter.com', followers: payload => payload.user?.followers },
+  { url: 'https://api.vxtwitter.com', followers: payload => payload.followers_count }
+]
 const ZONES_PER_PAGE = 50
 const ZONES_PER_QUERY = 10
 const DAYS_PER_MONTH = 30
@@ -85,12 +88,24 @@ export const cloudflareRequestsPerMonthByZone = async ({ fetch, token, now }) =>
   return Object.fromEntries(results.flat())
 }
 
-export const xFollowers = async ({ fetch, username }) => {
-  const res = await fetch(`${FXTWITTER_API}/${username}`)
-  const payload = await res.json()
-  const followers = payload.user?.followers
+const followersFrom = async ({ fetch, username, source }) => {
+  const res = await fetch(`${source.url}/${username}`)
+  const payload = await res.json().catch(() => ({}))
+  const followers = source.followers(payload)
   if (!res.ok || !Number.isInteger(followers)) {
-    throw new Error(`FxTwitter ${username}: HTTP ${res.status} ${payload.message ?? ''}`.trim())
+    throw new Error(`${source.url}/${username}: HTTP ${res.status} ${payload.message ?? ''}`.trim())
   }
   return followers
+}
+
+export const xFollowers = async ({ fetch, username }) => {
+  const errors = []
+  for (const source of X_FOLLOWER_SOURCES) {
+    try {
+      return await followersFrom({ fetch, username, source })
+    } catch (error) {
+      errors.push(error.message)
+    }
+  }
+  throw new Error(errors.join('; '))
 }
