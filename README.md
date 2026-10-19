@@ -10,6 +10,7 @@
 - `index.txt` is the template, built to `/index.txt` with the filters in `_plugins/terminal.rb`.
 - `vercel.json` routes `/` to `/index.txt` when the `User-Agent` starts with `curl/`, `HTTPie/` or `xh/`.
 - Send `X-Original: true` to get the regular HTML: `curl -H 'X-Original: true' kikobeats.com`.
+- Numbers next to the links come from `_data/numbers.json`, written at install by `scripts/fetch-numbers.js`: GitHub stars and npm downloads of the last month summed over `_data/oss.json`, X followers from FxTwitter, and Cloudflare requests of the last 30 days per zone, matched to each Running entry by its link hostname. The Cloudflare numbers need `CLOUDFLARE_API_TOKEN` (Zone Read, Analytics Read). A number that can't be fetched is hidden, and the build logs a warning.
 - `npm test` checks the filters and, after `npm run build`, that every line of the built page fits in 80 columns.
 
 ### Cloudflare
