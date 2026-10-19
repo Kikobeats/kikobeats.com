@@ -53,14 +53,14 @@
     "clean": "bundle exec jekyll clean && rm -rf node_mdoules",
     "dev": "bundle exec jekyll serve --host 0.0.0.0 --watch --drafts --livereload --port 1337",
     "lint": "standard",
-    "postinstall": "gem install bundler && bundle install && node scripts/fetch-oss.js",
+    "postinstall": "gem install bundler && bundle install && node scripts/fetch-oss.js && node scripts/fetch-numbers.js",
     "postrelease": "npm run release:tags && npm run release:github",
     "precommit": "nano-staged",
     "pretest": "npm run lint",
     "release": "git-authors-cli && git add package.json && standard-version -a",
     "release:github": "github-generate-release",
     "release:tags": "git push --follow-tags origin HEAD:master",
-    "test": "bundle exec ruby test/terminal_test.rb"
+    "test": "node --test test/numbers.test.js && bundle exec ruby test/terminal_test.rb"
   },
   "private": true,
   "license": "MIT",
