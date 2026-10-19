@@ -11,6 +11,17 @@ column: 56
   {{ 'https://github.com/kikobeats' | ansi: 'blue' }}
   {{ 'https://linkedin.com/in/kikobeats' | ansi: 'blue' }}
   {{ 'https://x.com/kikobeats' | ansi: 'blue' }}
+{%- assign numbers = site.data.numbers %}
+{%- if numbers %}
+
+  {{ 'NUMBERS' | ansi: 'bold, magenta' }}
+
+  {{ 'github stars' | pad: page.column }}{{ numbers.githubStars | compact | ansi: 'bold' }}
+  {{ 'npm downloads / month' | pad: page.column }}{{ numbers.npmDownloadsPerMonth | compact | ansi: 'bold' }}
+{%- if numbers.cloudflareRequestsPerMonth %}
+  {{ 'cloudflare requests / month' | pad: page.column }}{{ numbers.cloudflareRequestsPerMonth | compact | ansi: 'bold' }}
+{%- endif %}
+{%- endif %}
 
   {{ 'RUNNING' | ansi: 'bold, magenta' }}
 {% for running in site.data.running %}

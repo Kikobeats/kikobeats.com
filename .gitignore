@@ -8,3 +8,4 @@ _site
 node_modules
 .vercel
 _data/oss.json
+_data/numbers.json

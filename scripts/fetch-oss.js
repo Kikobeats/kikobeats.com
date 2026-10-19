@@ -1,6 +1,7 @@
 import { Octokit } from '@octokit/rest'
 import { writeFile } from 'fs/promises'
 import pLimit from 'p-limit'
+import { npmDownloads } from './npm-downloads.js'
 
 const octokit = new Octokit({ auth: process.env.GH_TOKEN })
 const limit = pLimit(5) // safe for GitHub + npm
@@ -14,21 +15,6 @@ const listUserRepos = username =>
     per_page: 100,
     type: 'all'
   })
-
-const getNpmDownloads = async (pkgName, period = 'last-year') => {
-  try {
-    const res = await fetch(
-      `https://api.npmjs.org/downloads/point/${period}/${encodeURIComponent(pkgName)}`
-    )
-
-    if (!res.ok) return null
-
-    const data = await res.json()
-    return data.downloads ?? 0
-  } catch {
-    return null
-  }
-}
 
 const getRootPackageName = async repo => {
   try {
@@ -77,17 +63,14 @@ await Promise.all(
         createdAt: repo.created_at,
         updatedAt: repo.updated_at,
         npmUrl: null,
-        downloads: 0
+        npmName: null
       }
 
       const pkg = await getRootPackageName(repo)
 
       if (pkg) {
         item.npmUrl = `https://www.npmjs.com/package/${pkg.name}`
-        const downloads = await getNpmDownloads(pkg.name)
-        if (downloads !== null) {
-          item.downloads = downloads
-        }
+        item.npmName = pkg.name
 
         if (pkg.keywords) {
           item.keywords = Array.from(new Set([...(item.keywords || []), ...(pkg.keywords || [])]))
@@ -99,12 +82,22 @@ await Promise.all(
   )
 )
 
-const sortedData = data.slice().sort((a, b) => {
-  if (b.downloads !== a.downloads) {
-    return b.downloads - a.downloads // Sort by downloads descending
-  }
-  return b.stars - a.stars // Then by stars descending
-})
+const npmNames = data.map(item => item.npmName).filter(Boolean)
+const yearly = await npmDownloads(npmNames, 'last-year')
+const monthly = await npmDownloads(npmNames, 'last-month')
+
+const sortedData = data
+  .map(({ npmName, ...item }) => ({
+    ...item,
+    downloads: yearly.get(npmName) ?? 0,
+    downloadsLastMonth: monthly.get(npmName) ?? 0
+  }))
+  .sort((a, b) => {
+    if (b.downloads !== a.downloads) {
+      return b.downloads - a.downloads // Sort by downloads descending
+    }
+    return b.stars - a.stars // Then by stars descending
+  })
 
 await writeFile('_data/oss.json', JSON.stringify(sortedData, null, 2))
 
