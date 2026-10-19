@@ -176,6 +176,48 @@ test('npmDownloads retries rate limits, honoring retry-after', async () => {
   assert.equal(downloads.get('a'), 7)
 })
 
+test('npmDownloads waits until a retry-after HTTP date', async () => {
+  const waits = []
+  const now = () => Date.parse('2026-10-19T12:00:00Z')
+  const { fetch } = npmStub((url, call) =>
+    call === 1
+      ? npmResponse(429, {}, { 'retry-after': 'Mon, 19 Oct 2026 12:00:03 GMT' })
+      : npmResponse(200, { downloads: 7 })
+  )
+  await npmDownloads(['a'], 'last-month', { fetch, now, wait: async ms => waits.push(ms) })
+  assert.deepEqual(waits, [3000])
+})
+
+test('npmDownloads gives up when retry-after asks for longer than a minute', async () => {
+  const waits = []
+  const { fetch, urls } = npmStub(() => npmResponse(429, {}, { 'retry-after': '3600' }))
+  await assert.rejects(
+    npmDownloads(['a'], 'last-month', { fetch, wait: async ms => waits.push(ms) }),
+    /retry after 3600000ms/
+  )
+  assert.equal(urls.length, 1)
+  assert.deepEqual(waits, [])
+})
+
+test('npmDownloads retries network errors and reports the last one', async () => {
+  let calls = 0
+  const fetch = async () => {
+    calls++
+    if (calls < 3) throw new TypeError('fetch failed')
+    return npmResponse(200, { downloads: 4 })
+  }
+  const downloads = await npmDownloads(['a'], 'last-month', { fetch, wait: async () => {} })
+  assert.equal(downloads.get('a'), 4)
+
+  const alwaysFails = async () => {
+    throw new TypeError('fetch failed')
+  }
+  await assert.rejects(
+    npmDownloads(['a'], 'last-month', { fetch: alwaysFails, wait: async () => {} }),
+    /fetch failed/
+  )
+})
+
 test('npmDownloads throws after persistent rate limits instead of reporting zero', async () => {
   const { fetch, urls } = npmStub(() => npmResponse(429, {}))
   await assert.rejects(

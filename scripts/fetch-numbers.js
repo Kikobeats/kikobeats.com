@@ -5,6 +5,7 @@ import {
   npmDownloadsPerMonth,
   xFollowers
 } from './numbers.js'
+import { timedFetch } from './timed-fetch.js'
 
 const X_USERNAME = 'kikobeats'
 
@@ -25,7 +26,7 @@ const requestsPerMonth = async () => {
     console.warn('⚠ CLOUDFLARE_API_TOKEN is unset, skipping Cloudflare requests')
     return {}
   }
-  const { byZone, failures } = await cloudflareRequestsPerMonthByZone({ fetch, token })
+  const { byZone, failures } = await cloudflareRequestsPerMonthByZone({ fetch: timedFetch, token })
   for (const { zone, message } of failures) {
     console.warn(`⚠ Cloudflare requests for ${zone} unavailable: ${message}`)
   }
@@ -37,7 +38,7 @@ const numbers = {
   npmDownloadsPerMonth: npmDownloadsPerMonth(repos),
   xFollowers: await optional(
     'X followers',
-    () => xFollowers({ fetch, username: X_USERNAME }),
+    () => xFollowers({ fetch: timedFetch, username: X_USERNAME }),
     null
   ),
   requestsPerMonth: await optional('Cloudflare requests', requestsPerMonth, {})
