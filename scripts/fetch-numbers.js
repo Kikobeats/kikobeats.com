@@ -20,10 +20,16 @@ const optional = async (label, compute, fallback) => {
   }
 }
 
-const requestsPerMonth = () => {
-  if (token) return cloudflareRequestsPerMonthByZone({ fetch, token })
-  console.warn('⚠ CLOUDFLARE_API_TOKEN is unset, skipping Cloudflare requests')
-  return {}
+const requestsPerMonth = async () => {
+  if (!token) {
+    console.warn('⚠ CLOUDFLARE_API_TOKEN is unset, skipping Cloudflare requests')
+    return {}
+  }
+  const { byZone, failures } = await cloudflareRequestsPerMonthByZone({ fetch, token })
+  for (const { zone, message } of failures) {
+    console.warn(`⚠ Cloudflare requests for ${zone} unavailable: ${message}`)
+  }
+  return byZone
 }
 
 const numbers = {

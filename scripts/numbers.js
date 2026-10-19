@@ -4,14 +4,12 @@ const X_FOLLOWER_SOURCES = [
   { url: 'https://api.vxtwitter.com', followers: payload => payload.followers_count }
 ]
 const ZONES_PER_PAGE = 50
-const ZONES_PER_QUERY = 10
 const DAYS_PER_MONTH = 30
 const MS_PER_DAY = 24 * 60 * 60 * 1000
 
-const REQUESTS_QUERY = `query ($zoneTags: [string!], $since: Date!, $until: Date!) {
+const REQUESTS_QUERY = `query ($zoneTag: string!, $since: Date!, $until: Date!) {
   viewer {
-    zones(filter: { zoneTag_in: $zoneTags }) {
-      zoneTag
+    zones(filter: { zoneTag: $zoneTag }) {
       httpRequests1dGroups(limit: ${
         DAYS_PER_MONTH + 1
       }, filter: { date_geq: $since, date_lt: $until }) {
@@ -33,11 +31,6 @@ export const lastMonthRange = (now = new Date()) => ({
   since: toDate(new Date(now.getTime() - DAYS_PER_MONTH * MS_PER_DAY)),
   until: toDate(now)
 })
-
-const chunk = (items, size) =>
-  Array.from({ length: Math.ceil(items.length / size) }, (_, index) =>
-    items.slice(index * size, (index + 1) * size)
-  )
 
 const cloudflare = async ({ fetch, token, path, body }) => {
   const res = await fetch(`${CLOUDFLARE_API}${path}`, {
@@ -67,25 +60,30 @@ const listZones = async ({ fetch, token }) => {
 
 const sumRequests = groups => groups.reduce((total, group) => total + group.sum.requests, 0)
 
+const zoneRequests = async ({ fetch, token, zone, range }) => {
+  const { data } = await cloudflare({
+    fetch,
+    token,
+    path: '/graphql',
+    body: { query: REQUESTS_QUERY, variables: { zoneTag: zone.id, ...range } }
+  })
+  return sumRequests(data.viewer.zones.flatMap(({ httpRequests1dGroups }) => httpRequests1dGroups))
+}
+
 export const cloudflareRequestsPerMonthByZone = async ({ fetch, token, now }) => {
   const zones = await listZones({ fetch, token })
-  const nameById = new Map(zones.map(zone => [zone.id, zone.name]))
   const range = lastMonthRange(now)
-  const results = await Promise.all(
-    chunk([...nameById.keys()], ZONES_PER_QUERY).map(async zoneTags => {
-      const { data } = await cloudflare({
-        fetch,
-        token,
-        path: '/graphql',
-        body: { query: REQUESTS_QUERY, variables: { zoneTags, ...range } }
-      })
-      return data.viewer.zones.map(zone => [
-        nameById.get(zone.zoneTag),
-        sumRequests(zone.httpRequests1dGroups)
-      ])
-    })
+  const results = await Promise.allSettled(
+    zones.map(zone => zoneRequests({ fetch, token, zone, range }))
   )
-  return Object.fromEntries(results.flat())
+  const byZone = {}
+  const failures = []
+  results.forEach((result, index) => {
+    const { name } = zones[index]
+    if (result.status === 'fulfilled') byZone[name] = result.value
+    else failures.push({ zone: name, message: result.reason.message })
+  })
+  return { byZone, failures }
 }
 
 const followersFrom = async ({ fetch, username, source }) => {

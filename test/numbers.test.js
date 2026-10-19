@@ -19,7 +19,7 @@ const jsonResponse = (payload, status = 200) => ({
   json: async () => payload
 })
 
-const stubCloudflare = ({ zonePages, requestsByZone, graphqlErrors }) => {
+const stubCloudflare = ({ zonePages, requestsByZone, unauthorized = [] }) => {
   const calls = []
   const fetch = async (url, init) => {
     calls.push({ url, init })
@@ -31,15 +31,21 @@ const stubCloudflare = ({ zonePages, requestsByZone, graphqlErrors }) => {
         result_info: { total_pages: zonePages.length }
       })
     }
-    if (graphqlErrors) return jsonResponse({ data: null, errors: graphqlErrors })
-    const { zoneTags } = JSON.parse(init.body).variables
+    const { zoneTag } = JSON.parse(init.body).variables
+    if (unauthorized.includes(zoneTag)) {
+      return jsonResponse({
+        data: null,
+        errors: [{ message: `zones [${zoneTag}] are not authorized` }]
+      })
+    }
     return jsonResponse({
       data: {
         viewer: {
-          zones: zoneTags.map(tag => ({
-            zoneTag: tag,
-            httpRequests1dGroups: requestsByZone[tag].map(requests => ({ sum: { requests } }))
-          }))
+          zones: [
+            {
+              httpRequests1dGroups: requestsByZone[zoneTag].map(requests => ({ sum: { requests } }))
+            }
+          ]
         }
       },
       errors: null
@@ -60,37 +66,48 @@ test('lastMonthRange covers the 30 days before today, today excluded', () => {
   assert.deepEqual(lastMonthRange(NOW), { since: '2026-09-19', until: '2026-10-19' })
 })
 
-test('cloudflareRequestsPerMonthByZone sums daily requests per zone name across pages and query chunks', async () => {
-  const zones = Array.from({ length: 12 }, (_, index) => `zone${index}`)
-  const requestsByZone = Object.fromEntries(zones.map((zone, index) => [zone, [index, 100]]))
+test('cloudflareRequestsPerMonthByZone sums the last 30 days per zone name across pages', async () => {
+  const zones = ['zone0', 'zone1', 'zone2']
   const { fetch, calls } = stubCloudflare({
-    zonePages: [zones.slice(0, 7), zones.slice(7)],
-    requestsByZone
+    zonePages: [['zone0', 'zone1'], ['zone2']],
+    requestsByZone: { zone0: [1, 2], zone1: [10], zone2: [] }
   })
 
-  const requests = await cloudflareRequestsPerMonthByZone({ fetch, token: 'token', now: NOW })
+  const { byZone, failures } = await cloudflareRequestsPerMonthByZone({
+    fetch,
+    token: 'token',
+    now: NOW
+  })
 
-  assert.equal(Object.keys(requests).length, 12)
-  assert.equal(requests['zone0.com'], 100)
-  assert.equal(requests['zone11.com'], 111)
+  assert.deepEqual(byZone, { 'zone0.com': 3, 'zone1.com': 10, 'zone2.com': 0 })
+  assert.deepEqual(failures, [])
   const graphqlCalls = calls.filter(call => call.url.endsWith('/graphql'))
-  assert.deepEqual(
-    graphqlCalls.map(call => JSON.parse(call.init.body).variables.zoneTags.length),
-    [10, 2]
-  )
+  assert.equal(graphqlCalls.length, zones.length)
   assert.equal(calls[0].init.headers.authorization, 'Bearer token')
-  assert.deepEqual(JSON.parse(graphqlCalls[0].init.body).variables.since, '2026-09-19')
+  assert.deepEqual(JSON.parse(graphqlCalls[0].init.body).variables, {
+    zoneTag: 'zone0',
+    since: '2026-09-19',
+    until: '2026-10-19'
+  })
 })
 
-test('cloudflareRequestsPerMonthByZone throws on GraphQL errors instead of reporting zero', async () => {
+test('cloudflareRequestsPerMonthByZone keeps authorized zones when others are refused', async () => {
   const { fetch } = stubCloudflare({
-    zonePages: [['zone0']],
-    graphqlErrors: [{ message: 'not authorized' }]
+    zonePages: [['zone0', 'zone1']],
+    requestsByZone: { zone0: [5] },
+    unauthorized: ['zone1']
   })
-  await assert.rejects(
-    cloudflareRequestsPerMonthByZone({ fetch, token: 'token', now: NOW }),
-    /not authorized/
-  )
+
+  const { byZone, failures } = await cloudflareRequestsPerMonthByZone({
+    fetch,
+    token: 'token',
+    now: NOW
+  })
+
+  assert.deepEqual(byZone, { 'zone0.com': 5 })
+  assert.equal(failures.length, 1)
+  assert.equal(failures[0].zone, 'zone1.com')
+  assert.match(failures[0].message, /not authorized/)
 })
 
 const npmStub = handler => {
