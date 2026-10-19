@@ -10,7 +10,7 @@ const sharp = require('sharp')
 const mime = require('mime')
 const path = require('path')
 
-const got = require('got').extend({
+const got = require('@kikobeats/got').extend({
   timeout: 8000,
   responseType: 'buffer'
 })
