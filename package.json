@@ -29,7 +29,7 @@
     "git-authors-cli": "latest",
     "github-generate-release": "latest",
     "github-slugger": "1",
-    "got": "11",
+    "got": "16",
     "gray-matter": "latest",
     "mime": "3",
     "nano-staged": "latest",
