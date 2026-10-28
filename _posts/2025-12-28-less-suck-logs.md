@@ -73,7 +73,7 @@ There’s one more subtle detail worth pointing out. The output is <span class="
 <pre><code><span style="font-weight:bold; color:#43a047">api:lightship</span> signalReady limit=hard signal=ready
 <span style="font-weight:bold; color:#ef5350">api</span> address=http://[::]:3000/ environment=development node=24.11.1 status=listening version=3.18.78 duration=113ms
 <span style="font-weight:bold; color:#26c6da">req-frequency</span> requests=1 perMinute=1 perSecond=0.0
-<span style="font-weight:bold; color:#f9a825">api:cache</span> key=EXA4OVNWtQz url="https://x.com/verge/status/957383241714970624&amp;force=" authorization="Bearer lEhTGCfOo6" accept-encoding="gzip, deflate, br" host=localhost:3000 connection=keep-alive
+<span style="font-weight:bold; color:#f9a825">api:cache</span> key=EXA4OVNWtQz url="https://x.com/verge/status/957383241714970624&amp;force=" authorization="Bearer &lt;redacted&gt;" accept-encoding="gzip, deflate, br" host=localhost:3000 connection=keep-alive
 <span style="font-weight:bold; color:#f9a825">browserless:info</span> create proxyServer=false retry=2 timeout=8861 concurrency=1 mem="374 MB" duration=16ms
 <span style="font-weight:bold; color:#7e57c2">html-get</span> prerender url=https://x.com/verge/status/957383241714970624 state=success
 <span style="font-weight:bold; color:#ef5350">api:html:info</span> get url=https://x.com/verge/status/957383241714970624 statusCode=200 mode=prerender duration=3.7s
@@ -244,7 +244,7 @@ The result is clean, readable, and trivially filterable:
 <pre><code>4206b33e-b040-4052-9931-dc11481c1fcf <span style="font-weight:bold; color:#43a047">api:lightship</span> signalReady limit=hard signal=ready
 4206b33e-b040-4052-9931-dc11481c1fcf <span style="font-weight:bold; color:#ef5350">api</span> address=http://[::]:3000/ environment=development node=24.11.1 status=listening version=3.18.78 duration=113ms
 4206b33e-b040-4052-9931-dc11481c1fcf <span style="font-weight:bold; color:#26c6da">req-frequency</span> requests=1 perMinute=1 perSecond=0.0
-4206b33e-b040-4052-9931-dc11481c1fcf <span style="font-weight:bold; color:#f9a825">api:cache</span> key=EXA4OVNWtQz url="https://x.com/verge/status/957383241714970624&amp;force=" authorization="Bearer lEhTGCfOo6" accept-encoding="gzip, deflate, br" host=localhost:3000 connection=keep-alive
+4206b33e-b040-4052-9931-dc11481c1fcf <span style="font-weight:bold; color:#f9a825">api:cache</span> key=EXA4OVNWtQz url="https://x.com/verge/status/957383241714970624&amp;force=" authorization="Bearer &lt;redacted&gt;" accept-encoding="gzip, deflate, br" host=localhost:3000 connection=keep-alive
 4206b33e-b040-4052-9931-dc11481c1fcf <span style="font-weight:bold; color:#f9a825">browserless:info</span> create proxyServer=false retry=2 timeout=8861 concurrency=1 mem="374 MB" duration=16ms
 4206b33e-b040-4052-9931-dc11481c1fcf <span style="font-weight:bold; color:#7e57c2">html-get</span> prerender url=https://x.com/verge/status/957383241714970624 state=success
 4206b33e-b040-4052-9931-dc11481c1fcf <span style="font-weight:bold; color:#ef5350">api:html:info</span> get url=https://x.com/verge/status/957383241714970624 statusCode=200 mode=prerender duration=3.7s
