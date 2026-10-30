@@ -4,15 +4,15 @@
   link: https://microlink.io
   logo: https://cdn.microlink.io/logo/logo.png
   changelog:
-    - description: Free development key, no card required
-      link: https://dashboard.microlink.io
-      date: 2026-09-30
-    - description: Microlink skill for AI agents
-      link: https://microlink.io/ai
-      date: 2026-09-21
-    - description: Browser functions API
-      link: https://microlink.io/function
-      date: 2026-09-07
+    - description: Free API key, 25 requests per day
+      link: https://microlink.io/pricing
+      date: 2026-10-25
+    - description: Browserless v14, with an experimental agent
+      link: https://github.com/microlinkhq/browserless/tree/master/packages/agent
+      date: 2026-10-08
+    - description: Animated screenshots
+      link: https://microlink.io/use-cases/website-screenshot/animated-screenshots
+      date: 2026-10-05
 
 - name: unavatar.io
   description: Get unified user avatar.
@@ -20,9 +20,9 @@
   link: https://unavatar.io
   logo: https://unavatar.io/web-app-manifest-512x512.png
   changelog:
-    - description: +75 providers supported
+    - description: +99 providers supported
       link: https://unavatar.io/
-      date: 2026-09-16
+      date: 2026-10-14
     - description: BIMI brand logos support
       link: https://unavatar.io/bimi
       date: 2026-08-31
