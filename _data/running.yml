@@ -7,6 +7,12 @@
     - description: Free API key, 25 requests per day
       link: https://microlink.io/pricing
       date: 2026-10-25
+    - description: Microlink skill for AI agents
+      link: https://microlink.io/ai
+      date: 2026-09-21
+    - description: Browser functions API
+      link: https://microlink.io/function
+      date: 2026-09-07
 
 - name: unavatar.io
   description: Get unified user avatar.
