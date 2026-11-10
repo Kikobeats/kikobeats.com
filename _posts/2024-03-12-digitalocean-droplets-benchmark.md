@@ -424,6 +424,51 @@ YABS completed in 6 min 29 sec
 - cpu: 8x Intel Xeon Processor (Cascadelake) @ 2992.960 MHz
 - single core: 1196 / multi core: 6155 in 6 min 29 sec
 
+### Vultr – Shared CPU High Performance AMD (8vCPU)
+
+<details>
+<summary>Full report</summary>
+<pre>
+Basic System Information:
+---------------------------------
+Uptime     : 0 days, 0 hours, 1 minutes
+Processor  : AMD EPYC-Rome Processor
+CPU cores  : 8 @ 1996.248 MHz
+AES-NI     : ✔ Enabled
+VM-x/AMD-V : ❌ Disabled
+RAM        : 15.1 GiB
+Swap       : 8.0 GiB
+Disk       : 328.1 GiB
+Distro     : Ubuntu 26.10
+Kernel     : 7.3.0-10-generic
+VM Type    : MICROSOFT
+IPv4/IPv6  : ✔ Online / ❌ Offline
+
+IPv4 Network Information:
+---------------------------------
+ISP        : Choopa
+ASN        : AS20473 The Constant Company, LLC
+Host       : Vultr Holdings, LLC
+Location   : Piscataway, New Jersey (NJ)
+Country    : United States
+
+Geekbench 6 Benchmark Test:
+---------------------------------
+Test            | Value                         
+                |                               
+Single Core     | 818                           
+Multi Core      | 3368                          
+Full Test       | https://browser.geekbench.com/v6/cpu/19458522
+
+YABS completed in 8 min 51 sec
+</pre>
+</details>
+
+- slug: vhp-8c-16gb-amd
+- billed: $96/mo or $0.14/hr
+- cpu: 8x AMD EPYC-Rome Processor @ 1996.248 MHz
+- single core: 818 / multi core: 3368 in 8 min 51 sec
+
 ## performance-to-price ratio
 
 *(higher is better)*
@@ -432,6 +477,7 @@ YABS completed in 6 min 29 sec
 
 ```
 s-8vcpu-16gb-amd   | 894  | $112/mo | 7.9821428571
+vhp-8c-16gb-amd    | 818  | $96/mo  | 8.5208333333
 c-8vcpu-16gb-intel | 1864 | $218/mo | 8.5504587156
 g-4vcpu-16gb       | 1085 | $126/mo | 8.6111111111
 g-4vcpu-16gb-intel | 1876 | $151/mo | 12.4238410596
@@ -449,6 +495,7 @@ g-4vcpu-16gb       | 2382 | $126/mo | 18.9047619048
 g-4vcpu-16gb-intel | 4152 | $151/mo | 27.4966887417
 c-4vcpu-8gb        | 2770 | $84/mo  | 32.9761904762
 c-8vcpu-16gb-intel | 7204 | $218/mo | 33.0458715596
+vhp-8c-16gb-amd    | 3368 | $96/mo  | 35.0833333333
 c-4vcpu-8gb-intel  | 4166 | $109/mo | 38.2201834862
 s-8vcpu-16gb-amd   | 4293 | $112/mo | 38.3303571429
 s-4vcpu-8gb        | 2783 | $64/mo  | 43.484375
@@ -462,6 +509,7 @@ vhp-8c-16gb-intel  | 6155 | $96/mo  | 64.1145833333
 g-4vcpu-16gb       | 1085 + 2382 | $126/mo | 27.5158730159
 g-4vcpu-16gb-intel | 1876 + 4152 | $151/mo | 39.9205298013
 c-8vcpu-16gb-intel | 1864 + 7204 | $218/mo | 41.5963302752
+vhp-8c-16gb-amd    | 818 + 3368  | $96/mo  | 43.6041666667
 s-8vcpu-16gb-amd   | 894 + 4293  | $112/mo | 46.3125
 c-4vcpu-8gb        | 1266 + 2770 | $84/mo  | 48.0476190476
 c-4vcpu-8gb-intel  | 1846 + 4166 | $109/mo | 55.1559633028
@@ -477,6 +525,8 @@ If the goal is to maximize **performance per dollar**, the winner is **Vultr vhp
 - Best value in multi-core performance-per-price, 29% ahead of the next one (s-4vcpu-8gb-amd).
 - Best value in combined single-core + multi-core performance-per-price.
 - Second fastest in absolute multi-core score, at 44% of the price of the fastest one.
+
+Pick the Intel flavor over **vhp-8c-16gb-amd**: same price, but Intel is 46% faster in single-core and 83% faster in multi-core.
 
 Within DigitalOcean, **s-4vcpu-8gb-amd** is still the best value, being the cheapest option tested.
 
