@@ -469,7 +469,7 @@ YABS completed in 8 min 51 sec
 - cpu: 8x AMD EPYC-Rome Processor @ 1996.248 MHz
 - single core: 818 / multi core: 3368 in 8 min 51 sec
 
-### Vultr – Shared CPU High Frequency (4vCPU)
+### Vultr – Shared CPU High Frequency Intel (4vCPU)
 
 <details>
 <summary>Full report</summary>
