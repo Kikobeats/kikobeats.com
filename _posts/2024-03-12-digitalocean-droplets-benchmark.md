@@ -673,4 +673,14 @@ s5-4vcpu-8gb-30gb       | 2707 + 6214  | $74.20/mo  | 120.2291105121
 | Highest raw performance | `s5-8vcpu-16gb-30gb` | 47% more multi-core than `c-8vcpu-16gb-intel` for 33% less money. |
 | Lowest bill | `s-4vcpu-8gb-amd` | Cheapest plan tested at $56/mo. For $18.20/mo more, `s5-4vcpu-8gb-30gb` is 3.1x faster on single-core and 2.2x faster on multi-core. |
 
+### Upgrading from `s-8vcpu-16gb-amd`
+
+That is the plan I run, so this is how the v5 plans compare against it:
+
+| | Single | Multi | Price |
+|---|---|---|---|
+| `s-8vcpu-16gb-amd` (current) | 1.00x (894) | 1.00x (4293) | 1.00x ($112) |
+| `s5-4vcpu-8gb-30gb` | 3.03x (2707) | 1.45x (6214) | 0.66x ($74.20) |
+| `s5-8vcpu-16gb-30gb` | 3.03x (2709) | 2.47x (10605) | 1.30x ($145.34) |
+
 The v5 plans are shared CPU and, as of November 2026, only available in Atlanta (ATL1), Richmond (RIC1), Kansas City (MKC1) and Memphis (MEM1).
