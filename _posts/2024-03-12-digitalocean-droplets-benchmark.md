@@ -246,7 +246,7 @@ YABS completed in 5 min 37 sec
 - cpu: 8x INTEL(R) XEON(R) GOLD 6548N @ 2800.000 MHz
 - single core: 1864 / multi core: 7204 in 5 min 37 sec
 
-### General Purpose – v5 AMD (4vCPU)
+### Basic – v5 AMD (4vCPU)
 
 <details>
 <summary>Full report</summary>
@@ -286,12 +286,12 @@ YABS completed in 4 min 57 sec
 </pre>
 </details>
 
-- slug: g5-4vcpu-8gb-30gb
-- billed: $67.20/mo or $0.100/hr
+- slug: s5-4vcpu-8gb-30gb
+- billed: $74.20/mo or $0.0997/hr
 - cpu: 4x AMD EPYC 9555P @ 3195.198 MHz
 - single core: 2707 / multi core: 6214 in 4 min 57 sec
 
-### General Purpose – v5 AMD (8vCPU)
+### Basic – v5 AMD (8vCPU)
 
 <details>
 <summary>Full report</summary>
@@ -331,8 +331,8 @@ YABS completed in 4 min 36 sec
 </pre>
 </details>
 
-- slug: g5-8vcpu-16gb-30gb
-- billed: $131.04/mo or $0.195/hr
+- slug: s5-8vcpu-16gb-30gb
+- billed: $145.34/mo or $0.1954/hr
 - cpu: 8x AMD EPYC 9555P @ 3195.200 MHz
 - single core: 2709 / multi core: 10605 in 4 min 36 sec
 
@@ -376,7 +376,7 @@ YABS completed in 8 min 34 sec
 </pre>
 </details>
 
-- slug: s-4vcpu-8gb
+- slug: s-4vcpu-8gb-240gb-intel
 - billed: $64/mo or $0.095/hr
 - cpu: 4x 1999.999 MHz
 - single core: 912 / multi core: 2783 in 8 min 34 sec
@@ -613,62 +613,64 @@ YABS completed in 6 min 18 sec
 ### single core
 
 ```
-s-8vcpu-16gb-amd   | 894  | $112/mo    | 7.9821428571
-vhp-8c-16gb-amd    | 818  | $96/mo     | 8.5208333333
-c-8vcpu-16gb-intel | 1864 | $218/mo    | 8.5504587156
-g-4vcpu-16gb       | 1085 | $126/mo    | 8.6111111111
-g-4vcpu-16gb-intel | 1876 | $151/mo    | 12.4238410596
-vhp-8c-16gb-intel  | 1196 | $96/mo     | 12.4583333333
-s-4vcpu-8gb        | 912  | $64/mo     | 14.25
-c-4vcpu-8gb        | 1266 | $84/mo     | 15.0714285714
-vhf-4c-16gb        | 1471 | $96/mo     | 15.3229166667
-s-4vcpu-8gb-amd    | 880  | $56/mo     | 15.7142857143
-c-4vcpu-8gb-intel  | 1846 | $109/mo    | 16.9357798165
-g5-8vcpu-16gb-30gb | 2709 | $131.04/mo | 20.6730769231
-g5-4vcpu-8gb-30gb  | 2707 | $67.20/mo  | 40.2827380952
+s-8vcpu-16gb-amd        | 894  | $112/mo    | 7.9821428571
+vhp-8c-16gb-amd         | 818  | $96/mo     | 8.5208333333
+c-8vcpu-16gb-intel      | 1864 | $218/mo    | 8.5504587156
+g-4vcpu-16gb            | 1085 | $126/mo    | 8.6111111111
+g-4vcpu-16gb-intel      | 1876 | $151/mo    | 12.4238410596
+vhp-8c-16gb-intel       | 1196 | $96/mo     | 12.4583333333
+s-4vcpu-8gb-240gb-intel | 912  | $64/mo     | 14.25
+c-4vcpu-8gb             | 1266 | $84/mo     | 15.0714285714
+vhf-4c-16gb             | 1471 | $96/mo     | 15.3229166667
+s-4vcpu-8gb-amd         | 880  | $56/mo     | 15.7142857143
+c-4vcpu-8gb-intel       | 1846 | $109/mo    | 16.9357798165
+s5-8vcpu-16gb-30gb      | 2709 | $145.34/mo | 18.6390532544
+s5-4vcpu-8gb-30gb       | 2707 | $74.20/mo  | 36.4824797844
 ```
 
 ### multi core
 
 ```
-g-4vcpu-16gb       | 2382  | $126/mo    | 18.9047619048
-g-4vcpu-16gb-intel | 4152  | $151/mo    | 27.4966887417
-c-4vcpu-8gb        | 2770  | $84/mo     | 32.9761904762
-c-8vcpu-16gb-intel | 7204  | $218/mo    | 33.0458715596
-vhp-8c-16gb-amd    | 3368  | $96/mo     | 35.0833333333
-c-4vcpu-8gb-intel  | 4166  | $109/mo    | 38.2201834862
-s-8vcpu-16gb-amd   | 4293  | $112/mo    | 38.3303571429
-vhf-4c-16gb        | 4082  | $96/mo     | 42.5208333333
-s-4vcpu-8gb        | 2783  | $64/mo     | 43.484375
-s-4vcpu-8gb-amd    | 2776  | $56/mo     | 49.5714285714
-vhp-8c-16gb-intel  | 6155  | $96/mo     | 64.1145833333
-g5-8vcpu-16gb-30gb | 10605 | $131.04/mo | 80.9294871795
-g5-4vcpu-8gb-30gb  | 6214  | $67.20/mo  | 92.4702380952
+g-4vcpu-16gb            | 2382  | $126/mo    | 18.9047619048
+g-4vcpu-16gb-intel      | 4152  | $151/mo    | 27.4966887417
+c-4vcpu-8gb             | 2770  | $84/mo     | 32.9761904762
+c-8vcpu-16gb-intel      | 7204  | $218/mo    | 33.0458715596
+vhp-8c-16gb-amd         | 3368  | $96/mo     | 35.0833333333
+c-4vcpu-8gb-intel       | 4166  | $109/mo    | 38.2201834862
+s-8vcpu-16gb-amd        | 4293  | $112/mo    | 38.3303571429
+vhf-4c-16gb             | 4082  | $96/mo     | 42.5208333333
+s-4vcpu-8gb-240gb-intel | 2783  | $64/mo     | 43.484375
+s-4vcpu-8gb-amd         | 2776  | $56/mo     | 49.5714285714
+vhp-8c-16gb-intel       | 6155  | $96/mo     | 64.1145833333
+s5-8vcpu-16gb-30gb      | 10605 | $145.34/mo | 72.9668363837
+s5-4vcpu-8gb-30gb       | 6214  | $74.20/mo  | 83.7466307278
 ```
 
 ### single core + multi core
 
 ```
-g-4vcpu-16gb       | 1085 + 2382  | $126/mo    | 27.5158730159
-g-4vcpu-16gb-intel | 1876 + 4152  | $151/mo    | 39.9205298013
-c-8vcpu-16gb-intel | 1864 + 7204  | $218/mo    | 41.5963302752
-vhp-8c-16gb-amd    | 818 + 3368   | $96/mo     | 43.6041666667
-s-8vcpu-16gb-amd   | 894 + 4293   | $112/mo    | 46.3125
-c-4vcpu-8gb        | 1266 + 2770  | $84/mo     | 48.0476190476
-c-4vcpu-8gb-intel  | 1846 + 4166  | $109/mo    | 55.1559633028
-s-4vcpu-8gb        | 912 + 2783   | $64/mo     | 57.734375
-vhf-4c-16gb        | 1471 + 4082  | $96/mo     | 57.84375
-s-4vcpu-8gb-amd    | 880 + 2776   | $56/mo     | 65.2857142857
-vhp-8c-16gb-intel  | 1196 + 6155  | $96/mo     | 76.5729166667
-g5-8vcpu-16gb-30gb | 2709 + 10605 | $131.04/mo | 101.6025641026
-g5-4vcpu-8gb-30gb  | 2707 + 6214  | $67.20/mo  | 132.7529761905
+g-4vcpu-16gb            | 1085 + 2382  | $126/mo    | 27.5158730159
+g-4vcpu-16gb-intel      | 1876 + 4152  | $151/mo    | 39.9205298013
+c-8vcpu-16gb-intel      | 1864 + 7204  | $218/mo    | 41.5963302752
+vhp-8c-16gb-amd         | 818 + 3368   | $96/mo     | 43.6041666667
+s-8vcpu-16gb-amd        | 894 + 4293   | $112/mo    | 46.3125
+c-4vcpu-8gb             | 1266 + 2770  | $84/mo     | 48.0476190476
+c-4vcpu-8gb-intel       | 1846 + 4166  | $109/mo    | 55.1559633028
+s-4vcpu-8gb-240gb-intel | 912 + 2783   | $64/mo     | 57.734375
+vhf-4c-16gb             | 1471 + 4082  | $96/mo     | 57.84375
+s-4vcpu-8gb-amd         | 880 + 2776   | $56/mo     | 65.2857142857
+vhp-8c-16gb-intel       | 1196 + 6155  | $96/mo     | 76.5729166667
+s5-8vcpu-16gb-30gb      | 2709 + 10605 | $145.34/mo | 91.6058896381
+s5-4vcpu-8gb-30gb       | 2707 + 6214  | $74.20/mo  | 120.2291105121
 ```
 
 ## Conclusion
 
 | If you want | Pick | Why |
 |-------------|------|-----|
-| Best value overall | `g5-4vcpu-8gb-30gb` | First on single-core, multi-core and combined per dollar. 73% ahead of the best non-DigitalOcean plan, `vhp-8c-16gb-intel`, on combined. Comes with 8 GB of RAM; if you need 16 GB, see the next row. |
-| Best 8 vCPU plan | `g5-8vcpu-16gb-30gb` | Second on combined per dollar, and still 26% ahead of `vhp-8c-16gb-intel` on multi-core per dollar. |
-| Highest raw performance | `g5-8vcpu-16gb-30gb` | 47% more multi-core than `c-8vcpu-16gb-intel` for 40% less money. |
-| Lowest bill | `s-4vcpu-8gb-amd` | Cheapest plan tested at $56/mo. For $11.20/mo more, `g5-4vcpu-8gb-30gb` is 3.1x faster on single-core and 2.2x faster on multi-core. |
+| Best value overall | `s5-4vcpu-8gb-30gb` | First on single-core, multi-core and combined per dollar. 57% ahead of the best non-DigitalOcean plan, `vhp-8c-16gb-intel`, on combined. Comes with 8 GB of RAM; if you need 16 GB, see the next row. |
+| Best 8 vCPU plan | `s5-8vcpu-16gb-30gb` | Second on combined per dollar, and still 14% ahead of `vhp-8c-16gb-intel` on multi-core per dollar. |
+| Highest raw performance | `s5-8vcpu-16gb-30gb` | 47% more multi-core than `c-8vcpu-16gb-intel` for 33% less money. |
+| Lowest bill | `s-4vcpu-8gb-amd` | Cheapest plan tested at $56/mo. For $18.20/mo more, `s5-4vcpu-8gb-30gb` is 3.1x faster on single-core and 2.2x faster on multi-core. |
+
+The v5 plans are shared CPU and, as of November 2026, only available in Atlanta (ATL1), Richmond (RIC1), Kansas City (MKC1) and Memphis (MEM1).
