@@ -13,9 +13,11 @@ DigitalOcean offers different kind of Droplets and I'm interested into find the 
 
 ## Methodology
 
-1. Create a DigitalOcean droplet for the desired droplet size.
-2. Install latest Ubuntu LTS.
-3. Run `curl -sL http://yabs.sh | bash -s -- -f -i`
+1. Create a DigitalOcean droplet or Vultr instance for the desired size.
+2. Install the latest Ubuntu available for it.
+3. Run `curl -sL https://yabs.sh | bash -s -- -f -i 2>&1 | tee yabs.log`
+
+Every result is a single run. Shared CPU plans (DigitalOcean Basic, Vultr) can score differently on another run, depending on the load from other customers on the same host.
 
 ## Results
 
@@ -106,7 +108,7 @@ YABS completed in 6 min 9 sec
 
 - slug: g-4vcpu-16gb-intel
 - billed: $151/mo or $0.2247/hr
-- cpu: 4x Intel(R) Xeon(R) Platinum 8358 CPU @ 2.60GHz
+- cpu: 4x INTEL(R) XEON(R) GOLD 6548N @ 2800.000 MHz
 - single core: 1876 / multi core: 4152 in 6 min 9 sec
 
 ### CPU-Optimized	– Regular Intel (4vCPU)
@@ -243,6 +245,96 @@ YABS completed in 5 min 37 sec
 - billed: $218/mo or $0.324/hr
 - cpu: 8x INTEL(R) XEON(R) GOLD 6548N @ 2800.000 MHz
 - single core: 1864 / multi core: 7204 in 5 min 37 sec
+
+### General Purpose – v5 AMD (4vCPU)
+
+<details>
+<summary>Full report</summary>
+<pre>
+Basic System Information:
+---------------------------------
+Uptime     : 0 days, 0 hours, 17 minutes
+Processor  : AMD EPYC 9555P 64-Core Processor
+CPU cores  : 4 @ 3195.198 MHz
+AES-NI     : ✔ Enabled
+VM-x/AMD-V : ✔ Enabled
+RAM        : 7.7 GiB
+Swap       : 0.0 KiB
+Disk       : 29.0 GiB
+Distro     : Ubuntu 26.04.1 LTS
+Kernel     : 7.0.0-43-generic
+VM Type    : KVM
+IPv4/IPv6  : ✔ Online / ❌ Offline
+
+IPv4 Network Information:
+---------------------------------
+ISP        : DigitalOcean, LLC
+ASN        : AS14061 DigitalOcean, LLC
+Host       : DigitalOcean, LLC
+Location   : Douglasville, Georgia (GA)
+Country    : United States
+
+Geekbench 6 Benchmark Test:
+---------------------------------
+Test            | Value                         
+                |                               
+Single Core     | 2707                          
+Multi Core      | 6214                          
+Full Test       | https://browser.geekbench.com/v6/cpu/19516597
+
+YABS completed in 4 min 57 sec
+</pre>
+</details>
+
+- slug: g5-4vcpu-8gb-30gb
+- billed: $67.20/mo or $0.100/hr
+- cpu: 4x AMD EPYC 9555P @ 3195.198 MHz
+- single core: 2707 / multi core: 6214 in 4 min 57 sec
+
+### General Purpose – v5 AMD (8vCPU)
+
+<details>
+<summary>Full report</summary>
+<pre>
+Basic System Information:
+---------------------------------
+Uptime     : 0 days, 0 hours, 17 minutes
+Processor  : AMD EPYC 9555P 64-Core Processor
+CPU cores  : 8 @ 3195.200 MHz
+AES-NI     : ✔ Enabled
+VM-x/AMD-V : ✔ Enabled
+RAM        : 15.6 GiB
+Swap       : 0.0 KiB
+Disk       : 29.0 GiB
+Distro     : Ubuntu 26.04.1 LTS
+Kernel     : 7.0.0-43-generic
+VM Type    : KVM
+IPv4/IPv6  : ✔ Online / ❌ Offline
+
+IPv4 Network Information:
+---------------------------------
+ISP        : DigitalOcean, LLC
+ASN        : AS14061 DigitalOcean, LLC
+Host       : DigitalOcean, LLC
+Location   : Douglasville, Georgia (GA)
+Country    : United States
+
+Geekbench 6 Benchmark Test:
+---------------------------------
+Test            | Value                         
+                |                               
+Single Core     | 2709                          
+Multi Core      | 10605                         
+Full Test       | https://browser.geekbench.com/v6/cpu/19516596
+
+YABS completed in 4 min 36 sec
+</pre>
+</details>
+
+- slug: g5-8vcpu-16gb-30gb
+- billed: $131.04/mo or $0.195/hr
+- cpu: 8x AMD EPYC 9555P @ 3195.200 MHz
+- single core: 2709 / multi core: 10605 in 4 min 36 sec
 
 ### Basic	– Premium Intel (4vCPU)
 
@@ -521,65 +613,62 @@ YABS completed in 6 min 18 sec
 ### single core
 
 ```
-s-8vcpu-16gb-amd   | 894  | $112/mo | 7.9821428571
-vhp-8c-16gb-amd    | 818  | $96/mo  | 8.5208333333
-c-8vcpu-16gb-intel | 1864 | $218/mo | 8.5504587156
-g-4vcpu-16gb       | 1085 | $126/mo | 8.6111111111
-g-4vcpu-16gb-intel | 1876 | $151/mo | 12.4238410596
-vhp-8c-16gb-intel  | 1196 | $96/mo  | 12.4583333333
-s-4vcpu-8gb        | 912  | $64/mo  | 14.25
-c-4vcpu-8gb        | 1266 | $84/mo  | 15.0714285714
-vhf-4c-16gb        | 1471 | $96/mo  | 15.3229166667
-s-4vcpu-8gb-amd    | 880  | $56/mo  | 15.7142857143
-c-4vcpu-8gb-intel  | 1846 | $109/mo | 16.9357798165
+s-8vcpu-16gb-amd   | 894  | $112/mo    | 7.9821428571
+vhp-8c-16gb-amd    | 818  | $96/mo     | 8.5208333333
+c-8vcpu-16gb-intel | 1864 | $218/mo    | 8.5504587156
+g-4vcpu-16gb       | 1085 | $126/mo    | 8.6111111111
+g-4vcpu-16gb-intel | 1876 | $151/mo    | 12.4238410596
+vhp-8c-16gb-intel  | 1196 | $96/mo     | 12.4583333333
+s-4vcpu-8gb        | 912  | $64/mo     | 14.25
+c-4vcpu-8gb        | 1266 | $84/mo     | 15.0714285714
+vhf-4c-16gb        | 1471 | $96/mo     | 15.3229166667
+s-4vcpu-8gb-amd    | 880  | $56/mo     | 15.7142857143
+c-4vcpu-8gb-intel  | 1846 | $109/mo    | 16.9357798165
+g5-8vcpu-16gb-30gb | 2709 | $131.04/mo | 20.6730769231
+g5-4vcpu-8gb-30gb  | 2707 | $67.20/mo  | 40.2827380952
 ```
 
 ### multi core
 
 ```
-g-4vcpu-16gb       | 2382 | $126/mo | 18.9047619048
-g-4vcpu-16gb-intel | 4152 | $151/mo | 27.4966887417
-c-4vcpu-8gb        | 2770 | $84/mo  | 32.9761904762
-c-8vcpu-16gb-intel | 7204 | $218/mo | 33.0458715596
-vhp-8c-16gb-amd    | 3368 | $96/mo  | 35.0833333333
-c-4vcpu-8gb-intel  | 4166 | $109/mo | 38.2201834862
-s-8vcpu-16gb-amd   | 4293 | $112/mo | 38.3303571429
-vhf-4c-16gb        | 4082 | $96/mo  | 42.5208333333
-s-4vcpu-8gb        | 2783 | $64/mo  | 43.484375
-s-4vcpu-8gb-amd    | 2776 | $56/mo  | 49.5714285714
-vhp-8c-16gb-intel  | 6155 | $96/mo  | 64.1145833333
+g-4vcpu-16gb       | 2382  | $126/mo    | 18.9047619048
+g-4vcpu-16gb-intel | 4152  | $151/mo    | 27.4966887417
+c-4vcpu-8gb        | 2770  | $84/mo     | 32.9761904762
+c-8vcpu-16gb-intel | 7204  | $218/mo    | 33.0458715596
+vhp-8c-16gb-amd    | 3368  | $96/mo     | 35.0833333333
+c-4vcpu-8gb-intel  | 4166  | $109/mo    | 38.2201834862
+s-8vcpu-16gb-amd   | 4293  | $112/mo    | 38.3303571429
+vhf-4c-16gb        | 4082  | $96/mo     | 42.5208333333
+s-4vcpu-8gb        | 2783  | $64/mo     | 43.484375
+s-4vcpu-8gb-amd    | 2776  | $56/mo     | 49.5714285714
+vhp-8c-16gb-intel  | 6155  | $96/mo     | 64.1145833333
+g5-8vcpu-16gb-30gb | 10605 | $131.04/mo | 80.9294871795
+g5-4vcpu-8gb-30gb  | 6214  | $67.20/mo  | 92.4702380952
 ```
 
 ### single core + multi core
 
 ```
-g-4vcpu-16gb       | 1085 + 2382 | $126/mo | 27.5158730159
-g-4vcpu-16gb-intel | 1876 + 4152 | $151/mo | 39.9205298013
-c-8vcpu-16gb-intel | 1864 + 7204 | $218/mo | 41.5963302752
-vhp-8c-16gb-amd    | 818 + 3368  | $96/mo  | 43.6041666667
-s-8vcpu-16gb-amd   | 894 + 4293  | $112/mo | 46.3125
-c-4vcpu-8gb        | 1266 + 2770 | $84/mo  | 48.0476190476
-c-4vcpu-8gb-intel  | 1846 + 4166 | $109/mo | 55.1559633028
-s-4vcpu-8gb        | 912 + 2783  | $64/mo  | 57.734375
-vhf-4c-16gb        | 1471 + 4082 | $96/mo  | 57.84375
-s-4vcpu-8gb-amd    | 880 + 2776  | $56/mo  | 65.2857142857
-vhp-8c-16gb-intel  | 1196 + 6155 | $96/mo  | 76.5729166667
+g-4vcpu-16gb       | 1085 + 2382  | $126/mo    | 27.5158730159
+g-4vcpu-16gb-intel | 1876 + 4152  | $151/mo    | 39.9205298013
+c-8vcpu-16gb-intel | 1864 + 7204  | $218/mo    | 41.5963302752
+vhp-8c-16gb-amd    | 818 + 3368   | $96/mo     | 43.6041666667
+s-8vcpu-16gb-amd   | 894 + 4293   | $112/mo    | 46.3125
+c-4vcpu-8gb        | 1266 + 2770  | $84/mo     | 48.0476190476
+c-4vcpu-8gb-intel  | 1846 + 4166  | $109/mo    | 55.1559633028
+s-4vcpu-8gb        | 912 + 2783   | $64/mo     | 57.734375
+vhf-4c-16gb        | 1471 + 4082  | $96/mo     | 57.84375
+s-4vcpu-8gb-amd    | 880 + 2776   | $56/mo     | 65.2857142857
+vhp-8c-16gb-intel  | 1196 + 6155  | $96/mo     | 76.5729166667
+g5-8vcpu-16gb-30gb | 2709 + 10605 | $131.04/mo | 101.6025641026
+g5-4vcpu-8gb-30gb  | 2707 + 6214  | $67.20/mo  | 132.7529761905
 ```
 
 ## Conclusion
 
-If the goal is to maximize **performance per dollar**, the winner is **Vultr vhp-8c-16gb-intel**.
-
-- Best value in multi-core performance-per-price, 29% ahead of the next one (s-4vcpu-8gb-amd).
-- Best value in combined single-core + multi-core performance-per-price.
-- Second fastest in absolute multi-core score, at 44% of the price of the fastest one.
-
-Pick the Intel flavor over **vhp-8c-16gb-amd**: same price, but Intel is 46% faster in single-core and 83% faster in multi-core.
-
-For the same $96/mo, **vhf-4c-16gb** trades cores for clock speed: 23% faster in single-core than vhp-8c-16gb-intel, but 34% slower in multi-core.
-
-Within DigitalOcean, **s-4vcpu-8gb-amd** is still the best value, being the cheapest option tested.
-
-If the goal is **single-core performance per dollar**, **c-4vcpu-8gb-intel** wins.
-
-If the goal is **highest raw CPU performance** (not value), **c-8vcpu-16gb-intel** is the fastest in absolute multi-core score.
+| If you want | Pick | Why |
+|-------------|------|-----|
+| Best value overall | `g5-4vcpu-8gb-30gb` | First on single-core, multi-core and combined per dollar. 73% ahead of the best non-DigitalOcean plan, `vhp-8c-16gb-intel`, on combined. Comes with 8 GB of RAM; if you need 16 GB, see the next row. |
+| Best 8 vCPU plan | `g5-8vcpu-16gb-30gb` | Second on combined per dollar, and still 26% ahead of `vhp-8c-16gb-intel` on multi-core per dollar. |
+| Highest raw performance | `g5-8vcpu-16gb-30gb` | 47% more multi-core than `c-8vcpu-16gb-intel` for 40% less money. |
+| Lowest bill | `s-4vcpu-8gb-amd` | Cheapest plan tested at $56/mo. For $11.20/mo more, `g5-4vcpu-8gb-30gb` is 3.1x faster on single-core and 2.2x faster on multi-core. |
